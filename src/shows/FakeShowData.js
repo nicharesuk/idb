@@ -1,33 +1,33 @@
 
 export default [
   {
-    title: "Kingsman",
+    title: "Steins Gate 0",
     imageURL: "https://myanimelist.cdn-dena.com/images/anime/4/77633.jpg",
     year: 2017,
   },
   {
-    title: "Kingsman",
-    imageURL: "https://resizing.flixster.com/PH7XnN7Unee6677nKLJpzZwduDY=/206x305/v1.bTsxMjM1MTUxNDtqOzE3NDY3OzEyMDA7MjAyNjszMDAw",
+    title: "Death Note",
+    imageURL: "https://myanimelist.cdn-dena.com/images/anime/9/9453.jpg",
     year: 2017,
   },
   {
-    title: "Kingsman",
-    imageURL: "https://resizing.flixster.com/PH7XnN7Unee6677nKLJpzZwduDY=/206x305/v1.bTsxMjM1MTUxNDtqOzE3NDY3OzEyMDA7MjAyNjszMDAw",
+    title: "Steins Gate",
+    imageURL: "https://myanimelist.cdn-dena.com/images/anime/5/73199.jpg",
     year: 2017,
   },
   {
-    title: "Kingsman",
-    imageURL: "https://resizing.flixster.com/PH7XnN7Unee6677nKLJpzZwduDY=/206x305/v1.bTsxMjM1MTUxNDtqOzE3NDY3OzEyMDA7MjAyNjszMDAw",
+    title: "Tokyo Ghoul",
+    imageURL: "https://myanimelist.cdn-dena.com/images/anime/5/64449.jpg",
     year: 2017,
   },
   {
-    title: "Kingsman",
-    imageURL: "https://resizing.flixster.com/PH7XnN7Unee6677nKLJpzZwduDY=/206x305/v1.bTsxMjM1MTUxNDtqOzE3NDY3OzEyMDA7MjAyNjszMDAw",
+    title: "Sword Art Online",
+    imageURL: "https://myanimelist.cdn-dena.com/images/anime/11/39717.jpg",
     year: 2017,
   },
   {
-    title: "Kingsman",
-    imageURL: "https://resizing.flixster.com/PH7XnN7Unee6677nKLJpzZwduDY=/206x305/v1.bTsxMjM1MTUxNDtqOzE3NDY3OzEyMDA7MjAyNjszMDAw",
+    title: "Log Horizon",
+    imageURL: "https://myanimelist.cdn-dena.com/images/anime/5/84004.jpg",
     year: 2017,
   }
 ];

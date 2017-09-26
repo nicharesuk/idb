@@ -30,5 +30,3 @@ ThumbnailCard.propTypes = {
 }
 
 export default ThumbnailCard;
-
-

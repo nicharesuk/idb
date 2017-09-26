@@ -14,6 +14,6 @@
 }
 
 .thumbnailYear {
-  color: #5b5b5b;
+  color: rgba(255, 255, 255, .7);
   font-size: 0.85em;
 }
