@@ -1,0 +1,19 @@
+
+.itemContainer {
+  margin: 10px;
+  width: 134px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.thumbnailTitle {
+  margin-top: 6px;
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.thumbnailYear {
+  color: #5b5b5b;
+  font-size: 0.85em;
+}
