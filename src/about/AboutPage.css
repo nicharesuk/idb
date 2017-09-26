@@ -1,0 +1,31 @@
+@font-face {font-family: animeace; src: url('animeace.ttf');}
+@font-face {font-family: animeace_b; src: url('animeace_b.ttf');}
+.topic {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	font-family: animeace_b;
+	font-size: 24px;
+}
+
+.member_name {
+	font-family: animeace;
+	font-size: 24px;
+}
+
+.member_info {
+	font-family: animeace;
+	font-size: 16px;
+}
+
+.img-member {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.img-tool {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
