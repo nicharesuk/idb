@@ -5,7 +5,13 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        The homepage
+      <h1>
+      weebMD
+        </h1>
+        <h2>
+        Thanks Doc!
+        </h2>
+
       </div>
     );
   }

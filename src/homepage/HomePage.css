@@ -1,0 +1,18 @@
+@font-face {font-family: animeace_b; src: url('animeace_b.ttf');}
+@font-face {font-family: animeace; src: url('animeace.ttf');}
+
+body{
+	background:url(gate.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+h1{
+	text-align: center;
+	color:darkgray;
+	font-size:10em;
+}
+h2{
+	text-align: center;
+	color: darkgray;
+	font-size: 4em;
+}
