@@ -16,21 +16,21 @@ class AboutPage extends Component {
 						<p className="member_info">About</p>
 						<p className="member_info">Role</p>
 					</div>
-  	      <div className="column" id="corbin">
+					<div className="column" id="corbin">
 						<img className="img-member" src={require("./corbin.jpg")} alt="Corbin Rogerson"></img>
 						<br/>
 						<p className="member_name">Corbin Rogerson</p>
 						<p className="member_info">About</p>
 						<p className="member_info">Role</p>
 					</div>
-  	      <div className="column" id="david">
+					<div className="column" id="david">
 						<img className="img-member" src={require("./david.png")} alt="David Malone"></img>
 						<br/>
 						<p className="member_name">David Malone</p>
 						<p className="member_info">About</p>
 						<p className="member_info">Role</p>
 					</div>
-    	    <div className="column" id="joshua">
+					<div className="column" id="joshua">
 						<img className="img-member" src={require("./joshua.jpg")} alt="Joshua Ondrusek"></img>
 						<br/>
 						<p className="member_name">Joshua Ondrusek</p>
