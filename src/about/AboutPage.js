@@ -9,26 +9,26 @@ class AboutPage extends Component {
 					<p className="topic">
 						Meet the Anime All Stars!
 					</p>
-					<div className="ui three column stackable grid container">	
- 		   	   	<div className="column" id="christopher">
+					<div className="ui three column stackable grid container">
+						<div className="column" id="christopher">
 							<img className="img-member" src={require("./christopher.png")} alt="Christopher Gutierrez"></img>
 							<p className="member_name">Christopher Gutierrez</p>
 							<p className="member_info">About</p>
 							<p className="member_info">Front-End Developer</p>
 						</div>
-  		      <div className="column" id="corbin">
+						<div className="column" id="corbin">
 							<img className="img-member" src={require("./corbin.jpg")} alt="Corbin Rogerson"></img>
 							<p className="member_name">Corbin Rogerson</p>
 							<p className="member_info">About</p>
 							<p className="member_info">Back-End Engineer</p>
 						</div>
-  		      <div className="column" id="david">
+						<div className="column" id="david">
 							<img className="img-member" src={require("./david.png")} alt="David Malone"></img>
 							<p className="member_name">David Malone</p>
 							<p className="member_info">About</p>
 							<p className="member_info">Front-End Developer</p>
 						</div>
-   	 	    <div className="column" id="joshua">
+						<div className="column" id="joshua">
 							<img className="img-member" src={require("./joshua.jpg")} alt="Joshua Ondrusek"></img>
 							<p className="member_name">Joshua Ondrusek</p>
 							<p className="member_info">About</p>
