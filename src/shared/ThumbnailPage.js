@@ -8,11 +8,13 @@ import ModalContent from './ModalContent';
 class ThumbnailPage extends Component {
   state = {
     modalOpen: false,
+    selectedIndex: 0,
   };
 
-  openModalAction = () => {
+  openModalAction = (index) => {
     this.setState({
       modalOpen: true,
+      selectedIndex: index,
     });
   }
 
@@ -26,12 +28,24 @@ class ThumbnailPage extends Component {
     return (
       <div className="thumbnailPageContainer">
         <Modal
+          basic
+          dimmer="blurring"
+          className="modalStyle"
           open={this.state.modalOpen}
-          onClose={this.closeModalAction}>
-          <ModalContent />
+          onClose={this.closeModalAction}
+          size="fullscreen">
+          <ModalContent
+            title={this.props.data[this.state.selectedIndex].title}
+            imageURL={this.props.data[this.state.selectedIndex].imageURL}
+            year={this.props.data[this.state.selectedIndex].year}
+            units={this.props.data[this.state.selectedIndex].units}
+            isManga={this.props.isManga}
+            onClose={this.closeModalAction} />
         </Modal>
         {this.props.data.map((show, index) => (
-          <div onClick={this.openModalAction} key={`thumbnail-component-${index}`}>
+          <div
+            onClick={() => this.openModalAction(index)}
+            key={`thumbnail-component-${index}`}>
             <ThumbnailCard
               title={show.title}
               imageURL={show.imageURL}

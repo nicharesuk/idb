@@ -1,24 +1,48 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
-import { Header, Image, Modal } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
+import { Header, Image, Modal, Icon } from 'semantic-ui-react';
+import './ModalContent.css';
 
 class ModalContent extends Component {
 
   render() {
     return (
-      <div style={{display: "flex"}}>
-        <Modal.Header>Select a Photo</Modal.Header>
-        <Modal.Content image>
-          <Image wrapped size='medium' src='https://myanimelist.cdn-dena.com/images/anime/12/76049.jpg' />
-          <Modal.Description>
-            <Header>Default Profile Image</Header>
-            <p>We've found the following gravatar image associated with your e-mail address.</p>
-            <p>Is it okay to use this photo?</p>
-          </Modal.Description>
-        </Modal.Content>
+      <div className="modalContentContainer">
+        <Icon
+          className="modalContentCloseIcon"
+          onClick={this.props.onClose}
+          size="huge"
+          name="remove" />
+        <div className="modalContentContent">
+          <Image
+            wrapped
+            height="588px"
+            width="402px"
+            src={this.props.imageURL} />
+          <div>
+            <div>
+              {`Title: ${this.props.title}`}
+            </div>
+            <div>
+              {`Length: ${this.props.units}`}
+            </div>
+            <div>
+              {`Year Started: ${this.props.year}`}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
+}
+
+ModalContent.propTypes = {
+  title: PropTypes.string,
+  imageURL: PropTypes.string,
+  year: PropTypes.number,
+  units: PropTypes.number,
+  isManga: PropTypes.bool,
+  onClose: PropTypes.func,
 }
 
 export default ModalContent;
