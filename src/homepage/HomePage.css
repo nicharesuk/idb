@@ -1,7 +1,7 @@
 @font-face {font-family: animeace_b; src: url('animeace_b.ttf');}
 @font-face {font-family: animeace; src: url('animeace.ttf');}
 
-body{
+#homepageBody{
 	background:url(gate.png);
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -17,6 +17,8 @@ h2{
 	color: darkgray;
 	font-size: 4em;
 }
+
+
 .moduleName{
 	color:darkgray;
 	font-size: 3em;
@@ -38,6 +40,7 @@ h2{
     font-size: 16px;
     border: none;
     cursor: pointer;
+    object-position: left;
 
 }
 
@@ -70,4 +73,13 @@ h2{
 
 .dropdown:hover .dropbtn {
     background-color: indigo;
+}
+
+#themeButton{
+	position:fixed;
+	left:0;
+}
+
+.column{
+	margin-bottom:100px;
 }

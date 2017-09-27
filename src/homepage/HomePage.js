@@ -3,20 +3,24 @@ import './HomePage.css';
 class HomePage extends Component {
   render() {
     return (
-      <div>
+      <div id="homepageBody">
+      <div id="themeButton">
       <div className="dropdown">
   <button className="dropbtn">Themes</button>
   <div className="dropdown-content">
-    <a href="#">Defualt(Edge)</a>
+    <a href="#">Default(Edge)</a>
     <a href="#">Theme2(Light)</a>
   </div>
 </div> 
+</div>
+	<div>
       <h1>
       weebMD
         </h1>
         <h2>
         Thanks Doc!
         </h2>
+        </div>
         <div className="ui two column stackable grid container">	
  	      	<div className="column" id="Anime">
 						<img className="moduleImage" src={require("./Lelouch.jpg")} alt="Find Anime"></img>
