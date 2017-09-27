@@ -8,7 +8,13 @@ class MangaPage extends Component {
     return (
       <ThumbnailPage
         isManga={true}
-        data={data} />
+        data={data.map(manga => {
+          return {
+            ...manga,
+            units: typeof manga.volumes === "number" ? manga.volumes : undefined,
+            started: manga.published.replace(/  +/g, ' ').split(' ')[2],
+          }
+        })} />
     );
   }
 }
