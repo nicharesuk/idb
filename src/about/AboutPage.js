@@ -4,11 +4,11 @@ import './AboutPage.css';
 class AboutPage extends Component {
   render() {
     return (
-			<div>
+			<div className="about_container">
 				<p className="topic">
 					Meet the Anime All Stars!
 				</p>
-				<div className="ui three column stackable grid container">	
+				<div className="ui three column stackable grid container">
  	      	<div className="column" id="christopher">
 						<img className="img-member" src={require("./christopher.png")} alt="Christopher Gutierrez"></img>
 						<br/>
@@ -63,7 +63,7 @@ class AboutPage extends Component {
 					<div className="column" id="googlecloudplatform">
 						<img className="img-tool" src={require("./googlecloudplatform.png")} alt="Google Cloud Platform"></img>
 					</div>
-					<div classname="column" id="namecheap">
+					<div className="column" id="namecheap">
 						<img className="img-tool" src={require("./namecheap.png")} alt="Namecheap"></img>
 					</div>
 					<div className="column" id="planitpoker">
