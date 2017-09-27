@@ -8,7 +8,7 @@ class ThumbnailCard extends Component {
   render() {
     const unitName = this.props.isManga ? "chapters" : "chapters"
     return (
-      <div className="itemContainer">
+      <div className="thumbnailCardContainer">
         <Image
           width="134px"
           height="196px"

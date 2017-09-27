@@ -1,11 +1,12 @@
 
-.itemContainer {
+.thumbnailCardContainer {
   margin: 10px;
   width: 134px;
   max-height: 240px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  cursor: pointer;
 }
 
 .thumbnailTitle {

@@ -11,7 +11,7 @@
 .modalContentCloseIcon {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 30px;
   cursor: pointer;
 }
 
@@ -19,4 +19,8 @@
   display: flex;
   flex-direction: row;
   font-size: 30px;
+}
+
+.modalContentData {
+  padding-left: 30px;
 }
