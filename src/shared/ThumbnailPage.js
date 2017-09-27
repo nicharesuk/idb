@@ -35,10 +35,7 @@ class ThumbnailPage extends Component {
           onClose={this.closeModalAction}
           size="fullscreen">
           <ModalContent
-            title={this.props.data[this.state.selectedIndex].title}
-            imageURL={this.props.data[this.state.selectedIndex].imageURL}
-            year={this.props.data[this.state.selectedIndex].year}
-            units={this.props.data[this.state.selectedIndex].units}
+            dataObject={this.props.data[this.state.selectedIndex]}
             isManga={this.props.isManga}
             onClose={this.closeModalAction} />
         </Modal>
@@ -49,7 +46,7 @@ class ThumbnailPage extends Component {
             <ThumbnailCard
               title={show.title}
               imageURL={show.image}
-              year={show.year}
+              started={show.started}
               units={show.units}
               isManga={this.props.isManga}/>
           </div>

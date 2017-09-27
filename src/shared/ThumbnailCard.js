@@ -20,10 +20,10 @@ class ThumbnailCard extends Component {
         </div>
         <div className="thumbnailSubInfo">
           <div>
-            {this.props.year}
+            {this.props.started}
           </div>
           <div>
-            {`${this.props.units} ${unitName}`}
+            {this.props.units ? `${this.props.units} ${unitName}` : null}
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@ class ThumbnailCard extends Component {
 ThumbnailCard.propTypes = {
   title: PropTypes.string,
   imageURL: PropTypes.string,
-  year: PropTypes.number,
+  started: PropTypes.string,
   units: PropTypes.number,
   isManga: PropTypes.bool,
 }

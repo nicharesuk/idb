@@ -6,6 +6,7 @@ import './ModalContent.css';
 class ModalContent extends Component {
 
   render() {
+    const { image, title, units, started } = this.props.dataObject;
     return (
       <div className="modalContentContainer">
         <Icon
@@ -18,16 +19,16 @@ class ModalContent extends Component {
             wrapped
             height="588px"
             width="402px"
-            src={this.props.imageURL} />
+            src={image} />
           <div>
             <div>
-              {`Title: ${this.props.title}`}
+              {`Title: ${title}`}
             </div>
             <div>
-              {`Length: ${this.props.units}`}
+              {`Length: ${units}`}
             </div>
             <div>
-              {`Year Started: ${this.props.year}`}
+              {`Year Started: ${started}`}
             </div>
           </div>
         </div>
@@ -37,10 +38,7 @@ class ModalContent extends Component {
 }
 
 ModalContent.propTypes = {
-  title: PropTypes.string,
-  imageURL: PropTypes.string,
-  year: PropTypes.number,
-  units: PropTypes.number,
+  dataObject: PropTypes.object,
   isManga: PropTypes.bool,
   onClose: PropTypes.func,
 }
