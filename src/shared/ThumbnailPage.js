@@ -48,7 +48,7 @@ class ThumbnailPage extends Component {
             key={`thumbnail-component-${index}`}>
             <ThumbnailCard
               title={show.title}
-              imageURL={show.imageURL}
+              imageURL={show.image}
               year={show.year}
               units={show.units}
               isManga={this.props.isManga}/>

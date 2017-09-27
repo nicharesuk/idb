@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Header, Image, Modal, Icon } from 'semantic-ui-react';
+import { Image, Icon } from 'semantic-ui-react';
 import './ModalContent.css';
 
 class ModalContent extends Component {
