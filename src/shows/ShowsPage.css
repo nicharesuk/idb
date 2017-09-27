@@ -4,4 +4,5 @@
   background-color: #17181b;
   padding-top: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
