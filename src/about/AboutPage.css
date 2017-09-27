@@ -57,3 +57,7 @@
 	height: 150px;
 	object-fit: cover;
 }
+
+.about_container {
+	text-align: center;
+}

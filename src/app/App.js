@@ -50,7 +50,7 @@ class App extends Component {
     const pageElement = pages.filter(obj => obj.name === this.state.currentPage)[0].node;
 
     return (
-      <div className="App">
+      <div className="appContainer">
         <div className="header">
           <Menu inverted pointing secondary size='large'>
             {pages.map(page => {

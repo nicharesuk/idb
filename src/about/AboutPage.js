@@ -4,58 +4,67 @@ import './AboutPage.css';
 class AboutPage extends Component {
   render() {
     return (
-			<div id="about">
-				<div id="team">
-					<p className="topic">
-						Meet the Anime All Stars!
-					</p>
-					<div className="ui three column stackable grid container">
-						<div className="column" id="christopher">
-							<img className="img-member" src={require("./christopher.png")} alt="Christopher Gutierrez"></img>
-							<p className="member_name">Christopher Gutierrez</p>
-							<p className="member_info">About</p>
-							<p className="member_info">Front-End Developer</p>
-						</div>
-						<div className="column" id="corbin">
-							<img className="img-member" src={require("./corbin.jpg")} alt="Corbin Rogerson"></img>
-							<p className="member_name">Corbin Rogerson</p>
-							<p className="member_info">About</p>
-							<p className="member_info">Back-End Engineer</p>
-						</div>
-						<div className="column" id="david">
-							<img className="img-member" src={require("./david.png")} alt="David Malone"></img>
-							<p className="member_name">David Malone</p>
-							<p className="member_info">About</p>
-							<p className="member_info">Front-End Developer</p>
-						</div>
-						<div className="column" id="joshua">
-							<img className="img-member" src={require("./joshua.jpg")} alt="Joshua Ondrusek"></img>
-							<p className="member_name">Joshua Ondrusek</p>
-							<p className="member_info">About</p>
-							<p className="member_info">Back-End Engineer</p>
-						</div>
-						<div className="column" id="nelson">
-							<img className="img-member" src={require("./nelson.png")} alt="Nelson Swindler"></img>
-							<p className="member_name">Nelson Swindler</p>
-							<p className="member_info">About</p>
-							<p className="member_info">Front-End Developer</p>
-						</div>
-						<div className="column" id="randy">
-							<img className="img-member" src={require("./randy.jpg")} alt="Randy Thai"></img>
-							<p className="member_name">Randy Thai</p>
-							<p className="member_info">Senior computer science student at the University of Texas at Austin.</p>
-							<p className="member_info">Front-End Developer</p>
-						</div>
+			<div className="about_container">
+				<p className="topic">
+					Meet the Anime All Stars!
+				</p>
+				<div className="ui three column stackable grid container">
+ 	      	<div className="column" id="christopher">
+						<img className="img-member" src={require("./christopher.png")} alt="Christopher Gutierrez"></img>
+						<br/>
+						<p className="member_name">Christopher Gutierrez</p>
+						<p className="member_info">About</p>
+						<p className="member_info">Role</p>
+					</div>
+  	      <div className="column" id="corbin">
+						<img className="img-member" src={require("./corbin.jpg")} alt="Corbin Rogerson"></img>
+						<br/>
+						<p className="member_name">Corbin Rogerson</p>
+						<p className="member_info">About</p>
+						<p className="member_info">Role</p>
+					</div>
+  	      <div className="column" id="david">
+						<img className="img-member" src={require("./david.png")} alt="David Malone"></img>
+						<br/>
+						<p className="member_name">David Malone</p>
+						<p className="member_info">About</p>
+						<p className="member_info">Role</p>
+					</div>
+    	    <div className="column" id="joshua">
+						<img className="img-member" src={require("./joshua.jpg")} alt="Joshua Ondrusek"></img>
+						<br/>
+						<p className="member_name">Joshua Ondrusek</p>
+						<p className="member_info">About</p>
+						<p className="member_info">Role</p>
+					</div>
+					<div className="column" id="nelson">
+						<img className="img-member" src={require("./nelson.png")} alt="Nelson Swindler"></img>
+						<br/>
+						<p className="member_name">Nelson Swindler</p>
+						<p className="member_info">About</p>
+						<p className="member_info">Role</p>
+					</div>
+					<div className="column" id="randy">
+						<img className="img-member" src={require("./randy.jpg")} alt="Randy Thai"></img>
+						<br/>
+						<p className="member_name">Randy Thai</p>
+						<p className="member_info">About</p>
+						<p className="member_info">Role</p>
 					</div>
 				</div>
-				<div id="stats">
-					<p className="topic">
-						The Stats
-					</p>
-					<div className="stats_info">
-						<p>Apiary API</p>
-						<p><a href="https://github.com/nicharesuk/idb">Github Repository</a></p>
-						<p><a href="https://trello.com/b/KrhsKbmQ/weebmd">Trello Board</a></p>
+				<p className="topic">
+					Tools
+				</p>
+				<br/>
+				<div className="ui four column stackable grid container">
+					<div className="column" id="github">
+						<a href="https://github.com/nicharesuk/idb"><img className="img-tool" src={require("./github.png")} alt="Github"></img></a>
+					</div>
+					<div className="column" id="googlecloudplatform">
+						<img className="img-tool" src={require("./googlecloudplatform.png")} alt="Google Cloud Platform"></img>
+					</div>
+					<div className="column" id="namecheap">
+						<img className="img-tool" src={require("./namecheap.png")} alt="Namecheap"></img>
 					</div>
 				</div>
 				<div id="data">
