@@ -25,6 +25,17 @@ class ThumbnailPage extends Component {
   }
 
   render() {
+
+    const moreData = [
+      ...this.props.data,
+      ...this.props.data,
+      ...this.props.data,
+      ...this.props.data,
+      ...this.props.data,
+      ...this.props.data,
+      ...this.props.data,
+    ];
+
     return (
       <div className="thumbnailPageContainer">
         <Modal
@@ -35,11 +46,11 @@ class ThumbnailPage extends Component {
           onClose={this.closeModalAction}
           size="fullscreen">
           <ModalContent
-            dataObject={this.props.data[this.state.selectedIndex]}
+            dataObject={moreData[this.state.selectedIndex]}
             isManga={this.props.isManga}
             onClose={this.closeModalAction} />
         </Modal>
-        {this.props.data.map((show, index) => (
+        {moreData.map((show, index) => (
           <div
             onClick={() => this.openModalAction(index)}
             key={`thumbnail-component-${index}`}>
