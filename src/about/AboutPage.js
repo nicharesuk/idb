@@ -55,7 +55,7 @@ class AboutPage extends Component {
 					<div className="stats_info">
 						<p><a href="http://docs.weebmd.apiary.io/#">Apiary API</a></p>
 						<p><a href="https://github.com/nicharesuk/idb">Github Repository</a></p>
-						<p><a href="https://utexas.app.box.com/s/nqtvuist94xdx1hluuo6pb0ju8cgwkci">Technical Report</a></p>
+						<p><a href="https://utexas.app.box.com/s/12veh1vpkd48wn90j1tztlnslcl6ockg">Technical Report</a></p>
 						<p><a href="https://trello.com/b/KrhsKbmQ/weebmd">Trello Board</a></p>
 					</div>
 				</div>
