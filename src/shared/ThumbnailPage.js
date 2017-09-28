@@ -47,7 +47,7 @@ class ThumbnailPage extends Component {
           size="fullscreen">
           <ModalContent
             dataObject={moreData[this.state.selectedIndex]}
-            isManga={this.props.isManga}
+            type={this.props.type}
             onClose={this.closeModalAction} />
         </Modal>
         {moreData.map((show, index) => (
@@ -57,8 +57,8 @@ class ThumbnailPage extends Component {
             <ThumbnailCard
               title={show.title}
               imageURL={show.image}
-              started={show.started}
-              units={show.units}
+              subInfo_1={show.subInfo_1}
+              subInfo_2={show.subInfo_2}
               isManga={this.props.isManga}/>
           </div>
         ))}
@@ -68,7 +68,7 @@ class ThumbnailPage extends Component {
 }
 
 ThumbnailPage.propTypes = {
-  isManga: PropTypes.bool,
+  type: PropTypes.string,
   data: PropTypes.array,
 }
 

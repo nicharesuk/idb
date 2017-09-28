@@ -2,11 +2,44 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Image, Icon } from 'semantic-ui-react';
 import './ModalContent.css';
+import ShowDetails from '../shows/ShowDetails';
+import CharacterDetails from '../characters/CharacterDetails';
+import PersonDetails from '../people/PersonDetails';
+import MangaDetails from '../manga/MangaDetails';
 
 class ModalContent extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      type: props.type,
+      dataObject: props.dataObject,
+    };
+  }
+
+  onChangeContent = (type, dataObject) => {
+    this.setState({
+      type,
+      dataObject,
+    });
+  }
+
+  getContentNode = () => {
+    if        (this.state.type === "shows") {
+      return <ShowDetails dataObject={this.state.dataObject} onChangeContent={this.onChangeContent} />
+    } else if (this.state.type === "characters") {
+      return <CharacterDetails dataObject={this.state.dataObject} onChangeContent={this.onChangeContent} />
+    } else if (this.state.type === "people") {
+      return <PersonDetails dataObject={this.state.dataObject} onChangeContent={this.onChangeContent} />
+    } else if (this.state.type === "manga") {
+      return <MangaDetails dataObject={this.state.dataObject} onChangeContent={this.onChangeContent} />
+    } else {
+      return null;
+    }
+  }
+
   render() {
-    const { image, title, units, started, status, score } = this.props.dataObject;
     return (
       <div className="modalContentContainer">
         <Icon
@@ -19,23 +52,9 @@ class ModalContent extends Component {
             wrapped
             height="588px"
             width="402px"
-            src={image} />
+            src={this.state.dataObject.image} />
           <div className="modalContentData">
-            <p>
-              {`Title: ${title}`}
-            </p>
-            <p>
-              {`Length: ${units}`}
-            </p>
-            <p>
-              {`Year Started: ${started}`}
-            </p>
-            <p>
-              {`Status: ${status}`}
-            </p>
-            <p>
-              {`Score: ${score[0]}`}
-            </p>
+            {this.getContentNode()}
           </div>
         </div>
       </div>
@@ -45,7 +64,7 @@ class ModalContent extends Component {
 
 ModalContent.propTypes = {
   dataObject: PropTypes.object,
-  isManga: PropTypes.bool,
+  type: PropTypes.string,
   onClose: PropTypes.func,
 }
 

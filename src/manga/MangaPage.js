@@ -7,12 +7,12 @@ class MangaPage extends Component {
   render() {
     return (
       <ThumbnailPage
-        isManga={true}
+        type="manga"
         data={data.map(manga => {
           return {
             ...manga,
-            units: typeof manga.volumes === "number" ? manga.volumes : undefined,
-            started: manga.published.replace(/  +/g, ' ').split(' ')[2],
+            subInfo_1: manga.published.replace(/  +/g, ' ').split(' ')[2],
+            subInfo_2: typeof manga.volumes === "number" ? manga.volumes : undefined,
           }
         })} />
     );
