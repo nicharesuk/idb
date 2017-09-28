@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './ThumbnailCard.css';
-import { Image } from 'semantic-ui-react'
+import { Image, Dimmer } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
 
 class ThumbnailCard extends Component {
