@@ -17,8 +17,9 @@ h2{
 	color: darkgray;
 	font-size: 4em;
 }
-
-
+.column{
+	margin-bottom:100px;
+}
 .moduleName{
 	color:darkgray;
 	font-size: 3em;
@@ -36,6 +37,9 @@ h2{
 	position:relative;
 	left:6.5em;
 }
+
+
+/*
 .dropbtn {
     background-color: indigo;
     color: white;
@@ -81,8 +85,5 @@ h2{
 #themeButton{
 	position:fixed;
 	left:0;
-}
+	} */
 
-.column{
-	margin-bottom:100px;
-}
