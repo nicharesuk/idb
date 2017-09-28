@@ -18,7 +18,7 @@
 .modalContentContent {
   display: flex;
   flex-direction: row;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .modalContentData {
