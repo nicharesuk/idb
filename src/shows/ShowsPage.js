@@ -7,12 +7,12 @@ class ShowsPage extends Component {
   render() {
     return (
       <ThumbnailPage
-        isManga={false}
+        type="shows"
         data={data.map(show => {
           return {
             ...show,
-            units: show.episodes,
-            started: show.aired.replace(/  +/g, ' ').split(' ')[2],
+            subInfo_1: show.aired.replace(/  +/g, ' ').split(' ')[2],
+            subInfo_2: show.episodes,
           }
         })} />
     );
