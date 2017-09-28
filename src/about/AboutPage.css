@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'AnimeAce';
-	src:url('AnimeAce.ttf');
+	src:url('assets/AnimeAce.ttf');
 }
 
 @font-face {
 	font-family: 'Rosario-Bold';		
-	src:url('Rosario-Bold.otf');
+	src:url('assets/Rosario-Bold.otf');
 }
 
 #team {
