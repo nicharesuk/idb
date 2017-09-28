@@ -32,7 +32,7 @@ class AboutPage extends Component {
 							<img className="img-member" src={require("./joshua.jpg")} alt="Joshua Ondrusek"></img>
 							<p className="member_name">Joshua Ondrusek</p>
 							<p className="member_info">Back-End Developer</p>
-							<p className="member_info">About</p>
+							<p className="member_info">Does what Corbin tells him to do</p>
 						</div>
 						<div className="column" id="nelson">
 							<img className="img-member" src={require("./nelson.jpg")} alt="Nelson Swindler"></img>
