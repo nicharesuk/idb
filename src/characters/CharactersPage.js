@@ -7,12 +7,12 @@ class CharactersPage extends Component {
   render() {
     return (
       <ThumbnailPage
-        isManga={false}
+        type="characters"
         data={data.map(character => {
           return {
             ...character,
             title: character.name,
-            started: character.nameJapanese,
+            subInfo_1: character.nameJapanese,
           }
         })} />
     );

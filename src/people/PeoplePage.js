@@ -7,12 +7,12 @@ class PeoplePage extends Component {
   render() {
     return (
       <ThumbnailPage
-        isManga={false}
+        type="people"
         data={data.map(person => {
           return {
             ...person,
             title: person.name,
-            started: person.birthday,
+            subInfo_1: person.birthday,
           }
         })} />
     );
