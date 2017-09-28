@@ -13,38 +13,38 @@ class AboutPage extends Component {
 						<div className="column" id="christopher">
 							<img className="img-member" src={require("./christopher.png")} alt="Christopher Gutierrez"></img>
 							<p className="member_name">Christopher Gutierrez</p>
-							<p className="member_info">About</p>
 							<p className="member_info">Front-End Developer</p>
+							<p className="member_info">About</p>
 						</div>
 						<div className="column" id="corbin">
 							<img className="img-member" src={require("./corbin.jpg")} alt="Corbin Rogerson"></img>
 							<p className="member_name">Corbin Rogerson</p>
+							<p className="member_info">Front-End Developer</p>
 							<p className="member_info">About</p>
-							<p className="member_info">Back-End Engineer</p>
 						</div>
 						<div className="column" id="david">
 							<img className="img-member" src={require("./david.png")} alt="David Malone"></img>
 							<p className="member_name">David Malone</p>
-							<p className="member_info">About</p>
 							<p className="member_info">Front-End Developer</p>
+							<p className="member_info">Believes the Back-End is a black box that does what it tells him to do</p>
 						</div>
 						<div className="column" id="joshua">
 							<img className="img-member" src={require("./joshua.jpg")} alt="Joshua Ondrusek"></img>
 							<p className="member_name">Joshua Ondrusek</p>
-							<p className="member_info">About</p>
 							<p className="member_info">Back-End Engineer</p>
+							<p className="member_info">About</p>
 						</div>
 						<div className="column" id="nelson">
-							<img className="img-member" src={require("./nelson.png")} alt="Nelson Swindler"></img>
+							<img className="img-member" src={require("./nelson.jpg")} alt="Nelson Swindler"></img>
 							<p className="member_name">Nelson Swindler</p>
-							<p className="member_info">About</p>
 							<p className="member_info">Front-End Developer</p>
+							<p className="member_info">About</p>
 						</div>
 						<div className="column" id="randy">
 							<img className="img-member" src={require("./randy.jpg")} alt="Randy Thai"></img>
 							<p className="member_name">Randy Thai</p>
-							<p className="member_info">Senior computer science student at the University of Texas at Austin.</p>
 							<p className="member_info">Front-End Developer</p>
+							<p className="member_info">Occasionally writes code</p>
 						</div>
 					</div>
 				</div>
