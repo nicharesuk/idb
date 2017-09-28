@@ -4,22 +4,23 @@ import PropTypes from 'prop-types';
 
 class ShowDetails extends Component {
   render() {
+    const { title, episodes, status, aired, score } = this.props.dataObject;
     return (
       <div>
         <p>
-          {`Title:`}
+          {`Title: ${title}`}
         </p>
         <p>
-          {`Length:`}
+          {`Length: ${episodes} episodes`}
         </p>
         <p>
-          {`Year Started:`}
+          {`Aired: ${aired}`}
         </p>
         <p>
-          {`Status:`}
+          {`Status: ${status}`}
         </p>
         <p>
-          {`Score:`}
+          {`Score: ${score[0]}`}
         </p>
       </div>
     );

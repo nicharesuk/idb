@@ -7,19 +7,7 @@ class CharacterDetails extends Component {
     return (
       <div>
         <p>
-          {`Title:`}
-        </p>
-        <p>
-          {`Length:`}
-        </p>
-        <p>
-          {`Year Started:`}
-        </p>
-        <p>
-          {`Status:`}
-        </p>
-        <p>
-          {`Score:`}
+          {`${this.props.dataObject.about}`}
         </p>
       </div>
     );

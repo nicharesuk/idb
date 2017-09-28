@@ -4,23 +4,23 @@ import PropTypes from 'prop-types';
 
 class PersonDetails extends Component {
   render() {
+    const { name, birthday, voiceActionRole } = this.props.dataObject;
     return (
       <div>
         <p>
-          {`Title:`}
+          {`Name: ${name}`}
         </p>
         <p>
-          {`Length:`}
+          {`Birthday: ${birthday}`}
         </p>
         <p>
-          {`Year Started:`}
+          {"Published Manga: None"}
         </p>
-        <p>
-          {`Status:`}
-        </p>
-        <p>
-          {`Score:`}
-        </p>
+        <div>
+          {"Characters Voice-acted:"}
+          {voiceActionRole.map(role => (
+            <div key={`${role.anime.name}`}>{`${role.anime.name} - ${role.character.name}`}<br /></div>))}
+        </div>
       </div>
     );
   }

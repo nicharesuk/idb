@@ -54,7 +54,7 @@ class ModalContent extends Component {
             width="402px"
             src={this.state.dataObject.image} />
           <div className="modalContentData">
-            {this.getContentNode()}}
+            {this.getContentNode()}
           </div>
         </div>
       </div>

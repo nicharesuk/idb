@@ -4,22 +4,23 @@ import PropTypes from 'prop-types';
 
 class MangaDetails extends Component {
   render() {
+    const { title, volumes, status, published, score } = this.props.dataObject;
     return (
       <div>
         <p>
-          {`Title:`}
+          {`Title: ${title}`}
         </p>
         <p>
-          {`Length:`}
+          {`Volumes: ${volumes}`}
         </p>
         <p>
-          {`Year Started:`}
+          {`Started: ${published}`}
         </p>
         <p>
-          {`Status:`}
+          {`Status: ${status}`}
         </p>
         <p>
-          {`Score:`}
+          {`Score: ${score[0]}`}
         </p>
       </div>
     );
