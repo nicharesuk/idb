@@ -1,31 +1,62 @@
-@font-face {font-family: animeace; src: url('animeace.ttf');}
-@font-face {font-family: animeace_b; src: url('animeace_b.ttf');}
-.topic {
+@font-face {
+	font-family: 'AnimeAce';
+	src:url('assets/AnimeAce.ttf');
+}
+
+@font-face {
+	font-family: 'Rosario-Bold';		
+	src:url('assets/Rosario-Bold.otf');
+}
+
+#team {
 	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+#stats, #data, #tools {
 	padding-bottom: 5%;
-	font-family: animeace_b;
-	font-size: 24px;
+}
+
+.topic {
+	font-size: 36px;
+	font-family: Rosario-Bold;
 }
 
 .member_name {
-	font-family: animeace;
 	font-size: 24px;
+	font-family: AnimeAce;
 }
 
 .member_info {
-	font-family: animeace;
-	font-size: 16px;
+	font-size: 18px;
+	font-family: AnimeAce;
+	color: grey;
 }
 
 .img-member {
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;		
 	border-radius: 50%;
 	object-fit: cover;
 }
 
+.stats_info, .data_info, .tool_info {
+	font-size: 18px;
+	font-family: Rosario-Bold;
+	color: grey;
+}
+
+.data_name, .tool_name {
+	font-size: 24px;
+	font-family: Rosario-Bold;
+}
+
 .img-tool {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	object-fit: cover;
+}
+
+.about_container {
+	text-align: center;
 }
