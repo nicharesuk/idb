@@ -4,7 +4,7 @@ class HomePage extends Component {
   render() {
     return (
       <div id="homepageBody">
-      <div id="themeButton">
+      {/* <div id="themeButton">
       <div className="dropdown">
   <button className="dropbtn">Themes</button>
   <div className="dropdown-content">
@@ -12,7 +12,7 @@ class HomePage extends Component {
     <a href="#">Theme2(Light)</a>
   </div>
 </div> 
-</div>
+</div>  */}	
 	<div>
       <h1>
       weebMD

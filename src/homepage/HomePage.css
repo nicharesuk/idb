@@ -27,11 +27,14 @@ h2{
 	width: 6em;
 	position: relative;
 	left: 3.5em;
+	text-align:center;
 }
 .moduleImage{
 	width: 26em;
 	height: 28em;
 	object-fit: contain;
+	position:relative;
+	left:6.5em;
 }
 .dropbtn {
     background-color: indigo;
