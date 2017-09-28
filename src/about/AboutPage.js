@@ -11,10 +11,10 @@ class AboutPage extends Component {
 					</p>
 					<div className="ui three column stackable grid container">
 						<div className="column" id="christopher">
-							<img className="img-member" src={require("./assets/images/christopher.png")} alt="Christopher Gutierrez"></img>
+							<img className="img-member" src={require("./assets/images/christopher.jpg")} alt="Christopher Gutierrez"></img>
 							<p className="member_name">Christopher Gutierrez</p>
 							<p className="member_info">Front-End Developer</p>
-							<p className="member_info">About</p>
+							<p className="member_info">Funny Text Here</p>
 						</div>
 						<div className="column" id="corbin">
 							<img className="img-member" src={require("./assets/images/corbin.jpg")} alt="Corbin Rogerson"></img>
@@ -53,9 +53,9 @@ class AboutPage extends Component {
 						The Stats
 					</p>
 					<div className="stats_info">
-						<p>Apiary API</p>
+						<p><a href="http://docs.weebmd.apiary.io/#">Apiary API</a></p>
 						<p><a href="https://github.com/nicharesuk/idb">Github Repository</a></p>
-						<p>Technical Report</p>
+						<p><a href="https://utexas.app.box.com/s/nqtvuist94xdx1hluuo6pb0ju8cgwkci">Technical Report</a></p>
 						<p><a href="https://trello.com/b/KrhsKbmQ/weebmd">Trello Board</a></p>
 					</div>
 				</div>
