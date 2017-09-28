@@ -22,7 +22,7 @@ export default [
         image: "https://myanimelist.cdn-dena.com/r/23x32/images/anime/10/5297.jpg?s=adaa86324e9ccb8f44c1271d11fec2af"
       },
     ],
-    "mangaography": [
+    mangaography: [
       {
         "name": "Dragon Ball",
         "link": "/manga/42/Dragon_Ball",
@@ -39,9 +39,9 @@ export default [
         "image": "https://myanimelist.cdn-dena.com/r/23x32/images/manga/4/111781.jpg?s=49ab2907772f4d52e1ab4948444fa667"
       },
     ],
-    "voice-actors": [
+    voiceActors: [
       {
-        "name": "Nozawa, Masako",
+        "name": "Nozawa Masako",
         "link": "/people/557/Masako_Nozawa",
         "image": "https://myanimelist.cdn-dena.com/images/voiceactors/1/32021v.jpg",
         "language": "Japanese"
@@ -84,14 +84,14 @@ export default [
     ],
     mangaography: [
       {
-        name: "One Punch-Man",
+        name: "One Punch Man",
         link: "/manga/44347/One_Punch-Man",
         image: "https://myanimelist.cdn-dena.com/r/23x32/images/manga/3/80661.jpg?s=3c4774583b1cbbca0aaa3a8ed0020533"
       }
     ],
     voiceActors: [
       {
-        name: "Furukawa, Makoto",
+        name: "Furukawa Makoto",
         link: "/people/17635/Makoto_Furukawa",
         image: "https://myanimelist.cdn-dena.com/images/voiceactors/1/41311v.jpg",
         language: "Japanese"
@@ -134,7 +134,7 @@ export default [
     ],
     mangaography: [
       {
-        name: "Bishoujo Senshi Sailor Moon",
+        name: "Sailor Moon",
         link: "/manga/92/Bishoujo_Senshi_Sailor_Moon",
         image: "https://myanimelist.cdn-dena.com/r/23x32/images/manga/1/126449.jpg?s=2b261a069f71e242456cfed97ea7b3c3"
       },
@@ -146,7 +146,7 @@ export default [
     ],
     voiceActors: [
       {
-        name: "Mitsuishi, Kotono",
+        name: "Mitsuishi Kotono",
         link: "/people/9/Kotono_Mitsuishi",
         image: "https://myanimelist.cdn-dena.com/images/voiceactors/2/43715v.jpg",
         language: "Japanese"

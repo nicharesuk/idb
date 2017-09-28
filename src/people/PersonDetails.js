@@ -30,16 +30,18 @@ class PersonDetails extends Component {
     const { name, birthday, voiceActionRole } = this.props.dataObject;
     return (
       <div>
-        <a
-          style={{cursor: "pointer"}}
-          onClick={this.getShow}>
-          Link to show
-        </a><br />
-        <a
-          style={{cursor: "pointer"}}
-          onClick={this.getManga}>
-          Link to manga
-        </a>
+        <p>
+          <a
+            style={{cursor: "pointer"}}
+            onClick={this.getShow}>
+            Link to anime
+          </a><br />
+          <a
+            style={{cursor: "pointer"}}
+            onClick={this.getManga}>
+            Link to manga
+          </a>
+        </p>
         <p>
           {`Name: ${name}`}
         </p>
