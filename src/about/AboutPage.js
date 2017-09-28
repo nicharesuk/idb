@@ -100,8 +100,8 @@ class AboutPage extends Component {
 							<p className="tool_info">Domain Name Registrar</p>
 						</div>
 						<div className="column" id="planitpoker">
-							<img className="img-tool" src={require("./planitpoker.png")} alt="PlanITPoker"></img>
-							<p className="tool_name">PlanITPoker</p>
+							<img className="img-tool" src={require("./planitpoker.png")} alt="PlanITpoker"></img>
+							<p className="tool_name">PlanITpoker</p>
 							<p className="tool_info">Online Scrum Planning</p>
 						</div>
 						<div className="column" id="reactjs">
