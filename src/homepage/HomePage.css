@@ -1,0 +1,7 @@
+.carousel_img {
+	display: block;
+	margin: auto;
+	object-fit: cover;
+	min-height: 400px;
+	max-height: 400px;
+}
