@@ -7,6 +7,7 @@ import CharactersPage from '../characters/CharactersPage';
 import PeoplePage from '../people/PeoplePage';
 import MangaPage from '../manga/MangaPage';
 import AboutPage from '../about/AboutPage';
+import { ThemeSwitcher } from 'react-bootstrap-theme-switcher';
 
 const pages = [
   {
@@ -50,24 +51,26 @@ class App extends Component {
     const pageElement = pages.filter(obj => obj.name === this.state.currentPage)[0].node;
 
     return (
-      <div className="appContainer">
-        <div className="header">
-          <Menu inverted pointing secondary size='large'>
-            {pages.map(page => {
-              return (
-                <Menu.Item
-                  as='a'
-                  key={page.name}
-                  onClick={() => this.changePage(page.name)}
-                  active={this.state.currentPage === page.name}>
-                  {page.name}
-                </Menu.Item>
-              );
-            })}
-          </Menu>
+      <ThemeSwitcher>
+        <div className="appContainer">
+          <div className="header">
+            <Menu inverted pointing secondary size='large'>
+              {pages.map(page => {
+                return (
+                  <Menu.Item
+                    as='a'
+                    key={page.name}
+                    onClick={() => this.changePage(page.name)}
+                    active={this.state.currentPage === page.name}>
+                    {page.name}
+                  </Menu.Item>
+                );
+              })}
+            </Menu>
+          </div>
+          {pageElement}
         </div>
-        {pageElement}
-      </div>
+      </ThemeSwitcher>
     );
   }
 }
