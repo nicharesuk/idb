@@ -11,16 +11,28 @@ class HomePage extends Component {
 				<div id="carousel" className="ui container">
 					<Carousel>	
 						<Carousel.Item>
-							<img className="img-carousel" src={require("./Lelouch.jpg")} alt="Lelouch"/>
+							<img className="img-carousel" src={require("./assets/images/Lelouch.jpg")} alt="Lelouch"/>
+							<Carousel.Caption>
+								<div className="carousel_name">Anime</div>
+							</Carousel.Caption>
 						</Carousel.Item>
 						<Carousel.Item>
-							<img className="img-carousel" src={require("./OnePiece.jpg")} alt="One Piece"/>
+							<img className="img-carousel" src={require("./assets/images/OnePiece.jpg")} alt="One Piece"/>
+							<Carousel.Caption>
+								<div className="carousel_name">Manga</div>
+							</Carousel.Caption>
 						</Carousel.Item>					
 						<Carousel.Item>
-							<img className="img-carousel" src={require("./Alucard.png")} alt="Alucard"/>
+							<img className="img-carousel" src={require("./assets/images/Alucard.png")} alt="Alucard"/>
+							<Carousel.Caption>
+								<div className="carousel_name">Characters</div>
+							</Carousel.Caption>
 						</Carousel.Item>
 						<Carousel.Item>
-							<img className="img-carousel" src={require("./Miyazaki.jpg")} alt="Miyazaki"/>
+							<img className="img-carousel" src={require("./assets/images/Miyazaki.jpg")} alt="Miyazaki"/>
+							<Carousel.Caption>
+								<div className="carousel_name">People</div>
+							</Carousel.Caption>
 						</Carousel.Item>				
 					</Carousel>
 				</div>
