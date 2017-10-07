@@ -6,7 +6,6 @@ import ShowsPage from '../shows/ShowsPage';
 import CharactersPage from '../characters/CharactersPage';
 import PeoplePage from '../people/PeoplePage';
 import MangaPage from '../manga/MangaPage';
-import AboutPage from '../about/AboutPage';
 import { ThemeSwitcher } from 'react-bootstrap-theme-switcher';
 
 const pages = [
@@ -29,10 +28,6 @@ const pages = [
   {
     name: "Manga",
     node: <MangaPage />,
-  },
-  {
-    name: "About",
-    node: <AboutPage />,
   },
 ];
 
