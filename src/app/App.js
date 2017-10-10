@@ -7,66 +7,72 @@ import CharactersPage from '../characters/CharactersPage';
 import PeoplePage from '../people/PeoplePage';
 import MangaPage from '../manga/MangaPage';
 import AboutPage from '../about/AboutPage';
+import { Link, Switch, Route } from 'react-router-dom';
 
 const pages = [
   {
     name: "Homepage",
+    link: "/",
     node: <HomePage />,
   },
   {
     name: "Shows",
+    link: "/shows",
     node: <ShowsPage />,
   },
   {
     name: "Characters",
+    link: "/characters",
     node: <CharactersPage />,
   },
   {
     name: "People",
+    link: "/people",
     node: <PeoplePage />,
   },
   {
     name: "Manga",
+    link: "/manga",
     node: <MangaPage />,
   },
   {
     name: "About",
+    link: "/about",
     node: <AboutPage />,
   },
 ];
 
 class App extends Component {
-  state = {
-    currentPage: "Homepage",
-  };
-
-  changePage = (nextPage) => {
-    this.setState({
-      currentPage: nextPage,
-    });
-  }
 
   render() {
-    const pageElement = pages.filter(obj => obj.name === this.state.currentPage)[0].node;
-
     return (
       <div className={style.appContainer}>
         <div className={style.header}>
           <Menu inverted pointing secondary size='large'>
             {pages.map(page => {
               return (
-                <Menu.Item
-                  as='a'
-                  key={page.name}
-                  onClick={() => this.changePage(page.name)}
-                  active={this.state.currentPage === page.name}>
-                  {page.name}
-                </Menu.Item>
+                <Link key={page.name} to={page.link}>
+                  <Menu.Item
+                    as='div'
+                    active={page.link === "/" ? window.location.href.endsWith("/#/") : window.location.href.includes(page.link)}>
+                    {page.name}
+                  </Menu.Item>
+                </Link>
               );
             })}
           </Menu>
         </div>
-        {pageElement}
+        <Switch>
+          {pages.map(page => {
+            return (
+              <Route
+                key={page.name}
+                exact={page.link === "/"}
+                path={page.link} 
+                render={() => page.node} />
+            );
+          })}
+        </Switch>
       </div>
     );
   }
