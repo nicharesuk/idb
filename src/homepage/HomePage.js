@@ -3,7 +3,7 @@ import styles from './HomePage.scss';
 class HomePage extends Component {
 render() {
 return (
-<div id="homepageBody">
+<div className={styles.homepageBody}>
 	{/* <div id="themeButton">
 		<div className="dropdown">
 			<button className="dropbtn">Themes</button>

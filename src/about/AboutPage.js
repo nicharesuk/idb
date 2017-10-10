@@ -5,7 +5,7 @@ class AboutPage extends Component {
   render() {
     return (
 			<div className={styles.about_container}>
-				<div id="team">
+				<div className={styles.team}>
 					<p className={styles.topic}>
 						Meet the Anime All Stars!
 					</p>
@@ -48,7 +48,7 @@ class AboutPage extends Component {
 						</div>
 					</div>
 				</div>
-				<div id="stats">
+				<div className={styles.info_container}>
 					<p className={styles.topic}>
 						The Stats
 					</p>
@@ -59,7 +59,7 @@ class AboutPage extends Component {
 						<p><a href="https://trello.com/b/KrhsKbmQ/weebmd">Trello Board</a></p>
 					</div>
 				</div>
-				<div id="data">
+				<div className={styles.info_container}>
 					<p className={styles.topic}>
 						The Data
 					</p>
@@ -74,7 +74,7 @@ class AboutPage extends Component {
 						</div>
 					</div>
 				</div>
-				<div id="tools">
+				<div className={styles.info_container}>
 					<p className={styles.topic}>
 						The Toolbox
 					</p>
