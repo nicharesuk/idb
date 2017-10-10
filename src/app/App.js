@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import style from './App.scss';
 import { Menu } from 'semantic-ui-react';
 import HomePage from '../homepage/HomePage';
 import ShowsPage from '../shows/ShowsPage';
@@ -50,8 +50,8 @@ class App extends Component {
     const pageElement = pages.filter(obj => obj.name === this.state.currentPage)[0].node;
 
     return (
-      <div className="appContainer">
-        <div className="header">
+      <div className={style.appContainer}>
+        <div className={style.header}>
           <Menu inverted pointing secondary size='large'>
             {pages.map(page => {
               return (

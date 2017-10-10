@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Image, Icon } from 'semantic-ui-react';
-import './ModalContent.css';
+import styles from './ModalContent.scss';
 import ShowDetails from '../shows/ShowDetails';
 import CharacterDetails from '../characters/CharacterDetails';
 import PersonDetails from '../people/PersonDetails';
@@ -41,19 +41,19 @@ class ModalContent extends Component {
 
   render() {
     return (
-      <div className="modalContentContainer">
+      <div className={styles.container}>
         <Icon
-          className="modalContentCloseIcon"
+          className={styles.closeIcon}
           onClick={this.props.onClose}
           size="huge"
           name="remove" />
-        <div className="modalContentContent">
+        <div className={styles.content}>
           <Image
             wrapped
             height="588px"
             width="402px"
             src={this.state.dataObject.image} />
-          <div className="modalContentData">
+          <div className={styles.data}>
             {this.getContentNode()}
           </div>
         </div>
