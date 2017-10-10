@@ -1,5 +1,5 @@
 
-.thumbnailCardContainer {
+.container {
   margin: 10px;
   width: 134px;
   max-height: 240px;
@@ -9,13 +9,13 @@
   cursor: pointer;
 }
 
-.thumbnailTitle {
+.title {
   margin-top: 6px;
   margin-bottom: 0px;
   color: #fff;
 }
 
-.thumbnailSubInfo {
+.subInfo {
   width: 100%;
   color: rgba(255, 255, 255, .4);
   font-size: 0.85em;

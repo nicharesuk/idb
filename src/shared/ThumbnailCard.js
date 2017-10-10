@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ThumbnailCard.css';
+import styles from './ThumbnailCard.scss';
 import { Image, Dimmer } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
 
@@ -13,7 +13,7 @@ class ThumbnailCard extends Component {
     const { active } = this.state
     const unitName = this.props.isManga ? "chapters" : "chapters"
     return (
-      <div className="thumbnailCardContainer" onMouseEnter={this.handleShow} onMouseLeave={this.handleHide}>
+      <div className={styles.container} onMouseEnter={this.handleShow} onMouseLeave={this.handleHide}>
         <Dimmer.Dimmable dimmed={active}>
             <Dimmer active={active} >
                {this.props.title}
@@ -23,12 +23,12 @@ class ThumbnailCard extends Component {
             height="196px"
             src={this.props.imageURL} />
         </Dimmer.Dimmable>
-        <div className="thumbnailTitle">
+        <div className={styles.title}>
           <div>
             {this.props.title}
           </div>
         </div>
-        <div className="thumbnailSubInfo">
+        <div className={styles.subInfo}>
           <div>
             {this.props.subInfo_1}
           </div>

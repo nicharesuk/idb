@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ThumbnailPage.css';
+import styles from './ThumbnailPage.scss';
 import ThumbnailCard from './ThumbnailCard';
 import PropTypes from 'prop-types';
 import { Modal } from 'semantic-ui-react';
@@ -37,11 +37,11 @@ class ThumbnailPage extends Component {
     ];
 
     return (
-      <div className="thumbnailPageContainer">
+      <div className={styles.container}>
         <Modal
           basic
           dimmer="blurring"
-          className="modalStyle"
+          className={styles.modal}
           open={this.state.modalOpen}
           onClose={this.closeModalAction}
           size="fullscreen">

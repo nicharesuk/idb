@@ -1,12 +1,12 @@
-@font-face {
+/*@font-face {
 	font-family: 'AnimeAce';
-	src:url('assets/AnimeAce.ttf');
+	src:url('/src/about/assets/AnimeAce.ttf');
 }
 
 @font-face {
 	font-family: 'Rosario-Bold';		
-	src:url('assets/Rosario-Bold.otf');
-}
+	src:url('/src/about/assets/Rosario-Bold.otf');
+}*/
 
 #team {
 	padding-top: 5%;
@@ -33,7 +33,7 @@
 	color: grey;
 }
 
-.img-member {
+.img_member {
 	width: 200px;
 	height: 200px;		
 	border-radius: 50%;
@@ -51,7 +51,7 @@
 	font-family: Rosario-Bold;
 }
 
-.img-tool {
+.img_tool {
 	width: 150px;
 	height: 150px;
 	object-fit: cover;

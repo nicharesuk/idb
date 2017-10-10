@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ShowsPage.css';
+import styles from './ShowsPage.scss';
 import data from './FakeShowData';
 import ThumbnailPage from '../shared/ThumbnailPage';
 
