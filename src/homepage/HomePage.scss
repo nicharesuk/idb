@@ -1,8 +1,8 @@
-@font-face {font-family: animeace_b; src: url('animeace_b.ttf');}
-@font-face {font-family: animeace; src: url('animeace.ttf');}
+/*@font-face {font-family: animeace_b; src: url('/homepage/animeace_b.ttf');}
+@font-face {font-family: animeace; src: url('/homepage/animeace.ttf');}*/
 
-#homepageBody{
-	background:url(gate.png);
+.homepageBody{
+	background:url(/homepage/gate.png);
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './MangaPage.css';
+// import styles from './MangaPage.scss';
 import data from './FakeMangaData';
 import ThumbnailPage from '../shared/ThumbnailPage';
 
