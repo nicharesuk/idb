@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
-// import styles from './ShowsPage.scss';
-import data from './FakeShowData';
-import ThumbnailPage from '../shared/ThumbnailPage';
+import './ShowsPage.css';
 
 class ShowsPage extends Component {
   render() {
     return (
-      <ThumbnailPage
-        type="shows"
-        data={data.map(show => {
-          return {
-            ...show,
-            subInfo_1: show.aired.replace(/  +/g, ' ').split(' ')[2],
-            subInfo_2: show.episodes,
-          }
-        })} />
+      <div>
+        The shows page
+      </div>
     );
   }
 }
