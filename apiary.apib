@@ -1,231 +1,80 @@
 FORMAT: 1A
-HOST: https://weebmd.me/api
+HOST: http://polls.apiblueprint.org/
 
 # weebmd
 
-Weebmd is an anime search platform. You can search for current and past anime and manga, people in the industry, and characters from your favorite series.
+Polls is a simple API allowing consumers to view polls and vote in them.
 
-API path: https://weebmd.me/api
+## Questions Collection [/questions]
 
-#Requests
-
-##Anime
-
-For a given anime you will be able to select an anime by id to recieve all relevant show information in json form. You can also get a list of all the characters, the main characters, or the staff of a given show. In addition to this, all studios relevant to production can be listed as well.
-
-##Manga
-
-For a given manga you can select a manga by id to recieve all relevant information on the manga. You can also get a list of the all the characters, the main characters, or the staff of a given show. All relevant studios can be listed as well.
-
-##Characters
-
-Searching for a character by id will yield the full character page, including biographical information, appearances in all media, and relevant voice actors.
-
-##People
-
-Searching a person by id will retrieve a full page of biographical information, past roles, and an image.
-
-### Anime [/anime]
-
-#### Anime information [GET /anime/id]
-
-+ Response 200 (application/json)
-[
-  {
-    "synopsis": "The seemingly ordinary and unimpressive Saitama has a rather unique hobby: being a hero. In order to pursue his childhood dream, he trained relentlessly for three years—and lost all of his hair in the process. Now, Saitama is incredibly powerful, so much so that no enemy is able to defeat him in battle. In fact, all it takes to defeat evildoers with just one punch has led to an unexpected problem—he is no longer able to enjoy the thrill of battling and has become quite bored. This all changes with the arrival of Genos, a 19-year-old cyborg, who wishes to be Saitama&#039;s disciple after seeing what he is capable of. Genos proposes that the two join the Hero Association in order to become certified heroes that will be recognized for their positive contributions to society, and Saitama, shocked that no one knows who he is, quickly agrees. And thus begins the story of One Punch Man, an action-comedy that follows an eccentric individual who longs to fight strong enemies that can hopefully give him the excitement he once felt and just maybe, he&#039;ll become popular in the process. [Written by MAL Rewrite]",
-    "title": "One Punch Man",
-    "image": "https://myanimelist.cdn-dena.com/images/anime/12/76049.jpg",
-    "type": "TV",
-    "episodes": 12,
-    "status": "Finished Airing",
-    "aired": "Oct 5, 2015 to Dec 21, 2015",
-    "source": "Web manga",
-    "genre": [
-      [
-        "1/Action",
-        "Action"
-      ],
-      [
-        "24/Sci-Fi",
-        "Sci-Fi"
-      ],
-      [
-        "4/Comedy",
-        "Comedy"
-      ],
-      [
-        "20/Parody",
-        "Parody"
-      ],
-      [
-        "31/Super_Power",
-        "Super Power"
-      ],
-      [
-        "37/Supernatural",
-        "Supernatural"
-      ],
-      [
-        "42/Seinen",
-        "Seinen"
-      ]
-    ],
-    "score": [
-      8.76,
-      518925
-    ],
-    "staff": [
-      {
-        "id": 111993,
-        "name_first": "",
-        "name_last": "ONE",
-        "language": "Japanese",
-        "image_url_lge": "https://cdn.anilist.co/img/dir/person/reg/16993-P1fq84JZLyeU.png",
-        "image_url_med": "https://cdn.anilist.co/img/dir/person/med/16993-P1fq84JZLyeU.png",
-        "link_id": 54478,
-        "role": "Original Story"
-      }
-    ]
-  }
-]
-
-#### List of characters [GET /anime/id/characters]
+### List All Questions [GET]
 
 + Response 200 (application/json)
 
-#### List of staff [GET /anime/id/staff]
+        [
+            {
+                "question": "Favourite programming language?",
+                "published_at": "2015-08-05T08:40:51.620Z",
+                "choices": [
+                    {
+                        "choice": "Swift",
+                        "votes": 2048
+                    }, {
+                        "choice": "Python",
+                        "votes": 1024
+                    }, {
+                        "choice": "Objective-C",
+                        "votes": 512
+                    }, {
+                        "choice": "Ruby",
+                        "votes": 256
+                    }
+                ]
+            }
+        ]
 
-+ Response 200 (application/json)
+### Create a New Question [POST]
 
-#### List of main characters [GET /anime/id/characters/main]
+You may create your own question using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
 
-+ Response 200 (application/json)
++ Request (application/json)
 
-#### List of studios [GET /anime/id/studios]
+        {
+            "question": "Favourite programming language?",
+            "choices": [
+                "Swift",
+                "Python",
+                "Objective-C",
+                "Ruby"
+            ]
+        }
 
-+ Response 200 (application/json)
-        
-### Manga [/manga]
++ Response 201 (application/json)
 
-#### Manga information [GET /manga/id]
+    + Headers
 
-+ Response 200 (application/json)
-{
-  "synopsis": "After rigorously training for three years, the ordinary Saitama has gained immense strength which allows him to take out anyone and anything with just one punch. He decides to put his new skill to good use by becoming a hero. However, he quickly becomes bored with easily defeating monsters, and wants someone to give him a challenge to bring back the spark of being a hero. Upon bearing witness to Saitama&#039;s amazing power, Genos, a cyborg, is determined to become Saitama&#039;s apprentice. During this time, Saitama realizes he is neither getting the recognition that he deserves nor known by the people due to him not being a part of the Hero Association. Wanting to boost his reputation, Saitama decides to have Genos register with him, in exchange for taking him in as a pupil. Together, the two begin working their way up toward becoming true heroes, hoping to find strong enemies and earn respect in the process. [Written by MAL Rewrite]",
-  "title": "One Punch-Man",
-  "image": "https://myanimelist.cdn-dena.com/images/manga/3/80661.jpg",
-  "type": "Manga",
-  "volumes": "Unknown",
-  "status": "Publishing",
-  "published": "Jun  14, 2012 to ?",
-  "genre": [
-    [
-      "1/Action",
-      "Action"
-    ],
-    [
-      "4/Comedy",
-      "Comedy"
-    ],
-    [
-      "20/Parody",
-      "Parody"
-    ],
-    [
-      "24/Sci-Fi",
-      "Sci-Fi"
-    ],
-    [
-      "31/Super_Power",
-      "Super Power"
-    ],
-    [
-      "37/Supernatural",
-      "Supernatural"
-    ]
-  ],
-  "score": [
-    8.8,
-    59251
-  ],
-  "staff": [
-    {
-      "id": 96903,
-      "name_first": "Yusuke",
-      "name_last": "Murata",
-      "language": "Japanese",
-      "image_url_lge": "https://cdn.anilist.co/img/dir/person/reg/1903.jpg",
-      "image_url_med": "https://cdn.anilist.co/img/dir/person/med/1903.jpg",
-      "link_id": 57152,
-      "role": "Art"
-    }
-  ]
-}
+            Location: /questions/2
 
-#### List of characters [GET /manga/id/characters]
+    + Body
 
-+ Response 200 (application/json)
-
-#### List of staff [GET /manga/id/staff]
-
-+ Response 200 (application/json)
-
-#### List of main characters [GET /manga/id/characters/main]
-
-+ Response 200 (application/json)
-
-#### List of studios [GET /manga/id/studios]
-
-+ Response 200 (application/json)
-        
-### Character [/character]
-
-#### Character information [GET /character/id]
-
-+ Response 200 (application/json)
-{
-  "about": "Race: Human\n Age: 25\n Height: 175 cm (5&#039;9\")\n Weight: 70 kg (154 lbs)\n Location: Z-City\n Abilities: Superhuman physical powers\n Occupation: Superhero\n Level: \n C-Class (Rank 388 - 342 - 5 - 1)\n B-Class (Rank 101 - 63 -33 - 7)\n A-Class (Rank 39)\n Affiliation: Hero Association\n Partner(s): Genos\n \n Saitama is the most powerful hero alive. Having apparently trained himself to superhuman condition, Saitama faces an existential crisis as he is now too powerful to gain any thrill from his heroic deeds.\n \n He is registered with the Heroes Association as a C-Class Superhero and is tasked to defend Z-City against Mysterious Beings.\n \n Saitama is usually deliberately drawn in a simpler style than other characters, with a very rounded head and only a simple mouth and eyes. When drawn in a more &#039;action-oriented&#039; style with more detail, Saitama is revealed to have sharp features, dangerous looking eyes, and chiseled musculature. His costume is a plain yellow jumpsuit with a short zipper at the collar and a belt. The costume is finished out by an ensemble of red boots and gloves, and a white cape.\n \n For a superhero, Saitama is rather laid back. Because even the mightiest foes pose no challenge to him, he doesn&#039;t take his hero work very seriously. In spite of this, he is constantly searching for an opponent that can challenge him, since his superhero work is beginning to bore him because it&#039;s too easy. The combination of his attitude, unstoppable strength, and distinctively simple and &#039;unimpressive&#039; appearance often cause his battles to become anticlimactic. Saitama will usually allow his opponents to rant about their motives and power up into their strongest forms before suddenly and nonchalantly obliterating them with one punch.\n \n (Source: One Punch-Man Wikia)\n\n",
-  "image": "https://myanimelist.cdn-dena.com/images/characters/11/294388.jpg",
-  "name": "Saitama ",
-  "name-japanese": "(サイタマ)",
-  "animeography": [
-    {
-      "name": "One Punch Man",
-      "link": "/anime/30276/One_Punch_Man",
-      "image": "https://myanimelist.cdn-dena.com/r/23x32/images/anime/12/76049.jpg?s=4ae2f65fd17ffe0ccdb410c5dd07f7f8"
-    }
-  ],
-  "mangaography": [
-    {
-      "name": "One Punch-Man",
-      "link": "/manga/44347/One_Punch-Man",
-      "image": "https://myanimelist.cdn-dena.com/r/23x32/images/manga/3/80661.jpg?s=3c4774583b1cbbca0aaa3a8ed0020533"
-    }
-  ],
-  "voice-actors": [
-    {
-      "name": "Chesman, Yuri",
-      "link": "/people/11521/Yuri_Chesman",
-      "image": "https://myanimelist.cdn-dena.com/images/voiceactors/3/34435v.jpg",
-      "language": "Brazilian"
-    }
-  ]
-}
-
-#### List of appearances [GET /character/id/media]
-
-+ Response 200 (application/json)
-
-#### List of actors [GET /character/id/actors]
-
-+ Response 200 (application/json)
-
-### People [/people]
-
-#### Person information [GET /person/id]
-
-+ Response 200 (application/json)
-
-#### Past work [GET /person/id/work]
-
-+ Response 200 (application/json)
+            {
+                "question": "Favourite programming language?",
+                "published_at": "2015-08-05T08:40:51.620Z",
+                "choices": [
+                    {
+                        "choice": "Swift",
+                        "votes": 0
+                    }, {
+                        "choice": "Python",
+                        "votes": 0
+                    }, {
+                        "choice": "Objective-C",
+                        "votes": 0
+                    }, {
+                        "choice": "Ruby",
+                        "votes": 0
+                    }
+                ]
+            }
