@@ -1,0 +1,64 @@
+
+/*
+@font-face {
+	font-family: 'AnimeAce';
+	src:url('/about/assets/AnimeAce.ttf');
+}
+
+@font-face {
+	font-family: 'Rosario-Bold';		
+	src:url('/src/about/assets/Rosario-Bold.otf');
+}*/
+
+.team {
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+.info_container {
+	padding-bottom: 5%;
+}
+
+.topic {
+	font-size: 36px;
+	font-family: Rosario-Bold;
+}
+
+.member_name {
+	font-size: 24px;
+	font-family: AnimeAce;
+}
+
+.member_info {
+	font-size: 18px;
+	font-family: AnimeAce;
+	color: grey;
+}
+
+.img_member {
+	width: 200px;
+	height: 200px;		
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.stats_info, .data_info, .tool_info {
+	font-size: 18px;
+	font-family: Rosario-Bold;
+	color: grey;
+}
+
+.data_name, .tool_name {
+	font-size: 24px;
+	font-family: Rosario-Bold;
+}
+
+.img_tool {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.about_container {
+	text-align: center;
+}
