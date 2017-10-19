@@ -2,6 +2,7 @@
   "name": "weebmd",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000/",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
@@ -49,9 +50,10 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "concurrently \"node scripts/start.js\" \"python3 main.py\"",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "server": "python3 main.py"
   },
   "jest": {
     "collectCoverageFrom": [
