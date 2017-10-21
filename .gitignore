@@ -11,6 +11,7 @@
 
 # python binaries
 /app/__pycache__
+/__pycache__
 
 # misc
 .DS_Store
