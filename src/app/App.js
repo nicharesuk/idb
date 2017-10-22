@@ -16,7 +16,7 @@ const pages = [
     node: <HomePage />,
   },
   {
-    name: "Shows",
+    name: "Anime",
     link: "/shows",
     node: <ShowsPage />,
   },
@@ -26,14 +26,14 @@ const pages = [
     node: <CharactersPage />,
   },
   {
-    name: "People",
-    link: "/people",
-    node: <PeoplePage />,
-  },
-  {
     name: "Manga",
     link: "/manga",
     node: <MangaPage />,
+  },
+  {
+    name: "Voice Actors",
+    link: "/people",
+    node: <PeoplePage />,
   },
   {
     name: "About",
