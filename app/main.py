@@ -45,9 +45,5 @@ def serve(path):
             return send_from_directory(BUILD_DIR, 'index.html')
 
 
-# @app.route('/api/anime/<int:id>')
-# def get_anime(id):
-#     return models.anime(id)
-
 if __name__ == '__main__':
     app.run(use_reloader=True, port=5000, threaded=True)
