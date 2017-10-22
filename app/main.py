@@ -10,9 +10,6 @@ from flask import Flask, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from models import db, Character, Anime, Actor, Manga
 
-# Potentially need to add Flask-Cors
-
-
 BUILD_DIR = '../build'
 app = Flask(__name__, static_folder=BUILD_DIR)
 
@@ -43,6 +40,11 @@ def serve(path):
             return send_from_directory(BUILD_DIR, path)
         else:
             return send_from_directory(BUILD_DIR, 'index.html')
+
+# Testing purposes only
+@app.route('/hello')
+def hello():
+    return "Hello world"
 
 
 if __name__ == '__main__':
