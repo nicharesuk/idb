@@ -1,14 +1,36 @@
 import os
+import flask
+import flask_sqlalchemy
+import flask_restless
+
+from sqlalchemy.schema import ForeignKey
+from flask_restless import APIManager
+# from flask_cors import CORS
 from flask import Flask, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
-from models import db
+from models import db, Character, Anime, Actor, Manga
 
-BUILD_DIR = 'build'
+# Potentially need to add Flask-Cors
+
+
+BUILD_DIR = '../build'
 app = Flask(__name__, static_folder=BUILD_DIR)
+
+# CORS(app, headers=['Content-Type'])
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weeb.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # Suppress warning
 
 db.init_app(app)
+
+
+manager = flask_restless.APIManager(app, flask_sqlalchemy_db=db)
+manager.create_api(Character, collection_name='characters', allow_functions=True, methods=['GET'], page_size=6)
+
+manager.create_api(Anime, collection_name='animes', allow_functions=True, methods=['GET'], page_size=6)
+
+manager.create_api(Actor, collection_name='actors', allow_functions=True, methods=['GET'], page_size=6)
+
+manager.create_api(Manga, collection_name='mangas', allow_functions=True, methods=['GET'], page_size=6)
 
 # Serve React App, handle all unhandled paths
 @app.route('/', defaults={'path': ''})
