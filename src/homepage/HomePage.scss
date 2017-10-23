@@ -1,34 +1,34 @@
 .home_container {
-	height: 100%;
+  height: 100%;
 }
 
 .splash {
-	background-image: url("./assets/images/splash.jpg");
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-image: url("./assets/images/splash.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .motivation {
-	padding-top: 5%;
-	padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .team, .info {
-	padding-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 .topic {
-	font-size: 36px;
-	font-weight: bold;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .stats_info {
-	font-size: 18px;
-	color: grey;
+  font-size: 18px;
+  color: grey;
 }
 
 .about_container {
-	text-align: center;
+  text-align: center;
 }
