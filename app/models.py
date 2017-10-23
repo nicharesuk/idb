@@ -5,7 +5,6 @@ from sqlalchemy import CheckConstraint
 # from sqlalchemy.sql import func
 # app = Flask(__name__)
 
-# # CORS(app, headers=['Content-Type'])
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weeb.db'
 # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # Suppress warning
 
