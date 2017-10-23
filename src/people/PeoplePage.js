@@ -10,9 +10,21 @@ class PeoplePage extends Component {
   }
 
   componentWillMount = () => {
-    axios('api/actors').then((response) => {
+    axios({
+      method: 'get',
+      url: 'api/actors',
+      headers: {'Accept': 'application/vnd.api+json'}
+    }).then((response) => {
+      const data = response.data.data.map(obj => {
+        return {
+          id: obj.id,
+          type: obj.type,
+          ...obj.relationships,
+          ...obj.attributes,
+        }
+      });
       this.setState({
-        data: response.data.objects,
+        data,
       });
     });
   }

@@ -10,9 +10,21 @@ class ShowsPage extends Component {
   }
 
   componentWillMount = () => {
-    axios('api/animes').then((response) => {
+    axios({
+      method: 'get',
+      url: 'api/animes',
+      headers: {'Accept': 'application/vnd.api+json'}
+    }).then((response) => {
+      const data = response.data.data.map(obj => {
+        return {
+          id: obj.id,
+          type: obj.type,
+          ...obj.relationships,
+          ...obj.attributes,
+        }
+      });
       this.setState({
-        data: response.data.objects,
+        data,
       });
     });
   }

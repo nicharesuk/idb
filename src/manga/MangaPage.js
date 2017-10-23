@@ -10,9 +10,21 @@ class MangaPage extends Component {
   }
 
   componentWillMount = () => {
-    axios('api/mangas').then((response) => {
+    axios({
+      method: 'get',
+      url: 'api/mangas',
+      headers: {'Accept': 'application/vnd.api+json'}
+    }).then((response) => {
+      const data = response.data.data.map(obj => {
+        return {
+          id: obj.id,
+          type: obj.type,
+          ...obj.relationships,
+          ...obj.attributes,
+        }
+      });
       this.setState({
-        data: response.data.objects,
+        data,
       });
     });
   }

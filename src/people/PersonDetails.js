@@ -35,8 +35,8 @@ class PersonDetails extends Component {
         </p>
         <div>
           {"Characters Voice-acted:"}
-          {characters.map(character => (
-            <div key={`${character.name}`}>{`${character.name}`}<br /></div>))}
+          {characters.data.map(character => (
+            <div key={`${character.id}`}>{`${character.id}`}<br /></div>))}
         </div>
       </div>
     );
