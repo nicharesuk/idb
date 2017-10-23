@@ -1,33 +1,15 @@
 import React, { Component } from 'react';
 // import './PersonDetails.css';
 import PropTypes from 'prop-types';
-import showData from '../shows/FakeShowData';
-import mangaData from '../manga/FakeMangaData';
 
 class PersonDetails extends Component {
 
-  getShow = () => {
-    this.props.dataObject.voiceActionRole.forEach(role => {
-      showData.forEach(show => {
-        if (role.anime.name === show.title) {
-          this.props.onChangeContent("shows", show);
-        }
-      });
-    });
-  }
+  getShow = () => {}
 
-  getManga = () => {
-    this.props.dataObject.voiceActionRole.forEach(role => {
-      mangaData.forEach(manga => {
-        if (role.anime.name === manga.title) {
-          this.props.onChangeContent("manga", manga);
-        }
-      });
-    });
-  }
+  getManga = () => {}
 
   render() {
-    const { name, birthday, voiceActionRole } = this.props.dataObject;
+    const { name, birthday, characters } = this.props.dataObject;
     return (
       <div>
         <p>
@@ -53,8 +35,8 @@ class PersonDetails extends Component {
         </p>
         <div>
           {"Characters Voice-acted:"}
-          {voiceActionRole.map(role => (
-            <div key={`${role.anime.name}`}>{`${role.anime.name} - ${role.character.name}`}<br /></div>))}
+          {characters.map(character => (
+            <div key={`${character.name}`}>{`${character.name}`}<br /></div>))}
         </div>
       </div>
     );

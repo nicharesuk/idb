@@ -52,7 +52,7 @@ class ModalContent extends Component {
             wrapped
             height="588px"
             width="402px"
-            src={this.state.dataObject.image} />
+            src={this.state.dataObject.picture} />
           <div className={styles.data}>
             {this.getContentNode()}
           </div>
