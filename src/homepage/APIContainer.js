@@ -3,27 +3,27 @@ import APICard from './APICard';
 import PropTypes from 'prop-types';
 
 class APIContainer extends React.Component {
-	state = {}
+  state = {}
 
-	render() {
-		const data = [
-			...this.props.data
-		]
-		return (
-			<div className="ui two column stackable grid container">
-				{data.map((api) => (
-					<APICard
-						key={api.id}
-						name={api.name}
-						URL={api.URL}/>
-				))}
-			</div>
-		);
-	}
+  render() {
+    const data = [
+      ...this.props.data
+    ]
+    return (
+      <div className="ui two column stackable grid container">
+        {data.map((api) => (
+          <APICard
+            key={api.id}
+            name={api.name}
+            URL={api.URL}/>
+        ))}
+      </div>
+    );
+  }
 }
 
 APIContainer.propTypes = {
-	data: PropTypes.array
+  data: PropTypes.array
 }
 
 export default APIContainer;
