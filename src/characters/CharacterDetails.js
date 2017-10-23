@@ -1,30 +1,12 @@
 import React, { Component } from 'react';
 // import './CharacterDetails.css';
 import PropTypes from 'prop-types';
-import showData from '../shows/FakeShowData';
-import peopleData from '../people/FakePeopleData';
 
 class CharacterDetails extends Component {
 
-  getVoiceActor = () => {
-    this.props.dataObject.voiceActors.forEach(actor => {
-      peopleData.forEach(person => {
-        if (actor.name === person.name) {
-          this.props.onChangeContent("people", person);
-        }
-      });
-    });
-  }
+  getVoiceActor = () => {}
 
-  getShow = () => {
-    this.props.dataObject.animeography.forEach(role => {
-      showData.forEach(show => {
-        if (role.name === show.title) {
-          this.props.onChangeContent("shows", show);
-        }
-      });
-    });
-  }
+  getShow = () => {}
 
   render() {
     return (

@@ -1,28 +1,12 @@
 import React, { Component } from 'react';
 // import './ShowDetails.css';
 import PropTypes from 'prop-types';
-import mangaData from '../manga/FakeMangaData';
-import peopleData from '../people/FakePeopleData';
 
 class ShowDetails extends Component {
 
-  getManga = () => {
-    mangaData.forEach(manga => {
-      if (manga.title === this.props.dataObject.title) {
-        this.props.onChangeContent("manga", manga);
-      }
-    });
-  }
+  getManga = () => {}
 
-  getPerson = () => {
-    peopleData.forEach(person => {
-      person.voiceActionRole.forEach(role => {
-        if (role.anime.name === this.props.dataObject.title) {
-          this.props.onChangeContent("people", person);
-        }
-      });
-    });
-  }
+  getPerson = () => {}
 
   render() {
     const { title, num_episodes, status, year, score } = this.props.dataObject;
