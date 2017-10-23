@@ -27,7 +27,7 @@ class PersonDetails extends Component {
   }
 
   render() {
-    const { name, birthday, voiceActionRole } = this.props.dataObject;
+    const { name, birthday, characters } = this.props.dataObject;
     return (
       <div>
         <p>
@@ -53,8 +53,8 @@ class PersonDetails extends Component {
         </p>
         <div>
           {"Characters Voice-acted:"}
-          {voiceActionRole.map(role => (
-            <div key={`${role.anime.name}`}>{`${role.anime.name} - ${role.character.name}`}<br /></div>))}
+          {characters.map(character => (
+            <div key={`${character.name}`}>{`${character.name}`}<br /></div>))}
         </div>
       </div>
     );
