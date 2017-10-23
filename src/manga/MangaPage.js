@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import styles from './MangaPage.scss
 import ThumbnailPage from '../shared/ThumbnailPage';
-import axios from 'axios';
+import { getModelData } from '../shared/Requests';
 
 class MangaPage extends Component {
 
@@ -10,23 +10,7 @@ class MangaPage extends Component {
   }
 
   componentWillMount = () => {
-    axios({
-      method: 'get',
-      url: 'api/mangas',
-      headers: {'Accept': 'application/vnd.api+json'}
-    }).then((response) => {
-      const data = response.data.data.map(obj => {
-        return {
-          id: obj.id,
-          type: obj.type,
-          ...obj.relationships,
-          ...obj.attributes,
-        }
-      });
-      this.setState({
-        data,
-      });
-    });
+    getModelData('mangas', (data) => this.setState({data}));
   }
 
   render() {
