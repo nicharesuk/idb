@@ -6,7 +6,6 @@ import ShowsPage from '../shows/ShowsPage';
 import CharactersPage from '../characters/CharactersPage';
 import PeoplePage from '../people/PeoplePage';
 import MangaPage from '../manga/MangaPage';
-import AboutPage from '../about/AboutPage';
 import { Link, Switch, Route } from 'react-router-dom';
 
 const pages = [
@@ -34,12 +33,7 @@ const pages = [
     name: "Voice Actors",
     link: "/people",
     node: <PeoplePage />,
-  },
-  {
-    name: "About",
-    link: "/about",
-    node: <AboutPage />,
-  },
+  }
 ];
 
 class App extends Component {
