@@ -21,6 +21,7 @@ class MemberCard extends React.Component {
 }
 
 MemberCard.propTypes = {
+	id: PropTypes.number,
 	name: PropTypes.string,
 	imgURL: PropTypes.string,
 	role: PropTypes.string,

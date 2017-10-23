@@ -13,6 +13,7 @@ class APIContainer extends React.Component {
 			<div className="ui two column stackable grid container">
 				{data.map((api) => (
 					<APICard
+						key={api.id}
 						name={api.name}
 						URL={api.URL}/>
 				))}

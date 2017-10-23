@@ -16,6 +16,7 @@ class APICard extends React.Component {
 }
 
 APICard.propTypes = {
+	id: PropTypes.number,
 	name: PropTypes.string,
 	URL: PropTypes.string
 }

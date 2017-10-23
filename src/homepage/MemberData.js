@@ -1,5 +1,6 @@
 export default [
   {
+		id: 1,
     name: "Christopher Gutierrez",
 		imgURL: "https://i.lensdump.com/i/TDqE9.jpg",
 		role: "Back-End Developer",
@@ -9,6 +10,7 @@ export default [
 		unittests: "Unit tests: 0"
   },
   {
+		id: 2,
 		name: "Corbin Rogerson",
 		imgURL: "https://i.lensdump.com/i/TDBH2.jpg",
 		role: "Back-End Developer",
@@ -18,6 +20,7 @@ export default [
 		unittests: "Unit tests: 0"
   },
   {
+		id: 3,
 		name: "David Malone",
 		imgURL: "https://i.lensdump.com/i/TDmcv.png",
 		role: "Front-End Developer",
@@ -27,6 +30,7 @@ export default [
 		unittests: "Unit tests: 0"
   },
   {
+		id: 4,
 		name: "Joshua Ondrusek",
 		imgURL: "https://i.lensdump.com/i/TDKDz.md.jpg",
 		role: "Back-End Developer",
@@ -36,6 +40,7 @@ export default [
 		unittests: "Unit tests: 0"
   },
   {
+		id: 5,
 		name: "Nelson Swindler",
 		imgURL: "https://i.lensdump.com/i/TDSEF.md.jpg",
 		role: "Front-End Developer",
@@ -45,6 +50,7 @@ export default [
 		unittests: "Unit tests: 0"
   },
 	{
+		id: 6,
 		name: "Randy Thai",
 		imgURL: "https://i.lensdump.com/i/TDlGr.jpg",
 		role: "Front-End Developer",

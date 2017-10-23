@@ -17,6 +17,7 @@ class ToolCard extends React.Component {
 }
 
 ToolCard.propTypes = {
+	id: PropTypes.number,
 	name: PropTypes.string,
 	imgURL: PropTypes.string,
 	info: PropTypes.string

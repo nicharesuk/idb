@@ -13,6 +13,7 @@ class ToolContainer extends React.Component {
 			<div className="ui four column stackable grid container">
 				{data.map((tool) => (
 					<ToolCard
+						key={tool.id}
 						name={tool.name}
 						imgURL={tool.imgURL}
 						info={tool.info}/>

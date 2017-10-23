@@ -13,6 +13,7 @@ class MemberContainer extends React.Component {
 			<div className="ui three column stackable grid container">
 				{data.map((member) => (
 					<MemberCard
+						key={member.id}
 						name={member.name}
 						imgURL={member.imgURL}
 						role={member.role}
