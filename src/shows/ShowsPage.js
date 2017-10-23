@@ -14,7 +14,6 @@ class ShowsPage extends Component {
       this.setState({
         data: response.data.objects,
       });
-      console.log(response.data.objects);
     });
   }
 

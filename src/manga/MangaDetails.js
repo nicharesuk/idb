@@ -25,7 +25,7 @@ class MangaDetails extends Component {
   }
 
   render() {
-    const { title, volumes, status, published, score } = this.props.dataObject;
+    const { title, num_chapters, status, year, score } = this.props.dataObject;
     return (
       <div>
         <p>
@@ -44,16 +44,16 @@ class MangaDetails extends Component {
           {`Title: ${title}`}
         </p>
         <p>
-          {`Volumes: ${volumes}`}
+          {`Chapters: ${num_chapters}`}
         </p>
         <p>
-          {`Started: ${published}`}
+          {`Started: ${year}`}
         </p>
         <p>
           {`Status: ${status}`}
         </p>
         <p>
-          {`Score: ${score[0]}`}
+          {`Score: ${score}`}
         </p>
       </div>
     );
