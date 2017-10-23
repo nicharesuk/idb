@@ -9,7 +9,7 @@ class ThumbnailPage extends Component {
   state = {
     modalOpen: false,
     selectedIndex: 0,
-  };
+  }
 
   openModalAction = (index) => {
     this.setState({
@@ -56,7 +56,7 @@ class ThumbnailPage extends Component {
             key={`thumbnail-component-${index}`}>
             <ThumbnailCard
               title={show.title}
-              imageURL={show.image}
+              picture={show.picture}
               subInfo_1={show.subInfo_1}
               subInfo_2={show.subInfo_2}
               isManga={this.props.isManga}/>

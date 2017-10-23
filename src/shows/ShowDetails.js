@@ -25,7 +25,7 @@ class ShowDetails extends Component {
   }
 
   render() {
-    const { title, episodes, status, aired, score } = this.props.dataObject;
+    const { title, num_episodes, status, year, score } = this.props.dataObject;
     return (
       <div>
         <p>
@@ -44,16 +44,16 @@ class ShowDetails extends Component {
           {`Title: ${title}`}
         </p>
         <p>
-          {`Length: ${episodes} episodes`}
+          {`Length: ${num_episodes} episodes`}
         </p>
         <p>
-          {`Aired: ${aired}`}
+          {`Aired: ${year}`}
         </p>
         <p>
           {`Status: ${status}`}
         </p>
         <p>
-          {`Score: ${score[0]}`}
+          {`Score: ${score}`}
         </p>
       </div>
     );
