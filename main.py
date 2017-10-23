@@ -5,16 +5,14 @@ import flask_restless
 
 from sqlalchemy.schema import ForeignKey
 from flask_restless import APIManager
-# from flask_cors import CORS
 from flask import Flask, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
-from models import db, Character, Anime, Actor, Manga
+from app.models import db, Character, Anime, Actor, Manga
 
-BUILD_DIR = '../build'
+BUILD_DIR = 'build'
 app = Flask(__name__, static_folder=BUILD_DIR)
 
-# CORS(app, headers=['Content-Type'])
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weeb.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app/weeb.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # Suppress warning
 
 db.init_app(app)
@@ -44,7 +42,7 @@ def serve(path):
 # Testing purposes only
 @app.route('/hello')
 def hello():
-    return "Hello world"
+    return app.root_path
 
 
 if __name__ == '__main__':

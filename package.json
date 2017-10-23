@@ -52,7 +52,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "concurrently \"node scripts/start.js\" \"python3 app/main.py\"",
+    "start": "concurrently \"node scripts/start.js\" \"python3 main.py\"",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "server": "python3 main.py"
