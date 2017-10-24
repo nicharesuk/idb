@@ -1,31 +1,15 @@
 import React, { Component } from 'react';
 // import './ShowDetails.css';
 import PropTypes from 'prop-types';
-import mangaData from '../manga/FakeMangaData';
-import peopleData from '../people/FakePeopleData';
 
 class ShowDetails extends Component {
 
-  getManga = () => {
-    mangaData.forEach(manga => {
-      if (manga.title === this.props.dataObject.title) {
-        this.props.onChangeContent("manga", manga);
-      }
-    });
-  }
+  getManga = () => {}
 
-  getPerson = () => {
-    peopleData.forEach(person => {
-      person.voiceActionRole.forEach(role => {
-        if (role.anime.name === this.props.dataObject.title) {
-          this.props.onChangeContent("people", person);
-        }
-      });
-    });
-  }
+  getPerson = () => {}
 
   render() {
-    const { title, episodes, status, aired, score } = this.props.dataObject;
+    const { title, num_episodes, status, year, score } = this.props.dataObject;
     return (
       <div>
         <p>
@@ -44,16 +28,16 @@ class ShowDetails extends Component {
           {`Title: ${title}`}
         </p>
         <p>
-          {`Length: ${episodes} episodes`}
+          {`Length: ${num_episodes} episodes`}
         </p>
         <p>
-          {`Aired: ${aired}`}
+          {`Aired: ${year}`}
         </p>
         <p>
           {`Status: ${status}`}
         </p>
         <p>
-          {`Score: ${score[0]}`}
+          {`Score: ${score}`}
         </p>
       </div>
     );

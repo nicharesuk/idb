@@ -11,7 +11,6 @@ class ThumbnailCard extends Component {
 
   render() {
     const { active } = this.state
-    const unitName = this.props.isManga ? "chapters" : "chapters"
     return (
       <div className={styles.container} onMouseEnter={this.handleShow} onMouseLeave={this.handleHide}>
         <Dimmer.Dimmable dimmed={active}>
@@ -21,19 +20,18 @@ class ThumbnailCard extends Component {
           <Image
             width="134px"
             height="196px"
-            src={this.props.imageURL} />
+            shape="rounded"
+            src={this.props.picture} />
         </Dimmer.Dimmable>
         <div className={styles.title}>
-          <div>
-            {this.props.title}
-          </div>
+          {this.props.title}
         </div>
         <div className={styles.subInfo}>
           <div>
             {this.props.subInfo_1}
           </div>
           <div>
-            {this.props.subInfo_2 ? `${this.props.subInfo_2} ${unitName}` : null}
+            {this.props.subInfo_2 || null}
           </div>
         </div>
       </div>
@@ -43,9 +41,9 @@ class ThumbnailCard extends Component {
 
 ThumbnailCard.propTypes = {
   title: PropTypes.string,
-  imageURL: PropTypes.string,
+  picture: PropTypes.string,
   subInfo_1: PropTypes.string,
-  subInfo_2: PropTypes.number,
+  subInfo_2: PropTypes.string,
   isManga: PropTypes.bool,
 }
 

@@ -11,6 +11,10 @@
 
 # python binaries
 /app/__pycache__
+/__pycache__
+
+# data folders
+/getdata
 
 # misc
 .DS_Store

@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 // import styles from './PeoplePage.scss';
-import data from './FakePeopleData';
 import ThumbnailPage from '../shared/ThumbnailPage';
+import { getModelData } from '../shared/Requests';
 
 class PeoplePage extends Component {
+
+  state = {
+    data: []
+  }
+
+  componentWillMount = () => {
+    getModelData('actors', (data) => this.setState({data}));
+  }
+
   render() {
+    if (!this.state.data) {
+      return <div></div>
+    }
     return (
       <ThumbnailPage
         type="people"
-        data={data.map(person => {
+        data={this.state.data.map(person => {
           return {
             ...person,
             title: person.name,
