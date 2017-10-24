@@ -2,14 +2,6 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import CheckConstraint
 
-# from sqlalchemy.sql import func
-# app = Flask(__name__)
-
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weeb.db'
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # Suppress warning
-
-# db = SQLAlchemy(app)
-
 db = SQLAlchemy()
 
 anime_character = db.Table('anime_character',
@@ -108,34 +100,3 @@ class Actor(db.Model):
 
     def __repr__(self):
         return '<Actor %r>' % self.name
-
-# db.create_all()
-
-# anime_row = Anime(title='TestAnime', year=1988, genre='Comedy', score=8, num_episodes=13, synopsis='Two boys learn the true meaning of friendship', media_type='TV', picture='https:\/\/myanimelist.cdn-dena.com\/images\/anime\/8\/37971.jpg', status='Finished Airing')
-
-# character_row = Character(name='TestCharacter', about="He's a boy with a big heart", japanese_name='(\u30ad\u30e9\u30fb\u30e4\u30de\u30c8)', picture='https:\/\/myanimelist.cdn-dena.com\/images\/characters\/10\/72646.jpg')
-
-# actor_row = Actor(name='TestActor', given_name='\u529b\u4e5f', language='Japanese', birthday='April 13, 1995', picture="https://myanimelist.cdn-dena.com/images/voiceactors/1/42208.jpg")
-
-# manga_row = Manga(title='TestManga', author='MangaAuthor', year=1987, genre='Comedy', score=7, num_chapters=40, synopsis='Two boys learn the true meaning of friendship but in manga form', media_type='Manga', picture='https:\/\/myanimelist.cdn-dena.com\/images\/anime\/8\/37971.jpg', status='Finished')
-
-# anime_row.characters.add(character_row)
-# anime_row.mangas.add(manga_row)
-# anime_row.actors.add(actor_row)
-
-# character_row.animes.add(anime_row)
-# character_row.mangas.add(manga_row)
-# character_row.actors.add(actor_row)
-
-# actor_row.characters.add(character_row)
-# actor_row.animes.add(anime_row)
-
-# manga_row.characters.add(character_row)
-# manga_row.animes.add(anime_row)
-
-# db.session.add(anime_row)
-# db.session.add(character_row)
-# db.session.add(actor_row)
-# db.session.add(manga_row)
-
-# db.session.commit()

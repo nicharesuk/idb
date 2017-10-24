@@ -19,13 +19,13 @@ db.init_app(app)
 
 
 manager = flask_restless.APIManager(app, flask_sqlalchemy_db=db)
-manager.create_api(Character, collection_name='characters', allow_functions=True, methods=['GET'], page_size=6)
+manager.create_api(Character, collection_name='characters', allow_functions=True, methods=['GET'], page_size=40)
 
-manager.create_api(Anime, collection_name='animes', allow_functions=True, methods=['GET'], page_size=6)
+manager.create_api(Anime, collection_name='animes', allow_functions=True, methods=['GET'], page_size=40)
 
-manager.create_api(Actor, collection_name='actors', allow_functions=True, methods=['GET'], page_size=6)
+manager.create_api(Actor, collection_name='actors', allow_functions=True, methods=['GET'], page_size=40)
 
-manager.create_api(Manga, collection_name='mangas', allow_functions=True, methods=['GET'], page_size=6)
+manager.create_api(Manga, collection_name='mangas', allow_functions=True, methods=['GET'], page_size=40)
 
 # Serve React App, handle all unhandled paths
 @app.route('/', defaults={'path': ''})
@@ -42,7 +42,7 @@ def serve(path):
 # Testing purposes only
 @app.route('/hello')
 def hello():
-    return app.root_path
+    return "Hellow World\n"
 
 
 if __name__ == '__main__':
