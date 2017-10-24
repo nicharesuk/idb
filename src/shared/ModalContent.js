@@ -6,6 +6,7 @@ import ShowModalContent from '../shows/ShowModalContent';
 import CharacterModalContent from '../characters/CharacterModalContent';
 import PersonModalContent from '../people/PersonModalContent';
 import MangaModalContent from '../manga/MangaModalContent';
+//import { getModelData } from './Requests';
 
 class ModalContent extends Component {
 
@@ -19,13 +20,13 @@ class ModalContent extends Component {
   }
 
   getContentNode = () => {
-    if        (this.state.type === "shows") {
+    if        (this.state.type === "animes") {
       return <ShowModalContent dataObject={this.state.dataObject} />
     } else if (this.state.type === "characters") {
       return <CharacterModalContent dataObject={this.state.dataObject} />
     } else if (this.state.type === "people") {
       return <PersonModalContent dataObject={this.state.dataObject} />
-    } else if (this.state.type === "manga") {
+    } else if (this.state.type === "mangas") {
       return <MangaModalContent dataObject={this.state.dataObject} />
     } else {
       return null;

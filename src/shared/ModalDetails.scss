@@ -11,9 +11,19 @@
 .details {
   display: flex;
   flex-direction: row;
-  width: 260px;
-  justify-content: space-between;
   padding-bottom: 30px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.detail {
+  padding-right: 10px;
+  white-space: nowrap;
 }
 
 .synopsis {
@@ -22,7 +32,7 @@
 }
 
 .data {
-  height: 40%;
+  height: 50%;
   width: 100%;
   color: white;
 }
@@ -34,7 +44,7 @@
 }
 
 .listsContainer {
-  height: 60%;
+  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: row;

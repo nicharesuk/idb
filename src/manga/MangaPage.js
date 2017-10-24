@@ -20,7 +20,7 @@ class MangaPage extends Component {
     }
     return (
       <ThumbnailPage
-        type="manga"
+        type="mangas"
         data={this.state.data.map(manga => {
           return {
             ...manga,

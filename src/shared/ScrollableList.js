@@ -16,10 +16,11 @@ class ModalContent extends Component {
             const color = index % 2 === 0 ? "#1f2025" : "transparent";
             return (
               <div
-                key={element.name}
+                key={element}
+                onClick={() => this.props.action(index)}
                 style={{backgroundColor: color}}
                 className={styles.element}>
-                {element.name}
+                {element}
               </div>
             )
           })}
@@ -32,6 +33,7 @@ class ModalContent extends Component {
 ModalContent.propTypes = {
   data: PropTypes.array,
   title: PropTypes.string,
+  action: PropTypes.func,
 }
 
 export default ModalContent;

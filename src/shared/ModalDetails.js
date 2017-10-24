@@ -6,46 +6,57 @@ import ScrollableList from './ScrollableList';
 class ModalDetails extends Component {
 
   render() {
-    const characterData = [
-      {name: 'Character1'},
-      {name: 'Character2'},
-      {name: 'Character3'},
-      {name: 'Character4'},
-      {name: 'Character5'},
-      {name: 'Character6'},
-      {name: 'Character7'},
-      {name: 'Character8'},
-      {name: 'Character9'},
-      {name: 'Character10'},
-      {name: 'Character11'},
-      {name: 'Character12'},
-    ];
-
-    const synopsis = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
     return (
       <div className={styles.content}>
         <div className={styles.data}>
-          <div className={styles.title}>
-            Title
+          <div className={styles.title}>  
+            {this.props.title}
           </div>
           <div className={styles.details}>
-            <div>2017</div><div>•</div><div>Episodes: 20</div><div>•</div><div>Action / Fantasy</div>
+            {this.props.detailsList.map((detail, index) => (
+              <div key={index} className={styles.detailContainer}>
+                <div className={styles.detail}>
+                  {detail}
+                </div>
+                {index !== this.props.detailsList.length - 1 ?
+                  <div className={styles.detail}>
+                    •
+                  </div> :
+                  null
+                }
+              </div>   
+            ))}
           </div>
           <div className={styles.synopsis}>
-            {synopsis}
+            {this.props.paragraph}
           </div>
         </div>
         <div className={styles.divider}></div>
         <div className={styles.listsContainer}>
-          <ScrollableList data={characterData} title="Characters" />
-          <ScrollableList data={characterData} title="Voice Actors" />
+          <ScrollableList
+            data={this.props.primaryList}
+            title={this.props.primaryListTitle}
+            action={this.props.primaryListAction} />
+          <ScrollableList
+            data={this.props.secondaryList}
+            title={this.props.secondaryListTitle}
+            action={this.props.secondaryListAction} />
         </div>
       </div>
     );
   }
 }
 
-ModalDetails.propTypes = {}
+ModalDetails.propTypes = {
+  title: PropTypes.string,
+  detailsList: PropTypes.array,
+  paragraph: PropTypes.string,
+  primaryList: PropTypes.array,
+  primaryListTitle: PropTypes.string,
+  primaryListAction: PropTypes.func,
+  secondaryList: PropTypes.array,
+  secondaryListTitle: PropTypes.string,
+  secondaryListAction: PropTypes.func,
+}
 
 export default ModalDetails;
