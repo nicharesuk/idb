@@ -42,7 +42,11 @@ class App extends Component {
     return (
       <div className={style.appContainer}>
         <div className={style.header}>
-          <Menu inverted pointing secondary size='large'>
+          <Menu
+            inverted
+            pointing
+            secondary
+            size='large'>
             {pages.map(page => {
               return (
                 <Link key={page.name} to={page.link}>

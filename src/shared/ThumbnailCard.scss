@@ -13,6 +13,11 @@
   margin-top: 6px;
   margin-bottom: 0px;
   color: #fff;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .subInfo {
