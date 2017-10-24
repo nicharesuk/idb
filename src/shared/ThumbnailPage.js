@@ -39,8 +39,6 @@ class ThumbnailPage extends Component {
     return (
       <div className={styles.container}>
         <Modal
-          basic
-          dimmer="blurring"
           className={styles.modal}
           open={this.state.modalOpen}
           onClose={this.closeModalAction}
