@@ -6,7 +6,6 @@ import ShowsPage from '../shows/ShowsPage';
 import CharactersPage from '../characters/CharactersPage';
 import PeoplePage from '../people/PeoplePage';
 import MangaPage from '../manga/MangaPage';
-import AboutPage from '../about/AboutPage';
 import { Link, Switch, Route } from 'react-router-dom';
 
 const pages = [
@@ -16,7 +15,7 @@ const pages = [
     node: <HomePage />,
   },
   {
-    name: "Shows",
+    name: "Anime",
     link: "/shows",
     node: <ShowsPage />,
   },
@@ -26,20 +25,15 @@ const pages = [
     node: <CharactersPage />,
   },
   {
-    name: "People",
-    link: "/people",
-    node: <PeoplePage />,
-  },
-  {
     name: "Manga",
     link: "/manga",
     node: <MangaPage />,
   },
   {
-    name: "About",
-    link: "/about",
-    node: <AboutPage />,
-  },
+    name: "Voice Actors",
+    link: "/people",
+    node: <PeoplePage />,
+  }
 ];
 
 class App extends Component {
@@ -48,7 +42,11 @@ class App extends Component {
     return (
       <div className={style.appContainer}>
         <div className={style.header}>
-          <Menu inverted pointing secondary size='large'>
+          <Menu
+            inverted
+            pointing
+            secondary
+            size='large'>
             {pages.map(page => {
               return (
                 <Link key={page.name} to={page.link}>

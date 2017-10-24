@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import styles from './ShowsPage.scss';
 import ThumbnailPage from '../shared/ThumbnailPage';
 import { getModelData } from '../shared/Requests';
+import getStartYear from '../shared/GetStartYear';
 
 class ShowsPage extends Component {
 
@@ -23,8 +24,8 @@ class ShowsPage extends Component {
         data={this.state.data.map(show => {
           return {
             ...show,
-            subInfo_1: `${show.year}`,
-            subInfo_2: show.num_episodes,
+            subInfo_1: `${getStartYear(show.aired)}`,
+            subInfo_2: `${show.num_episodes} episodes`,
           }
         })} />
     );
