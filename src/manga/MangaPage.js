@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import styles from './MangaPage.scss
 import ThumbnailPage from '../shared/ThumbnailPage';
 import { getModelData } from '../shared/Requests';
+import getStartYear from '../shared/GetStartYear';
 
 class MangaPage extends Component {
 
@@ -23,8 +24,8 @@ class MangaPage extends Component {
         data={this.state.data.map(manga => {
           return {
             ...manga,
-            subInfo_1: `${manga.year}`,
-            subInfo_2: manga.num_chapters,
+            subInfo_1: `${getStartYear(manga.published)}`,
+            subInfo_2: `${manga.num_chapters} chapters`,
           }
         })} />
     );
