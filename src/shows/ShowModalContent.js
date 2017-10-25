@@ -14,18 +14,23 @@ class ShowModalContent extends Component {
   }
 
   render() {
-    const { title, aired, score, num_episodes, synopsis, status, rating, genre, characters, mangas} = this.props.dataObject;
+    const { title, aired, score, num_episodes, synopsis, status, rating, genre, included} = this.props.dataObject;
 
-    console.log(this.props.dataObject);
+    let characterList = [];
+    let mangaList = [];
+    if (included) {
+      characterList = included.filter(obj => obj.type === "characters").map(obj => obj.attributes.name);
+      mangaList = included.filter(obj => obj.type === "mangas").map(obj => obj.attributes.title);
+    }
     return (
       <ModalDetails
         title={title}
         detailsList={[aired, `${num_episodes}`, status, rating, score, genre ]}
         paragraph={synopsis}
-        primaryList={characters.data.map(character => character.id)}
+        primaryList={characterList}
         primaryListTitle={"Characters"}
         primaryListAction={this.onClickCharacter}
-        secondaryList={mangas.data.map(manga => manga.id)}
+        secondaryList={mangaList}
         secondaryListTitle={"Mangas"}
         secondaryListAction={this.onClickManga}/>
     );

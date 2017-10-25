@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Image } from 'semantic-ui-react';
+import { Image, Icon } from 'semantic-ui-react';
 import styles from './ModalContent.scss';
 import ShowModalContent from '../shows/ShowModalContent';
 import CharacterModalContent from '../characters/CharacterModalContent';
 import PersonModalContent from '../people/PersonModalContent';
 import MangaModalContent from '../manga/MangaModalContent';
-//import { getModelData } from './Requests';
+import { getSingleModel } from './Requests';
 
 class ModalContent extends Component {
 
@@ -15,8 +15,15 @@ class ModalContent extends Component {
 
     this.state = {
       type: props.type,
-      dataObject: props.dataObject,
+      dataObject: null,
     };
+  }
+
+  componentWillMount = () => {
+    getSingleModel(
+      this.props.type,
+      (dataObject) => this.setState({dataObject}),
+      this.props.dataObject.id);
   }
 
   getContentNode = () => {
@@ -24,7 +31,7 @@ class ModalContent extends Component {
       return <ShowModalContent dataObject={this.state.dataObject} />
     } else if (this.state.type === "characters") {
       return <CharacterModalContent dataObject={this.state.dataObject} />
-    } else if (this.state.type === "people") {
+    } else if (this.state.type === "actors") {
       return <PersonModalContent dataObject={this.state.dataObject} />
     } else if (this.state.type === "mangas") {
       return <MangaModalContent dataObject={this.state.dataObject} />
@@ -34,8 +41,16 @@ class ModalContent extends Component {
   }
 
   render() {
+    if (!this.state.dataObject) {
+      return <div></div>
+    }
     return (
       <div className={styles.container}>
+        <Icon 
+          className={styles.closeIcon} 
+          onClick={this.props.onClose} 
+          size="huge" 
+          name="remove" />
         <div className={styles.imageContainer}>
           <Image
             fluid

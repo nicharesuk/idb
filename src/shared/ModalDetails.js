@@ -47,6 +47,16 @@ class ModalDetails extends Component {
   }
 }
 
+ModalDetails.defaultProps = {
+  title: "",
+  detailsList: [],
+  paragraph: "",
+  primaryList: [],
+  primaryListTitle: "",
+  secondaryList: [],
+  secondaryListTitle: "",
+}
+
 ModalDetails.propTypes = {
   title: PropTypes.string,
   detailsList: PropTypes.array,
