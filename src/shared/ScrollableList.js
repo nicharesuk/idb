@@ -18,9 +18,10 @@ class ModalContent extends Component {
               <div
                 key={element}
                 onClick={() => this.props.action(index)}
-                style={{backgroundColor: color}}
-                className={styles.element}>
-                {element}
+                style={{backgroundColor: color}}>
+                <div className={styles.innerElement}>
+                  {element}
+                </div>
               </div>
             )
           })}
