@@ -42,12 +42,13 @@
   left: 0px;
   width: 134px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .rating {
-  padding-left: 10px;
+  padding-top: 10px;
   color: #fff;
+  font-size: 20px;
 }

@@ -27,7 +27,7 @@ class ThumbnailCard extends Component {
               style={{visibility: active ? "visible" : "hidden"}}
               className={styles.absolute}>
               <ReactStars
-                size={15}
+                size={25}
                 edit={false}
                 value={this.props.score / 2.0} />
               <div className={styles.rating}>
