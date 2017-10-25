@@ -27,7 +27,7 @@ class ShowModalContent extends Component {
       <ModalDetails
         title={title}
         detailsList={[aired, `${num_episodes}`, status, rating, score, genre ]}
-        website={`https://www.youtube.com/watch?v=${youtube_id}`}
+        website={youtube_id ? `https://www.youtube.com/watch?v=${youtube_id}` : null}
         websiteText={"Link to trailer"}
         paragraph={synopsis}
         primaryList={characterList}
