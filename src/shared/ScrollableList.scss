@@ -18,10 +18,14 @@
 	overflow: auto;
 }
 
-.element {
-	width: 100%;
-	color: white;
+.innerElement {
+	background-color: transparent;
 	padding: 20px;
+	margin: 3px;
 	font-size: 20px;
 	cursor: pointer;
+	color: white;
+	&:hover {
+		background-color: #26272d;
+	}
 }
