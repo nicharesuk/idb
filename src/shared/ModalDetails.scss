@@ -13,7 +13,7 @@
   flex-direction: row;
   padding-bottom: 30px;
   max-width: 100%;
-  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .detailContainer {
@@ -26,9 +26,11 @@
   white-space: nowrap;
 }
 
-.synopsis {
+.paragraph {
   font-size: 15px;
   line-height: 21px;
+  max-height: calc(100% - 120px);
+  overflow: auto;
 }
 
 .data {

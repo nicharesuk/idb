@@ -27,7 +27,7 @@ class ModalDetails extends Component {
               </div>   
             ))}
           </div>
-          <div className={styles.synopsis}>
+          <div className={styles.paragraph}>
             {this.props.paragraph}
           </div>
         </div>
