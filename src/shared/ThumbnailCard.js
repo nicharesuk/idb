@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styles from './ThumbnailCard.scss';
-import { Image, Dimmer } from 'semantic-ui-react'
+import { Image, Rating } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
+import ReactStars from 'react-stars'
 
 class ThumbnailCard extends Component {
   state = {}
@@ -13,16 +14,21 @@ class ThumbnailCard extends Component {
     const { active } = this.state
     return (
       <div className={styles.container} onMouseEnter={this.handleShow} onMouseLeave={this.handleHide}>
-        <Dimmer.Dimmable dimmed={active}>
-            <Dimmer active={active} >
-               {this.props.title}
-            </Dimmer>
+        <div className={styles.relative}>
           <Image
+            className={!active || styles.dim}
+            bordered={active}
             width="134px"
             height="196px"
             shape="rounded"
             src={this.props.picture} />
-        </Dimmer.Dimmable>
+          <div style={{visibility: active ? "visible" : "hidden"}} className={styles.absolute}>
+            <ReactStars
+              size={20}
+              edit={false}
+              value={3.5} />
+          </div>
+        </div>
         <div className={styles.title}>
           {this.props.title}
         </div>

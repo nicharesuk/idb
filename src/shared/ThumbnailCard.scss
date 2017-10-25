@@ -27,3 +27,17 @@
   display: flex;
   justify-content: space-between;
 }
+
+.dim {
+  opacity: .2;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 90px;
+  left: 25px;
+}
