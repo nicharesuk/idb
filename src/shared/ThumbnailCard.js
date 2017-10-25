@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './ThumbnailCard.scss';
-import { Image, Rating } from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
 import ReactStars from 'react-stars'
 
@@ -16,18 +16,25 @@ class ThumbnailCard extends Component {
       <div className={styles.container} onMouseEnter={this.handleShow} onMouseLeave={this.handleHide}>
         <div className={styles.relative}>
           <Image
-            className={!active || styles.dim}
+            className={active ? styles.dim : ""}
             bordered={active}
             width="134px"
             height="196px"
             shape="rounded"
             src={this.props.picture} />
-          <div style={{visibility: active ? "visible" : "hidden"}} className={styles.absolute}>
-            <ReactStars
-              size={20}
-              edit={false}
-              value={3.5} />
-          </div>
+          {this.props.score !== -1 && this.props.score !== null ?
+            <div
+              style={{visibility: active ? "visible" : "hidden"}}
+              className={styles.absolute}>
+              <ReactStars
+                size={15}
+                edit={false}
+                value={this.props.score / 2.0} />
+              <div className={styles.rating}>
+                {`${Math.round(this.props.score * 10) / 10}/10`}
+              </div>
+            </div> : null
+          }
         </div>
         <div className={styles.title}>
           {this.props.title}
@@ -45,12 +52,20 @@ class ThumbnailCard extends Component {
   }
 }
 
+ThumbnailCard.defaultProps = {
+  title: "",
+  score: -1,
+  picture: "",
+  subInfo_1: "",
+  subInfo_2: "",
+}
+
 ThumbnailCard.propTypes = {
   title: PropTypes.string,
+  score: PropTypes.number,
   picture: PropTypes.string,
   subInfo_1: PropTypes.string,
   subInfo_2: PropTypes.string,
-  isManga: PropTypes.bool,
 }
 
 export default ThumbnailCard;
