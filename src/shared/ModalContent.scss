@@ -6,22 +6,29 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: #17181b;
 }
 
 .closeIcon {
   position: fixed;
-  top: 20px;
-  right: 30px;
+  top: 15px;
+  right: 20px;
   cursor: pointer;
+  color: white;
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  font-size: 25px;
+  width: 70%;
+  height: 100%;
+  background-color: #17181b;
+  padding: 20px;
 }
 
-.data {
-  max-width: 50%;
-  padding-left: 30px;
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+  padding: 30px;
 }

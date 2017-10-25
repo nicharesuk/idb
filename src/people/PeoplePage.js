@@ -19,7 +19,7 @@ class PeoplePage extends Component {
     }
     return (
       <ThumbnailPage
-        type="people"
+        type="actors"
         data={this.state.data.map(person => {
           return {
             ...person,

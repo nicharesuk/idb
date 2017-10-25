@@ -25,32 +25,19 @@ class ThumbnailPage extends Component {
   }
 
   render() {
-
-    const moreData = [
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-    ];
-
     return (
       <div className={styles.container}>
         <Modal
-          basic
-          dimmer="blurring"
           className={styles.modal}
           open={this.state.modalOpen}
           onClose={this.closeModalAction}
           size="fullscreen">
           <ModalContent
-            dataObject={moreData[this.state.selectedIndex]}
+            dataObject={this.props.data[this.state.selectedIndex]}
             type={this.props.type}
             onClose={this.closeModalAction} />
         </Modal>
-        {moreData.map((show, index) => (
+        {this.props.data.map((show, index) => (
           <div
             onClick={() => this.openModalAction(index)}
             key={`thumbnail-component-${index}`}>

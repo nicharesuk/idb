@@ -20,7 +20,7 @@ class ShowsPage extends Component {
     }
     return (
       <ThumbnailPage
-        type="shows"
+        type="animes"
         data={this.state.data.map(show => {
           return {
             ...show,

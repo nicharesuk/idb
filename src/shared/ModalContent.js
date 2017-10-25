@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Image, Icon } from 'semantic-ui-react';
 import styles from './ModalContent.scss';
-import ShowDetails from '../shows/ShowDetails';
-import CharacterDetails from '../characters/CharacterDetails';
-import PersonDetails from '../people/PersonDetails';
-import MangaDetails from '../manga/MangaDetails';
+import ShowModalContent from '../shows/ShowModalContent';
+import CharacterModalContent from '../characters/CharacterModalContent';
+import PersonModalContent from '../people/PersonModalContent';
+import MangaModalContent from '../manga/MangaModalContent';
+import { getSingleModel } from './Requests';
 
 class ModalContent extends Component {
 
@@ -14,48 +15,53 @@ class ModalContent extends Component {
 
     this.state = {
       type: props.type,
-      dataObject: props.dataObject,
+      dataObject: null,
     };
   }
 
-  onChangeContent = (type, dataObject) => {
-    this.setState({
+  componentWillMount = () => {
+    this.changeContent(this.props.type, this.props.dataObject.id);
+  }
+
+  changeContent = (type, id) => {
+    getSingleModel(
       type,
-      dataObject,
-    });
+      (dataObject) => this.setState({type, dataObject}),
+      id);
   }
 
   getContentNode = () => {
-    if        (this.state.type === "shows") {
-      return <ShowDetails dataObject={this.state.dataObject} onChangeContent={this.onChangeContent} />
+    if        (this.state.type === "animes") {
+      return <ShowModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "characters") {
-      return <CharacterDetails dataObject={this.state.dataObject} onChangeContent={this.onChangeContent} />
-    } else if (this.state.type === "people") {
-      return <PersonDetails dataObject={this.state.dataObject} onChangeContent={this.onChangeContent} />
-    } else if (this.state.type === "manga") {
-      return <MangaDetails dataObject={this.state.dataObject} onChangeContent={this.onChangeContent} />
+      return <CharacterModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
+    } else if (this.state.type === "actors") {
+      return <PersonModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
+    } else if (this.state.type === "mangas") {
+      return <MangaModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else {
       return null;
     }
   }
 
   render() {
+    if (!this.state.dataObject) {
+      return <div></div>
+    }
     return (
       <div className={styles.container}>
-        <Icon
-          className={styles.closeIcon}
-          onClick={this.props.onClose}
-          size="huge"
+        <Icon 
+          className={styles.closeIcon} 
+          onClick={this.props.onClose} 
+          size="large" 
           name="remove" />
-        <div className={styles.content}>
+        <div className={styles.imageContainer}>
           <Image
-            wrapped
-            height="588px"
-            width="402px"
+            fluid
             src={this.state.dataObject.picture} />
-          <div className={styles.data}>
-            {this.getContentNode()}
-          </div>
+        </div>
+        <div className={styles.content}>
+          {this.getContentNode()}
         </div>
       </div>
     );
