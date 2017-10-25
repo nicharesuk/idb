@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './ShowDetails.css';
 import PropTypes from 'prop-types';
 import ModalDetails from '../shared/ModalDetails';
 

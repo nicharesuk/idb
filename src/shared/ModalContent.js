@@ -49,7 +49,7 @@ class ModalContent extends Component {
         <Icon 
           className={styles.closeIcon} 
           onClick={this.props.onClose} 
-          size="huge" 
+          size="large" 
           name="remove" />
         <div className={styles.imageContainer}>
           <Image

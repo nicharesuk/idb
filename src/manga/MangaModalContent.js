@@ -1,12 +1,38 @@
 import React, { Component } from 'react';
-// import './MangaDetails.css';
 import PropTypes from 'prop-types';
 import ModalDetails from '../shared/ModalDetails';
 
 class MangaDetails extends Component {
 
+  onClickCharacter = (index) => {
+    console.log(index);
+  }
+
+  onClickAnime = (index) => {
+    console.log(index);
+  }
+
   render() {
-    return <ModalDetails />
+    const { title, published, score, num_chapters, synopsis, status, rating, genre, included} = this.props.dataObject;
+
+    let characterList = [];
+    let animeList = [];
+    if (included) {
+      characterList = included.filter(obj => obj.type === "characters").map(obj => obj.attributes.name);
+      animeList = included.filter(obj => obj.type === "animes").map(obj => obj.attributes.title);
+    }
+    return (
+      <ModalDetails
+        title={title}
+        detailsList={[published, `${num_chapters}`, status, rating, score, genre ]}
+        paragraph={synopsis}
+        primaryList={characterList}
+        primaryListTitle={"Characters"}
+        primaryListAction={this.onClickCharacter}
+        secondaryList={animeList}
+        secondaryListTitle={"Anime"}
+        secondaryListAction={this.onClickAnime}/>
+    );
   }
 }
 

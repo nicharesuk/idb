@@ -1,12 +1,37 @@
 import React, { Component } from 'react';
-// import './PersonDetails.css';
 import PropTypes from 'prop-types';
 import ModalDetails from '../shared/ModalDetails';
 
 class PersonDetails extends Component {
 
+  onClickCharacter = (index) => {
+    console.log(index);
+  }
+
+  onClickAnime = (index) => {
+    console.log(index);
+  }
+
   render() {
-    return <ModalDetails />
+    const { name, language, birthday, included} = this.props.dataObject;
+
+    let characterList = [];
+    let animeList = [];
+    if (included) {
+      characterList = included.filter(obj => obj.type === "characters").map(obj => obj.attributes.name);
+      animeList = included.filter(obj => obj.type === "animes").map(obj => obj.attributes.title);
+    }
+    return (
+      <ModalDetails
+        title={name}
+        detailsList={[language, `Born on ${birthday}`]}
+        primaryList={characterList}
+        primaryListTitle={"Characters"}
+        primaryListAction={this.onClickCharacter}
+        secondaryList={animeList}
+        secondaryListTitle={"Anime"}
+        secondaryListAction={this.onClickAnime}/>
+    );
   }
 }
 

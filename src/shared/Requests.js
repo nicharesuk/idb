@@ -25,7 +25,7 @@ export function getSingleModel (model, callback, number) {
   } else if (model === "characters") {
     url = `api/${model}/${number}?include=actors,animes`;
   } else if (model === "actors") {
-    url = `api/${model}/${number}?include=characters,animes`;
+    url = `api/${model}/${number}?include=animes,characters`;
   } else if (model === "mangas") {
     url = `api/${model}/${number}?include=animes,characters`;
   } else {
