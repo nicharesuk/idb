@@ -5,11 +5,13 @@ import ModalDetails from '../shared/ModalDetails';
 class MangaDetails extends Component {
 
   onClickCharacter = (index) => {
-    console.log(index);
+    const id = this.props.dataObject.included.filter(obj => obj.type === "characters")[index].id
+    this.props.onChange("characters", id);
   }
 
   onClickAnime = (index) => {
-    console.log(index);
+    const id = this.props.dataObject.included.filter(obj => obj.type === "animes")[index].id
+    this.props.onChange("animes", id);
   }
 
   render() {
@@ -38,7 +40,7 @@ class MangaDetails extends Component {
 
 MangaDetails.propTypes = {
   dataObject: PropTypes.object,
-  onChangeContent: PropTypes.func,
+  onChange: PropTypes.func,
 }
 
 export default MangaDetails;

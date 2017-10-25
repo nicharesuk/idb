@@ -5,11 +5,13 @@ import ModalDetails from '../shared/ModalDetails';
 class CharacterDetails extends Component {
 
   onClickActor = (index) => {
-    console.log(index);
+    const id = this.props.dataObject.included.filter(obj => obj.type === "actors")[index].id
+    this.props.onChange("actors", id);
   }
 
   onClickAnime = (index) => {
-    console.log(index);
+    const id = this.props.dataObject.included.filter(obj => obj.type === "animes")[index].id
+    this.props.onChange("animes", id);
   }
 
   render() {
@@ -38,7 +40,7 @@ class CharacterDetails extends Component {
 
 CharacterDetails.propTypes = {
   dataObject: PropTypes.object,
-  onChangeContent: PropTypes.func,
+  onChange: PropTypes.func,
 }
 
 export default CharacterDetails;

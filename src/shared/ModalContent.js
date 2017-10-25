@@ -20,21 +20,25 @@ class ModalContent extends Component {
   }
 
   componentWillMount = () => {
+    this.changeContent(this.props.type, this.props.dataObject.id);
+  }
+
+  changeContent = (type, id) => {
     getSingleModel(
-      this.props.type,
-      (dataObject) => this.setState({dataObject}),
-      this.props.dataObject.id);
+      type,
+      (dataObject) => this.setState({type, dataObject}),
+      id);
   }
 
   getContentNode = () => {
     if        (this.state.type === "animes") {
-      return <ShowModalContent dataObject={this.state.dataObject} />
+      return <ShowModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "characters") {
-      return <CharacterModalContent dataObject={this.state.dataObject} />
+      return <CharacterModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "actors") {
-      return <PersonModalContent dataObject={this.state.dataObject} />
+      return <PersonModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "mangas") {
-      return <MangaModalContent dataObject={this.state.dataObject} />
+      return <MangaModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else {
       return null;
     }
