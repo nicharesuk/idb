@@ -42,7 +42,7 @@ def serve(path):
 # Testing purposes only
 @app.route('/hello')
 def hello():
-    return "Hellow World\n"
+    return "Hello World\n"
 
 
 if __name__ == '__main__':
