@@ -28,7 +28,18 @@ class ModalDetails extends Component {
             ))}
           </div>
           <div className={styles.paragraph}>
-            {this.props.paragraph}
+            {this.props.website ?
+              <div className={styles.link}>
+                <a
+                  href={this.props.website}
+                  target="_blank">
+                  {this.props.websiteText} <br />
+                </a>
+              </div> : null
+            }
+            <div>
+              {this.props.paragraph}
+            </div>
           </div>
         </div>
         <div className={styles.divider}></div>
@@ -51,6 +62,7 @@ ModalDetails.defaultProps = {
   title: "",
   detailsList: [],
   paragraph: "",
+  websiteText: "",
   primaryList: [],
   primaryListTitle: "",
   secondaryList: [],
@@ -61,6 +73,8 @@ ModalDetails.propTypes = {
   title: PropTypes.string,
   detailsList: PropTypes.array,
   paragraph: PropTypes.string,
+  website: PropTypes.string,
+  websiteText: PropTypes.string,
   primaryList: PropTypes.array,
   primaryListTitle: PropTypes.string,
   primaryListAction: PropTypes.func,
