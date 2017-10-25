@@ -14,23 +14,33 @@ class CharacterDetails extends Component {
     this.props.onChange("animes", id);
   }
 
+  onClickManga = (index) => {
+    const id = this.props.dataObject.included.filter(obj => obj.type === "mangas")[index].id
+    this.props.onChange("mangas", id);
+  }
+
   render() {
     const { name, about, japanese_name, included} = this.props.dataObject;
 
     let actorList = [];
     let animeList = [];
+    let mangaList = [];
     if (included) {
       actorList = included.filter(obj => obj.type === "actors").map(obj => obj.attributes.name);
       animeList = included.filter(obj => obj.type === "animes").map(obj => obj.attributes.title);
+      mangaList = included.filter(obj => obj.type === "mangas").map(obj => obj.attributes.title);
     }
+    let primaryList = actorList.length ? actorList : mangaList;
+    let primaryTitle = actorList.length ? "Actors" : "Mangas";
+    let primaryAction = actorList.length ? this.onClickActor : this.onClickManga;
     return (
       <ModalDetails
         title={name}
         detailsList={[japanese_name]}
         paragraph={about}
-        primaryList={actorList}
-        primaryListTitle={"Actors"}
-        primaryListAction={this.onClickActor}
+        primaryList={primaryList}
+        primaryListTitle={primaryTitle}
+        primaryListAction={primaryAction}
         secondaryList={animeList}
         secondaryListTitle={"Anime"}
         secondaryListAction={this.onClickAnime}/>
