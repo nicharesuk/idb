@@ -15,7 +15,7 @@ class PersonDetails extends Component {
   }
 
   render() {
-    const { name, language, birthday, included} = this.props.dataObject;
+    const { name, language, birthday, website, included} = this.props.dataObject;
 
     let characterList = [];
     let animeList = [];
@@ -26,6 +26,8 @@ class PersonDetails extends Component {
     return (
       <ModalDetails
         title={name}
+        website={website}
+        websiteText={"Link to website"}
         detailsList={[language, `Born on ${birthday}`]}
         primaryList={characterList}
         primaryListTitle={"Characters"}

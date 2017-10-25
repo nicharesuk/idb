@@ -15,7 +15,7 @@ class ShowModalContent extends Component {
   }
 
   render() {
-    const { title, aired, score, num_episodes, synopsis, status, rating, genre, included} = this.props.dataObject;
+    const { title, aired, score, num_episodes, youtube_id, synopsis, status, rating, genre, included} = this.props.dataObject;
 
     let characterList = [];
     let mangaList = [];
@@ -27,6 +27,8 @@ class ShowModalContent extends Component {
       <ModalDetails
         title={title}
         detailsList={[aired, `${num_episodes}`, status, rating, score, genre ]}
+        website={`https://www.youtube.com/watch?v=${youtube_id}`}
+        websiteText={"Link to trailer"}
         paragraph={synopsis}
         primaryList={characterList}
         primaryListTitle={"Characters"}
