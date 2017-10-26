@@ -15,17 +15,15 @@ class MangaPage extends Component {
   }
 
   render() {
-    if (!this.state.data) {
-      return <div></div>
-    }
     return (
       <ThumbnailPage
         type="mangas"
         data={this.state.data.map(manga => {
+          const subInfo_2 = manga.num_chapters === "Unknown" ? "" : `${manga.num_chapters} chapters`
           return {
             ...manga,
             subInfo_1: `${getStartYear(manga.published)}`,
-            subInfo_2: `${manga.num_chapters} chapters`,
+            subInfo_2: subInfo_2,
           }
         })} />
     );
