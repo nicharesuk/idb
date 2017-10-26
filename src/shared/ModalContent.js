@@ -51,7 +51,7 @@ class ModalContent extends Component {
 
   render() {
     if (!this.state.dataObject) {
-      return <div></div>
+      return <div className={styles.container}></div>
     }
     return (
       <div className={styles.container}>

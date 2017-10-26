@@ -28,6 +28,14 @@
   justify-content: space-between;
 }
 
+.sub {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .dim {
   opacity: .3;
 }
