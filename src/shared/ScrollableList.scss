@@ -1,6 +1,8 @@
 
 .container {
-	width: 50%;
+	flex-basis: 50%;
+	flex-grow: 1;
+	flex-shrink: 1;
 	max-height: 100%;
 	padding: 10px;
 	padding-top: 30px;
