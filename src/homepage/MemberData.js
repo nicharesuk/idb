@@ -5,9 +5,9 @@ export default [
     imgURL: "https://i.lensdump.com/i/TDqE9.jpg",
     role: "Back-End Developer",
     blurb: "Funny Text Here",
-		responsibilities: "Unit Testing",
+    responsibilities: "Unit Testing",
     commits: "7",
-		issues: "15",
+    issues: "15",
     unittests: "18"
   },
   {
@@ -16,9 +16,9 @@ export default [
     imgURL: "https://i.lensdump.com/i/TDBH2.jpg",
     role: "Back-End Developer",
     blurb: "Head Weeb",
-		responsibilities: "Hosting, Database Setup, Auto-generate API",
+    responsibilities: "Hosting, Database Setup, Auto-generate API",
     commits: "24",
-		issues: "17",
+    issues: "17",
     unittests: "0"
   },
   {
@@ -28,8 +28,8 @@ export default [
     role: "Front-End Developer",
     blurb: "Believes the Back-End is a black box that does what it tells him to do",
     responsibilities: "Front-End Design/Development, User Stories, UML Diagram, Technical Document",
-		commits: "12",
-		issues: "21",
+    commits: "12",
+    issues: "21",
     unittests: "0"
   },
   {
@@ -38,9 +38,9 @@ export default [
     imgURL: "https://i.lensdump.com/i/TDKDz.md.jpg",
     role: "Back-End Developer",
     blurb: "Does what Corbin tells him to do",
-		responsibilities: "Database Scraping, API Documentation",
+    responsibilities: "Database Scraping, API Documentation",
     commits: "1",
-		issues: "18",
+    issues: "18",
     unittests: "0"
   },
   {
@@ -49,9 +49,9 @@ export default [
     imgURL: "https://i.lensdump.com/i/TDSEF.md.jpg",
     role: "Front-End Developer",
     blurb: "Chief Bug Creator",
-		responsibilities: "Front-end Design/Development, Technical Document",
+    responsibilities: "Front-end Design/Development, Technical Document",
     commits: "63",
-		issues: "21",
+    issues: "21",
     unittests: "0"
   },
   {
@@ -60,9 +60,9 @@ export default [
     imgURL: "https://i.lensdump.com/i/TDlGr.jpg",
     role: "Front-End Developer",
     blurb: "Occasionally Writes Code",
-		responsibilities: "Front-End Design/Development, Technical Document",
+    responsibilities: "Front-End Design/Development, Technical Document",
     commits: "14",
-		issues: "15",
+    issues: "15",
     unittests: "0"
   }
 ];

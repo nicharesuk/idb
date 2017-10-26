@@ -71,16 +71,16 @@ export default [
     imgURL: "https://i.lensdump.com/i/TDM3q.md.png",
     info: "Issue Tracker"
   },
-	{
-		id: 13,
-		name: "Axios",
-		imgURL: "https://i.lensdump.com/i/EnDX5.md.gif",
-		info: "HTTP Client"
-	},
-	{
-		id: 14,
-		name: "Flask-SQLAlchemy",
-		imgURL: "https://i.lensdump.com/i/EntD7.png",
-		info: "SQL Toolkit"
-	}
+  {
+    id: 13,
+    name: "Axios",
+    imgURL: "https://i.lensdump.com/i/EnDX5.md.gif",
+    info: "HTTP Client"
+  },
+  {
+    id: 14,
+    name: "Flask-SQLAlchemy",
+    imgURL: "https://i.lensdump.com/i/EntD7.png",
+    info: "SQL Toolkit"
+  }
 ]
