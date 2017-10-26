@@ -18,7 +18,9 @@ class MemberContainer extends React.Component {
             imgURL={member.imgURL}
             role={member.role}
             blurb={member.blurb}
+            responsibilities={member.responsibilities}
             commits={member.commits}
+            issues={member.issues}
             unittests={member.unittests}/>
         ))}
       </div>

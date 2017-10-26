@@ -10,11 +10,12 @@ class MemberCard extends React.Component {
       <div className="column">
         <img className={styles.img_member} src={this.props.imgURL} alt={this.props.name}></img>
         <p className={styles.member_name}>{this.props.name}</p>
-        <p className={styles.member_info}>{this.props.role}</p>
-        <p className={styles.member_info}>{this.props.blurb}</p>
-        <p className={styles.member_info}>{this.props.commits}</p>
-        <p className={styles.member_info}>{this.props.issues}</p>
-        <p className={styles.member_info}>{this.props.unittests}</p>
+        <div className={styles.member_role}>{this.props.role}</div>
+        <p className={styles.member_blurb}>{this.props.blurb}</p>
+        <p className={styles.member_responsibilities}>Major Responsibilities: {this.props.responsibilities}</p>
+        <div className={styles.member_responsibilities}>Commits: {this.props.commits}</div>
+        <div className={styles.member_responsibilities}>Issues: {this.props.issues}</div>
+        <div className={styles.member_responsibilities}>Unit tests: {this.props.unittests}</div>
       </div>
     );
   }
@@ -26,6 +27,7 @@ MemberCard.propTypes = {
   imgURL: PropTypes.string,
   role: PropTypes.string,
   blurb: PropTypes.string,
+  responsibilities: PropTypes.string,
   commits: PropTypes.string,
   issues: PropTypes.string,
   unittests: PropTypes.string
