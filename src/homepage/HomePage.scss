@@ -3,7 +3,7 @@
 }
 
 .splash {
-  background-image: url("./assets/images/splash.jpg");
+  background-image: url("./assets/images/splash.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,9 +26,12 @@
 
 .stats_info {
   font-size: 18px;
-  color: grey;
 }
 
 .about_container {
   text-align: center;
+}
+
+.motivation {
+	font-size: 18px;
 }

@@ -10,7 +10,18 @@
   object-fit: cover;
 }
 
-.member_info {
+.member_role {
+	font-size: 18px;
+	color: dimgrey;
+}
+
+
+.member_blurb {
   font-size: 18px;
-  color: grey;
+  color: dimgrey;
+	font-style: italic;
+}
+
+.member_responsibilities {
+	font-size: 18px;
 }
