@@ -40,10 +40,10 @@ class ThumbnailCard extends Component {
           {this.props.title}
         </div>
         <div className={styles.subInfo}>
-          <div>
+          <div className={styles.sub}>
             {this.props.subInfo_1}
           </div>
-          <div>
+          <div className={styles.sub}>
             {this.props.subInfo_2 || null}
           </div>
         </div>

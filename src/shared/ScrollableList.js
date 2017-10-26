@@ -6,6 +6,9 @@ import styles from './ScrollableList.scss';
 class ModalContent extends Component {
 
   render() {
+    if (this.props.data.length === 0) {
+      return null;
+    }
     return (
       <div className={styles.container}>
         <div className={styles.title}>

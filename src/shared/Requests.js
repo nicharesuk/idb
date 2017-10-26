@@ -23,7 +23,7 @@ export function getSingleModel (model, callback, number) {
   if        (model === "animes") {
     url = `api/${model}/${number}?include=characters,mangas`;
   } else if (model === "characters") {
-    url = `api/${model}/${number}?include=actors,animes`;
+    url = `api/${model}/${number}?include=actors,animes,mangas`;
   } else if (model === "actors") {
     url = `api/${model}/${number}?include=animes,characters`;
   } else if (model === "mangas") {
