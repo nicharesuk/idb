@@ -15,9 +15,6 @@ class ShowsPage extends Component {
   }
 
   render() {
-    if (!this.state.data) {
-      return <div></div>
-    }
     return (
       <ThumbnailPage
         type="animes"

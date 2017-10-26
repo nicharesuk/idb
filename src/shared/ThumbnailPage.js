@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './ThumbnailPage.scss';
 import ThumbnailCard from './ThumbnailCard';
 import PropTypes from 'prop-types';
-import { Modal } from 'semantic-ui-react';
+import { Modal, Loader } from 'semantic-ui-react';
 import ModalContent from './ModalContent';
 
 class ThumbnailPage extends Component {
@@ -25,6 +25,18 @@ class ThumbnailPage extends Component {
   }
 
   render() {
+    if (!this.props.data.length) {
+      return (
+        <div className={styles.loaderContainer}>
+          <Loader
+            size="massive"
+            active
+            inverted>
+            Loading
+          </Loader>
+        </div>
+      );
+    }
     return (
       <div className={styles.container}>
         <Modal
@@ -37,16 +49,16 @@ class ThumbnailPage extends Component {
             type={this.props.type}
             onClose={this.closeModalAction} />
         </Modal>
-        {this.props.data.map((show, index) => (
+        {this.props.data.map((instance, index) => (
           <div
             onClick={() => this.openModalAction(index)}
             key={`thumbnail-component-${index}`}>
             <ThumbnailCard
-              title={show.title}
-              picture={show.picture}
-              subInfo_1={show.subInfo_1}
-              subInfo_2={show.subInfo_2}
-              isManga={this.props.isManga}/>
+              title={instance.title}
+              picture={instance.picture}
+              score={instance.score}
+              subInfo_1={instance.subInfo_1}
+              subInfo_2={instance.subInfo_2} />
           </div>
         ))}
       </div>
