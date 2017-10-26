@@ -16,7 +16,15 @@
   align-content: flex-start;
 }
 
-.modal {
-  width: 100%;
+.loaderContainer {
+  background-color: #17181b;
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  height: 92%;
 }

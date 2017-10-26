@@ -27,3 +27,27 @@
   display: flex;
   justify-content: space-between;
 }
+
+.dim {
+  opacity: .3;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  width: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating {
+  padding-top: 10px;
+  color: #fff;
+}

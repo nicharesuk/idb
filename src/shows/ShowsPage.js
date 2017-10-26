@@ -15,12 +15,9 @@ class ShowsPage extends Component {
   }
 
   render() {
-    if (!this.state.data) {
-      return <div></div>
-    }
     return (
       <ThumbnailPage
-        type="shows"
+        type="animes"
         data={this.state.data.map(show => {
           return {
             ...show,

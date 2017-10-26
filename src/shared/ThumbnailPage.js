@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './ThumbnailPage.scss';
 import ThumbnailCard from './ThumbnailCard';
 import PropTypes from 'prop-types';
-import { Modal } from 'semantic-ui-react';
+import { Modal, Loader } from 'semantic-ui-react';
 import ModalContent from './ModalContent';
 
 class ThumbnailPage extends Component {
@@ -25,41 +25,40 @@ class ThumbnailPage extends Component {
   }
 
   render() {
-
-    const moreData = [
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-      ...this.props.data,
-    ];
-
+    if (!this.props.data.length) {
+      return (
+        <div className={styles.loaderContainer}>
+          <Loader
+            size="massive"
+            active
+            inverted>
+            Loading
+          </Loader>
+        </div>
+      );
+    }
     return (
       <div className={styles.container}>
         <Modal
-          basic
-          dimmer="blurring"
           className={styles.modal}
           open={this.state.modalOpen}
           onClose={this.closeModalAction}
           size="fullscreen">
           <ModalContent
-            dataObject={moreData[this.state.selectedIndex]}
+            dataObject={this.props.data[this.state.selectedIndex]}
             type={this.props.type}
             onClose={this.closeModalAction} />
         </Modal>
-        {moreData.map((show, index) => (
+        {this.props.data.map((instance, index) => (
           <div
             onClick={() => this.openModalAction(index)}
             key={`thumbnail-component-${index}`}>
             <ThumbnailCard
-              title={show.title}
-              picture={show.picture}
-              subInfo_1={show.subInfo_1}
-              subInfo_2={show.subInfo_2}
-              isManga={this.props.isManga}/>
+              title={instance.title}
+              picture={instance.picture}
+              score={instance.score}
+              subInfo_1={instance.subInfo_1}
+              subInfo_2={instance.subInfo_2} />
           </div>
         ))}
       </div>
