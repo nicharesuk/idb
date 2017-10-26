@@ -3,229 +3,2682 @@ HOST: https://weebmd.me/api
 
 # weebmd
 
-Weebmd is an anime search platform. You can search for current and past anime and manga, people in the industry, and characters from your favorite series.
+Weebmd is an anime search platform. You can search for current and past anime and manga, and characters and their voice actors from your favorite series.
 
 API path: https://weebmd.me/api
 
+In order to receive data from the API you must create a header for your request with "Accept" as the key and "application/vnd.api+json" as the value.
+
+This API was generated using Flask-Restless version 1.0.0b. For more information on the kinds of REST calls that are possible, see the Flask-Restless documentation: https://flask-restless.readthedocs.io/en/latest/requestformat.html 
+
 #Requests
 
-##Anime
+##Animes
 
-For a given anime you will be able to select an anime by id to recieve all relevant show information in json form. You can also get a list of all the characters, the main characters, or the staff of a given show. In addition to this, all studios relevant to production can be listed as well.
+For a given anime you can search by id to receive a show's information. You can also get separately all manga related to that show, all main characters in that show, and all voice actors who voice main characters in that show.
 
-##Manga
+##Mangas
 
-For a given manga you can select a manga by id to recieve all relevant information on the manga. You can also get a list of the all the characters, the main characters, or the staff of a given show. All relevant studios can be listed as well.
+For a given manga you can search by id to receive a manga's information. You can also get separately all anime related to that manga and all main characters that appear in that manga.
 
 ##Characters
 
-Searching for a character by id will yield the full character page, including biographical information, appearances in all media, and relevant voice actors.
+For a given character you can search by id to receive a character's information. You can also get separately all anime related to that character, all manga that character appears in, and all voice actors who voice that character.
 
-##People
+##Actors
 
-Searching a person by id will retrieve a full page of biographical information, past roles, and an image.
+For a given actor you can search by id to receive an actor's information. You can also get separately all anime that actor has been in and all characters that actor has voiced.
 
-### Anime [/anime]
+### Anime [/animes]
 
-#### Anime information [GET /anime/id]
++ Attributes 
+    + attributes
+        + aired (string) - When the showed aired
+        + genre (string) - A list of genres
+        + media_type (string) - Type of media, e.g. TV, movie
+        + num_episodes (number) - Number of total episodes
+        + picture (string) - A myanimelist hosted image link
+        + rating (string) - The content film rating
+        + score (number) - The shows average rating by myanimelist users
+        + source (string) - The format of the source material
+        + status (string) - Whether the show is currently airing or not
+        + synopsis (string) - Synopsis of the anime
+        + title (string) 
+        + youtube_id (string) - id string for the associated youtube trailer, follows "https://www.youtube.com/watch?v="
+    + id (string) - ID inside WeebMD's API and database
+    + links (string) - Link to its own API call
+    + relationships (array) - gives id and type of related characters, manga, and voice actors
+        + actors (object)
+            + data (array)
+                + id (string) - id of voice actor
+                + type (string) - type of data that it is, e.g. "actors"
+            + links (object)
+                + related (string) - link to related actors for this anime
+                + self (string) - link to this anime's actor relationships
+        + characters (object)
+            + data (array)
+                + id (string) - id of character
+                + type (string) - type of data that it is, e.g. "characters"
+            + links (object)
+                + related (string) - link to related characters for this anime
+                + self (string) - link to this anime's character relationships
+        + mangas (object)
+            + data (array)
+                + id (string) - id of manga
+                + type (string) - type of data that it is, e.g. "mangas"
+            + links (object)
+                + related (string) - link to related mangas for this anime
+                + self (string) - link to this anime's manga relationships
 
-+ Response 200 (application/json)
-[
-  {
-    "synopsis": "The seemingly ordinary and unimpressive Saitama has a rather unique hobby: being a hero. In order to pursue his childhood dream, he trained relentlessly for three years—and lost all of his hair in the process. Now, Saitama is incredibly powerful, so much so that no enemy is able to defeat him in battle. In fact, all it takes to defeat evildoers with just one punch has led to an unexpected problem—he is no longer able to enjoy the thrill of battling and has become quite bored. This all changes with the arrival of Genos, a 19-year-old cyborg, who wishes to be Saitama&#039;s disciple after seeing what he is capable of. Genos proposes that the two join the Hero Association in order to become certified heroes that will be recognized for their positive contributions to society, and Saitama, shocked that no one knows who he is, quickly agrees. And thus begins the story of One Punch Man, an action-comedy that follows an eccentric individual who longs to fight strong enemies that can hopefully give him the excitement he once felt and just maybe, he&#039;ll become popular in the process. [Written by MAL Rewrite]",
-    "title": "One Punch Man",
-    "image": "https://myanimelist.cdn-dena.com/images/anime/12/76049.jpg",
-    "type": "TV",
-    "episodes": 12,
-    "status": "Finished Airing",
-    "aired": "Oct 5, 2015 to Dec 21, 2015",
-    "source": "Web manga",
-    "genre": [
-      [
-        "1/Action",
-        "Action"
-      ],
-      [
-        "24/Sci-Fi",
-        "Sci-Fi"
-      ],
-      [
-        "4/Comedy",
-        "Comedy"
-      ],
-      [
-        "20/Parody",
-        "Parody"
-      ],
-      [
-        "31/Super_Power",
-        "Super Power"
-      ],
-      [
-        "37/Supernatural",
-        "Supernatural"
-      ],
-      [
-        "42/Seinen",
-        "Seinen"
-      ]
-    ],
-    "score": [
-      8.76,
-      518925
-    ],
-    "staff": [
-      {
-        "id": 111993,
-        "name_first": "",
-        "name_last": "ONE",
-        "language": "Japanese",
-        "image_url_lge": "https://cdn.anilist.co/img/dir/person/reg/16993-P1fq84JZLyeU.png",
-        "image_url_med": "https://cdn.anilist.co/img/dir/person/med/16993-P1fq84JZLyeU.png",
-        "link_id": 54478,
-        "role": "Original Story"
-      }
-    ]
-  }
-]
+#### Fetch Resource [GET /animes/{id}]
 
-#### List of characters [GET /anime/id/characters]
++ Parameters
+    + id (number) - id of the anime
+        + Default: 1
 
 + Response 200 (application/json)
 
-#### List of staff [GET /anime/id/staff]
-
-+ Response 200 (application/json)
-
-#### List of main characters [GET /anime/id/characters/main]
-
-+ Response 200 (application/json)
-
-#### List of studios [GET /anime/id/studios]
-
-+ Response 200 (application/json)
-        
-### Manga [/manga]
-
-#### Manga information [GET /manga/id]
-
-+ Response 200 (application/json)
 {
-  "synopsis": "After rigorously training for three years, the ordinary Saitama has gained immense strength which allows him to take out anyone and anything with just one punch. He decides to put his new skill to good use by becoming a hero. However, he quickly becomes bored with easily defeating monsters, and wants someone to give him a challenge to bring back the spark of being a hero. Upon bearing witness to Saitama&#039;s amazing power, Genos, a cyborg, is determined to become Saitama&#039;s apprentice. During this time, Saitama realizes he is neither getting the recognition that he deserves nor known by the people due to him not being a part of the Hero Association. Wanting to boost his reputation, Saitama decides to have Genos register with him, in exchange for taking him in as a pupil. Together, the two begin working their way up toward becoming true heroes, hoping to find strong enemies and earn respect in the process. [Written by MAL Rewrite]",
-  "title": "One Punch-Man",
-  "image": "https://myanimelist.cdn-dena.com/images/manga/3/80661.jpg",
-  "type": "Manga",
-  "volumes": "Unknown",
-  "status": "Publishing",
-  "published": "Jun  14, 2012 to ?",
-  "genre": [
-    [
-      "1/Action",
-      "Action"
-    ],
-    [
-      "4/Comedy",
-      "Comedy"
-    ],
-    [
-      "20/Parody",
-      "Parody"
-    ],
-    [
-      "24/Sci-Fi",
-      "Sci-Fi"
-    ],
-    [
-      "31/Super_Power",
-      "Super Power"
-    ],
-    [
-      "37/Supernatural",
-      "Supernatural"
-    ]
-  ],
-  "score": [
-    8.8,
-    59251
-  ],
-  "staff": [
-    {
-      "id": 96903,
-      "name_first": "Yusuke",
-      "name_last": "Murata",
-      "language": "Japanese",
-      "image_url_lge": "https://cdn.anilist.co/img/dir/person/reg/1903.jpg",
-      "image_url_med": "https://cdn.anilist.co/img/dir/person/med/1903.jpg",
-      "link_id": 57152,
-      "role": "Art"
-    }
-  ]
+    "data": {
+        "attributes": {
+            "aired": "Apr 3, 1998 to Apr 24, 1999",
+            "genre": "Action, Adventure, Comedy, Drama, Sci-Fi, Space",
+            "media_type": "TV",
+            "num_episodes": 26,
+            "picture": "https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg",
+            "rating": "R - 17+ (violence & profanity)",
+            "score": 8.81,
+            "status": "Finished Airing",
+            "synopsis": "In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as \"Cowboys.\" The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member's dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]",
+            "title": "Cowboy Bebop",
+            "youtube_id": "qig4KOK2R2g"
+        },
+        "id": "1",
+        "links": {
+            "self": "http://weebmd.me/api/animes/1"
+        },
+        "relationships": {
+            "actors": {
+                "data": [
+                    {
+                        "id": "8",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "3",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "6",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "2",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "7",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "1",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "5",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "4",
+                        "type": "actors"
+                    }
+                ],
+                "links": {
+                    "related": "/api/animes/1/actors",
+                    "self": "/api/animes/1/relationships/actors"
+                }
+            },
+            "characters": {
+                "data": [
+                    {
+                        "id": "4",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "3",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "2",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "1",
+                        "type": "characters"
+                    }
+                ],
+                "links": {
+                    "related": "/api/animes/1/characters",
+                    "self": "/api/animes/1/relationships/characters"
+                }
+            },
+            "mangas": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "mangas"
+                    }
+                ],
+                "links": {
+                    "related": "/api/animes/1/mangas",
+                    "self": "/api/animes/1/relationships/mangas"
+                }
+            }
+        },
+        "type": "animes"
+    },
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "self": "/api/animes"
+    },
+    "meta": {}
 }
 
-#### List of characters [GET /manga/id/characters]
+
++ Headers
+
+    Accept: application/vnd.api+json
+    
+#### Fetch Collection [GET /animes]
 
 + Response 200 (application/json)
 
-#### List of staff [GET /manga/id/staff]
-
-+ Response 200 (application/json)
-
-#### List of main characters [GET /manga/id/characters/main]
-
-+ Response 200 (application/json)
-
-#### List of studios [GET /manga/id/studios]
-
-+ Response 200 (application/json)
-        
-### Character [/character]
-
-#### Character information [GET /character/id]
-
-+ Response 200 (application/json)
 {
-  "about": "Race: Human\n Age: 25\n Height: 175 cm (5&#039;9\")\n Weight: 70 kg (154 lbs)\n Location: Z-City\n Abilities: Superhuman physical powers\n Occupation: Superhero\n Level: \n C-Class (Rank 388 - 342 - 5 - 1)\n B-Class (Rank 101 - 63 -33 - 7)\n A-Class (Rank 39)\n Affiliation: Hero Association\n Partner(s): Genos\n \n Saitama is the most powerful hero alive. Having apparently trained himself to superhuman condition, Saitama faces an existential crisis as he is now too powerful to gain any thrill from his heroic deeds.\n \n He is registered with the Heroes Association as a C-Class Superhero and is tasked to defend Z-City against Mysterious Beings.\n \n Saitama is usually deliberately drawn in a simpler style than other characters, with a very rounded head and only a simple mouth and eyes. When drawn in a more &#039;action-oriented&#039; style with more detail, Saitama is revealed to have sharp features, dangerous looking eyes, and chiseled musculature. His costume is a plain yellow jumpsuit with a short zipper at the collar and a belt. The costume is finished out by an ensemble of red boots and gloves, and a white cape.\n \n For a superhero, Saitama is rather laid back. Because even the mightiest foes pose no challenge to him, he doesn&#039;t take his hero work very seriously. In spite of this, he is constantly searching for an opponent that can challenge him, since his superhero work is beginning to bore him because it&#039;s too easy. The combination of his attitude, unstoppable strength, and distinctively simple and &#039;unimpressive&#039; appearance often cause his battles to become anticlimactic. Saitama will usually allow his opponents to rant about their motives and power up into their strongest forms before suddenly and nonchalantly obliterating them with one punch.\n \n (Source: One Punch-Man Wikia)\n\n",
-  "image": "https://myanimelist.cdn-dena.com/images/characters/11/294388.jpg",
-  "name": "Saitama ",
-  "name-japanese": "(サイタマ)",
-  "animeography": [
-    {
-      "name": "One Punch Man",
-      "link": "/anime/30276/One_Punch_Man",
-      "image": "https://myanimelist.cdn-dena.com/r/23x32/images/anime/12/76049.jpg?s=4ae2f65fd17ffe0ccdb410c5dd07f7f8"
-    }
-  ],
-  "mangaography": [
-    {
-      "name": "One Punch-Man",
-      "link": "/manga/44347/One_Punch-Man",
-      "image": "https://myanimelist.cdn-dena.com/r/23x32/images/manga/3/80661.jpg?s=3c4774583b1cbbca0aaa3a8ed0020533"
-    }
-  ],
-  "voice-actors": [
-    {
-      "name": "Chesman, Yuri",
-      "link": "/people/11521/Yuri_Chesman",
-      "image": "https://myanimelist.cdn-dena.com/images/voiceactors/3/34435v.jpg",
-      "language": "Brazilian"
-    }
-  ]
+    "data": {
+        "attributes": {
+            "aired": "Apr 3, 1998 to Apr 24, 1999",
+            "genre": "Action, Adventure, Comedy, Drama, Sci-Fi, Space",
+            "media_type": "TV",
+            "num_episodes": 26,
+            "picture": "https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg",
+            "rating": "R - 17+ (violence & profanity)",
+            "score": 8.81,
+            "status": "Finished Airing",
+            "synopsis": "In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as \"Cowboys.\" The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member's dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]",
+            "title": "Cowboy Bebop",
+            "youtube_id": "qig4KOK2R2g"
+        },
+        "id": "1",
+        "links": {
+            "self": "http://weebmd.me/api/animes/1"
+        },
+        "relationships": {
+            "actors": {
+                "data": [
+                    {
+                        "id": "8",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "3",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "6",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "2",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "7",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "1",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "5",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "4",
+                        "type": "actors"
+                    }
+                ],
+                "links": {
+                    "related": "/api/animes/1/actors",
+                    "self": "/api/animes/1/relationships/actors"
+                }
+            },
+            "characters": {
+                "data": [
+                    {
+                        "id": "4",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "3",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "2",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "1",
+                        "type": "characters"
+                    }
+                ],
+                "links": {
+                    "related": "/api/animes/1/characters",
+                    "self": "/api/animes/1/relationships/characters"
+                }
+            },
+            "mangas": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "mangas"
+                    }
+                ],
+                "links": {
+                    "related": "/api/animes/1/mangas",
+                    "self": "/api/animes/1/relationships/mangas"
+                }
+            }
+        },
+        "type": "animes"
+    },
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "self": "/api/animes"
+    },
+    "meta": {}
 }
 
-#### List of appearances [GET /character/id/media]
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+#### List Main Characters [GET /animes/{id}/characters]
+
++ Parameters
+    + id (number) - id of the anime
+        + Default: 1
+        
++ Response 200 (application/json)
+
+{
+    "data": [
+        {
+            "attributes": {
+                "about": "The self-invented personal name of an elite net-diver from Earth, hacker \"Radical Edward\" is a very strange, somewhat androgynous, teenage girl assumed to be around 13 years in age. She has a feral aspect reflected in her mannerisms, bare feet, strange postures and gangling walk.\n \n Ed could be considered a \"free spirit\"; she is fond of silly exclamations and childish rhymes, easily distracted, and the show's primary source of physical humor.\n \n Over the course of the show she rarely walks anywhere, preferring to run, crawl, flip, roll, walk on her hands, or even just saunter. Ed is always barefoot. In one episode, she considers putting on socks and shoes, but quickly removes them, as even wearing socks hampers her, and she falls over seconds after putting them on; she also appears to be exceptionally strong and flexible, being able to support her weight on her arms for several minutes at a time, and to scratch her nose with her toe.\n \n In the English version, she almost always refers to herself in the third person.\n \n Not much is known about her origins, only that she spent some of her earlier childhood in an orphanage after being left there by her father, a man named Afedersiniz Hesap L&uuml;tfen (he calls Ed \"Fran&ccedil;oise\", and may be of Turkish origin as his name means \"excuse me, check please\" in Turkish). In the manga it is revealed that she was a friend of a timid young boy in the orphanage known simply as \"Tomato\" (which also happens to be the brand name scrawled in katakana on her PC) who, like Ed, knew a great deal about computers and the net, and it is probably safe to assume that his friendship with Ed helped turn her into the genius-hacker she is today.\n \n Ed's primary use to the Bebop crew is as a hacker; she is widely known to be a whiz kid behind a computer. Ed's computer of choice is a carry-along Tomato desktop, an homage to the portable flatpanel-outfitted Apple IIc from the 80s, and when traveling by foot she will balance it on her head.\n \n Ed has a strong rapport with Jet, who acts as a surrogate father, and Faye, who acts as something of a big sister (much to Faye's chagrin). Ed also seems to be the only person who can understand Ein (though in a few instances Jet could understand Ein also).\n\n",
+                "japanese_name": "(エドワード・ウォン・ハウ・ペペル・チブルスキー4世)",
+                "name": "Edward Wong Hau Pepelu Tivrusky IV",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/characters/1"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "1",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/actors",
+                        "self": "/api/characters/1/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/animes",
+                        "self": "/api/characters/1/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/mangas",
+                        "self": "/api/characters/1/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        },
+        {
+            "attributes": {
+                "about": "Faye Valentine\n Birthday: August 14, 1994\n \n One of the members of the bounty hunting crew in the anime series Cowboy Bebop. Often seen with a cigarette and in a revealing outfit complete with bright yellow hot pants and a matching, revealing top, black suspenders, white boots, and a long-sleeved red shirt worn normally through the sleeves, not to mention her signature headband, she is unusually attractive, sporting a bob of violet hair, green eyes, fair skin, and a voluptuous body. Although appearing to be no more than her 23 years alive suggests, Faye is actually upwards of 74-years-old, having been put into cryogenic freeze after a space shuttle accident. During the course of the series (set in 2071), Faye manages to cross paths with Spike and Jet twice before she finally makes herself at home aboard their ship the second time, much to the consternation and disapproval of the two men, both of whom have their own reservations about women in general. Faye herself is brash, egotistical, and quite lazy, despite taking plenty of time to pamper and care for her own appearance. Faye has also been placed under arrest several times in the series and spends much time in handcuffs on the ship. She, at times, expects the boys to take care of bounties for her, while she sits by idly to reap the benefits and eat all their food, another source of conflict.\n \n Seemingly little more than a thorn in her partners&rsquo; sides, Faye is actually a well-rounded member of the team. She can handle herself exceptionally well for a woman of her slight appearance, displaying at least once in the series (in \"Cowboy Funk\") that she packs quite a mean punch. Adept at flying, Faye has stood her ground just as well as Spike has in an aerial dogfight in her ship Red Tail, at times even against Spike in an aerial dogfight. She also excels with guns, and is first seen in the series completely disabling a ship with a Heckler & Koch MP5, though she is immediately apprehended afterward. In the movie, she is seen with the same gun, in addition to her normal companion: a Glock 30. Where Faye really shines, however, is with her mouth. She has an almost unstoppable attitude, and even her sometimes innocent smile can be seen as dangerous. Sarcastic and presumptuous, she rarely appears weak or in need of support. She brags and takes care of herself, never trusting others, cheating and lying her way from one day to the next.\n \n  She is a woman who is skilled at getting what she wants; however, her indomitable exterior hides a more delicate interior. Upon awakening from her 54-year cryogenic sleep, not only was she saddled with a massive amount of debt that she had no means to pay, but she was also diagnosed with total amnesia, a stranger in a mysterious world that she was not a part of and did not understand, surrounded by people who claimed to be helping her but were only there to take advantage of her naivet&eacute;. The surname \"Valentine\" was merely a name given to her by the doctor who woke her; the circumstances of her accident, her previous life, and even her real name all remain a mystery, and are only gradually revealed as the series progresses. It has been hinted that she came from Singapore on Earth, and was the daughter of a very wealthy family, as the city's famous Merlion Statue features prominently in scenes of her childhood, and that memories and a film from her childhood showed her living in a large mansion. In an early episode, she states that she is descended from Roma people, but she may well have been lying. Utterly betrayed by someone she thought she could trust after waking, Faye found herself burdened with even more money to pay, and the situation resulted in the hardening of her personality to an extreme degree. She even says in Session 11: &ldquo;we deceive or we are deceived&rdquo;, and that &ldquo;nothing good ever happened to me when I trusted others.&rdquo; \n Throughout the series, though she retains her sarcastic demeanor and unpleasant nature up until the very end, it is easy to see her grow as a character. She learns to value her comrades, coming back to the Bebop when she realizes that it is the only home that she has left, naming it as the &ldquo;only place I could return to&rdquo;. She grows to understand the disadvantages of being a loner, and that even though her \"family\" is somewhat dysfunctional it is still a place where she will always belong.\n \n\n",
+                "japanese_name": "(フェイ・バレンタイン)",
+                "name": "Faye Valentine",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/15/264961.jpg"
+            },
+            "id": "2",
+            "links": {
+                "self": "http://weebmd.me/api/characters/2"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "4",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "3",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/2/actors",
+                        "self": "/api/characters/2/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/2/animes",
+                        "self": "/api/characters/2/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/2/mangas",
+                        "self": "/api/characters/2/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        },
+        {
+            "attributes": {
+                "about": "Jet, known on his home satellite as the \"Black Dog\" for his tenacity, is a 36-year-old former cop from Ganymede (a Jovian satellite) and acts as Spike's foil during the series. Physically, Jet is very tall with a muscular build. He wears a beard with no mustache, and is completely bald save for the back of his head. Spike acts lazy and uninterested, whereas Jet is hard working and a jack-of-all-trades. Jet was once an investigator in the Inter Solar System Police (ISSP) for many years until he lost his arm in an investigation that went awry when his corrupt partner (and friend at the time) betrayed him. His arm was replaced with a cybernetic limb (later revealed to be by choice, as biological replacements were possible, he wanted the fake arm as a reminder of what happened), yet his loss of limb coupled with the general corruption of the police force prompted Jet to quit the ISSP in disgust and become a freelance bounty hunter. Jet also considers himself something of a renaissance man: he cultivates bonsai trees, cooks, enjoys jazz/blues music (he named his ship the Bebop, referring to a type of jazz), especially Charlie Parker, and even has interest in Goethe. As a character, Jet is the quintessential oyaji or \"dad\" even though he often wishes people would view him as a more brotherly figure (so as not to seem old).\n \n Jet is skilled with handguns, typically carrying a pre-2004 Walther P99, as well as the use of the netgun. He is good with hand to hand combat as well. Unlike Spike, Jet tends to use more raw muscle than technique. He is also a great mechanic and pilot. Aside from the converted interplanetary fishing trawler vessel Bebop, Jet flies a smaller ship called Hammerhead. The Hammerhead appears to be a modified (Jet added larger engines and fuel tanks) salvage-craft that uses a mechanical arm equipped with a harpoon as its main weapon, which is somewhat analogous to his own mechanical arm. Both the Hammerhead and the Bebop are able to land on water, and have a fishing theme, most likely because Ganymede's surface is mostly covered with water (it is later revealed that the Bebop was originally a fishing ship that Jet \"customized\" with larger engines).\n \n During the series, it is revealed that Jet once lived with a woman named Alisa, who left him because he was too controlling. Later they meet up again when Alisa's new boyfriend Rhint is wanted for murder. Jet then ends up in a situation somewhat similar to that of Vicious, where he must hunt down a woman who broke his heart, and her lover.\n \n In a later episode, another Vicious/Spike parallel is set up when Jet finds out that it was his old partner Fad who betrayed him (though in Jet's case, there was no love affair involved). Fad arranged for Jet's death in a setup, but he survived with only a missing arm and a scar on his face. It is worth noting that Jet managed to face the demons of his past and let them go, in contrast to Spike, who was killed when he confronted his. This is likely due to the contrast in the two approaches to the past. While Spike hid and fled from his past, Jet tracked it down and confronted it.\n\n",
+                "japanese_name": "(ジェット・ブラック)",
+                "name": "Jet Black",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/11/253723.jpg"
+            },
+            "id": "3",
+            "links": {
+                "self": "http://weebmd.me/api/characters/3"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "5",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "6",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/3/actors",
+                        "self": "/api/characters/3/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/3/animes",
+                        "self": "/api/characters/3/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/3/mangas",
+                        "self": "/api/characters/3/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        },
+        {
+            "attributes": {
+                "about": "Birthdate: June 26, 2044\n Height: 185 cm (6' 1\")\n Weight: 70 kg (155 lbs)\n Blood type: O\n Planet of Origin: Mars\n \n Spike Spiegel is a tall and lean 27-year-old bounty hunter born on Mars. The inspiration for Spike is found in martial artist Bruce Lee who uses the martial arts style of Jeet Kune Do as depicted in Session 8, \"Waltz For Venus\". He has fluffy, dark green hair (which is inspired by Yusaku Matsuda's) and reddish brown eyes, one of which is artificial and lighter than the other. He is usually dressed in a blue leisure suit, with a yellow shirt and Lupin III inspired boots. A flashback in Session 6 revealed it was his fully functioning right eye which was surgically replaced by the cybernetic one (although Spike himself may not have conscious recollection of the procedure since he claims to have lost his natural eye in an \"accident\"). One theory is that his natural eye may have been lost during the pre-series massacre in which he supposedly \"died\". The purpose of this cybernetic eye is never explicitly stated, though it apparently gives him exceptional hand-eye coordination - particularly with firearms (Spike's gun of choice is a Jericho 941, as seen throughout the series). In the first episode, when facing a bounty-head using Red Eye, Spike mocks him, calling his moves \"too slow\". At first, this seems like posturing on Spike's part, but even with his senses and reflexes accelerated to superhuman levels by the drug, the bounty cannot even touch Spike. A recurring device throughout the entire show is a closeup on Spike's fully-natural left eye before dissolving to a flashback of his life as part of the syndicate. As said by Spike himself in the last episode, his right eye \"only sees the present\" and his left eye \"only sees the past.\" Spike often has a bent cigarette between his lips, sometimes despite rain or \"No Smoking\" signs.\n\n",
+                "japanese_name": "(スパイク・スピーゲル)",
+                "name": "Spike Spiegel",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/4/50197.jpg"
+            },
+            "id": "4",
+            "links": {
+                "self": "http://weebmd.me/api/characters/4"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "7",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "8",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/4/actors",
+                        "self": "/api/characters/4/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/4/animes",
+                        "self": "/api/characters/4/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/4/mangas",
+                        "self": "/api/characters/4/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/animes/1/characters?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/animes/1/characters?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/animes"
+    },
+    "meta": {
+        "total": 4
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+
+#### List Actors [GET /animes/{id}/actors]
+
++ Parameters
+    + id (number) - id of the anime
+        + Default: 1
 
 + Response 200 (application/json)
 
-#### List of actors [GET /character/id/actors]
+{
+    "data": [
+        {
+            "attributes": {
+                "birthday": "Apr  28, 1973",
+                "given_name": null,
+                "language": "English",
+                "name": "Fahn, Melissa",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg",
+                "website": "http://www.melissafahn.com/"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/actors/1"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/1/animes",
+                        "self": "/api/actors/1/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/1/characters",
+                        "self": "/api/actors/1/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Jul  3, 1981",
+                "given_name": "葵",
+                "language": "Japanese",
+                "name": "Tada, Aoi",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/27665.jpg",
+                "website": "http://yaplog.jp/tada_aoi/"
+            },
+            "id": "2",
+            "links": {
+                "self": "http://weebmd.me/api/actors/2"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/2/animes",
+                        "self": "/api/actors/2/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/2/characters",
+                        "self": "/api/actors/2/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Feb  20, 1960",
+                "given_name": null,
+                "language": "English",
+                "name": "Lee, Wendee",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/35525.jpg",
+                "website": "http://www.wendeelee.com/"
+            },
+            "id": "3",
+            "links": {
+                "self": "http://weebmd.me/api/actors/3"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/3/animes",
+                        "self": "/api/actors/3/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/3/characters",
+                        "self": "/api/actors/3/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Mar  30, 1967",
+                "given_name": "めぐみ",
+                "language": "Japanese",
+                "name": "Hayashibara, Megumi",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/40734.jpg",
+                "website": "http://www.starchild.co.jp/artist/hayashi/index.html"
+            },
+            "id": "4",
+            "links": {
+                "self": "http://weebmd.me/api/actors/4"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/4/animes",
+                        "self": "/api/actors/4/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/4/characters",
+                        "self": "/api/actors/4/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Sep  1, 1953",
+                "given_name": null,
+                "language": "English",
+                "name": "Billingslea, Beau",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/43568.jpg",
+                "website": null
+            },
+            "id": "5",
+            "links": {
+                "self": "http://weebmd.me/api/actors/5"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/5/animes",
+                        "self": "/api/actors/5/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "3",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/5/characters",
+                        "self": "/api/actors/5/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "May  16, 1951",
+                "given_name": "運昇",
+                "language": "Japanese",
+                "name": "Ishizuka, Unshou",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/17135.jpg",
+                "website": "http://www.aoni.co.jp/actor/a/ishizuka-unsho.html"
+            },
+            "id": "6",
+            "links": {
+                "self": "http://weebmd.me/api/actors/6"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/6/animes",
+                        "self": "/api/actors/6/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "3",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/6/characters",
+                        "self": "/api/actors/6/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Jun  17, 1961",
+                "given_name": "宏一",
+                "language": "Japanese",
+                "name": "Yamadera, Kouichi",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/44674.jpg",
+                "website": "http://across-ent.com/talent/men/koichi_yamadera.html"
+            },
+            "id": "7",
+            "links": {
+                "self": "http://weebmd.me/api/actors/7"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/7/animes",
+                        "self": "/api/actors/7/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "4",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/7/characters",
+                        "self": "/api/actors/7/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Apr  29, 1960",
+                "given_name": null,
+                "language": "English",
+                "name": "Blum, Steven",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/45741.jpg",
+                "website": "http://www.steveblumvoices.com"
+            },
+            "id": "8",
+            "links": {
+                "self": "http://weebmd.me/api/actors/8"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/8/animes",
+                        "self": "/api/actors/8/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "4",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/8/characters",
+                        "self": "/api/actors/8/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/animes/1/actors?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/animes/1/actors?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/animes"
+    },
+    "meta": {
+        "total": 8
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+#### List Mangas [GET /animes/{id}/mangas]
+
++ Parameters
+    + id (number) - id of the anime
+        + Default: 1
 
 + Response 200 (application/json)
 
-### People [/people]
+{
+    "data": [
+        {
+            "attributes": {
+                "author": "Kuga, Cain",
+                "genre": "Action, Adventure, Comedy, Sci-Fi, Shoujo",
+                "media_type": "Manga",
+                "num_chapters": 10,
+                "picture": "https://myanimelist.cdn-dena.com/images/manga/3/176770.jpg",
+                "published": "May  1, 1998 to Oct  10, 1998",
+                "score": 6.87,
+                "status": "Finished",
+                "synopsis": "Kai Lucas hires the Bebop crew to find his mischievous doppelganger, but the bounty goes bust and Spike and Jet once again find themselves broke - and hungry. And to add to their woes, Spike ends up mysteriously on the police's most wanted list, either the butt of a joke or the victim of a severe computer glitch. But what's worse, being targeted by every bounty hunter in the solar system, or taking on a kid-genius, a genius puppy and a genus: fatale, species: femme as part of the crew. Well, if Scorpion or the Dragon Head Family doesn't kill them, the extra mouths to feed certainly will. (Source: Tokyopop)",
+                "title": "Shooting Star Bebop: Cowboy Bebop",
+                "title_english": "Cowboy Bebop: Shooting Star",
+                "title_japanese": "シューティングスタービバップ―カウボーイビバップ"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/mangas/1"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/mangas/1/animes",
+                        "self": "/api/mangas/1/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "4",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "3",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/mangas/1/characters",
+                        "self": "/api/mangas/1/relationships/characters"
+                    }
+                }
+            },
+            "type": "mangas"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/animes/1/mangas?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/animes/1/mangas?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/animes"
+    },
+    "meta": {
+        "total": 1
+    }
+}
 
-#### Person information [GET /person/id]
++ Headers
+
+    Accept: application/vnd.api+json
+        
+### Manga [/mangas]
+
++ Attributes 
+    + attributes (object)
+        + author (string)
+        + genre (string) - A list of genres
+        + media_type (string) - Type of media, e.g. TV, movie, manga
+        + num_chapters (number) - Number of total chapters
+        + picture (string) - A myanimelist hosted image link
+        + published (string) - Time period during which the manga was published
+        + score (number) - The mangas average rating by myanimelist users
+        + source (string) - The format of the source material
+        + status (string) - Whether the manga is currently ongoing
+        + synopsis (string) - Synopsis of the manga
+        + title (string) 
+        + title_english (string) 
+        + title_japanese (string) 
+    + id (string) - ID inside WeebMD's API and database
+    + links (string) - Link to its own API call
+    + relationships (array) - gives id and type of related animes and characters
+        + animes (object)
+            + data (array)
+                + id (string) - id of anime
+                + type (string) - type of data that it is, e.g. "anime"
+            + links (object)
+                + related (string) - link to related anime for this manga
+                + self (string) - link to this manga's anime relationships
+        + characters (object)
+            + data (array)
+                + id (string) - id of character
+                + type (string) - type of data that it is, e.g. "characters"
+            + links (object)
+                + related (string) - link to related characters for this manga
+                + self (string) - link to this manga's character relationships
+        
+
+#### Fetch Resource [GET /mangas/{id}]
+
++ Parameters
+    + id (number) - id of the manga
+        + Default: 1
 
 + Response 200 (application/json)
 
-#### Past work [GET /person/id/work]
+{
+    "data": {
+        "attributes": {
+            "author": "Kuga, Cain",
+            "genre": "Action, Adventure, Comedy, Sci-Fi, Shoujo",
+            "media_type": "Manga",
+            "num_chapters": 10,
+            "picture": "https://myanimelist.cdn-dena.com/images/manga/3/176770.jpg",
+            "published": "May  1, 1998 to Oct  10, 1998",
+            "score": 6.87,
+            "status": "Finished",
+            "synopsis": "Kai Lucas hires the Bebop crew to find his mischievous doppelganger, but the bounty goes bust and Spike and Jet once again find themselves broke - and hungry. And to add to their woes, Spike ends up mysteriously on the police's most wanted list, either the butt of a joke or the victim of a severe computer glitch. But what's worse, being targeted by every bounty hunter in the solar system, or taking on a kid-genius, a genius puppy and a genus: fatale, species: femme as part of the crew. Well, if Scorpion or the Dragon Head Family doesn't kill them, the extra mouths to feed certainly will. (Source: Tokyopop)",
+            "title": "Shooting Star Bebop: Cowboy Bebop",
+            "title_english": "Cowboy Bebop: Shooting Star",
+            "title_japanese": "シューティングスタービバップ―カウボーイビバップ"
+        },
+        "id": "1",
+        "links": {
+            "self": "http://weebmd.me/api/mangas/1"
+        },
+        "relationships": {
+            "animes": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "animes"
+                    }
+                ],
+                "links": {
+                    "related": "/api/mangas/1/animes",
+                    "self": "/api/mangas/1/relationships/animes"
+                }
+            },
+            "characters": {
+                "data": [
+                    {
+                        "id": "2",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "4",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "3",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "1",
+                        "type": "characters"
+                    }
+                ],
+                "links": {
+                    "related": "/api/mangas/1/characters",
+                    "self": "/api/mangas/1/relationships/characters"
+                }
+            }
+        },
+        "type": "mangas"
+    },
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "self": "/api/mangas"
+    },
+    "meta": {}
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+#### Fetch Collection [GET /mangas]
 
 + Response 200 (application/json)
+
+{
+    "data": {
+        "attributes": {
+            "author": "Kuga, Cain",
+            "genre": "Action, Adventure, Comedy, Sci-Fi, Shoujo",
+            "media_type": "Manga",
+            "num_chapters": 10,
+            "picture": "https://myanimelist.cdn-dena.com/images/manga/3/176770.jpg",
+            "published": "May  1, 1998 to Oct  10, 1998",
+            "score": 6.87,
+            "status": "Finished",
+            "synopsis": "Kai Lucas hires the Bebop crew to find his mischievous doppelganger, but the bounty goes bust and Spike and Jet once again find themselves broke - and hungry. And to add to their woes, Spike ends up mysteriously on the police's most wanted list, either the butt of a joke or the victim of a severe computer glitch. But what's worse, being targeted by every bounty hunter in the solar system, or taking on a kid-genius, a genius puppy and a genus: fatale, species: femme as part of the crew. Well, if Scorpion or the Dragon Head Family doesn't kill them, the extra mouths to feed certainly will. (Source: Tokyopop)",
+            "title": "Shooting Star Bebop: Cowboy Bebop",
+            "title_english": "Cowboy Bebop: Shooting Star",
+            "title_japanese": "シューティングスタービバップ―カウボーイビバップ"
+        },
+        "id": "1",
+        "links": {
+            "self": "http://weebmd.me/api/mangas/1"
+        },
+        "relationships": {
+            "animes": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "animes"
+                    }
+                ],
+                "links": {
+                    "related": "/api/mangas/1/animes",
+                    "self": "/api/mangas/1/relationships/animes"
+                }
+            },
+            "characters": {
+                "data": [
+                    {
+                        "id": "2",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "4",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "3",
+                        "type": "characters"
+                    },
+                    {
+                        "id": "1",
+                        "type": "characters"
+                    }
+                ],
+                "links": {
+                    "related": "/api/mangas/1/characters",
+                    "self": "/api/mangas/1/relationships/characters"
+                }
+            }
+        },
+        "type": "mangas"
+    },
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "self": "/api/mangas"
+    },
+    "meta": {}
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+#### List Main Characters [GET /mangas/{id}/characters]
+
++ Parameters
+    + id (number) - id of the manga
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": [
+        {
+            "attributes": {
+                "about": "The self-invented personal name of an elite net-diver from Earth, hacker \"Radical Edward\" is a very strange, somewhat androgynous, teenage girl assumed to be around 13 years in age. She has a feral aspect reflected in her mannerisms, bare feet, strange postures and gangling walk.\n \n Ed could be considered a \"free spirit\"; she is fond of silly exclamations and childish rhymes, easily distracted, and the show's primary source of physical humor.\n \n Over the course of the show she rarely walks anywhere, preferring to run, crawl, flip, roll, walk on her hands, or even just saunter. Ed is always barefoot. In one episode, she considers putting on socks and shoes, but quickly removes them, as even wearing socks hampers her, and she falls over seconds after putting them on; she also appears to be exceptionally strong and flexible, being able to support her weight on her arms for several minutes at a time, and to scratch her nose with her toe.\n \n In the English version, she almost always refers to herself in the third person.\n \n Not much is known about her origins, only that she spent some of her earlier childhood in an orphanage after being left there by her father, a man named Afedersiniz Hesap L&uuml;tfen (he calls Ed \"Fran&ccedil;oise\", and may be of Turkish origin as his name means \"excuse me, check please\" in Turkish). In the manga it is revealed that she was a friend of a timid young boy in the orphanage known simply as \"Tomato\" (which also happens to be the brand name scrawled in katakana on her PC) who, like Ed, knew a great deal about computers and the net, and it is probably safe to assume that his friendship with Ed helped turn her into the genius-hacker she is today.\n \n Ed's primary use to the Bebop crew is as a hacker; she is widely known to be a whiz kid behind a computer. Ed's computer of choice is a carry-along Tomato desktop, an homage to the portable flatpanel-outfitted Apple IIc from the 80s, and when traveling by foot she will balance it on her head.\n \n Ed has a strong rapport with Jet, who acts as a surrogate father, and Faye, who acts as something of a big sister (much to Faye's chagrin). Ed also seems to be the only person who can understand Ein (though in a few instances Jet could understand Ein also).\n\n",
+                "japanese_name": "(エドワード・ウォン・ハウ・ペペル・チブルスキー4世)",
+                "name": "Edward Wong Hau Pepelu Tivrusky IV",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/characters/1"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "2",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/actors",
+                        "self": "/api/characters/1/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/animes",
+                        "self": "/api/characters/1/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/mangas",
+                        "self": "/api/characters/1/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        },
+        {
+            "attributes": {
+                "about": "Faye Valentine\n Birthday: August 14, 1994\n \n One of the members of the bounty hunting crew in the anime series Cowboy Bebop. Often seen with a cigarette and in a revealing outfit complete with bright yellow hot pants and a matching, revealing top, black suspenders, white boots, and a long-sleeved red shirt worn normally through the sleeves, not to mention her signature headband, she is unusually attractive, sporting a bob of violet hair, green eyes, fair skin, and a voluptuous body. Although appearing to be no more than her 23 years alive suggests, Faye is actually upwards of 74-years-old, having been put into cryogenic freeze after a space shuttle accident. During the course of the series (set in 2071), Faye manages to cross paths with Spike and Jet twice before she finally makes herself at home aboard their ship the second time, much to the consternation and disapproval of the two men, both of whom have their own reservations about women in general. Faye herself is brash, egotistical, and quite lazy, despite taking plenty of time to pamper and care for her own appearance. Faye has also been placed under arrest several times in the series and spends much time in handcuffs on the ship. She, at times, expects the boys to take care of bounties for her, while she sits by idly to reap the benefits and eat all their food, another source of conflict.\n \n Seemingly little more than a thorn in her partners&rsquo; sides, Faye is actually a well-rounded member of the team. She can handle herself exceptionally well for a woman of her slight appearance, displaying at least once in the series (in \"Cowboy Funk\") that she packs quite a mean punch. Adept at flying, Faye has stood her ground just as well as Spike has in an aerial dogfight in her ship Red Tail, at times even against Spike in an aerial dogfight. She also excels with guns, and is first seen in the series completely disabling a ship with a Heckler & Koch MP5, though she is immediately apprehended afterward. In the movie, she is seen with the same gun, in addition to her normal companion: a Glock 30. Where Faye really shines, however, is with her mouth. She has an almost unstoppable attitude, and even her sometimes innocent smile can be seen as dangerous. Sarcastic and presumptuous, she rarely appears weak or in need of support. She brags and takes care of herself, never trusting others, cheating and lying her way from one day to the next.\n \n  She is a woman who is skilled at getting what she wants; however, her indomitable exterior hides a more delicate interior. Upon awakening from her 54-year cryogenic sleep, not only was she saddled with a massive amount of debt that she had no means to pay, but she was also diagnosed with total amnesia, a stranger in a mysterious world that she was not a part of and did not understand, surrounded by people who claimed to be helping her but were only there to take advantage of her naivet&eacute;. The surname \"Valentine\" was merely a name given to her by the doctor who woke her; the circumstances of her accident, her previous life, and even her real name all remain a mystery, and are only gradually revealed as the series progresses. It has been hinted that she came from Singapore on Earth, and was the daughter of a very wealthy family, as the city's famous Merlion Statue features prominently in scenes of her childhood, and that memories and a film from her childhood showed her living in a large mansion. In an early episode, she states that she is descended from Roma people, but she may well have been lying. Utterly betrayed by someone she thought she could trust after waking, Faye found herself burdened with even more money to pay, and the situation resulted in the hardening of her personality to an extreme degree. She even says in Session 11: &ldquo;we deceive or we are deceived&rdquo;, and that &ldquo;nothing good ever happened to me when I trusted others.&rdquo; \n Throughout the series, though she retains her sarcastic demeanor and unpleasant nature up until the very end, it is easy to see her grow as a character. She learns to value her comrades, coming back to the Bebop when she realizes that it is the only home that she has left, naming it as the &ldquo;only place I could return to&rdquo;. She grows to understand the disadvantages of being a loner, and that even though her \"family\" is somewhat dysfunctional it is still a place where she will always belong.\n \n\n",
+                "japanese_name": "(フェイ・バレンタイン)",
+                "name": "Faye Valentine",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/15/264961.jpg"
+            },
+            "id": "2",
+            "links": {
+                "self": "http://weebmd.me/api/characters/2"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "3",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "4",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/2/actors",
+                        "self": "/api/characters/2/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/2/animes",
+                        "self": "/api/characters/2/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/2/mangas",
+                        "self": "/api/characters/2/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        },
+        {
+            "attributes": {
+                "about": "Jet, known on his home satellite as the \"Black Dog\" for his tenacity, is a 36-year-old former cop from Ganymede (a Jovian satellite) and acts as Spike's foil during the series. Physically, Jet is very tall with a muscular build. He wears a beard with no mustache, and is completely bald save for the back of his head. Spike acts lazy and uninterested, whereas Jet is hard working and a jack-of-all-trades. Jet was once an investigator in the Inter Solar System Police (ISSP) for many years until he lost his arm in an investigation that went awry when his corrupt partner (and friend at the time) betrayed him. His arm was replaced with a cybernetic limb (later revealed to be by choice, as biological replacements were possible, he wanted the fake arm as a reminder of what happened), yet his loss of limb coupled with the general corruption of the police force prompted Jet to quit the ISSP in disgust and become a freelance bounty hunter. Jet also considers himself something of a renaissance man: he cultivates bonsai trees, cooks, enjoys jazz/blues music (he named his ship the Bebop, referring to a type of jazz), especially Charlie Parker, and even has interest in Goethe. As a character, Jet is the quintessential oyaji or \"dad\" even though he often wishes people would view him as a more brotherly figure (so as not to seem old).\n \n Jet is skilled with handguns, typically carrying a pre-2004 Walther P99, as well as the use of the netgun. He is good with hand to hand combat as well. Unlike Spike, Jet tends to use more raw muscle than technique. He is also a great mechanic and pilot. Aside from the converted interplanetary fishing trawler vessel Bebop, Jet flies a smaller ship called Hammerhead. The Hammerhead appears to be a modified (Jet added larger engines and fuel tanks) salvage-craft that uses a mechanical arm equipped with a harpoon as its main weapon, which is somewhat analogous to his own mechanical arm. Both the Hammerhead and the Bebop are able to land on water, and have a fishing theme, most likely because Ganymede's surface is mostly covered with water (it is later revealed that the Bebop was originally a fishing ship that Jet \"customized\" with larger engines).\n \n During the series, it is revealed that Jet once lived with a woman named Alisa, who left him because he was too controlling. Later they meet up again when Alisa's new boyfriend Rhint is wanted for murder. Jet then ends up in a situation somewhat similar to that of Vicious, where he must hunt down a woman who broke his heart, and her lover.\n \n In a later episode, another Vicious/Spike parallel is set up when Jet finds out that it was his old partner Fad who betrayed him (though in Jet's case, there was no love affair involved). Fad arranged for Jet's death in a setup, but he survived with only a missing arm and a scar on his face. It is worth noting that Jet managed to face the demons of his past and let them go, in contrast to Spike, who was killed when he confronted his. This is likely due to the contrast in the two approaches to the past. While Spike hid and fled from his past, Jet tracked it down and confronted it.\n\n",
+                "japanese_name": "(ジェット・ブラック)",
+                "name": "Jet Black",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/11/253723.jpg"
+            },
+            "id": "3",
+            "links": {
+                "self": "http://weebmd.me/api/characters/3"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "5",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "6",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/3/actors",
+                        "self": "/api/characters/3/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/3/animes",
+                        "self": "/api/characters/3/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/3/mangas",
+                        "self": "/api/characters/3/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        },
+        {
+            "attributes": {
+                "about": "Birthdate: June 26, 2044\n Height: 185 cm (6' 1\")\n Weight: 70 kg (155 lbs)\n Blood type: O\n Planet of Origin: Mars\n \n Spike Spiegel is a tall and lean 27-year-old bounty hunter born on Mars. The inspiration for Spike is found in martial artist Bruce Lee who uses the martial arts style of Jeet Kune Do as depicted in Session 8, \"Waltz For Venus\". He has fluffy, dark green hair (which is inspired by Yusaku Matsuda's) and reddish brown eyes, one of which is artificial and lighter than the other. He is usually dressed in a blue leisure suit, with a yellow shirt and Lupin III inspired boots. A flashback in Session 6 revealed it was his fully functioning right eye which was surgically replaced by the cybernetic one (although Spike himself may not have conscious recollection of the procedure since he claims to have lost his natural eye in an \"accident\"). One theory is that his natural eye may have been lost during the pre-series massacre in which he supposedly \"died\". The purpose of this cybernetic eye is never explicitly stated, though it apparently gives him exceptional hand-eye coordination - particularly with firearms (Spike's gun of choice is a Jericho 941, as seen throughout the series). In the first episode, when facing a bounty-head using Red Eye, Spike mocks him, calling his moves \"too slow\". At first, this seems like posturing on Spike's part, but even with his senses and reflexes accelerated to superhuman levels by the drug, the bounty cannot even touch Spike. A recurring device throughout the entire show is a closeup on Spike's fully-natural left eye before dissolving to a flashback of his life as part of the syndicate. As said by Spike himself in the last episode, his right eye \"only sees the present\" and his left eye \"only sees the past.\" Spike often has a bent cigarette between his lips, sometimes despite rain or \"No Smoking\" signs.\n\n",
+                "japanese_name": "(スパイク・スピーゲル)",
+                "name": "Spike Spiegel",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/4/50197.jpg"
+            },
+            "id": "4",
+            "links": {
+                "self": "http://weebmd.me/api/characters/4"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "8",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "7",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/4/actors",
+                        "self": "/api/characters/4/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/4/animes",
+                        "self": "/api/characters/4/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/4/mangas",
+                        "self": "/api/characters/4/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/mangas/1/characters?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/mangas/1/characters?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/mangas"
+    },
+    "meta": {
+        "total": 4
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+#### List Anime [GET /mangas/{id}/animes]
+
++ Parameters
+    + id (number) - id of the manga
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": [
+        {
+            "attributes": {
+                "birthday": "Apr  28, 1973",
+                "given_name": null,
+                "language": "English",
+                "name": "Fahn, Melissa",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg",
+                "website": "http://www.melissafahn.com/"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/actors/1"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/1/animes",
+                        "self": "/api/actors/1/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/1/characters",
+                        "self": "/api/actors/1/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Jul  3, 1981",
+                "given_name": "葵",
+                "language": "Japanese",
+                "name": "Tada, Aoi",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/27665.jpg",
+                "website": "http://yaplog.jp/tada_aoi/"
+            },
+            "id": "2",
+            "links": {
+                "self": "http://weebmd.me/api/actors/2"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/2/animes",
+                        "self": "/api/actors/2/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/2/characters",
+                        "self": "/api/actors/2/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Feb  20, 1960",
+                "given_name": null,
+                "language": "English",
+                "name": "Lee, Wendee",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/35525.jpg",
+                "website": "http://www.wendeelee.com/"
+            },
+            "id": "3",
+            "links": {
+                "self": "http://weebmd.me/api/actors/3"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/3/animes",
+                        "self": "/api/actors/3/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/3/characters",
+                        "self": "/api/actors/3/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Mar  30, 1967",
+                "given_name": "めぐみ",
+                "language": "Japanese",
+                "name": "Hayashibara, Megumi",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/40734.jpg",
+                "website": "http://www.starchild.co.jp/artist/hayashi/index.html"
+            },
+            "id": "4",
+            "links": {
+                "self": "http://weebmd.me/api/actors/4"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/4/animes",
+                        "self": "/api/actors/4/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/4/characters",
+                        "self": "/api/actors/4/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Sep  1, 1953",
+                "given_name": null,
+                "language": "English",
+                "name": "Billingslea, Beau",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/43568.jpg",
+                "website": null
+            },
+            "id": "5",
+            "links": {
+                "self": "http://weebmd.me/api/actors/5"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/5/animes",
+                        "self": "/api/actors/5/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "3",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/5/characters",
+                        "self": "/api/actors/5/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "May  16, 1951",
+                "given_name": "運昇",
+                "language": "Japanese",
+                "name": "Ishizuka, Unshou",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/17135.jpg",
+                "website": "http://www.aoni.co.jp/actor/a/ishizuka-unsho.html"
+            },
+            "id": "6",
+            "links": {
+                "self": "http://weebmd.me/api/actors/6"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/6/animes",
+                        "self": "/api/actors/6/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "3",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/6/characters",
+                        "self": "/api/actors/6/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Jun  17, 1961",
+                "given_name": "宏一",
+                "language": "Japanese",
+                "name": "Yamadera, Kouichi",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/44674.jpg",
+                "website": "http://across-ent.com/talent/men/koichi_yamadera.html"
+            },
+            "id": "7",
+            "links": {
+                "self": "http://weebmd.me/api/actors/7"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/7/animes",
+                        "self": "/api/actors/7/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "4",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/7/characters",
+                        "self": "/api/actors/7/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Apr  29, 1960",
+                "given_name": null,
+                "language": "English",
+                "name": "Blum, Steven",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/45741.jpg",
+                "website": "http://www.steveblumvoices.com"
+            },
+            "id": "8",
+            "links": {
+                "self": "http://weebmd.me/api/actors/8"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/8/animes",
+                        "self": "/api/actors/8/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "4",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/8/characters",
+                        "self": "/api/actors/8/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/animes/1/actors?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/animes/1/actors?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/animes"
+    },
+    "meta": {
+        "total": 8
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+        
+### Characters [/characters]
+
++ Attributes 
+    + attributes (object)
+        + about (string) - Character bio
+        + japanese_name (string)
+        + name
+        + picture (string) - A myanimelist hosted image link
+    + id (string) - ID inside WeebMD's API and database
+    + links (string) - Link to its own API call
+    + relationships (array) - gives id and type of related animes, manga, and voice actors
+        + actors (object)
+            + data (array)
+                + id (string) - id of voice actor
+                + type (string) - type of data that it is, e.g. "actors"
+            + links (object)
+                + related (string) - link to related actors for this character
+                + self (string) - link to this character's actor relationships
+        + anime (object)
+            + data (array)
+                + id (string) - id of anime
+                + type (string) - type of data that it is, e.g. "animes"
+            + links (object)
+                + related (string) - link to related animes for this character
+                + self (string) - link to this character's anime relationships
+        + mangas (object)
+            + data (array)
+                + id (string) - id of manga
+                + type (string) - type of data that it is, e.g. "mangas"
+            + links (object)
+                + related (string) - link to related mangas for this character
+                + self (string) - link to this character's manga relationships
+
+#### Fetch Resource [GET /characters/{id}]
+
++ Parameters
+    + id (number) - id of the character
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": {
+        "attributes": {
+            "about": "The self-invented personal name of an elite net-diver from Earth, hacker \"Radical Edward\" is a very strange, somewhat androgynous, teenage girl assumed to be around 13 years in age. She has a feral aspect reflected in her mannerisms, bare feet, strange postures and gangling walk.\n \n Ed could be considered a \"free spirit\"; she is fond of silly exclamations and childish rhymes, easily distracted, and the show's primary source of physical humor.\n \n Over the course of the show she rarely walks anywhere, preferring to run, crawl, flip, roll, walk on her hands, or even just saunter. Ed is always barefoot. In one episode, she considers putting on socks and shoes, but quickly removes them, as even wearing socks hampers her, and she falls over seconds after putting them on; she also appears to be exceptionally strong and flexible, being able to support her weight on her arms for several minutes at a time, and to scratch her nose with her toe.\n \n In the English version, she almost always refers to herself in the third person.\n \n Not much is known about her origins, only that she spent some of her earlier childhood in an orphanage after being left there by her father, a man named Afedersiniz Hesap L&uuml;tfen (he calls Ed \"Fran&ccedil;oise\", and may be of Turkish origin as his name means \"excuse me, check please\" in Turkish). In the manga it is revealed that she was a friend of a timid young boy in the orphanage known simply as \"Tomato\" (which also happens to be the brand name scrawled in katakana on her PC) who, like Ed, knew a great deal about computers and the net, and it is probably safe to assume that his friendship with Ed helped turn her into the genius-hacker she is today.\n \n Ed's primary use to the Bebop crew is as a hacker; she is widely known to be a whiz kid behind a computer. Ed's computer of choice is a carry-along Tomato desktop, an homage to the portable flatpanel-outfitted Apple IIc from the 80s, and when traveling by foot she will balance it on her head.\n \n Ed has a strong rapport with Jet, who acts as a surrogate father, and Faye, who acts as something of a big sister (much to Faye's chagrin). Ed also seems to be the only person who can understand Ein (though in a few instances Jet could understand Ein also).\n\n",
+            "japanese_name": "(エドワード・ウォン・ハウ・ペペル・チブルスキー4世)",
+            "name": "Edward Wong Hau Pepelu Tivrusky IV",
+            "picture": "https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg"
+        },
+        "id": "1",
+        "links": {
+            "self": "http://weebmd.me/api/characters/1"
+        },
+        "relationships": {
+            "actors": {
+                "data": [
+                    {
+                        "id": "2",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "1",
+                        "type": "actors"
+                    }
+                ],
+                "links": {
+                    "related": "/api/characters/1/actors",
+                    "self": "/api/characters/1/relationships/actors"
+                }
+            },
+            "animes": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "animes"
+                    }
+                ],
+                "links": {
+                    "related": "/api/characters/1/animes",
+                    "self": "/api/characters/1/relationships/animes"
+                }
+            },
+            "mangas": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "mangas"
+                    }
+                ],
+                "links": {
+                    "related": "/api/characters/1/mangas",
+                    "self": "/api/characters/1/relationships/mangas"
+                }
+            }
+        },
+        "type": "characters"
+    },
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "self": "/api/characters"
+    },
+    "meta": {}
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+    
+#### Fetch Collection [GET /characters]
+
++ Response 200 (application/json)
+
+{
+    "data": {
+        "attributes": {
+            "about": "The self-invented personal name of an elite net-diver from Earth, hacker \"Radical Edward\" is a very strange, somewhat androgynous, teenage girl assumed to be around 13 years in age. She has a feral aspect reflected in her mannerisms, bare feet, strange postures and gangling walk.\n \n Ed could be considered a \"free spirit\"; she is fond of silly exclamations and childish rhymes, easily distracted, and the show's primary source of physical humor.\n \n Over the course of the show she rarely walks anywhere, preferring to run, crawl, flip, roll, walk on her hands, or even just saunter. Ed is always barefoot. In one episode, she considers putting on socks and shoes, but quickly removes them, as even wearing socks hampers her, and she falls over seconds after putting them on; she also appears to be exceptionally strong and flexible, being able to support her weight on her arms for several minutes at a time, and to scratch her nose with her toe.\n \n In the English version, she almost always refers to herself in the third person.\n \n Not much is known about her origins, only that she spent some of her earlier childhood in an orphanage after being left there by her father, a man named Afedersiniz Hesap L&uuml;tfen (he calls Ed \"Fran&ccedil;oise\", and may be of Turkish origin as his name means \"excuse me, check please\" in Turkish). In the manga it is revealed that she was a friend of a timid young boy in the orphanage known simply as \"Tomato\" (which also happens to be the brand name scrawled in katakana on her PC) who, like Ed, knew a great deal about computers and the net, and it is probably safe to assume that his friendship with Ed helped turn her into the genius-hacker she is today.\n \n Ed's primary use to the Bebop crew is as a hacker; she is widely known to be a whiz kid behind a computer. Ed's computer of choice is a carry-along Tomato desktop, an homage to the portable flatpanel-outfitted Apple IIc from the 80s, and when traveling by foot she will balance it on her head.\n \n Ed has a strong rapport with Jet, who acts as a surrogate father, and Faye, who acts as something of a big sister (much to Faye's chagrin). Ed also seems to be the only person who can understand Ein (though in a few instances Jet could understand Ein also).\n\n",
+            "japanese_name": "(エドワード・ウォン・ハウ・ペペル・チブルスキー4世)",
+            "name": "Edward Wong Hau Pepelu Tivrusky IV",
+            "picture": "https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg"
+        },
+        "id": "1",
+        "links": {
+            "self": "http://weebmd.me/api/characters/1"
+        },
+        "relationships": {
+            "actors": {
+                "data": [
+                    {
+                        "id": "2",
+                        "type": "actors"
+                    },
+                    {
+                        "id": "1",
+                        "type": "actors"
+                    }
+                ],
+                "links": {
+                    "related": "/api/characters/1/actors",
+                    "self": "/api/characters/1/relationships/actors"
+                }
+            },
+            "animes": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "animes"
+                    }
+                ],
+                "links": {
+                    "related": "/api/characters/1/animes",
+                    "self": "/api/characters/1/relationships/animes"
+                }
+            },
+            "mangas": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "mangas"
+                    }
+                ],
+                "links": {
+                    "related": "/api/characters/1/mangas",
+                    "self": "/api/characters/1/relationships/mangas"
+                }
+            }
+        },
+        "type": "characters"
+    },
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "self": "/api/characters"
+    },
+    "meta": {}
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+#### List Animes [GET /characters/{id}/animes]
+
++ Parameters
+    + id (number) - id of the character
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": [
+        {
+            "attributes": {
+                "aired": "Apr 3, 1998 to Apr 24, 1999",
+                "genre": "Action, Adventure, Comedy, Drama, Sci-Fi, Space",
+                "media_type": "TV",
+                "num_episodes": 26,
+                "picture": "https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg",
+                "rating": "R - 17+ (violence & profanity)",
+                "score": 8.81,
+                "status": "Finished Airing",
+                "synopsis": "In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as \"Cowboys.\" The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member's dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]",
+                "title": "Cowboy Bebop",
+                "youtube_id": "qig4KOK2R2g"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/animes/1"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "8",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "6",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "2",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "3",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "5",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "1",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "4",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "7",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/animes/1/actors",
+                        "self": "/api/animes/1/relationships/actors"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "4",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "2",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "3",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/animes/1/characters",
+                        "self": "/api/animes/1/relationships/characters"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/animes/1/mangas",
+                        "self": "/api/animes/1/relationships/mangas"
+                    }
+                }
+            },
+            "type": "animes"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/characters/1/animes?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/characters/1/animes?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/characters"
+    },
+    "meta": {
+        "total": 1
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+    
+#### List Mangas [GET /characters/{id}/mangas]
+
++ Parameters
+    + id (number) - id of the character
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": [
+        {
+            "attributes": {
+                "author": "Kuga, Cain",
+                "genre": "Action, Adventure, Comedy, Sci-Fi, Shoujo",
+                "media_type": "Manga",
+                "num_chapters": 10,
+                "picture": "https://myanimelist.cdn-dena.com/images/manga/3/176770.jpg",
+                "published": "May  1, 1998 to Oct  10, 1998",
+                "score": 6.87,
+                "status": "Finished",
+                "synopsis": "Kai Lucas hires the Bebop crew to find his mischievous doppelganger, but the bounty goes bust and Spike and Jet once again find themselves broke - and hungry. And to add to their woes, Spike ends up mysteriously on the police's most wanted list, either the butt of a joke or the victim of a severe computer glitch. But what's worse, being targeted by every bounty hunter in the solar system, or taking on a kid-genius, a genius puppy and a genus: fatale, species: femme as part of the crew. Well, if Scorpion or the Dragon Head Family doesn't kill them, the extra mouths to feed certainly will. (Source: Tokyopop)",
+                "title": "Shooting Star Bebop: Cowboy Bebop",
+                "title_english": "Cowboy Bebop: Shooting Star",
+                "title_japanese": "シューティングスタービバップ―カウボーイビバップ"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/mangas/1"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/mangas/1/animes",
+                        "self": "/api/mangas/1/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "3",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "4",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "2",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/mangas/1/characters",
+                        "self": "/api/mangas/1/relationships/characters"
+                    }
+                }
+            },
+            "type": "mangas"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/characters/1/mangas?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/characters/1/mangas?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/characters"
+    },
+    "meta": {
+        "total": 1
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+#### List Actors [GET /characters/{id}/actors]
+
++ Parameters
+    + id (number) - id of the character
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": [
+        {
+            "attributes": {
+                "birthday": "Apr  28, 1973",
+                "given_name": null,
+                "language": "English",
+                "name": "Fahn, Melissa",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg",
+                "website": "http://www.melissafahn.com/"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/actors/1"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/1/animes",
+                        "self": "/api/actors/1/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/1/characters",
+                        "self": "/api/actors/1/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        },
+        {
+            "attributes": {
+                "birthday": "Jul  3, 1981",
+                "given_name": "葵",
+                "language": "Japanese",
+                "name": "Tada, Aoi",
+                "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/27665.jpg",
+                "website": "http://yaplog.jp/tada_aoi/"
+            },
+            "id": "2",
+            "links": {
+                "self": "http://weebmd.me/api/actors/2"
+            },
+            "relationships": {
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/2/animes",
+                        "self": "/api/actors/2/relationships/animes"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/actors/2/characters",
+                        "self": "/api/actors/2/relationships/characters"
+                    }
+                }
+            },
+            "type": "actors"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/characters/1/actors?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/characters/1/actors?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/characters"
+    },
+    "meta": {
+        "total": 2
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+### Actors [/actors]
+
++ Attributes 
+    + attributes (object)
+        + birthday (string)
+        + given_name (string) - The actor's given name if Japanese
+        + language (string)
+        + name (string)
+        + picture (string) - A myanimelist hosted image link
+        + website (string) - A link to the voice actors website
+    + id (string) - ID inside WeebMD's API and database
+    + links (string) - Link to its own API call
+    + relationships (array) - gives id and type of related animes, manga, and voice actors
+        + anime (object)
+            + data (array)
+                + id (string) - id of anime
+                + type (string) - type of data that it is, e.g. "animes"
+            + links (object)
+                + related (string) - link to related animes for this character
+                + self (string) - link to this character's anime relationships
+        + characters (object)
+            + data (array)
+                + id (string) - id of character
+                + type (string) - type of data that it is, e.g. "characters"
+            + links (object)
+                + related (string) - link to related characters for this actor
+                + self (string) - link to this actor's character relationships
+
+#### Fetch Resource [GET /actors/{id}]
+
++ Parameters
+    + id (number) - id of the actor
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": {
+        "attributes": {
+            "birthday": "Apr  28, 1973",
+            "given_name": null,
+            "language": "English",
+            "name": "Fahn, Melissa",
+            "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg",
+            "website": "http://www.melissafahn.com/"
+        },
+        "id": "1",
+        "links": {
+            "self": "http://weebmd.me/api/actors/1"
+        },
+        "relationships": {
+            "animes": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "animes"
+                    }
+                ],
+                "links": {
+                    "related": "/api/actors/1/animes",
+                    "self": "/api/actors/1/relationships/animes"
+                }
+            },
+            "characters": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "characters"
+                    }
+                ],
+                "links": {
+                    "related": "/api/actors/1/characters",
+                    "self": "/api/actors/1/relationships/characters"
+                }
+            }
+        },
+        "type": "actors"
+    },
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "self": "/api/actors"
+    },
+    "meta": {}
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+    
+#### Fetch Collection [GET /actors]
+
++ Response 200 (application/json)
+
+{
+    "data": {
+        "attributes": {
+            "birthday": "Apr  28, 1973",
+            "given_name": null,
+            "language": "English",
+            "name": "Fahn, Melissa",
+            "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg",
+            "website": "http://www.melissafahn.com/"
+        },
+        "id": "1",
+        "links": {
+            "self": "http://weebmd.me/api/actors/1"
+        },
+        "relationships": {
+            "animes": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "animes"
+                    }
+                ],
+                "links": {
+                    "related": "/api/actors/1/animes",
+                    "self": "/api/actors/1/relationships/animes"
+                }
+            },
+            "characters": {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "characters"
+                    }
+                ],
+                "links": {
+                    "related": "/api/actors/1/characters",
+                    "self": "/api/actors/1/relationships/characters"
+                }
+            }
+        },
+        "type": "actors"
+    },
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "self": "/api/actors"
+    },
+    "meta": {}
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+
+#### List Animes [GET /actors/{id}/animes]
+
++ Parameters
+    + id (number) - id of the actor
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": [
+        {
+            "attributes": {
+                "aired": "Apr 3, 1998 to Apr 24, 1999",
+                "genre": "Action, Adventure, Comedy, Drama, Sci-Fi, Space",
+                "media_type": "TV",
+                "num_episodes": 26,
+                "picture": "https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg",
+                "rating": "R - 17+ (violence & profanity)",
+                "score": 8.81,
+                "status": "Finished Airing",
+                "synopsis": "In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as \"Cowboys.\" The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member's dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]",
+                "title": "Cowboy Bebop",
+                "youtube_id": "qig4KOK2R2g"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/animes/1"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "7",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "3",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "2",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "8",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "4",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "6",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "1",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "5",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/animes/1/actors",
+                        "self": "/api/animes/1/relationships/actors"
+                    }
+                },
+                "characters": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "3",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "1",
+                            "type": "characters"
+                        },
+                        {
+                            "id": "4",
+                            "type": "characters"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/animes/1/characters",
+                        "self": "/api/animes/1/relationships/characters"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/animes/1/mangas",
+                        "self": "/api/animes/1/relationships/mangas"
+                    }
+                }
+            },
+            "type": "animes"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/actors/1/animes?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/actors/1/animes?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/actors"
+    },
+    "meta": {
+        "total": 1
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
+    
+#### List Characters [GET /actors/{id}/characters]
+
++ Parameters
+    + id (number) - id of the actor
+        + Default: 1
+
++ Response 200 (application/json)
+
+{
+    "data": [
+        {
+            "attributes": {
+                "about": "The self-invented personal name of an elite net-diver from Earth, hacker \"Radical Edward\" is a very strange, somewhat androgynous, teenage girl assumed to be around 13 years in age. She has a feral aspect reflected in her mannerisms, bare feet, strange postures and gangling walk.\n \n Ed could be considered a \"free spirit\"; she is fond of silly exclamations and childish rhymes, easily distracted, and the show's primary source of physical humor.\n \n Over the course of the show she rarely walks anywhere, preferring to run, crawl, flip, roll, walk on her hands, or even just saunter. Ed is always barefoot. In one episode, she considers putting on socks and shoes, but quickly removes them, as even wearing socks hampers her, and she falls over seconds after putting them on; she also appears to be exceptionally strong and flexible, being able to support her weight on her arms for several minutes at a time, and to scratch her nose with her toe.\n \n In the English version, she almost always refers to herself in the third person.\n \n Not much is known about her origins, only that she spent some of her earlier childhood in an orphanage after being left there by her father, a man named Afedersiniz Hesap L&uuml;tfen (he calls Ed \"Fran&ccedil;oise\", and may be of Turkish origin as his name means \"excuse me, check please\" in Turkish). In the manga it is revealed that she was a friend of a timid young boy in the orphanage known simply as \"Tomato\" (which also happens to be the brand name scrawled in katakana on her PC) who, like Ed, knew a great deal about computers and the net, and it is probably safe to assume that his friendship with Ed helped turn her into the genius-hacker she is today.\n \n Ed's primary use to the Bebop crew is as a hacker; she is widely known to be a whiz kid behind a computer. Ed's computer of choice is a carry-along Tomato desktop, an homage to the portable flatpanel-outfitted Apple IIc from the 80s, and when traveling by foot she will balance it on her head.\n \n Ed has a strong rapport with Jet, who acts as a surrogate father, and Faye, who acts as something of a big sister (much to Faye's chagrin). Ed also seems to be the only person who can understand Ein (though in a few instances Jet could understand Ein also).\n\n",
+                "japanese_name": "(エドワード・ウォン・ハウ・ペペル・チブルスキー4世)",
+                "name": "Edward Wong Hau Pepelu Tivrusky IV",
+                "picture": "https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg"
+            },
+            "id": "1",
+            "links": {
+                "self": "http://weebmd.me/api/characters/1"
+            },
+            "relationships": {
+                "actors": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "actors"
+                        },
+                        {
+                            "id": "1",
+                            "type": "actors"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/actors",
+                        "self": "/api/characters/1/relationships/actors"
+                    }
+                },
+                "animes": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "animes"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/animes",
+                        "self": "/api/characters/1/relationships/animes"
+                    }
+                },
+                "mangas": {
+                    "data": [
+                        {
+                            "id": "1",
+                            "type": "mangas"
+                        }
+                    ],
+                    "links": {
+                        "related": "/api/characters/1/mangas",
+                        "self": "/api/characters/1/relationships/mangas"
+                    }
+                }
+            },
+            "type": "characters"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    },
+    "links": {
+        "first": "http://weebmd.me/api/actors/1/characters?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "last": "http://weebmd.me/api/actors/1/characters?Accept=application/vnd.api json&page[size]=60&page[number]=1",
+        "next": null,
+        "prev": null,
+        "self": "/api/actors"
+    },
+    "meta": {
+        "total": 1
+    }
+}
+
++ Headers
+
+    Accept: application/vnd.api+json
