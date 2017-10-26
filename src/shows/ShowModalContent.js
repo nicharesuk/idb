@@ -4,18 +4,8 @@ import ModalDetails from '../shared/ModalDetails';
 
 class ShowModalContent extends Component {
 
-  onClickCharacter = (index) => {
-    const id = this.props.dataObject.included.filter(obj => obj.type === "characters")[index].id
-    this.props.onChange("characters", id);
-  }
-
-  onClickManga = (index) => {
-    const id = this.props.dataObject.included.filter(obj => obj.type === "mangas")[index].id
-    this.props.onChange("mangas", id);
-  }
-
   render() {
-    const { title, aired, score, num_episodes, synopsis, status, rating, genre, included} = this.props.dataObject;
+    const { title, aired, score, num_episodes, youtube_id, synopsis, status, rating, genre, included} = this.props.dataObject;
 
     let characterList = [];
     let mangaList = [];
@@ -23,17 +13,27 @@ class ShowModalContent extends Component {
       characterList = included.filter(obj => obj.type === "characters").map(obj => obj.attributes.name);
       mangaList = included.filter(obj => obj.type === "mangas").map(obj => obj.attributes.title);
     }
+
+    let lists = [
+      {
+        data: characterList,
+        title: "Characters",
+        action: (index) => this.props.onChange("characters", index),
+      },
+      {
+        data: mangaList,
+        title: "Mangas",
+        action: (index) => this.props.onChange("mangas", index),
+      },
+    ];
     return (
       <ModalDetails
         title={title}
         detailsList={[aired, `${num_episodes}`, status, rating, score, genre ]}
+        website={youtube_id ? `https://www.youtube.com/watch?v=${youtube_id}` : null}
+        websiteText={"Link to trailer"}
         paragraph={synopsis}
-        primaryList={characterList}
-        primaryListTitle={"Characters"}
-        primaryListAction={this.onClickCharacter}
-        secondaryList={mangaList}
-        secondaryListTitle={"Mangas"}
-        secondaryListAction={this.onClickManga}/>
+        lists={lists} />
     );
   }
 }

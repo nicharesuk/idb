@@ -28,19 +28,29 @@ class ModalDetails extends Component {
             ))}
           </div>
           <div className={styles.paragraph}>
-            {this.props.paragraph}
+            {this.props.website ?
+              <div className={styles.link}>
+                <a
+                  href={this.props.website}
+                  target="_blank">
+                  {this.props.websiteText} <br />
+                </a>
+              </div> : null
+            }
+            <div>
+              {this.props.paragraph}
+            </div>
           </div>
         </div>
         <div className={styles.divider}></div>
         <div className={styles.listsContainer}>
-          <ScrollableList
-            data={this.props.primaryList}
-            title={this.props.primaryListTitle}
-            action={this.props.primaryListAction} />
-          <ScrollableList
-            data={this.props.secondaryList}
-            title={this.props.secondaryListTitle}
-            action={this.props.secondaryListAction} />
+          {this.props.lists.map(list => (
+            <ScrollableList
+              key={list.title}
+              data={list.data}
+              title={list.title}
+              action={list.action} />
+          ))}
         </div>
       </div>
     );
@@ -51,22 +61,20 @@ ModalDetails.defaultProps = {
   title: "",
   detailsList: [],
   paragraph: "",
-  primaryList: [],
-  primaryListTitle: "",
-  secondaryList: [],
-  secondaryListTitle: "",
+  websiteText: "",
 }
 
 ModalDetails.propTypes = {
   title: PropTypes.string,
   detailsList: PropTypes.array,
   paragraph: PropTypes.string,
-  primaryList: PropTypes.array,
-  primaryListTitle: PropTypes.string,
-  primaryListAction: PropTypes.func,
-  secondaryList: PropTypes.array,
-  secondaryListTitle: PropTypes.string,
-  secondaryListAction: PropTypes.func,
+  website: PropTypes.string,
+  websiteText: PropTypes.string,
+  lists: PropTypes.arrayOf(PropTypes.shape({
+    data: PropTypes.arrayOf(PropTypes.string),
+    title: PropTypes.string,
+    action: PropTypes.func,
+  })).isRequired,
 }
 
 export default ModalDetails;

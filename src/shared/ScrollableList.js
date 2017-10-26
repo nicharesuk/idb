@@ -6,6 +6,9 @@ import styles from './ScrollableList.scss';
 class ModalContent extends Component {
 
   render() {
+    if (this.props.data.length === 0) {
+      return null;
+    }
     return (
       <div className={styles.container}>
         <div className={styles.title}>
@@ -18,9 +21,10 @@ class ModalContent extends Component {
               <div
                 key={element}
                 onClick={() => this.props.action(index)}
-                style={{backgroundColor: color}}
-                className={styles.element}>
-                {element}
+                style={{backgroundColor: color}}>
+                <div className={styles.innerElement}>
+                  {element}
+                </div>
               </div>
             )
           })}

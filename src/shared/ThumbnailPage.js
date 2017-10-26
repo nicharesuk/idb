@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './ThumbnailPage.scss';
 import ThumbnailCard from './ThumbnailCard';
 import PropTypes from 'prop-types';
-import { Modal } from 'semantic-ui-react';
+import { Modal, Loader } from 'semantic-ui-react';
 import ModalContent from './ModalContent';
 
 class ThumbnailPage extends Component {
@@ -25,6 +25,18 @@ class ThumbnailPage extends Component {
   }
 
   render() {
+    if (!this.props.data.length) {
+      return (
+        <div className={styles.loaderContainer}>
+          <Loader
+            size="massive"
+            active
+            inverted>
+            Loading
+          </Loader>
+        </div>
+      );
+    }
     return (
       <div className={styles.container}>
         <Modal
