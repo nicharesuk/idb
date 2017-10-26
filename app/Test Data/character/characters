@@ -1,0 +1,3144 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "about": "The self-invented personal name of an elite net-diver from Earth, hacker \"Radical Edward\" is a very strange, somewhat androgynous, teenage girl assumed to be around 13 years in age. She has a feral aspect reflected in her mannerisms, bare feet, strange postures and gangling walk.\n \n Ed could be considered a \"free spirit\"; she is fond of silly exclamations and childish rhymes, easily distracted, and the show's primary source of physical humor.\n \n Over the course of the show she rarely walks anywhere, preferring to run, crawl, flip, roll, walk on her hands, or even just saunter. Ed is always barefoot. In one episode, she considers putting on socks and shoes, but quickly removes them, as even wearing socks hampers her, and she falls over seconds after putting them on; she also appears to be exceptionally strong and flexible, being able to support her weight on her arms for several minutes at a time, and to scratch her nose with her toe.\n \n In the English version, she almost always refers to herself in the third person.\n \n Not much is known about her origins, only that she spent some of her earlier childhood in an orphanage after being left there by her father, a man named Afedersiniz Hesap L&uuml;tfen (he calls Ed \"Fran&ccedil;oise\", and may be of Turkish origin as his name means \"excuse me, check please\" in Turkish). In the manga it is revealed that she was a friend of a timid young boy in the orphanage known simply as \"Tomato\" (which also happens to be the brand name scrawled in katakana on her PC) who, like Ed, knew a great deal about computers and the net, and it is probably safe to assume that his friendship with Ed helped turn her into the genius-hacker she is today.\n \n Ed's primary use to the Bebop crew is as a hacker; she is widely known to be a whiz kid behind a computer. Ed's computer of choice is a carry-along Tomato desktop, an homage to the portable flatpanel-outfitted Apple IIc from the 80s, and when traveling by foot she will balance it on her head.\n \n Ed has a strong rapport with Jet, who acts as a surrogate father, and Faye, who acts as something of a big sister (much to Faye's chagrin). Ed also seems to be the only person who can understand Ein (though in a few instances Jet could understand Ein also).\n\n", 
+        "japanese_name": "(\u30a8\u30c9\u30ef\u30fc\u30c9\u30fb\u30a6\u30a9\u30f3\u30fb\u30cf\u30a6\u30fb\u30da\u30da\u30eb\u30fb\u30c1\u30d6\u30eb\u30b9\u30ad\u30fc4\u4e16)", 
+        "name": "Edward Wong Hau Pepelu Tivrusky IV", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg"
+      }, 
+      "id": "1", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/1"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "actors"
+            }, 
+            {
+              "id": "2", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1/actors", 
+            "self": "/api/characters/1/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1/animes", 
+            "self": "/api/characters/1/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1/mangas", 
+            "self": "/api/characters/1/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Faye Valentine\n Birthday: August 14, 1994\n \n One of the members of the bounty hunting crew in the anime series Cowboy Bebop. Often seen with a cigarette and in a revealing outfit complete with bright yellow hot pants and a matching, revealing top, black suspenders, white boots, and a long-sleeved red shirt worn normally through the sleeves, not to mention her signature headband, she is unusually attractive, sporting a bob of violet hair, green eyes, fair skin, and a voluptuous body. Although appearing to be no more than her 23 years alive suggests, Faye is actually upwards of 74-years-old, having been put into cryogenic freeze after a space shuttle accident. During the course of the series (set in 2071), Faye manages to cross paths with Spike and Jet twice before she finally makes herself at home aboard their ship the second time, much to the consternation and disapproval of the two men, both of whom have their own reservations about women in general. Faye herself is brash, egotistical, and quite lazy, despite taking plenty of time to pamper and care for her own appearance. Faye has also been placed under arrest several times in the series and spends much time in handcuffs on the ship. She, at times, expects the boys to take care of bounties for her, while she sits by idly to reap the benefits and eat all their food, another source of conflict.\n \n Seemingly little more than a thorn in her partners&rsquo; sides, Faye is actually a well-rounded member of the team. She can handle herself exceptionally well for a woman of her slight appearance, displaying at least once in the series (in \"Cowboy Funk\") that she packs quite a mean punch. Adept at flying, Faye has stood her ground just as well as Spike has in an aerial dogfight in her ship Red Tail, at times even against Spike in an aerial dogfight. She also excels with guns, and is first seen in the series completely disabling a ship with a Heckler & Koch MP5, though she is immediately apprehended afterward. In the movie, she is seen with the same gun, in addition to her normal companion: a Glock 30. Where Faye really shines, however, is with her mouth. She has an almost unstoppable attitude, and even her sometimes innocent smile can be seen as dangerous. Sarcastic and presumptuous, she rarely appears weak or in need of support. She brags and takes care of herself, never trusting others, cheating and lying her way from one day to the next.\n \n  She is a woman who is skilled at getting what she wants; however, her indomitable exterior hides a more delicate interior. Upon awakening from her 54-year cryogenic sleep, not only was she saddled with a massive amount of debt that she had no means to pay, but she was also diagnosed with total amnesia, a stranger in a mysterious world that she was not a part of and did not understand, surrounded by people who claimed to be helping her but were only there to take advantage of her naivet&eacute;. The surname \"Valentine\" was merely a name given to her by the doctor who woke her; the circumstances of her accident, her previous life, and even her real name all remain a mystery, and are only gradually revealed as the series progresses. It has been hinted that she came from Singapore on Earth, and was the daughter of a very wealthy family, as the city's famous Merlion Statue features prominently in scenes of her childhood, and that memories and a film from her childhood showed her living in a large mansion. In an early episode, she states that she is descended from Roma people, but she may well have been lying. Utterly betrayed by someone she thought she could trust after waking, Faye found herself burdened with even more money to pay, and the situation resulted in the hardening of her personality to an extreme degree. She even says in Session 11: &ldquo;we deceive or we are deceived&rdquo;, and that &ldquo;nothing good ever happened to me when I trusted others.&rdquo; \n Throughout the series, though she retains her sarcastic demeanor and unpleasant nature up until the very end, it is easy to see her grow as a character. She learns to value her comrades, coming back to the Bebop when she realizes that it is the only home that she has left, naming it as the &ldquo;only place I could return to&rdquo;. She grows to understand the disadvantages of being a loner, and that even though her \"family\" is somewhat dysfunctional it is still a place where she will always belong.\n \n\n", 
+        "japanese_name": "(\u30d5\u30a7\u30a4\u30fb\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3)", 
+        "name": "Faye Valentine", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/264961.jpg"
+      }, 
+      "id": "2", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/2"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "4", 
+              "type": "actors"
+            }, 
+            {
+              "id": "3", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/2/actors", 
+            "self": "/api/characters/2/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/2/animes", 
+            "self": "/api/characters/2/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/2/mangas", 
+            "self": "/api/characters/2/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Jet, known on his home satellite as the \"Black Dog\" for his tenacity, is a 36-year-old former cop from Ganymede (a Jovian satellite) and acts as Spike's foil during the series. Physically, Jet is very tall with a muscular build. He wears a beard with no mustache, and is completely bald save for the back of his head. Spike acts lazy and uninterested, whereas Jet is hard working and a jack-of-all-trades. Jet was once an investigator in the Inter Solar System Police (ISSP) for many years until he lost his arm in an investigation that went awry when his corrupt partner (and friend at the time) betrayed him. His arm was replaced with a cybernetic limb (later revealed to be by choice, as biological replacements were possible, he wanted the fake arm as a reminder of what happened), yet his loss of limb coupled with the general corruption of the police force prompted Jet to quit the ISSP in disgust and become a freelance bounty hunter. Jet also considers himself something of a renaissance man: he cultivates bonsai trees, cooks, enjoys jazz/blues music (he named his ship the Bebop, referring to a type of jazz), especially Charlie Parker, and even has interest in Goethe. As a character, Jet is the quintessential oyaji or \"dad\" even though he often wishes people would view him as a more brotherly figure (so as not to seem old).\n \n Jet is skilled with handguns, typically carrying a pre-2004 Walther P99, as well as the use of the netgun. He is good with hand to hand combat as well. Unlike Spike, Jet tends to use more raw muscle than technique. He is also a great mechanic and pilot. Aside from the converted interplanetary fishing trawler vessel Bebop, Jet flies a smaller ship called Hammerhead. The Hammerhead appears to be a modified (Jet added larger engines and fuel tanks) salvage-craft that uses a mechanical arm equipped with a harpoon as its main weapon, which is somewhat analogous to his own mechanical arm. Both the Hammerhead and the Bebop are able to land on water, and have a fishing theme, most likely because Ganymede's surface is mostly covered with water (it is later revealed that the Bebop was originally a fishing ship that Jet \"customized\" with larger engines).\n \n During the series, it is revealed that Jet once lived with a woman named Alisa, who left him because he was too controlling. Later they meet up again when Alisa's new boyfriend Rhint is wanted for murder. Jet then ends up in a situation somewhat similar to that of Vicious, where he must hunt down a woman who broke his heart, and her lover.\n \n In a later episode, another Vicious/Spike parallel is set up when Jet finds out that it was his old partner Fad who betrayed him (though in Jet's case, there was no love affair involved). Fad arranged for Jet's death in a setup, but he survived with only a missing arm and a scar on his face. It is worth noting that Jet managed to face the demons of his past and let them go, in contrast to Spike, who was killed when he confronted his. This is likely due to the contrast in the two approaches to the past. While Spike hid and fled from his past, Jet tracked it down and confronted it.\n\n", 
+        "japanese_name": "(\u30b8\u30a7\u30c3\u30c8\u30fb\u30d6\u30e9\u30c3\u30af)", 
+        "name": "Jet Black", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/253723.jpg"
+      }, 
+      "id": "3", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/3"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "5", 
+              "type": "actors"
+            }, 
+            {
+              "id": "6", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/3/actors", 
+            "self": "/api/characters/3/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/3/animes", 
+            "self": "/api/characters/3/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/3/mangas", 
+            "self": "/api/characters/3/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthdate: June 26, 2044\n Height: 185 cm (6' 1\")\n Weight: 70 kg (155 lbs)\n Blood type: O\n Planet of Origin: Mars\n \n Spike Spiegel is a tall and lean 27-year-old bounty hunter born on Mars. The inspiration for Spike is found in martial artist Bruce Lee who uses the martial arts style of Jeet Kune Do as depicted in Session 8, \"Waltz For Venus\". He has fluffy, dark green hair (which is inspired by Yusaku Matsuda's) and reddish brown eyes, one of which is artificial and lighter than the other. He is usually dressed in a blue leisure suit, with a yellow shirt and Lupin III inspired boots. A flashback in Session 6 revealed it was his fully functioning right eye which was surgically replaced by the cybernetic one (although Spike himself may not have conscious recollection of the procedure since he claims to have lost his natural eye in an \"accident\"). One theory is that his natural eye may have been lost during the pre-series massacre in which he supposedly \"died\". The purpose of this cybernetic eye is never explicitly stated, though it apparently gives him exceptional hand-eye coordination - particularly with firearms (Spike's gun of choice is a Jericho 941, as seen throughout the series). In the first episode, when facing a bounty-head using Red Eye, Spike mocks him, calling his moves \"too slow\". At first, this seems like posturing on Spike's part, but even with his senses and reflexes accelerated to superhuman levels by the drug, the bounty cannot even touch Spike. A recurring device throughout the entire show is a closeup on Spike's fully-natural left eye before dissolving to a flashback of his life as part of the syndicate. As said by Spike himself in the last episode, his right eye \"only sees the present\" and his left eye \"only sees the past.\" Spike often has a bent cigarette between his lips, sometimes despite rain or \"No Smoking\" signs.\n\n", 
+        "japanese_name": "(\u30b9\u30d1\u30a4\u30af\u30fb\u30b9\u30d4\u30fc\u30b2\u30eb)", 
+        "name": "Spike Spiegel", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/4/50197.jpg"
+      }, 
+      "id": "4", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/4"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "actors"
+            }, 
+            {
+              "id": "8", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/4/actors", 
+            "self": "/api/characters/4/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/4/animes", 
+            "self": "/api/characters/4/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/4/mangas", 
+            "self": "/api/characters/4/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "No biography written.\n\n", 
+        "japanese_name": "(\u7d30)", 
+        "name": "Sasame ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/51322.jpg"
+      }, 
+      "id": "5", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/5"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "9", 
+              "type": "actors"
+            }, 
+            {
+              "id": "10", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/5/actors", 
+            "self": "/api/characters/5/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/5/animes", 
+            "self": "/api/characters/5/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/5/mangas", 
+            "self": "/api/characters/5/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Knight of Light. Kei is the Knight of Light and works at an Electronic Gaming Company. Kei is the most practical and direct of the Knights, which sometimes leads to confrontation. Kei is also a narcissist, as illustrated by the numerous self-depicting toys and pictures in his work cubicle in the anime.\n \n In the manga he's actually 15 and not a narcissist, but a blunt know-it-all teen. Which leads to many disputes with Goh, and Mannen.\n\n", 
+        "japanese_name": "(\u86cd)", 
+        "name": "Kei ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/51408.jpg"
+      }, 
+      "id": "6", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/6"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/6/actors", 
+            "self": "/api/characters/6/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/6/animes", 
+            "self": "/api/characters/6/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/6/mangas", 
+            "self": "/api/characters/6/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Hajime is the Knight of Water and is the second youngest member of the Leafe Knights. He is almost always seen with Mannen and Shin. When Himeno assumes Hajime's power, she can utilize the Water Flail\n\n", 
+        "japanese_name": "(\u521d,)", 
+        "name": "Hajime ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/51409.jpg"
+      }, 
+      "id": "7", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/7"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/7/actors", 
+            "self": "/api/characters/7/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/7/animes", 
+            "self": "/api/characters/7/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/7/mangas", 
+            "self": "/api/characters/7/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Go is the Knight of Fire and works at a restaurant. Adopting a tough-guy technique, Go is typically the one assigning the younger members of the Leafe Knights tasks and threatening them for any misdeeds. He often uses reverse psychology as a tactic to get the younger members to do what he wants. When Himeno assumes Go's power, she can utilize the Fire Axe. \n \n\n", 
+        "japanese_name": "(\u8c6a,)", 
+        "name": "Goh ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/3/51321.jpg"
+      }, 
+      "id": "8", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/8"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/8/actors", 
+            "self": "/api/characters/8/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/8/animes", 
+            "self": "/api/characters/8/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/8/mangas", 
+            "self": "/api/characters/8/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Knight of Plants. Shin is the youngest member of the Leafe Knights and is the Knight of Plants. He uses his abilities to seal away Demon Larvae, as well as using the spell 'Beyondios' to create a separate dimension so that when the knights and the Pr&eacute;tear are battling Demon Larvae, they do not harm the surrounding environment. Like the other two younger Knights, Shin died sixteen years ago while fighting the Princess of Disaster and was reborn.\n\n", 
+        "japanese_name": "(\u65b0)", 
+        "name": "Shin ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/10/51318.jpg"
+      }, 
+      "id": "9", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/9"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/9/actors", 
+            "self": "/api/characters/9/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/9/animes", 
+            "self": "/api/characters/9/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/9/mangas", 
+            "self": "/api/characters/9/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Mannen is the Knight of Ice and is the leader of the younger members of the Leafe Knights. Mannen often comes up with clever ideas to solve the Leafe Knight's problems, including using Shin as bait to find the Pretear. The older Knights usually get mad at him and claim that he's too young to help majorly, which only drives Mannen to disobey them more. With his two followers, Hajime and Shin, Mannen died while fighting the Princess of Disaster sixteen years ago and came back as a child. \n \n\n", 
+        "japanese_name": "(\u4e07\u5e74)", 
+        "name": "Mannen ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/51320.jpg"
+      }, 
+      "id": "10", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/10"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/10/actors", 
+            "self": "/api/characters/10/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/10/animes", 
+            "self": "/api/characters/10/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/10/mangas", 
+            "self": "/api/characters/10/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Nationality: Japanese\n Measurements: Eeww! You shouldn't ask me things like that!\n Occupation: Student, Magical Defender of Good stuff\n Personality: Cheerful, carefree and optimistic\n Special Powers: Sinister Path House Style Karate master, becoming Pretear\n Current Crush: HEY! That's a secret!\n Likes: Cute boys, apple tea\n Dislikes: The princess of Disater, mean stepsisters\n \n After her mother's death and her father's remarriage, Himeno is thrust into a high-class society life. However, Himeno has great difficulty adjusting to her new life, and is picked on both by her new family, and by her peers at school. Himeno's alienation grows, and she begins to question her place with her new life, she meets Hayate and the other Leafe Knights, who tell her that she's the Pr\u00e9tear who is needed to save the world. As Himeno progresses as the new Pr\u00e9tear, she finds herself falling in love with Hayate. Himeno usually feels distant from her family, like Cinderella.\n \n In the manga: There were a lot of hints that she had a strong feeling of infatuation for Sasame in the beginning. As the story progresses, her opinions of Hayate and the feelings for him  change and develop, turning into a crush or love. \n\n", 
+        "japanese_name": "(\u6de1\u96ea \u59eb\u4e43)", 
+        "name": "Himeno Awayuki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/118248.jpg"
+      }, 
+      "id": "11", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/11"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "actors"
+            }, 
+            {
+              "id": "12", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/11/actors", 
+            "self": "/api/characters/11/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/11/animes", 
+            "self": "/api/characters/11/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/11/mangas", 
+            "self": "/api/characters/11/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Hayate is the Knight of Wind. Hayate is initially hostile towards Himeno, refusing to acknowledge her as the new Pr&eacute;tear due to a past experience. After testing Himeno through various means, Hayate gradually begins to accept her as the Pr&eacute;tear, eventually finding himself falling in love with her. In an attempt to watch-over and protect Himeno, Hayate takes a part time job with her father working on the mansion grounds.\n \n\n", 
+        "japanese_name": "(\u98af)", 
+        "name": "Hayate ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/85544.jpg"
+      }, 
+      "id": "12", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/12"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "actors"
+            }, 
+            {
+              "id": "14", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/12/actors", 
+            "self": "/api/characters/12/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/12/animes", 
+            "self": "/api/characters/12/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "2", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/12/mangas", 
+            "self": "/api/characters/12/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: Unknown (possibly between 17-20)\n Hair color: grey\n Eye color: gold/hazel\n Relations: Ryuuya and Uraha (long descendant)\n Favorite food: ramen\n Favorite object: his puppet\n \n Yukito Kunisaki is a young man who travels around the country, searching for the Winged-Maiden he was told about by his late mother. By using a special trick, Yukito is able to move his puppet without strings. He uses this to make money as he travels, with most of it going toward food.\n \n One day, Yukito arrives in a small town by the sea. Quickly deciding not to stay very long, he heads for the beach in an attempt to make some money. While by the beach, he meets a strange girl named Misuzu who quickly invites him to her house for dinner and, although skeptical, he accepts. Soon after meeting her mother Haruko and becoming friends with them, he is convinced into staying there. Yukito soon begins doing odd jobs for the local clinic after the doctor catches him doing his puppet show outside. It is here that Yukito becomes friends with Kano and Minagi; however, after getting to know them better he learns of their problems, which convinces Yukito to stay and help.\n \n After helping Kano and Minagi, Yukito finds out about Misuzu's illness, which is where she is unable to make friends because she'll begin crying uncontrollably. Yukito then leaves, deciding that if he leaves, Misuzu will get better; however, as he is about to leave, Yukito realizes his mistake and goes back to help. Here is when he realizes his and Misuzu's connection to the past and that Misuzu is the re-incarnation of the Winged Maiden. When Yukito finds Misuzu, she tells him of her last dream before falling asleep. Yukito then disappears in a bright light, causing Misuzu to wake up, seemingly better.\n \n It is implied that when Sora appears in the anime after Yukito's disappearance, Sora is Yukito or contains a part of Yukito's soul.\n [Written by MAL Rewrite]\n\n", 
+        "japanese_name": "(\u56fd\u5d0e\u5f80\u4eba)", 
+        "name": "Yukito Kunisaki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/128621.jpg"
+      }, 
+      "id": "13", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/13"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "actors"
+            }, 
+            {
+              "id": "16", 
+              "type": "actors"
+            }, 
+            {
+              "id": "17", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/13/actors", 
+            "self": "/api/characters/13/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/13/animes", 
+            "self": "/api/characters/13/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/13/mangas", 
+            "self": "/api/characters/13/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: Unknown\n Birthday: November 3\n Hair color: reddish pink\n Eye color: blue\n Height: 168cm\n Weight: 48kg\n Bust-Waist-Hips: 88-57-85cm\n Relations: Kamio Misuzu (niece, foster daughter then adopted)\n Likes: alcohol, motorbikes\n \n Haruko Kamio is Misuzu Kamio's aunt and foster mother. When Misuzu was younger, she was forced onto Haruko after her biological mother died and her father left her. Haruko loves Misuzu as her own child; however, she distances herself from Misuzu in the fear that if they became too close, it would hurt all the more if she gets taken away. Haruko enjoys drinking and riding her motorcycle which she often crashes into the garage after work. She also has many part-time jobs instead of one full-time job.\n \n Haruko is first introduced when Misuzu brings Yukito home and asks if he can stay. Although distrustful at first, Haruko soon trusts him and forces him to drink with her. When Misuzu breaks down crying, Haruko explains to Yukito of her disease and Misuzu's past with her father. She also explains her fear of Misuzu getting taken away and says that she distances herself from Misuzu to not get attached.\n \n When Yukito leaves and Misuzu's condition gets worse, Haruko decides to officially adopt Misuzu instead of living in fear and restricting their relationship. However when Misuzu's real father appears to take her with him, Haruko is sent into despair after finally allowing herself to hope for a family. After Misuzu rejects her father to stay with Haruko, she begins to act more like a mother and spend more time with Misuzu, but because of Misuzu's condition she isn't able to do much. One day, when Misuzu asks if they can go to the beach, Haruko happily accepts; however, when they get there, Misuzu dies in Haruko's arms, leaving her to cry at what they could have done now that they were a proper family.\n [Written by MAL Rewrite]\n\n", 
+        "japanese_name": "(\u795e\u5c3e\u6674\u5b50)", 
+        "name": "Haruko Kamio", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/128615.jpg"
+      }, 
+      "id": "14", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/14"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/14/actors", 
+            "self": "/api/characters/14/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/14/animes", 
+            "self": "/api/characters/14/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/14/mangas", 
+            "self": "/api/characters/14/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: 15\n Hair color: blue\n Eye color: green\n Height: 156cm\n Weight: 45kg\n Bust-Waist-Hips: 82-53-80cm\n Relations: Hijiri Kirishima (older sister)\n Likes: Potato (a stray dog that is always with her), magic, flying\n \n Kano Kirishima is a young girl who lives with her older sister, Hijiri Kirishima, at the local Clinic. Kano is a bit strange because of her belief in magic; however, she is an outgoing girl who loves the town's stray dog, \"Potato.\" After learning her mother died giving birth, Kano dreams of flying to meet her mother who she believes is watching down on them. Kano constantly wears a yellow scarf around her wrist, convinced she'll be able to use magic as an adult if she never takes it off.\n \n Kano's first appears when Yukito Kunisaki is hired by her sister. Soon after becoming friends with Yukito, she reveals her dreams of flying and the reasoning behind her scarf. One day, Kano disappears and Yukito finds her near the town shrine, where Kano attempts to strangle Yukito. He soon finds out from Hijiri that Kano did strange things such as muttering nonsense and trying to commit suicide when she was younger. Hijiri then explains that after Kano attempted to slit her wrists, she put the scarf around it and fabricated the story of gaining magic powers, hoping this cause Kano's suicidal acts to subside.\n \n Later, Yukito, Misuzu and Hijiri find a letter from Kano saying she overheard the whole thing and that she's going to fly away. They go search for her and find her at the shrine again. This time, her scarf has been taken off and there is blood around her wrist with no visible wound. A feather then begins to glow on the shrine and Yukito gives it to Kano, invoking a hallucination where Kano sees her mother. During this hallucination, Kano thanks her mother for giving birth to her and tells her she no longer needs the scarf. When Kano comes back, she tells everyone she saw her mother and that she is alright now. Kano then lets the scarf fly away into the wind.\n [Written by MAL Rewrite]\n\n", 
+        "japanese_name": "(\u9727\u5cf6\u4f73\u4e43)", 
+        "name": "Kano Kirishima", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/9/40525.jpg"
+      }, 
+      "id": "15", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/15"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "18", 
+              "type": "actors"
+            }, 
+            {
+              "id": "19", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/15/actors", 
+            "self": "/api/characters/15/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/15/animes", 
+            "self": "/api/characters/15/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/15/mangas", 
+            "self": "/api/characters/15/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: 15-16\n Height: 159 cm\n Weight: 46 kg\n BWH: 83-55-82\n Relations: Haruko Kamio (aunt, foster mother then adopted) and Kannabi no Mikoto/Kanna (incarnation)\n Favorite animal: dinosaur\n Favorite phrase: \"Gao\" (noise of a dinosaur)\n Favorite drink: peach pulp juice\n \n Misuzu Kamio is a slightly strange girl that is first introduced when she meets Yukito Kunisaki. With an obsession with dinosaurs (which goes back to her childhood), she finds it difficult to make friends and is constantly left alone. Because of Misuzu's fondness of dinosaurs, she uses the word \"Gao\" frequently, which is the noise she thought dinosaurs made when she was young. Even though Misuzu's foster mother scolds her whenever she utters it, Misuzu constantly disregards the warning and continues using it in her everyday speech.\n \n One day, Misuzu resolves to make a friend, and after meeting Yukito, invites him over to dinner. Although Haruko disapproves of him at first, they all eventually become friends and Yukito is invited to stay. While playing cards one night, Misuzu suddenly cries without reason. Haruko soon explains that Misuzu has a condition where she cries uncontrollably when she comes close to making friends. Haruko brought her to a clinic and to a big hospital hoping it would help, but it didn't work. It was a mental instability, but the doctors said she would slowly recover as she got older. Misuzu's condition begins to worsen, prompting Yukito to leave. He soon discovers that Misuzu is related to a childhood tale he heard, and that she is the descendant of the Winged-Maiden in the tale, who has been cursed to eternal pain.\n \n Misuzu soon becomes ill; she becomes childlike and has to use a wheelchair. As a result, Haruko tries to adopt Misuzu officially. Unfortunately, before she is able to do so, Misuzu's biological father comes to take her with him; however, when he tries to leave with her, Misuzu refuses, calling Haruko \"Mama.\"\n \n Even though Misuzu stays with Haruko, her condition doesn't improve, and when Yukito returns, she is in constant pain. In the final episode, Misuzu asks that they all go to the beach together and when they get there, Misuzu attempts to walk to Haruko and Yukito, calling them \"her goal.\" Sadly, when Misuzu does reach them, she collapses and dies in Haruko's arms, ending the curse placed on the Winged Maiden.\n (Source: MAL Rewrite)\n\n", 
+        "japanese_name": "(\u795e\u5c3e\u89b3\u9234)", 
+        "name": "Misuzu Kamio", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/121658.jpg"
+      }, 
+      "id": "16", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/16"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "21", 
+              "type": "actors"
+            }, 
+            {
+              "id": "20", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/16/actors", 
+            "self": "/api/characters/16/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/16/animes", 
+            "self": "/api/characters/16/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/16/mangas", 
+            "self": "/api/characters/16/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: 15\n Birthday: December 22\n Zodiac sign: Sagittarius\n Hair color: brown\n Eye color: reddish pink\n Height: 169 cm\n Weight: 48 kg\n BWH: 85-58-84\n Blood type: A\n Relations: Michiru (younger sister)\n Likes: Astronomy\n \n Minagi Toono is a smart girl who is the top student in all her classes at school; however, she is very shy, with Michiru as her only friend. One of the things Minagi enjoys the most is studying the stars at night. Together, her and Michiru created the Astronomy Club, which she forces Yukito to join. Minagi's mother and father are separated, with her mother living at home and her father away on business as a train conductor.\n \n Yukito finds out from Hijiri, the local doctor, that Minagi's mother has a mental illness caused by the miscarriage of her second child. When Yukito goes to see Minagi at her house, her mother appears calling Minagi, \"Michiru\"&mdash;the name she would have called her miscarried child. It is explained that Minagi was closer to her father than her mother, and because of her mother's wish that her next child be closer to her, she has delusions that Michiru was born and Minagi never existed.\n \n When Minagi talks to Yukito, she talks of her desire to leave, prompting Yukito to take her with him on his journey. However, when they walk to her house, Minagi's mother sees them, causing her memories of the miscarriage return and her delusions to end. With her mother's illness gone, Minagi invites Michiru to dinner, and her mother is surprised at the coincidence of her friend's name being the same as her miscarried daughter.\n \n Soon after, Minagi and Yukito go to the school roof where they find Michiru. She explains that she was a wandering spirit who came down to Earth because she saw a sad girl that she wished to make happy. Now that Minagi is happy, she has to leave. Michiru then vanishes. When Minagi gets home, she is given a letter from her father, explaining that he has re-married and new wife has given birth to a little girl. When Minagi goes to visit, she finds that the daughter is named, and looks exactly like, Michiru.\n [Written by MAL Rewrite]\n\n", 
+        "japanese_name": "(\u9060\u91ce \u7f8e\u51ea)", 
+        "name": "Minagi Toono", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/10/101893.jpg"
+      }, 
+      "id": "17", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/17"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "22", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/17/actors", 
+            "self": "/api/characters/17/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/17/animes", 
+            "self": "/api/characters/17/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "3", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/17/mangas", 
+            "self": "/api/characters/17/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Yuzuyu is a naive and bubbly little girl. She tries her best to live without her mother. She is easy to get along with. In the beginning, she tells Satsuki she wants to marry Kippei when she grows up. She is very protective of Kippei but truly only wants him to be happy. During the whole series, Yuzuyu struggles with the absence of her mother and her wish to be with her. This conflicts with her wish to be with Kippei. She loves to draw.\n\n", 
+        "japanese_name": "(\u5742\u4e0b \u3086\u305a\u3086)", 
+        "name": "Yuzuyu Sakashita", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/30964.jpg"
+      }, 
+      "id": "18", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/18"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "23", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/18/actors", 
+            "self": "/api/characters/18/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "4", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/18/animes", 
+            "self": "/api/characters/18/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "4", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/18/mangas", 
+            "self": "/api/characters/18/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Kippei is quite the easygoing type and had no idea what hit him when he was told to start taking care of Yuzuyu. At his first attempt to make Yuzuyu's lunch he only made an onigiri; an extra large one, but Yuzuyu eats it because Kippei is the one who cooked it. Over the series his cooking and personality change. He becomes a little more responsible and gains a girlfriend named Kokoro. Kippei tends to be quite flirty and isn't very smart. He is very kind and loving.\n\n", 
+        "japanese_name": "(\u7247\u5009\u7d50\u5e73)", 
+        "name": "Kippei Katakura", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/7/30965.jpg"
+      }, 
+      "id": "19", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/19"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "24", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/19/actors", 
+            "self": "/api/characters/19/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "4", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/19/animes", 
+            "self": "/api/characters/19/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "4", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/19/mangas", 
+            "self": "/api/characters/19/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Kokoro is the soon-to-be girlfriend of Kippei. She is pretty, although quiet, and rather lonesome as she lost her mother at an early age of 6. This makes it easy for her to sympathize with Yuzuyu. Her father married another woman and thinking Kokoro could fend on her own, rents her a luxurious apartment to live in. The truth is, that is not the case. Kokoro is understanding of Kippei's responsibility to spend most of his time with Yuzuyu. Despite her popularity and Kippei's moron-ness, Kokoro's heart remains loyal to Kippei.\n\n", 
+        "japanese_name": "(\u5fb3\u6c38\u5fc3)", 
+        "name": "Kokoro Tokunaga", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/6/120294.jpg"
+      }, 
+      "id": "20", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/20"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "25", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/20/actors", 
+            "self": "/api/characters/20/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "4", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/20/animes", 
+            "self": "/api/characters/20/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "4", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/20/mangas", 
+            "self": "/api/characters/20/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Riiya may look like a regular boy, but he can actually transform into a wolf at will, with no need for a full moon, and harbors inhuman strength. He is one of Chacha's two closest friends, the other being Shiine, whom he fights with for Chacha's oblivious affection. Riiya also loves food, and is frequently cuddled by Chacha for being, in her mind, incredibly adorable in his wolf form.\n\n", 
+        "japanese_name": "(\u30ea\u30fc\u30e4)", 
+        "name": "Riiya ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/13/113853.jpg"
+      }, 
+      "id": "21", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/21"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "26", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/21/actors", 
+            "self": "/api/characters/21/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "5", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/21/animes", 
+            "self": "/api/characters/21/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "5", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/21/mangas", 
+            "self": "/api/characters/21/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Cha Cha is a cute little girl who is training to be a good magician. She was raised by her teacher Seravi, who is considered the world's greatest magician. Cha Cha almost always gets strange or disastrous results whenever she uses her magic, so she practices a lot. Cha Cha then embarks on a quest with her friends to find out about her real identity and her real family.\n\n", 
+        "japanese_name": "(\u30c1\u30e3\u30c1\u30e3)", 
+        "name": "Chacha ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/88512.jpg"
+      }, 
+      "id": "22", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/22"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "27", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/22/actors", 
+            "self": "/api/characters/22/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "5", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/22/animes", 
+            "self": "/api/characters/22/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "5", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/22/mangas", 
+            "self": "/api/characters/22/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "An apprentice wizard to Dorothy. His magic powers are better than Chacha's and is the most sensible and reasonable among the group. He is very loyal to his Master Dorothy and enjoys doing housework. He also has quite the crush on Chacha and tends to feel uneasy if Riiya and Chacha are getting along together without him.\n \n He was left to Dorothy as a baby by Access (his father). With Chacha and Riiya's help, he is reunited with his parents.\n\n", 
+        "japanese_name": "(\u3057\u3044\u306d)", 
+        "name": "Shiine ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/88511.jpg"
+      }, 
+      "id": "23", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/23"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "28", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/23/actors", 
+            "self": "/api/characters/23/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "5", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/23/animes", 
+            "self": "/api/characters/23/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "5", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/23/mangas", 
+            "self": "/api/characters/23/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "<b>Birthday:</b> September 24\n <b>Age:</b> 16 years old\n <b>Blood Type:</b> O\n <b>Zodiac:</b> Libra\n <b>Height:</b> 177 cm\n <b>Hobbies:</b> Listening to music\n <b>Family:</b> Mother, father, twin sister\n \n Aya's twin brother, a gentle and caring person who is subject to becoming a medium for the spirit of Mikagi, the founder of the Mikage family who aggressively pursues Aya and Ceres and almost raped Aya. In the end he sacrifices his life to destroy the violent Mikagi's reincarnation.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u5fa1\u666f \u660e)", 
+        "name": "Aki Mikage", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/89883.jpg"
+      }, 
+      "id": "24", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/24"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "29", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/24/actors", 
+            "self": "/api/characters/24/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/24/animes", 
+            "self": "/api/characters/24/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/24/mangas", 
+            "self": "/api/characters/24/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "<b>Blood Type:</b> O?\n <b>Height:</b> 166 cm.\n \n A celestial maiden or tennyo from the legend, who married the founder of the Mikage family, Mikagi Mikage. While she is extremely powerful and volatile, she seeks to recover her hagoromo, or celestial robe, to regain her powers. She has repeatedly attempted to manifest herself through certain female descendants of her line when they reach the age of sixteen, only to be thwarted each time as they are killed by the Mikage family. Ceres hides a tragic past misinterpreted by descendants who seek to kill Aya to stop Ceres for another generation.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u30bb\u30ec\u30b9)", 
+        "name": "Ceres ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/16/89878.jpg"
+      }, 
+      "id": "25", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/25"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "30", 
+              "type": "actors"
+            }, 
+            {
+              "id": "31", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/25/actors", 
+            "self": "/api/characters/25/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/25/animes", 
+            "self": "/api/characters/25/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/25/mangas", 
+            "self": "/api/characters/25/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "<b>Birthday:</b> August 8\n <b>Age:</b> 16 years old\n <b>Blood Type:</b> B\n <b>Zodiac:</b> Leo\n <b>Height:</b> 178 cm\n <b>Specialty:</b> Martial Arts (he uses a chopstick during a battle)\n <b>Family:</b> Sister-in-law (Suzumi), father, two brothers\n \n Suzumi's brother-in-law, the adopted younger brother of Suzumi's deceased husband. Early within the series, he wears a headband enhanced with tennyo magic made by Suzumi which helps to designate him as Aya's bodyguard. Yuuhi has unrequited feelings for Aya. Though attracted to Yuuhi, Aya ultimately comes to see him as a close friend, and Yuuhi is able to accept the fact that Aya only has eyes for Tooya. A notable martial arts expert, he is also an extraordinary cook.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u68a7 \u96c4\u98db)", 
+        "name": "Yuuhi Aogiri", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/89879.jpg"
+      }, 
+      "id": "26", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/26"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "32", 
+              "type": "actors"
+            }, 
+            {
+              "id": "33", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/26/actors", 
+            "self": "/api/characters/26/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/26/animes", 
+            "self": "/api/characters/26/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/26/mangas", 
+            "self": "/api/characters/26/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "<b>Age:</b> Appears to be about 20 to 24 years old\n <b>Blood Type:</b> AB\n <b>Height</b>: 184cm\n \n A mysterious young man who has absolutely no memory of his past or the nature of his being. His only clues are two names: \"Tooya\" (\"ten nights\", his own name) and \"Mikage.\" He was found and hired by Kagami and works for Mikage International, and later rebels against them. He and Aya are drawn to one another, not only in love.\n \n Tooya is the embodiment/offspring of the hagoromo which Ceres is searching for. As he regains his lost memories, he sacrifices the immortality bestowed upon him by the object to save Aya and his unborn child. At the end of the series, he tells Yuuhi that he may not live for long and that Yuuhi should take care of Aya once he dies.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u5341\u591c)", 
+        "name": "Tooya ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/89852.jpg"
+      }, 
+      "id": "27", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/27"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "34", 
+              "type": "actors"
+            }, 
+            {
+              "id": "35", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/27/actors", 
+            "self": "/api/characters/27/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/27/animes", 
+            "self": "/api/characters/27/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/27/mangas", 
+            "self": "/api/characters/27/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "<b>Birthday:</b> September 24\n <b>Age:</b> 16 years old\n <b>Blood Type:</b> O\n <b>Zodiac:</b> Libra\n <b>Height:</b> 166 cm\n <b>Hobbies:</b> Singing, talking on the phone\n <b>Family:</b> Mother, father, twin brother\n <b>Specialty:</b> Turn into a celestial being (Ceres)\n <b>Lover:</b> Tooya\n \n A high-school girl and the protagonist  at the beginning of the story who discovers she is a descendant of a tennyo named \"Ceres\" and is Ceres' latest medium  for existence. The Mikage family takes this as a threat and continuously tries to take Aya's life. Her father is killed attempting to protect her. Her mother is forced into a coma for the majority of the series. While Aya is initially horrified that her life has been turned upside down, she is determined to right the past doings of her family and recover Ceres' hagoromo so that her family will no longer suffer in fear of her. As the series progresses, she falls in love with Tooya and they conceive a child together.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u5fa1\u666f \u5996)", 
+        "name": "Aya Mikage", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/89836.jpg"
+      }, 
+      "id": "28", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/28"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "37", 
+              "type": "actors"
+            }, 
+            {
+              "id": "36", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/28/actors", 
+            "self": "/api/characters/28/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/28/animes", 
+            "self": "/api/characters/28/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "6", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/28/mangas", 
+            "self": "/api/characters/28/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Makoto is the epitome of a girl-obsessed guy who keeps an electronic database of almost all the girls at Otowa-no-Mori with him (to a point of bribing some informers to get the scoop). He even uses computer dating simulators and guide books. (Actually, he's terribly shy and can't do anything in decisive situations.) He is also the only techno-geek in the group. After he botched his date with Erika Kawai, he ended up with her best friend (who acted as the bridge between them), Yumi Kazama. He also had an interlude with a nursing intern after getting hospitalized for peeping at a short-skirted girl as she climbed an overpass. His scooter hitting a mini-truck, but he forgot about her when he saw that girl again...\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u80e1\u6843\u6ca2\u30de\u30b3\u30c8)", 
+        "name": "Makoto Kurumizawa", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/10/10692.jpg"
+      }, 
+      "id": "29", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/29"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "38", 
+              "type": "actors"
+            }, 
+            {
+              "id": "39", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/29/actors", 
+            "self": "/api/characters/29/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/29/animes", 
+            "self": "/api/characters/29/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/29/mangas", 
+            "self": "/api/characters/29/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Yumi is a spectacled girl who loves to dress in odd clothes, like wearing a sea lion costume at the beach. She acted as an \"Erika Kawai Simulator\" for Makoto... and eventually falls in love when Rika dumps him.\n \n (Source: Wikipedia, edited)\n\n", 
+        "japanese_name": "(\u98a8\u9593\u6709\u7f8e)", 
+        "name": "Yumi Kazama", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/44812.jpg"
+      }, 
+      "id": "30", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/30"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "41", 
+              "type": "actors"
+            }, 
+            {
+              "id": "40", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/30/actors", 
+            "self": "/api/characters/30/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/30/animes", 
+            "self": "/api/characters/30/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/30/mangas", 
+            "self": "/api/characters/30/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Her boyfriend is a photographer now working in Hokkaid\u014d, hence her limited love interludes. For most of the series she's maintaining a long-distance relationship. \n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u6c34\u8c37\u4e9c\u7d00)", 
+        "name": "Aki Mizutani", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/44806.jpg"
+      }, 
+      "id": "31", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/31"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "42", 
+              "type": "actors"
+            }, 
+            {
+              "id": "43", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/31/actors", 
+            "self": "/api/characters/31/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/31/animes", 
+            "self": "/api/characters/31/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/31/mangas", 
+            "self": "/api/characters/31/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "She is Kyoichi's athletic love interest, running for their school's track and field team. She has been Kyoichi's friend since childhood, but she also has difficulty expressing love. Though not in a relationship with Kyoichi, she was asked by Okazaki if she had a boyfriend to which she replied that \"he\" wouldn't mind. Okazaki continued his advances to which they spent a night together at a lookout point (though nothing happened between them). She wanted to keep her tryst a secret, but Kyoichi, coming in to visit, saw them kissing, hence a rift between them that lasted all summer.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u65b0\u7530\u5343\u6625)", 
+        "name": "Chiharu Nitta", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/44809.jpg"
+      }, 
+      "id": "32", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/32"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "44", 
+              "type": "actors"
+            }, 
+            {
+              "id": "45", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/32/actors", 
+            "self": "/api/characters/32/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/32/animes", 
+            "self": "/api/characters/32/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/32/mangas", 
+            "self": "/api/characters/32/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "He is a high school student having difficulty expressing his love for his childhood friend, Chiharu Nitta. Their relationship has encountered turbulence. It had an all-time low when he was connected to one Shoko Sayama. In Hokkaido, he worked on his sketches with a girl named Chiharu Reicha.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u795e\u5d0e\u606d)", 
+        "name": "Kyoichi Kanzaki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/7/10690.jpg"
+      }, 
+      "id": "33", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/33"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "47", 
+              "type": "actors"
+            }, 
+            {
+              "id": "46", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/33/actors", 
+            "self": "/api/characters/33/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/33/animes", 
+            "self": "/api/characters/33/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/33/mangas", 
+            "self": "/api/characters/33/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Yoshihiko is extremely talented in sports (especially baseball), but he has no interest in it whatsoever (similar to Initial D's Takumi Fujiwara). He also seems to have no interest in girls... until the day he met Aya Kurihara. However, after her return to France, he met his girlfriend Natsue Horikawa during baseball practice. He also had a run-in with the young idol Jyunna Morio when she escaped and got lost from her studio taping.\n \n (Source: Wikipedia, edited)\n\n", 
+        "japanese_name": "(\u5263\u57ce\u7f8e\u5f66)", 
+        "name": "Yoshihiko Kenjo", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/44810.jpg"
+      }, 
+      "id": "34", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/34"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "49", 
+              "type": "actors"
+            }, 
+            {
+              "id": "48", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/34/actors", 
+            "self": "/api/characters/34/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/34/animes", 
+            "self": "/api/characters/34/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/34/mangas", 
+            "self": "/api/characters/34/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Domyouji Tsukasa is the leader of the F4. At the beginning of the series, he is Makino's biggest enemy, but as the story progresses, he becomes her love interest.\n \n Tsukasa is the heir to Domyoji Enterprises, and his family is extremely rich. They own various houses around the world, including an actual island, a house in Canada, and a house in New York City where his parents stay.\n \n Domyouji grew up somewhat lonely, as his parents were always overseas, and his sister&mdash;as loving as she could be&mdash;was either busy studying or, later in life, married and moved to Los Angeles. Also, his mother, Kaede, is cold to him, and although she loves him, wants to control his life. Tsukasa sometimes calls her \"the old hag\" and \"witch\".\n \n Before he met Makino, he was violent and ill-tempered, but after he became loyal and nice. \n \n As Tsukasa first started off being hard and tough to get though to;  the author of Hana Yori Dango showed us thoughout the anime and manga that anyone who starts off being hard can also find their soft side because of love and that is shown though Tsukasa Domyouji.\n\n", 
+        "japanese_name": "(\u9053\u660e\u5bfa \u53f8)", 
+        "name": "Tsukasa Domyouji", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/4/82712.jpg"
+      }, 
+      "id": "35", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/35"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "51", 
+              "type": "actors"
+            }, 
+            {
+              "id": "50", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/35/actors", 
+            "self": "/api/characters/35/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "8", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/35/animes", 
+            "self": "/api/characters/35/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "8", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/35/mangas", 
+            "self": "/api/characters/35/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "The violinist Rui Hanazawa, Tsukasa's best friend, becomes Tsukushi's first serious romantic interest. He is a quiet and cold guy, but he has a soft spot for his close friend and Tsukushi's idol, the model Todo Shizuka, whom he harbored feelings for since childhood. His character is a bit complex, and always has changing feelings for Tsukushi, but above all cares about her in a friendly way.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u82b1\u6ca2 \u985e)", 
+        "name": "Rui Hanazawa", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/133205.jpg"
+      }, 
+      "id": "36", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/36"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "53", 
+              "type": "actors"
+            }, 
+            {
+              "id": "52", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/36/actors", 
+            "self": "/api/characters/36/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "8", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/36/animes", 
+            "self": "/api/characters/36/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "8", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/36/mangas", 
+            "self": "/api/characters/36/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Tsukushi Makino is the main female character, and is one of the very few students at the prestigious Eitoku University to come from an \"unwealthy\" family. Her family is so poor that they can barely afford to pay Makino's tuition, but her parents push her on to continue school because they have a dream that she can \"snag a rich man\" and take them out of poverty.\n \n At the beginning of the manga, Makino was a poor, pig-tailed girl who had almost no friends at school and kept to herself. When one of her only friends falls down a staircase and bumps in the leader of the F4, Makino stands up for her friend (Domyoji was about to hurt her for bumping into him) and suffers the consequences.\n \n The next day, a red tag is hanging in her locker, which predicts future torment from the F4 and followers. But, unlike most of the F4's targets, Makino stands up for herself, showing how strong a \"weed\" can be.\n \n In this process, she changes to let her stubborn, hardworking ways show through, and in the end she turns all of the F4 into her friends.\n \n At first, Makino hates all of the F4 except Hanazawa Rui, (which she has romantic feelings towards). But, as Rui goes off to chase after Shizuka, Makino gets to know them, and even slowly falls in love with the hotheaded leader, Domyoji.\n\n", 
+        "japanese_name": "(\u7267\u91ce \u3064\u304f\u3057)", 
+        "name": "Tsukushi Makino", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/84352.jpg"
+      }, 
+      "id": "37", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/37"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "actors"
+            }, 
+            {
+              "id": "54", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/37/actors", 
+            "self": "/api/characters/37/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "8", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/37/animes", 
+            "self": "/api/characters/37/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "8", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/37/mangas", 
+            "self": "/api/characters/37/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Jing is the protagonist of the series. A dashing young thief in a flowing orange trenchcoat, his exceptional skills and dedication are seemingly contradicted by his laid-back manner. He approaches life with a disarming, confident cheerfulness, selecting his targets seemingly on a whim. Because he is such a legendary figure, many people are surprised when they meet him in person, as he is rather small and unassuming at first glance. His skills as a thief, however, are without equal. He travels the world with his best friend, Kir, a talking albatross with whom he can combine to unleash the deadly Kir Royale attack, which is a green ball of energy shot out of Kir's mouth.\n\n", 
+        "japanese_name": "(\u30b8\u30f3)", 
+        "name": "Jing ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/7/67585.jpg"
+      }, 
+      "id": "38", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/38"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "57", 
+              "type": "actors"
+            }, 
+            {
+              "id": "56", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/38/actors", 
+            "self": "/api/characters/38/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "9", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/38/animes", 
+            "self": "/api/characters/38/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "9", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/38/mangas", 
+            "self": "/api/characters/38/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "A student attending a certified culinary school who is proficient in French, Chinese, Italian and Japanese cooking. Kyohei is often seen wearing his chef uniform and riding a small motor scooter which is destroyed by Jo on two occasions. He is hired by Sei as a cook for the girls because their last cook had left. He continues working for the team to save up to go to France and become a pastry chef.\n\n", 
+        "japanese_name": "(\u7acb\u5834\u7121 \u606d\u5e73)", 
+        "name": "Kyouhei Tachibana", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/3/119483.jpg"
+      }, 
+      "id": "39", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/39"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "59", 
+              "type": "actors"
+            }, 
+            {
+              "id": "58", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/39/actors", 
+            "self": "/api/characters/39/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/39/animes", 
+            "self": "/api/characters/39/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/39/mangas", 
+            "self": "/api/characters/39/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Silver hair, red eyes, carries twin Desert Eagles and is known as \"The Angel from Hell.\" She has superhuman abilities from her artificial creation, usually followed by the appearance of a purple glowing tattoo on her left arm and shoulder blade. They resemble wings and are often called \"The Wings of the Devil\" and will glow when Jo is put under a lot of stress when fighting. Jo also puts Meg over anything else, which she stated when telling Meg that she fights for her only. When she is not fighting, she enjoys watching horror or gore related movies.\n \n Ending spoiler:\n \n Jo would eventually rediscover her past as a genetically engineered war machine in human form. After being forced to surrender with Meg and others held hostage, Jo returns to the secret labs for reprogramming and conditioning at RAPT R&D. Jo's counterpart, Maria, freed her to only prove who was the strongest; Jo managed to remove her will to defeat her and restores her true humanity. Jo realized that she has to destroy RAPT at the source all for all that has happened as well as help Sei. Meg was highly opposed to the idea after seeing her go through a lifetime of combat and feels it's not their problem. Jo knocks Meg out, bids her farewell and leaves her communicator and jacket behind for her to remember by. After fighting their way into RAPT HQ, Jo destroyed RAPT's most powerful bio-tech brain and the whole building collapses. It is unknown whether Jo survived the explosion or not.\n (Source: Wikipedia)\n\n", 
+        "japanese_name": "( \u30b8\u30e7\u30fc\u00b7\u30ab\u30fc\u30da\u30f3\u30bf\u30fc)", 
+        "name": "Jo ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/31028.jpg"
+      }, 
+      "id": "40", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/40"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "60", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/40/actors", 
+            "self": "/api/characters/40/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/40/animes", 
+            "self": "/api/characters/40/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "10", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/40/mangas", 
+            "self": "/api/characters/40/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Sei is the busty leader of the group and was the one who hired Jo and Meg to become members of it alongside Kyohei. She wears a long blue jacket, and has her black hair in a bun, but appears older than her stated age. Her grandfather runs Bai Lan and comes from a very powerful Chinese family. Born and raised as a traditional Chinese girl and trained in various ways of her clan/syndicate. After her grandfather stepped down as leader of the clan, their current clan members made a partnership with RAPT to preserve their clan. However such actions not only disgusted Sei, but she was forced to do many things for RAPT in Bai-Lan's name. She eventually rebelled against her own organization under the advice of her own grandfather. She was advised to walk her own path and so she chose to oppose RAPT and towards the end she was shot multiple times by a cyberoid. It is unknown if Sei survived the explosion or not. (Source : Wikipedia)\n\n", 
+        "japanese_name": "(\u30bb\u30a4)", 
+        "name": "Sei ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/119384.jpg"
+      }, 
+      "id": "41", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/41"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "61", 
+              "type": "actors"
+            }, 
+            {
+              "id": "62", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/41/actors", 
+            "self": "/api/characters/41/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/41/animes", 
+            "self": "/api/characters/41/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "10", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/41/mangas", 
+            "self": "/api/characters/41/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Meg has red hair, carries a small revolver, at times a large armor piercing rifle, and dresses like a cowgirl. Meg is highly prone to be captured and only to be rescued by Jo. She is the very best of friends with Jo and is 100% loyal to her only. It's suggestive throughout the series and manga that her feelings for Jo might be romantic, possibly bisexual since she's into men. She first met Jo in New York City, a year before the beginning of the series. Since then, Meg and Jo teamed up and became bounty hunters until Sei hired them. Meg enjoys eating and loves buffets. Her true hair color is not red, but actually black.\n \n She was once an orphan in New York City, but managed to encounter Jo. At first she was reluctant to keep Jo around because of her destructive capabilities, but after some time they learn to appreciate and trust each other. After they took Sei's offer as employees of Bai-lan, they have been performing supportive roles for Jo's missions. Meg often would be an undercover agent for info and provide cover fire for Jo. After she finds out Jo's origin, she feels Jo no longer should fight, but was left alone on their final mission. Jo knocked her out and left her belongings to her. ( Source : Wikipedia )\n\n", 
+        "japanese_name": "(\u30e1\u30b0)", 
+        "name": "Meg ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/9/119385.jpg"
+      }, 
+      "id": "42", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/42"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "63", 
+              "type": "actors"
+            }, 
+            {
+              "id": "64", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/42/actors", 
+            "self": "/api/characters/42/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/42/animes", 
+            "self": "/api/characters/42/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "10", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/42/mangas", 
+            "self": "/api/characters/42/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Amy is a Computer/Techno whiz. She was saved and recruited by Sei after Amy's hacking drew attention to the authorities. She often argues with Meg and also loves scarfing down Kyohei's various treats. She has a cult following in the cyberworld. She is often seen carrying what appears to be a pink stuffed animal that actually contains a laptop. ( Source : Wikipedia )\n\n", 
+        "japanese_name": "(\u30a8\u30a4\u30df\u30fc)", 
+        "name": "Amy ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/10/75077.jpg"
+      }, 
+      "id": "43", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/43"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "66", 
+              "type": "actors"
+            }, 
+            {
+              "id": "65", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/43/actors", 
+            "self": "/api/characters/43/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/43/animes", 
+            "self": "/api/characters/43/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "10", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/43/mangas", 
+            "self": "/api/characters/43/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Mao is the son of the late \"Fairy of cuisine\" Pai. After her death Mao wishes to follow in his mother's footsteps and become the best chef in the world!\n\n", 
+        "japanese_name": "(\u5289\u6634\u661f)", 
+        "name": "Liu Mao Hsing", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/105381.jpg"
+      }, 
+      "id": "44", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/44"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "67", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/44/actors", 
+            "self": "/api/characters/44/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "12", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/44/animes", 
+            "self": "/api/characters/44/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/44/mangas", 
+            "self": "/api/characters/44/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "The 16 year old daughter of Chouyu. Originally, she was a helper at the Yang Spring Restaurant. She fell in love with Mao after seeing how much he loves cooking and how he also cares about others. She only knows a little about the cooking field, but she's useful when it comes to little facts and often tries to help Mao with various other things. After finding out that Mao was leaving the Yang Spring Restaurant to travel China, she was heartbroken since she thought that she could live a life with him. She eventually made up her mind and decided to also leave the restaurant, in order to travel with him (In the manga, she did not accompany Mao in his journey around China). Mei often gets into arguments with Shirou and always ends up slapping or hitting him. She also gets very jealous every time another woman gets near Mao. An example of her animosity towards women that gets close to Mao is when his sister, Karin, visits him to bring their mother's cooking materials; she says that Karin will never be good for Mao, that is until she finds out that she is his sister. In another occasion, when the female chef, Anzu, finally realized the way of making singe cuisine, she kissed Mao as a sign of gratitude, but Mei Li became angry and began to express her anger by hitting Shirou. Although, she says that her number one rival for Mao's heart is his love for cooking. She's a spitting image of her deceased mother, Meika.\n \n -Wikipedia\n\n", 
+        "japanese_name": "(\u5468\u6885\u9e97)", 
+        "name": "Mei Li Chou", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/13/105382.jpg"
+      }, 
+      "id": "45", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/45"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "68", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/45/actors", 
+            "self": "/api/characters/45/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "12", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/45/animes", 
+            "self": "/api/characters/45/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/45/mangas", 
+            "self": "/api/characters/45/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "She's a dark and mysterious girl who becomes a Corrector on her own in the 2nd season after the Teddy Bear of the \"missing little girl\" (named I-chan) stole Yui's original ComCon for Ai so she could help his little mistress.\n \n Her bitter experience in the past seems to be the reason for her cold, apathetic demeanor as a mask to protect herself; she actually wants to save her mother, Azusa,who is in a coma after an accident in the net.\n \n While at most times she performs her job with mostly cold, no-nonsense efficiency, Yui's compassionate actions sometimes make her think twice and then go out of her way to help Yui. The Correctors distrust her but Dr. Inukai actually think she's not a bad person, letting Ai keep the ComCon after she promises to give it back to him when she's done dealing with the reason that made her take up the Corrector tasks.\n \n \n [source: Wikipedia]\n \n\n", 
+        "japanese_name": "(\u7be0\u5d0e \u611b )", 
+        "name": "Ai Shinozaki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/5/104394.jpg"
+      }, 
+      "id": "46", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/46"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "69", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/46/actors", 
+            "self": "/api/characters/46/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/46/animes", 
+            "self": "/api/characters/46/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/46/mangas", 
+            "self": "/api/characters/46/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Natsumi stars in the \"Cosprayers\" show as Miko Red Rayer (Koto Hoshino). She is 17 years of age and is under the belief that she was only enlisted for her looks and that her acting is of poor quality. Yagami is aware that Naoko is the script writer and seduces him to gain more roles in the show, but then falls in love with him after she sees how much of a good person he is.\n \n Source: Wikipedia\n\n", 
+        "japanese_name": "(\u516b\u795e\u83dc\u6458 / \u661f\u91ce\u53e4\u90fd / \u30df\u30b3\u30ec\u30a4\u30e4\u30fc)", 
+        "name": "Natsumi Yagami", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/60876.jpg"
+      }, 
+      "id": "47", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/47"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "70", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/47/actors", 
+            "self": "/api/characters/47/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "14", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/47/animes", 
+            "self": "/api/characters/47/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/47/mangas", 
+            "self": "/api/characters/47/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "The hero of the story is Shima (or \"Shipon (\u3057\u30fc\u307d\u3093)\" as she is dubbed by Arisa) who joins the Stellvia foundation's space program so that she could \"see the stars while looking forward, rather than having to look up.\" In the beginning, she fluctuates between complete confidence in her abilities and believing she couldn't do anything. The series depicts her as extremely diligent, although she is also a natural genius.\n \n As the series progresses, she learns to understand her mistakes and not think that she has to be perfect or else fail. For instance, after a rocky start to her training, during which she was dead last in her class at piloting, she takes the advice of Kouta Otoyama and realizes she was trying to keep track of far too much information on her ship displays. Her piloting improves dramatically as a result. Despite her early setbacks as a pilot, her programming abilities are top notch from the very start, and she eventually combines the two in order to become even more formidable in the cockpit. She is called Shipon because the first time she piloted one of the Biancas she flew around like a ping-pong ball.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u7247\u702c \u5fd7\u9ebb)", 
+        "name": "Shima Katase", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/14/100418.jpg"
+      }, 
+      "id": "48", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/48"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "72", 
+              "type": "actors"
+            }, 
+            {
+              "id": "71", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/48/actors", 
+            "self": "/api/characters/48/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/48/animes", 
+            "self": "/api/characters/48/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/48/mangas", 
+            "self": "/api/characters/48/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Kouta is an enigmatic character. He and Shipon develop a romantic relationship but there's still a lot about him that remains unknown. He has an older sister who runs an astronomical observatory in Japan. He often gives advice which is as enigmatic as himself.\n He consistently achieves rank C in every class, without exception, regardless of how easy or hard the subject is. And when he was warned of the possibility of Ayaka attacking Shipon during training, he displays extraordinary piloting abilities beyond what his ship should have been capable of handling. Another example would be during a simulator-game where Rinna scored Rank A, Shima scored Rank B, he had scores Rank S. When Shima asks why Kouta does not do the best during class, especially since he is capable of it, he merely says: he wonders why also. Pierre once remarks \"Talented hawks hide their talons\" when referring to Kouta's skills.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u97f3\u5c71 \u5149\u592a)", 
+        "name": "Kouta Otoyama", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/100417.jpg"
+      }, 
+      "id": "49", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/49"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "74", 
+              "type": "actors"
+            }, 
+            {
+              "id": "73", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/49/actors", 
+            "self": "/api/characters/49/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/49/animes", 
+            "self": "/api/characters/49/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/49/mangas", 
+            "self": "/api/characters/49/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Arisa is Shipon's best friend at the Stellvia foundation. They meet on the shuttle going to the station from Earth at the beginning of the term, and find themselves rooming together and in the same class as well. Though Arisa is nowhere near Shipon in academic or piloting ability, she finds Shipon to be an inspiration to improve herself, and calls Shipon her \"Star of Hope\". Later in the series, she begins focusing on becoming a mechanic, rather than a pilot. (wikipedia)\n\n", 
+        "japanese_name": "(\u30a2\u30ea\u30b5\u30fb\u30b0\u30ec\u30f3\u30ce\u30fc\u30b9)", 
+        "name": "Arisa Glennorth", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/13/92407.jpg"
+      }, 
+      "id": "50", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/50"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "76", 
+              "type": "actors"
+            }, 
+            {
+              "id": "75", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/50/actors", 
+            "self": "/api/characters/50/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/50/animes", 
+            "self": "/api/characters/50/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/50/mangas", 
+            "self": "/api/characters/50/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "A mute with a nearly uncanny resemblance to Freddie Mercury. Hayashida claimed that as long as he attended, Cromartie would be the \"Olympics for delinquents\". Although he never speaks and people assume he is a mute, Freddie actually has a good singing voice and the only occasion people can hear his voice is when he sings. He also rides a horse to school, and seems to be in Japan for no apparent reason.\n\nNo voice actors have been added to this character. Help improve our database by searching for a voice actor, and adding this character to their roles <a href=\"/voiceactor.php\">here</a>.\n\n<h2><div class=\"floatRightHeader\"><a href=\"/character/2837/Freddie/featured\">See More</a></div>Recent Featured Articles</h2><div class=\"detail-page-featured-article\"><div class=\"news-list\">", 
+        "japanese_name": "(\u30d5\u30ec\u30c7\u30a3)", 
+        "name": "Freddie ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/66077.jpg"
+      }, 
+      "id": "51", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/51"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/51/actors", 
+            "self": "/api/characters/51/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "16", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/51/animes", 
+            "self": "/api/characters/51/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "14", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/51/mangas", 
+            "self": "/api/characters/51/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "One of the most notorious delinquents of Cromartie. Though he is a robot, no one but the main characters seems to notice, including himself. Other delinquents rely on him and he gives good advice. \n \n Mechazawa is bad with machines:\n \"Why are you bringing ME your electronics? I want to help you guys in any way I can -- even if I gotta put my life on the line! But when it comes to MACHINES, I'm helpless myself.\"\n \n From the character profile:\n People seem to find this robot deliquent a bit unbelievable; however, both male and female readers are enamored of Mechazawa for his cerebral and down-to-earth remarks. But whatever way you look at it, Mechazawa is a robot - though he obnoxiously tries to play himself of as a human.\n\n", 
+        "japanese_name": "(\u30e1\u30ab\u6ca2 \u65b0\u4e00)", 
+        "name": "Shinichi Mechazawa", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/7/77978.jpg"
+      }, 
+      "id": "52", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/52"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "77", 
+              "type": "actors"
+            }, 
+            {
+              "id": "78", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/52/actors", 
+            "self": "/api/characters/52/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "16", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/52/animes", 
+            "self": "/api/characters/52/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "14", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/52/mangas", 
+            "self": "/api/characters/52/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Kamiyama's first friend at Cromartie, noted for his (fake) purple mohawk. Hayashida is the one delinquent that helps Kamiyama blend in to the bewildering environment of Cromartie High. Although streetwise, he is dumber than the gorilla and doesn't even understand basic math.\n\n", 
+        "japanese_name": "(\u6797\u7530 \u614e\u4e8c\u90ce)", 
+        "name": "Shinjirou Hayashida", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/4/77975.jpg"
+      }, 
+      "id": "53", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/53"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "79", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/53/actors", 
+            "self": "/api/characters/53/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "16", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/53/animes", 
+            "self": "/api/characters/53/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "14", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/53/mangas", 
+            "self": "/api/characters/53/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "The main character of the series, originally just another above-average student until he decided to enroll at Cromartie. Everyone else at Cromartie assumes that he's the toughest kid in school, since a rabbit would never go into a den of lions (unless it was a really badass rabbit). He has ambitions to change the school for the sake of bettering its student body.\n\n", 
+        "japanese_name": "(\u795e\u5c71 \u9ad8\u5fd7)", 
+        "name": "Takashi Kamiyama", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/77976.jpg"
+      }, 
+      "id": "54", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/54"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "80", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/54/actors", 
+            "self": "/api/characters/54/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "16", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/54/animes", 
+            "self": "/api/characters/54/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "14", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/54/mangas", 
+            "self": "/api/characters/54/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Katsuhiko Jinnai (\u9663\u5185 \u514b\u5f66 Jinnai Katsuhiko), manages to win the Student Body Presidential election by promising student government funds to campus clubs and organizations that voted for him.\n \n When Makoto catches wind of this and plans are made for him to testify against Jinnai (who is called \"Jinnai\" by everyone except his sister), the egocentric, power-hungry and soon-to-be-impeached Student Body President attempts to thwart the process by attacking Makoto, intending to keep him tied up until a technicality in the bylaws prevents him from being thrown out of office. Before he can execute his plan, however, he's sent to El-Hazard, and once there encounters the Bugrom, a race of human-sized insectoid beings ruled by Queen Diva.\n \n Jinnai's power granted to him by the trip is the ability to communicate with the Bugrom, allowing him to become their military commander under their belief that he is the messenger from God sent to lead the Bugrom to victory. A skilled tactician, he is able to reorganize the Bugrom forces into an effective army and comes close to conquering El-Hazard.\n \n Although Jinnai is a power-hungry egomaniac, he's not without some level of humanity. When Galus attempts to stop Makoto and the others from halting the Eye of God's apocalyptic malfunction, he takes the leader of the Phantom Tribe by surprise with the help of a Bugrom soldier. Although Jinnai effectively comes to Makoto and Nanami's rescue, he does so more for the fact that a \"true ruler doesn't destroy the land he wishes to conquer.\" Jinnai has a very distinctive laugh.\n \n Jinni suffers from an obsession with Makoto that borders of the psychotic. Over the course of both series, he consistently blames Makoto for essentially every single failure and disappointment he experiences. His sense of his own history is a montage of misfortune, the chief architect of which is Makoto. Though generally megalomaniacal, one of his primary motivations in gaining power is to subsequently gain the ability to best, or, even kill him.\n \n Jinnai in The Wanderers\n \n Jinnai does not change much in the transition from OVA to TV series, either, but he seems to treat Ifurita with more care. Although he's threatened with impeachment from his position as Student Body President at the beginning of the series and Makoto plays no direct role in the trial, he is paranoid that Makoto will replace him as president once he is kicked out of office.\n \n Additionally, Jinnai reveals a softer side at the end of the series, showing a certain fatherly affection towards Ifurita after she stops the Eye of God from plowing into Roshtaria.   ~From Wikipedia\n\n", 
+        "japanese_name": "(\u9663\u5185 \u514b\u5f66)", 
+        "name": "Katsuhiko Jinnai", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/10/127875.jpg"
+      }, 
+      "id": "55", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/55"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "81", 
+              "type": "actors"
+            }, 
+            {
+              "id": "82", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/55/actors", 
+            "self": "/api/characters/55/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "17", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/55/animes", 
+            "self": "/api/characters/55/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/55/mangas", 
+            "self": "/api/characters/55/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Current Age: 32\n Birthdate: 1964\n Height: 178 cm\n \n Masamichi Fujisawa is a history teacher at Shinonome High. Not known for his hygiene or concern for fashion, Fujisawa is a lanky man with a mop of scraggly dark hair atop his head and his face is peppered with the occasional stubble. Clothing wise, he tends to opt for comfort over style and thus is more likely to be seen wearing a warm-up suit over an Armani and sandals instead of Bruno Magli. \n \n However, while his dedication to his appearance may come into question, his devotion to his students and teaching cannot. He is definitely filled with school spirit and his dedication to his students can only be rivaled by his love for three things: 1. Smoking 2. Drinking 3. Mountain Climbing. \n \n (Source: El-Hazard Online)\n\n", 
+        "japanese_name": "(\u85e4\u6ca2\u771f\u7406)", 
+        "name": "Masamichi Fujisawa", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/3/113085.jpg"
+      }, 
+      "id": "56", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/56"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "86", 
+              "type": "actors"
+            }, 
+            {
+              "id": "83", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/56/actors", 
+            "self": "/api/characters/56/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "18", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/56/animes", 
+            "self": "/api/characters/56/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/56/mangas", 
+            "self": "/api/characters/56/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Rune Venus is the princess of Roshtaria. She's both the leader of Roshtaria and the head of the Alliance. A serious, intelligent and kind-hearted ruler. \n \n (by Wikipedia)\n\n", 
+        "japanese_name": "(\u30eb\u30fc\u30f3\u30fb\u30f4\u30a7\u30fc\u30ca\u30b9)", 
+        "name": "Rune Venus", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/16/86053.jpg"
+      }, 
+      "id": "57", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/57"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "85", 
+              "type": "actors"
+            }, 
+            {
+              "id": "84", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/57/actors", 
+            "self": "/api/characters/57/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "18", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/57/animes", 
+            "self": "/api/characters/57/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/57/mangas", 
+            "self": "/api/characters/57/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Ifurita is an ancient Demon God of El-Hazard. Although the specifics of her origin are never explained, it appears as though she is a biological machine designed to look like a beautiful young woman. (by Wikipedia) \n\n", 
+        "japanese_name": "(\u30a4\u30d5\u30ea\u30fc\u30bf)", 
+        "name": "Ifurita ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/5/147963.jpg"
+      }, 
+      "id": "58", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/58"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "87", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/58/actors", 
+            "self": "/api/characters/58/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "19", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/58/animes", 
+            "self": "/api/characters/58/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/58/mangas", 
+            "self": "/api/characters/58/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Jinnai's younger sister by about a year. \n \n Nanami is highly independent and strongly entrepreneurial, going so far as to take payment from the high school's Broadcast Club to grill her brother over the fraudulent election results on campus television. When she's sent to El-Hazard, she's initially alone and is forced to take on a waitressing job to earn enough money to travel, but she eventually meets up with Makoto and Fujisawa at the Fountain of Arliman, where she is able to start a small business selling boxed lunches to the visiting priestesses. Nanami has feelings for Makoto, but she's never really had the opportunity to talk about a relationship with him. \n \n Nanami's power gained upon entering El-Hazard is to see through the illusions of the Phantom Tribe, making her a viable defense against the greatest threat in the first OVA series. \n \n Nanami in The Wanderers \n \n The Phantom Tribe does not exist in the alternate timeline, and so instead Nanami has the same power to communicate with the Bugrom as her brother. Her past relationship with Makoto is also explored a bit more in detail, and she becomes good friends with Princess Rune Venus. As well, in the last episode of the TV series, Alielle describes Nanami and herself as \"special friends\", lending their relationship a certain homoerotic subtext, though this seems to be more along the lines of a big sister relationship. \n \n (Source: Wikipedia) \n\n", 
+        "japanese_name": "(\u9663\u5185 \u83dc\u3005\u7f8e)", 
+        "name": "Nanami Jinnai", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/146465.jpg"
+      }, 
+      "id": "59", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/59"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "89", 
+              "type": "actors"
+            }, 
+            {
+              "id": "88", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/59/actors", 
+            "self": "/api/characters/59/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "17", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/59/animes", 
+            "self": "/api/characters/59/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/59/mangas", 
+            "self": "/api/characters/59/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "At age nineteen, Shayla-Shayla (\u30b7\u30a7\u30fc\u30e9\u30fb\u30b7\u30a7\u30fc\u30e9 Sh\u0113ra Sh\u0113ra; spelled \"Shaellah-shaellah\" in the Etranger Tour Guide) is (initially) the youngest of the three priestesses. Holding true to the classic anime redhead stereotype, this tanned priestess' temper is as fiery as her hair, matching her control over the element of fire. Makoto, Fujisawa and Alielle first meet her when she rescues them from a Bugrom attack on Mt. Muldoon, but she runs off with Afura without hearing them out about their mission. When she first learns Makoto's true identity, she accuses him of being a pervert and tries to roast him, but after he saves her life when Ifurita awakens, she begins to have feelings for him. She also has a friendly rivalry with the wind priestess Afura Mann.\n \n Shayla-Shayla in The Wanderers\n \n Rather than be centralized in one location, the three priestesses each run a separate temple. Fittingly enough, Shayla's fire temple is located in a volcano. She is just as temper-driven as her OVA persona, but with the addition of being a heavy gambler. When Makoto and Fujisawa first meet her, she had lost her clothes and the entire temple to Jinnai in a rigged game.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u30b7\u30a7\u30fc\u30e9\u30fb\u30b7\u30a7\u30fc\u30e9)", 
+        "name": "Shayla Shayla", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/13/103677.jpg"
+      }, 
+      "id": "60", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/60"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "91", 
+              "type": "actors"
+            }, 
+            {
+              "id": "90", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/60/actors", 
+            "self": "/api/characters/60/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "17", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/60/animes", 
+            "self": "/api/characters/60/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/60/mangas", 
+            "self": "/api/characters/60/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }
+  ], 
+  "jsonapi": {
+    "version": "1.0"
+  }, 
+  "links": {
+    "first": "http://www.weebmd.me/api/characters?page[size]=60&page[number]=1", 
+    "last": "http://www.weebmd.me/api/characters?page[size]=60&page[number]=6", 
+    "next": "http://www.weebmd.me/api/characters?page[size]=60&page[number]=2", 
+    "prev": null, 
+    "self": "/api/characters"
+  }, 
+  "meta": {
+    "total": 345
+  }
+}

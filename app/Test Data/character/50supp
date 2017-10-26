@@ -1,0 +1,152 @@
+{
+  "data": {
+    "attributes": {
+      "about": "Arisa is Shipon's best friend at the Stellvia foundation. They meet on the shuttle going to the station from Earth at the beginning of the term, and find themselves rooming together and in the same class as well. Though Arisa is nowhere near Shipon in academic or piloting ability, she finds Shipon to be an inspiration to improve herself, and calls Shipon her \"Star of Hope\". Later in the series, she begins focusing on becoming a mechanic, rather than a pilot. (wikipedia)\n\n", 
+      "japanese_name": "(\u30a2\u30ea\u30b5\u30fb\u30b0\u30ec\u30f3\u30ce\u30fc\u30b9)", 
+      "name": "Arisa Glennorth", 
+      "picture": "https://myanimelist.cdn-dena.com/images/characters/13/92407.jpg"
+    }, 
+    "id": "50", 
+    "links": {
+      "self": "http://www.weebmd.me/api/characters/50"
+    }, 
+    "relationships": {
+      "actors": {
+        "data": [
+          {
+            "id": "76", 
+            "type": "actors"
+          }, 
+          {
+            "id": "75", 
+            "type": "actors"
+          }
+        ], 
+        "links": {
+          "related": "/api/characters/50/actors", 
+          "self": "/api/characters/50/relationships/actors"
+        }
+      }, 
+      "animes": {
+        "data": [
+          {
+            "id": "15", 
+            "type": "animes"
+          }
+        ], 
+        "links": {
+          "related": "/api/characters/50/animes", 
+          "self": "/api/characters/50/relationships/animes"
+        }
+      }, 
+      "mangas": {
+        "data": [
+          {
+            "id": "13", 
+            "type": "mangas"
+          }
+        ], 
+        "links": {
+          "related": "/api/characters/50/mangas", 
+          "self": "/api/characters/50/relationships/mangas"
+        }
+      }
+    }, 
+    "type": "characters"
+  }, 
+  "included": [
+    {
+      "attributes": {
+        "aired": "Apr 3, 2003 to Sep 25, 2003", 
+        "genre": "Action, Romance, Sci-Fi, Space", 
+        "media_type": "TV", 
+        "num_episodes": 26, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/10/15225.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 7.46, 
+        "status": "Finished Airing", 
+        "synopsis": "The year is 2356 A.D. - 189 years after a distant supernova caused a global catastrophe that wiped out 99% of the world population. To keep track on all space activities, mankind has built colossal space stations called \"foundations\" all over the Solar System. After passing the Space Academy entrance exams, Shima Katase embarks to the Earth-based foundation Stellvia to fulfill her dream of seeing the galaxy and to prevent another interstellar catastrophe from destroying Earth. (Source: ANN)", 
+        "title": "Uchuu no Stellvia", 
+        "youtube_id": "m5jz6LjlpGo"
+      }, 
+      "id": "15", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/15"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "75", 
+              "type": "actors"
+            }, 
+            {
+              "id": "73", 
+              "type": "actors"
+            }, 
+            {
+              "id": "74", 
+              "type": "actors"
+            }, 
+            {
+              "id": "76", 
+              "type": "actors"
+            }, 
+            {
+              "id": "71", 
+              "type": "actors"
+            }, 
+            {
+              "id": "72", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/15/actors", 
+            "self": "/api/animes/15/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "49", 
+              "type": "characters"
+            }, 
+            {
+              "id": "50", 
+              "type": "characters"
+            }, 
+            {
+              "id": "48", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/15/characters", 
+            "self": "/api/animes/15/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/15/mangas", 
+            "self": "/api/animes/15/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }
+  ], 
+  "jsonapi": {
+    "version": "1.0"
+  }, 
+  "links": {
+    "self": "/api/characters"
+  }, 
+  "meta": {}
+}
