@@ -1,0 +1,83 @@
+{
+  "data": {
+    "attributes": {
+      "aired": "Oct 7, 2005 to Mar 31, 2006", 
+      "genre": "Comedy, Drama, Fantasy, Magic", 
+      "media_type": "TV", 
+      "num_episodes": 26, 
+      "picture": "https://myanimelist.cdn-dena.com/images/anime/2/46897.jpg", 
+      "rating": "PG-13 - Teens 13 or older", 
+      "score": 7.38, 
+      "status": "Finished Airing", 
+      "synopsis": "Arika Yumemiya has traveled far in search of her goal: the prestigious Gualderobe Academy. This is the school where young girls are trained to become Otomes, protectors of royal leaders throughout the lands. Here, Arika makes plenty of friends, but some enemies know something about her past that she does not. Nevertheless, her spirit and determination will keep pushing her forward. Adapted from its predecessor, Mai-HiME, this series is not a direct sequel, but an alternate universe setting featuring some of the Mai-HiME cast (though with different personalities). (Source: ANN)", 
+      "title": "Mai-Otome", 
+      "youtube_id": null
+    }, 
+    "id": "100", 
+    "links": {
+      "self": "http://www.weebmd.me/api/animes/100"
+    }, 
+    "relationships": {
+      "actors": {
+        "data": [
+          {
+            "id": "424", 
+            "type": "actors"
+          }, 
+          {
+            "id": "422", 
+            "type": "actors"
+          }, 
+          {
+            "id": "423", 
+            "type": "actors"
+          }
+        ], 
+        "links": {
+          "related": "/api/animes/100/actors", 
+          "self": "/api/animes/100/relationships/actors"
+        }
+      }, 
+      "characters": {
+        "data": [
+          {
+            "id": "342", 
+            "type": "characters"
+          }, 
+          {
+            "id": "343", 
+            "type": "characters"
+          }, 
+          {
+            "id": "341", 
+            "type": "characters"
+          }
+        ], 
+        "links": {
+          "related": "/api/animes/100/characters", 
+          "self": "/api/animes/100/relationships/characters"
+        }
+      }, 
+      "mangas": {
+        "data": [
+          {
+            "id": "75", 
+            "type": "mangas"
+          }
+        ], 
+        "links": {
+          "related": "/api/animes/100/mangas", 
+          "self": "/api/animes/100/relationships/mangas"
+        }
+      }
+    }, 
+    "type": "animes"
+  }, 
+  "jsonapi": {
+    "version": "1.0"
+  }, 
+  "links": {
+    "self": "/api/animes"
+  }, 
+  "meta": {}
+}

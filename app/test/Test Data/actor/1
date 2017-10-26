@@ -1,0 +1,50 @@
+{
+  "data": {
+    "attributes": {
+      "birthday": "Apr  28, 1973", 
+      "given_name": null, 
+      "language": "English", 
+      "name": "Fahn, Melissa", 
+      "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg", 
+      "website": "http://www.melissafahn.com/"
+    }, 
+    "id": "1", 
+    "links": {
+      "self": "http://www.weebmd.me/api/actors/1"
+    }, 
+    "relationships": {
+      "animes": {
+        "data": [
+          {
+            "id": "1", 
+            "type": "animes"
+          }
+        ], 
+        "links": {
+          "related": "/api/actors/1/animes", 
+          "self": "/api/actors/1/relationships/animes"
+        }
+      }, 
+      "characters": {
+        "data": [
+          {
+            "id": "1", 
+            "type": "characters"
+          }
+        ], 
+        "links": {
+          "related": "/api/actors/1/characters", 
+          "self": "/api/actors/1/relationships/characters"
+        }
+      }
+    }, 
+    "type": "actors"
+  }, 
+  "jsonapi": {
+    "version": "1.0"
+  }, 
+  "links": {
+    "self": "/api/actors"
+  }, 
+  "meta": {}
+}

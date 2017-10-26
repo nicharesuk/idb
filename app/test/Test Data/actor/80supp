@@ -1,0 +1,185 @@
+{
+  "data": {
+    "attributes": {
+      "birthday": "Nov  15, 1978", 
+      "given_name": null, 
+      "language": "English", 
+      "name": "Pronsky, Ben", 
+      "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/3131.jpg", 
+      "website": "http://www.benpronsky.com/"
+    }, 
+    "id": "80", 
+    "links": {
+      "self": "http://www.weebmd.me/api/actors/80"
+    }, 
+    "relationships": {
+      "animes": {
+        "data": [
+          {
+            "id": "16", 
+            "type": "animes"
+          }
+        ], 
+        "links": {
+          "related": "/api/actors/80/animes", 
+          "self": "/api/actors/80/relationships/animes"
+        }
+      }, 
+      "characters": {
+        "data": [
+          {
+            "id": "54", 
+            "type": "characters"
+          }
+        ], 
+        "links": {
+          "related": "/api/actors/80/characters", 
+          "self": "/api/actors/80/relationships/characters"
+        }
+      }
+    }, 
+    "type": "actors"
+  }, 
+  "included": [
+    {
+      "attributes": {
+        "about": "The main character of the series, originally just another above-average student until he decided to enroll at Cromartie. Everyone else at Cromartie assumes that he's the toughest kid in school, since a rabbit would never go into a den of lions (unless it was a really badass rabbit). He has ambitions to change the school for the sake of bettering its student body.\n\n", 
+        "japanese_name": "(\u795e\u5c71 \u9ad8\u5fd7)", 
+        "name": "Takashi Kamiyama", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/77976.jpg"
+      }, 
+      "id": "54", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/54"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "80", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/54/actors", 
+            "self": "/api/characters/54/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "16", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/54/animes", 
+            "self": "/api/characters/54/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "14", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/54/mangas", 
+            "self": "/api/characters/54/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "aired": "Oct 3, 2003 to Mar 26, 2004", 
+        "genre": "Comedy, School, Shounen", 
+        "media_type": "TV", 
+        "num_episodes": 26, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/3/13390.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 8.01, 
+        "status": "Finished Airing", 
+        "synopsis": "Takashi Kamiyama is your typical mild-mannered high school student\u2014polite, aloof, and pacifistic, with a slightly above-average IQ. But would your average high school student really enroll himself at the infamous Cromartie High School, known as a breeding ground for the toughest delinquents out there? Apparently so, as that is exactly what Takashi does, though for reasons he'd rather leave unmentioned. However, one thing is for sure: the \"hard-boiled rabbit in a den full of hungry lions\" is never going to have another dull day. And how could he, now that he's surrounded by mohawked punks, obnoxious robots, and... gorillas? And was that Freddie Mercury riding a horse down the corridor? Follow Takashi as he earnestly dedicates his new high school life to better his school's reputation while his classmates are hellbent on wreaking havoc. [Written by MAL Rewrite] ", 
+        "title": "Sakigake!! Cromartie Koukou", 
+        "youtube_id": null
+      }, 
+      "id": "16", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/16"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "77", 
+              "type": "actors"
+            }, 
+            {
+              "id": "78", 
+              "type": "actors"
+            }, 
+            {
+              "id": "79", 
+              "type": "actors"
+            }, 
+            {
+              "id": "80", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/16/actors", 
+            "self": "/api/animes/16/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "54", 
+              "type": "characters"
+            }, 
+            {
+              "id": "52", 
+              "type": "characters"
+            }, 
+            {
+              "id": "51", 
+              "type": "characters"
+            }, 
+            {
+              "id": "53", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/16/characters", 
+            "self": "/api/animes/16/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "14", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/16/mangas", 
+            "self": "/api/animes/16/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }
+  ], 
+  "jsonapi": {
+    "version": "1.0"
+  }, 
+  "links": {
+    "self": "/api/actors"
+  }, 
+  "meta": {}
+}

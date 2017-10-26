@@ -1,0 +1,286 @@
+{
+  "data": {
+    "attributes": {
+      "author": "Kishimoto, Masashi", 
+      "genre": "Action, Adventure, Martial Arts, Shounen, Super Power", 
+      "media_type": "Manga", 
+      "num_chapters": 700, 
+      "picture": "https://myanimelist.cdn-dena.com/images/manga/3/117681.jpg", 
+      "published": "Sep  21, 1999 to Nov  10, 2014", 
+      "score": 8.11, 
+      "status": "Finished", 
+      "synopsis": "Before Naruto's birth, a great demon fox had attacked the Hidden Leaf Village. A man known as the 4th Hokage sealed the demon inside the newly born Naruto, causing him to unknowingly grow up detested by his fellow villagers. Despite his lack of talent in many areas of ninjutsu, Naruto strives for only one goal: to gain the title of Hokage, the strongest ninja in his village. Desiring the respect he never received, Naruto works toward his dream with fellow friends Sasuke and Sakura and mentor Kakashi as they go through many trials and battles that come with being a ninja.", 
+      "title": "Naruto", 
+      "title_english": "Naruto", 
+      "title_japanese": "NARUTO\u2015\u30ca\u30eb\u30c8\u2015"
+    }, 
+    "id": "22", 
+    "links": {
+      "self": "http://www.weebmd.me/api/mangas/22"
+    }, 
+    "relationships": {
+      "animes": {
+        "data": [
+          {
+            "id": "28", 
+            "type": "animes"
+          }
+        ], 
+        "links": {
+          "related": "/api/mangas/22/animes", 
+          "self": "/api/mangas/22/relationships/animes"
+        }
+      }, 
+      "characters": {
+        "data": [
+          {
+            "id": "90", 
+            "type": "characters"
+          }, 
+          {
+            "id": "93", 
+            "type": "characters"
+          }, 
+          {
+            "id": "92", 
+            "type": "characters"
+          }, 
+          {
+            "id": "91", 
+            "type": "characters"
+          }
+        ], 
+        "links": {
+          "related": "/api/mangas/22/characters", 
+          "self": "/api/mangas/22/relationships/characters"
+        }
+      }
+    }, 
+    "type": "mangas"
+  }, 
+  "included": [
+    {
+      "attributes": {
+        "about": "Age: 12-13 (Naruto part I), 15-17 (part II), 19 (The Last: Naruto the Movie), 27 (Naruto epilogue), 32 (Boruto: Naruto the Movie)\n Birthday: October 10\n Blood type: B\n Height: 145&ndash;147 cm (I), 166 cm (II), 174 cm (The Last: Naruto the Movie), 180 cm (Boruto: Naruto the Movie)\n Weight: 41&ndash;44 kg (I), 52 kg (II), 56 kg (The Last: Naruto the Movie), 66 kg (Boruto: Naruto the Movie)\n Favorite food: Ichiraku ramen\n \n Born in Konohagakure, a ninja village hidden in the leaves, Naruto Uzumaki was destined for greatness. When born, a powerful nine-tailed demon fox attacked his village. With a wave of its tail, the demon fox could raise tsunamis and shatter mountains. In a valiant attempt to save the village from destruction, the Fourth Hokage, the leader of the Hidden Leaf Village, sealed the demon fox within Naruto's newborn body. This was his final act, for the battle with the fox cost him his life.\n \n Despite the Fourth Hokage's dying wish that Naruto be viewed as a hero for serving as the container for the demon (a <i>Jinchuuriki</i>) the adult villagers of Konoha harbored a fierce hatred for him, with many believing that Naruto and the demon were one and the same. Cast aside as an inhuman monster, Naruto was outcast and ostracized by the villagers for reasons he could not understand. The children his age could only ever follow their parents' example; and they too came to harbor a fierce hatred for Naruto.\n \n Naruto eventually came to accept that he would live and die alone, and his external response was to perform harmless pranks on the village. Coy, raffish and full of life, Naruto soon came to display a somewhat unexpected determination to succeed and be accepted by others. Upon being assigned to \"Team Seven\" as a Genin-ranked ninja, his true potential soon became outwardly apparent.\n \n Vowing to become Hokage one day and using his will to never give in, Naruto saves the village from invading forces and earns his acceptance. Eventually, Naruto learns to harness the power of the Demon Fox sealed inside him to perform acts of strength far beyond what any other human is capable of.\n \n In all, Naruto is an admirable character whose sheer determination to succeed despite the odds, earns him respect and devotion from his fellow villagers.\n \n He becomes the hero of his village, after defeating the six Pains all by himself.\n He then befriends the nine-tails inside of him and control its powers. In time, he also becomes more dependable considering the Shinobi Alliance completely relies and respects his power, even the reanimated previous Hokages.\n He later receives chakra from all the nine tailed beasts and then gains the power of the sage of the six paths, along with Sasuke.\n At the end of the manga, he is married to Hinata with two children, Boruto and Himawari, and becomes the seventh hokage.\n\n", 
+        "japanese_name": "(\u3046\u305a\u307e\u304d \u30ca\u30eb\u30c8)", 
+        "name": "Naruto Uzumaki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/284121.jpg"
+      }, 
+      "id": "90", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/90"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "141", 
+              "type": "actors"
+            }, 
+            {
+              "id": "140", 
+              "type": "actors"
+            }, 
+            {
+              "id": "142", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/90/actors", 
+            "self": "/api/characters/90/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "28", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/90/animes", 
+            "self": "/api/characters/90/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "22", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/90/mangas", 
+            "self": "/api/characters/90/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: 12-13 (I), 16-17 (II), 19 (The Last)\n Birthday: March 28\n Horoscope: Aries\n Blood type: O\n Height: 149cm (I), 161cm (II)\n Weight: 35kg (I), 45kg (II)\n Hair: Pink\n Eyes: Green\n Rank: Genin (I); Chuunin (II)\n Family: Kizashi Haruno (father), Mebuki Haruno (mother)\n Likes: Syrup coated anko dumplings; Umeboshi; Anmitsu; Word Puzzles; Studying her medical studdies.\n Dislikes: Anything Spicy; Naruto (at first); Ino (at first) \n \n Sakura is the only female ninja of Team 7. When she first meets Naruto she is physically weak and has an immense crush on Sasuke. She dislikes Naruto as well.The only thing she's good at is her brain as the smartest girl in ninja academy her excellent chakra control, out of that she could be categorized as a kunoichi. In the first part of the Chuunin exam she is easily able to answer the questions, but in the second part she is unable to defeat the Sound ninja attacking Sasuke and Naruto. She makes a pledge to become a better ninja and a better person. To prove her commitment she cuts her long hair with a kunai.\n \n In the third part of the Chuunin Exam she goes up against Ino Yamanaka, her former friend but current rival for Sasuke's affections. The two defeat each other simultaneously. This turns their relationship in a rivalry between friends.\n \n After the time skip she is now a chuunin having been trained by Tsunade for the past two years. She is now a medic Ninja of considerable skill, enough skill to possibly defeat Tsunade one day. It is shown when she is able to do a complicated surgery to extract poisons out of Kankuro body and make an antidote of the new type poison that Sasori used,which the Suna gakure medical-nin unable to do.\n \n During the time skip she's also matured in personality, she become calmer compare when she were Genin, but she still has her temper especially when Naruto is fooling around in front of her she will beat him up into a bloody pulp. \n \n Sakura has grown not only as a medical-nin, now she's also a capable fighter. She can manage to destroy the ground with her fist using her inhuman strength, a chakra control technique she learned from Tsunade, and she is also able to beat Sasori from Akatsuki together with elder Chiyo from Sunagakure.  Additionally she is a genjutsu type, and though she has yet to use that potential she does show an almost complete immunity to being trapped in an illusion.\n\n", 
+        "japanese_name": "(\u6625\u91ce \u30b5\u30af\u30e9)", 
+        "name": "Sakura Haruno", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/9/69275.jpg"
+      }, 
+      "id": "93", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/93"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "146", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/93/actors", 
+            "self": "/api/characters/93/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "28", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/93/animes", 
+            "self": "/api/characters/93/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "22", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/93/mangas", 
+            "self": "/api/characters/93/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: 12-13 (I); 16-17 (II); 19 (The Last: Naruto the Movie); 32 (Boruto: Naruto the Movie)\n Birthday: July 23\n Ninja Registration No: 012606\n Horoscope: Leo\n Blood type: AB\n Height: 153.2 cm(I); 168 cm (II); 175 cm (The Last: Naruto the Movie); 182 cm (Boruto: Naruto the Movie)\n Weight: 43.5kg(I); 52.2kg (II); 55kg (The Last: Naruto the Movie); 65kg (Boruto: Naruto the Movie)\n Hair: Ebony Black with Blue tints\n Eyes: Black; Right eye Red (when using Sharingan) & Left eye Purple (when using Rinnengan)\n Rank: Genin; Missing Nin [II]\n Kekkei Genkai: Sharingan (Part 1)\n Mangekyo Sharingan, Eternal Mangekyo Sharingan (Part 2)\n Rinnegan awakening and Sage of the six path powers\n Likes: Omusubi (Okaka) (omusubi is like Onigiri: Okaka is dried Bonito) Tomato\n Dislikes: Everything that gets in the way of his revenge, natto (fermented soybeans) and sweet food\n Hates: Itachi (Part I)\n Konoha and its upper echelons (part II)\n Talents: Highly skilled ninja, specializes in fire and lightning jutsu.\n \n When Sasuke was young, his clan was murdered by his older brother, Itachi. With his parents and family now gone, his brother spared him and left him to survive by himself. He told Sasuke to hate him. Sasuke tried to forget about the past by applying himself in the ninja academy and fitting in with the rest of the leaf village.\n \n After his fight with Naruto, he believes he's been wasting his time \"playing ninja\" with the people of the leaf village. His new goal is to get stronger so he can avenge his clan by killing Itachi and then restore the Uchiha clan.\n \n As a wielder of the Sharingan (the kekkei genkai of the Uchiha clan), he learns to use Chidori and has a vast knowledge of the various Fire Jutsus. The curse seal which Orichimaru gives him during the Chuunin exam, at first, enhanced his power but at the risk of killing him. Now he can use it of his own free will.\n \n Claiming at first that he doesn't need any friends, he is forced to contradict himself when he sees that either Naruto or Sakura are in danger. Remembering this type of Sasuke is what brings motivation to Naruto. Sasuke openly admitted to Naruto that he was his closest friend.\n \n <b>Appearance</b>\n Sasuke has black hair with a blue tint that lengthens as the story goes with onyx eyes and has lighter skin than his brother Itachi. Like many other members of his clan, his hair hangs over both sides of his face to roughly his cheeks. In his curse seal form, he has grey skin with wings on his back that resemble giant webbed hands. He also has hair similar to Madara Uchiha except in a greyish-blue color.\n \n At the beginning of Part I, Sasuke's clothing made up a blue, short-sleeved shirt with a raised collar and the Uchiha crest on the back and white shorts. An interesting thing is that during Part I the Uchiha symbol on his back gets smaller each time he changes his outfit. In the last stage of the Chunin exams, he wore a black, one pieced version of this outfit but eventually went back to his original clothes.\n \n In Part II, Sasuke has grown noticeably taller (almost eye height with Itachi) and slightly more muscular. wears a white long sleeved shirt that's open at the torso with a smaller version of the Uchiha crest on his collar. He wears black pants with a blue cloth hanging from his half way up his stomach to his knees. He also wears a purple rope belt (Japanese name: Shimenawa) tied in a bow fashion found on many Sound ninja, only the bow is in a different style and is tied in the front instead of the back. He also will at points remove his shirt and hang it from his belt around his waist to give his wings in Curse Seal Level 2 room to move (also without transforming).\n \n Sasuke, even though claiming to be emotionless, wouldn't kill unless it was necessary until Madara Uchiha twisted his personality even further by telling him that his brother, Itachi, after he had killed him, was ordered to kill their clan and suffer for the sake of the village. After knowing this, he suddenly turns far colder and seeks for revenge on Konoha. However, after he had calmed down, he noticed how confused he really was and revived Orochimaru to request answers to his questions about his clan, Konoha, and what shinobi and the Hokage really are. He's currently helping Naruto and the others put an end to the war and announced that he plans to become the next Hokage. But when the the war concluded, Sasuke made it clear that his goal was to become a new kind of Hokage, a kind of Hokage that wants to banish darkness from the Ninja World and to do so he believes all the old Kages should be killed. He also wants to conclude things with Naruto and so he invites him to one final concluding battle. The battle ends with both Naruto and Sasuke losing one of their hands. While both lie on the ground he finally accepts Naruto's feelings and stops his path of revenge to return to the village.\n In chapter 700, it is shown that he has a daughter with Sakura.\n\n", 
+        "japanese_name": "(\u3046\u3061\u306f \u30b5\u30b9\u30b1)", 
+        "name": "Sasuke Uchiha", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/9/131317.jpg"
+      }, 
+      "id": "92", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/92"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "145", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/92/actors", 
+            "self": "/api/characters/92/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "28", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/92/animes", 
+            "self": "/api/characters/92/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "22", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/92/mangas", 
+            "self": "/api/characters/92/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: 26-27 (Part I); 29-31 (Part II)\n Birthday: September 15\n Horoscope: Virgo\n Blood Type: O\n Height: 5\"11\"\n Weight: 67.5 kg \n Hair: Silver\n Eyes: Grey, Sharingan\n Rank: Jonin, Former ANBUHokage\n Likes: Icha-Icha series, Broiled Saury with salt, Miso soup with eggplant\n Dislikes: Anything sweet\n Quote: (from Obito) \"A shinobi who violates the rules is scum, but a shinobi who abandons their friends is worse than scum\".\n \n Major Background SpoilersLike his father, Sakumo Hatake whose skills have been compared to that of the Legendary Ninja, Kakashi is considered a genius shinobi, graduating from the Ninja Academy at age 5 and achieving the rank of Chunin at 6. A few years after these accomplishments, Kakashi's father was disgraced by the village for abandoning a mission in favor of saving his comrades, which cost the Land of Fire dearly. Deeply ashamed and ostracized even by those he had saved, Sakumo committed seppuku, leaving Kakashi to bear witness to the event. After his father's suicide, Kakashi began to adhere strictly to the rules of the shinobi &ndash; in particular the rule dictating that the success of the mission must come before the well being of one's teammates, causing him to become arrogant, humorless, and by-the-book.\n \n During an attempt to save Rin, Kakashi lost his left eye as a result of taking an enemy ninja's attack for Obito. To protect Kakashi in return, Obito managed to awaken his Sharingan and killed their assailant. Soon after saving Rin, a rockfall technique was triggered and a rock struck Kakashi on his blind side. He would have been buried beneath the rocks had Obito not pushed Kakashi out of the way, getting the right side of his body almost completely crushed in the process. Shortly before he died, Obito had Rin (a medical ninja) implant his Sharingan eye in Kakashi's damaged eye socket as a gift. As his first act with his new eye, Kakashi avenged Obito by killing the enemy ninja with his now-perfected Chidori technique, bringing the Kakashi of today into being.\n \n Years later Kakashi would become a member of the Konohagakure ANBU where he served as a squad leader. During this time, he had several k\u014dhai, named Yugao Uzuki and Tenzo, and recognized the latter as the most successful of his k\u014dhai. It is unknown when or why he left ANBU, but he still wears iron guards on his gloves, a characteristic of ANBU uniforms.\n \n Obito's death profoundly changed Kakashi, and Kakashi adopted many of Obito's traits. One such trait was Obito's concept of teamwork, which is most clearly seen in the way Kakashi tests newly-graduated students hoping to become a squad under him. He uses the bell test to test his students, which requires the three students to get the two bells he keeps on his person. Only those who get a bell get to pass, which would be difficult even with teamwork, as at least one ninja would fail regardless. However, the rule is only a ruse; the point of the test is to foster teamwork and to teach the students that teamwork is more important than the rules. Team 7 is the only team to realize this, and as such becomes the only team Kakashi passes into Genin-status. Kakashi also inherits Obito's chronic tardiness, due primarily to losing track of time during his frequent visits to Konoha's memorial site, where Obito's name is engraved. Ironically, this very habit is one that Kakashi was often annoyed at Obito about. Obito was supposedly late due to random good deeds. Kakashi's personal life appears to be as much of a mystery as the face behind the mask he has worn for most of his ninja career. He has no living family, or at least none he cares to acknowledge, and he's confirmed that everyone he loves is already dead.\n Kakashi has an ongoing, albeit slightly one-sided, rivalry with Might Guy, with Guy constantly proclaiming that Kakashi is his rival, and considering his and Kakashi's subordinates rivals. Kakashi, however, seems indifferent to their rivalry, which annoys Guy to no end. Guy randomly challenges Kakashi to contests of skill, and Kakashi has acquired a record of 49 wins and 50 losses in doing so. Given that the contests that make up this figure are so varied (ranging from Rock, Paper, Scissors to sumo-wrestling), this is not much of an achievement on Guy's part. Nevertheless, Guy is proud of his record.\n \n Though he evasively says that he has \"many hobbies\" when asked about himself, he is commonly seen reading of \"Icha Icha Paradise\" (\u30a4\u30c1\u30e3\u30a4\u30c1\u30e3\u30d1\u30e9\u30c0\u30a4\u30b9, Icha Icha Paradaisu, literally \"Make Out Paradise\"), an adult and probably pornographic novel authored by Jiraiya that is a runaway bestseller in the Naruto world. Kakashi most prominently reads it while training and speaking with his team, and is later seen reading the second known volume in the series, \"Icha Icha Violence\" (\u30a4\u30c1\u30e3\u30a4\u30c1\u30e3\u30d0\u30a4\u30aa\u30ec\u30f3\u30b9, Icha Icha Baiorensu, literally \"Make Out Violence\"). In Part II Naruto gives him the new \"Icha Icha Tactics\" (\u30a4\u30c1\u30e3\u30a4\u30c1\u30e3\u30bf\u30af\u30c6\u30a3\u30af\u30b9, Icha Icha Takutikusu, literally \"Make Out Tactics\").\n \n Kakashi's Sharingan eye gives him a significant advantage in battle, as he can copy enemy techniques and use them as his own, as well as track and predict his opponent's movements flawlessly. Because it is a transplanted eye, his Sharingan eye is always active. While this would not be much of a problem for an Uchiha, his non-Uchiha blood causes it to use much more chakra than it should. Because of this, he covers it with his headband and only utilizes it in the most dangerous battles. Kakashi's use of the Sharingan is as good as that of Itachi Uchiha, though the aforementioned handicaps brought about by the nature of his eye make him somewhat weaker in comparison. In Part II Kakashi is able to develop his own Mangekyo Sharingan. With his variant he is able to manipulate space-time to conduct long range attacks, and in its two uses has been capable of severing another's arms and otherwise sending things to different dimensions. Much like the standard Sharingan, the Mangekyo Sharingan tires Kakashi considerably, and after using it only three times he was hospitalized for a week due to its chakra usage.\n \n With his Sharingan Kakashi has been able to copy more than one thousand jutsu, giving him the nickname \"Copy Ninja Kakashi\". As a result, Kakashi's arsenal most prominently features ninjutsu abilities and has led to him becoming a specialist in the field. Many of the jutsu he has been seen copying in the series are water-based attacks, though most of these he only uses against the person he copies them from. He does, however, use Water Release: Water Encampment Wall on occasion as a way to block attacks. He less frequently uses other elemental attacks such as Fire Release: Great Fireball Technique to attack opponents or Earth Release: Inner Decapitation Technique (\u571f\u9041\u30fb\u5fc3\u4e2d\u65ac\u9996\u306e\u8853, Doton: Shinj\u016b Zanshu no Jutsu, Viz \"Groundhog Technique Decapitation\", English TV \"Headhunter Jutsu\") to pull opponents below ground and immobilize them. He can also create shadow clones, though because he lacks Naruto's chakra reserves, he exercises the ability with caution, rarely creating more than one at a time.\n \n While Kakashi specializes in the use of ninjutsu due to his Sharingan he is fairly adept with other jutsu types, though his use of them is rarely seen. Demonic Illusion: Hell Viewing Technique (\u9b54\u5e7b\u30fb\u5948\u70d9\u898b\u306e\u8853, Magen: Narakumi no Jutsu) causes his opponent to see what they would find a horrifying vision, keeping them preoccupied until they can overcome the illusion. A Thousand Years of Pain (death in english dub) (\u5343\u5e74\u6bba\u3057, Sennen Goroshi) consists of Kakashi forcefully plunging his index and middle fingers into an opponent's rectum. While only capable of launching the opponent humorous distances in typical uses, the fingers can be replaced with kunai attached with exploding tags to actually do damage to the person one is attacking.\n \n When he was younger Kakashi was taught how to use the Rasengan by the Fourth Hokage. Because the Rasengan is meant to have the user's chakra nature mixed with it, Kakashi attempted to add his lightning-based chakra to it, though was ultimately unsuccessful. In time he instead created the Chidori, his only original jutsu. After the jutsu's initial creation Kakashi was unable to use the Chidori to its full potential as the sheer speed of the attack left his normal eyes unable to see any form of an enemy counterattack. After acquiring the Sharingan, however, he was able to overcome this shortcoming. Through repeated use and increased proficiency with it, Kakashi's Chidori has been upgraded and renamed to the Lightning Blade due to him having cut through a bolt of lightning with it.\n\n", 
+        "japanese_name": "(\u306f\u305f\u3051 \u30ab\u30ab\u30b7)", 
+        "name": "Kakashi Hatake", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/7/284129.jpg"
+      }, 
+      "id": "91", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/91"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "143", 
+              "type": "actors"
+            }, 
+            {
+              "id": "144", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/91/actors", 
+            "self": "/api/characters/91/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "28", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/91/animes", 
+            "self": "/api/characters/91/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "22", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/91/mangas", 
+            "self": "/api/characters/91/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }
+  ], 
+  "jsonapi": {
+    "version": "1.0"
+  }, 
+  "links": {
+    "self": "/api/mangas"
+  }, 
+  "meta": {}
+}
