@@ -4,16 +4,6 @@ import ModalDetails from '../shared/ModalDetails';
 
 class MangaDetails extends Component {
 
-  onClickCharacter = (index) => {
-    const id = this.props.dataObject.included.filter(obj => obj.type === "characters")[index].id
-    this.props.onChange("characters", id);
-  }
-
-  onClickAnime = (index) => {
-    const id = this.props.dataObject.included.filter(obj => obj.type === "animes")[index].id
-    this.props.onChange("animes", id);
-  }
-
   render() {
     const { title, published, score, num_chapters, synopsis, status, rating, genre, included} = this.props.dataObject;
 
@@ -23,17 +13,25 @@ class MangaDetails extends Component {
       characterList = included.filter(obj => obj.type === "characters").map(obj => obj.attributes.name);
       animeList = included.filter(obj => obj.type === "animes").map(obj => obj.attributes.title);
     }
+
+    let lists = [
+      {
+        data: characterList,
+        title: "Characters",
+        action: (index) => this.props.onChange("characters", index),
+      },
+      {
+        data: animeList,
+        title: "Animes",
+        action: (index) => this.props.onChange("animes", index),
+      },
+    ];
     return (
       <ModalDetails
         title={title}
         detailsList={[published, `${num_chapters}`, status, rating, score, genre ]}
         paragraph={synopsis}
-        primaryList={characterList}
-        primaryListTitle={"Characters"}
-        primaryListAction={this.onClickCharacter}
-        secondaryList={animeList}
-        secondaryListTitle={"Anime"}
-        secondaryListAction={this.onClickAnime}/>
+        lists={lists}/>
     );
   }
 }

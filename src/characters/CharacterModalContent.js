@@ -4,21 +4,6 @@ import ModalDetails from '../shared/ModalDetails';
 
 class CharacterDetails extends Component {
 
-  onClickActor = (index) => {
-    const id = this.props.dataObject.included.filter(obj => obj.type === "actors")[index].id
-    this.props.onChange("actors", id);
-  }
-
-  onClickAnime = (index) => {
-    const id = this.props.dataObject.included.filter(obj => obj.type === "animes")[index].id
-    this.props.onChange("animes", id);
-  }
-
-  onClickManga = (index) => {
-    const id = this.props.dataObject.included.filter(obj => obj.type === "mangas")[index].id
-    this.props.onChange("mangas", id);
-  }
-
   render() {
     const { name, about, japanese_name, included} = this.props.dataObject;
 
@@ -30,20 +15,30 @@ class CharacterDetails extends Component {
       animeList = included.filter(obj => obj.type === "animes").map(obj => obj.attributes.title);
       mangaList = included.filter(obj => obj.type === "mangas").map(obj => obj.attributes.title);
     }
-    let primaryList = actorList.length ? actorList : mangaList;
-    let primaryTitle = actorList.length ? "Actors" : "Mangas";
-    let primaryAction = actorList.length ? this.onClickActor : this.onClickManga;
+
+    let lists = [
+      {
+        data: actorList,
+        title: "Actors",
+        action: (index) => this.props.onChange("actors", index),
+      },
+      {
+        data: animeList,
+        title: "Animes",
+        action: (index) => this.props.onChange("animes", index),
+      },
+      {
+        data: mangaList,
+        title: "Mangas",
+        action: (index) => this.props.onChange("mangas", index),
+      },
+    ];
     return (
       <ModalDetails
         title={name}
         detailsList={[japanese_name]}
         paragraph={about}
-        primaryList={primaryList}
-        primaryListTitle={primaryTitle}
-        primaryListAction={primaryAction}
-        secondaryList={animeList}
-        secondaryListTitle={"Anime"}
-        secondaryListAction={this.onClickAnime}/>
+        lists={lists} />
     );
   }
 }

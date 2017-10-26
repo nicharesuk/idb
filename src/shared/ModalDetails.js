@@ -44,14 +44,13 @@ class ModalDetails extends Component {
         </div>
         <div className={styles.divider}></div>
         <div className={styles.listsContainer}>
-          <ScrollableList
-            data={this.props.primaryList}
-            title={this.props.primaryListTitle}
-            action={this.props.primaryListAction} />
-          <ScrollableList
-            data={this.props.secondaryList}
-            title={this.props.secondaryListTitle}
-            action={this.props.secondaryListAction} />
+          {this.props.lists.map(list => (
+            <ScrollableList
+              key={list.title}
+              data={list.data}
+              title={list.title}
+              action={list.action} />
+          ))}
         </div>
       </div>
     );
@@ -63,10 +62,6 @@ ModalDetails.defaultProps = {
   detailsList: [],
   paragraph: "",
   websiteText: "",
-  primaryList: [],
-  primaryListTitle: "",
-  secondaryList: [],
-  secondaryListTitle: "",
 }
 
 ModalDetails.propTypes = {
@@ -75,12 +70,11 @@ ModalDetails.propTypes = {
   paragraph: PropTypes.string,
   website: PropTypes.string,
   websiteText: PropTypes.string,
-  primaryList: PropTypes.array,
-  primaryListTitle: PropTypes.string,
-  primaryListAction: PropTypes.func,
-  secondaryList: PropTypes.array,
-  secondaryListTitle: PropTypes.string,
-  secondaryListAction: PropTypes.func,
+  lists: PropTypes.arrayOf(PropTypes.shape({
+    data: PropTypes.arrayOf(PropTypes.string),
+    title: PropTypes.string,
+    action: PropTypes.func,
+  })).isRequired,
 }
 
 export default ModalDetails;

@@ -20,14 +20,19 @@ class ModalContent extends Component {
   }
 
   componentWillMount = () => {
-    this.changeContent(this.props.type, this.props.dataObject.id);
+    this.getModelData(this.props.type, this.props.dataObject.id);
   }
 
-  changeContent = (type, id) => {
+  getModelData = (type, id) => {
     getSingleModel(
       type,
       (dataObject) => this.setState({type, dataObject}),
       id);
+  }
+
+  changeContent = (type, index) => {
+    const id = this.state.dataObject.included.filter(obj => obj.type === type)[index].id;
+    this.getModelData(type, id);
   }
 
   getContentNode = () => {
