@@ -14,9 +14,6 @@ class CharactersPage extends Component {
   }
 
   render() {
-    if (!this.state.data) {
-      return <div></div>
-    }
     return (
       <ThumbnailPage
         type="characters"

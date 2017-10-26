@@ -29,7 +29,7 @@ class MangaDetails extends Component {
     return (
       <ModalDetails
         title={title}
-        detailsList={[published, `${num_chapters}`, status, rating, score, genre ]}
+        detailsList={[published, `Chapters: ${num_chapters}`, status, score, genre ]}
         paragraph={synopsis}
         lists={lists}/>
     );
