@@ -84,7 +84,7 @@ def jikanget(url_type, num_items, folder_name, filter_porn=True):
             # only add the anime if it's not porn, will always run if filter_porn
             # is set to false
             if has_porn != True:
-                file_name = folder_name + '/' + str(id) + ".txt"
+                file_name = folder_name + '/' + str(id)
                 print(file_name)
                 if not os.path.exists(os.path.dirname(file_name)):
                     try:
@@ -143,7 +143,7 @@ def get_matches(read_match, write_match, read_folder, write_folder, url_type, *a
                             # if the field matches between files
                             if data[read_match] == match_data:
                                 # name the file after it's id
-                                file_name = write_folder + '/' + str(id) + ".txt"
+                                file_name = write_folder + '/' + str(id)
                                 # create the folder if it does not exist in this dir
                                 if not os.path.exists(os.path.dirname(file_name)):
                 					try:
@@ -236,7 +236,7 @@ def get_matches_people(read_folder, write_folder, url_type):
                                             url = url_type + tokenized_id
                                             r = requests.get(url).json()
 
-                                            file_name = write_folder + '/' + tokenized_id + ".txt"
+                                            file_name = write_folder + '/' + tokenized_id
                                             # create the folder if it does not exist in this dir
                                             if not os.path.exists(os.path.dirname(file_name)):
                                                 try:
@@ -280,7 +280,7 @@ def get_matches_character(read_folder, write_folder, url_type):
                                     try:
                                         r = requests.get(url).json()
 
-                                        file_name = write_folder + '/' + tokenized_id + ".txt"
+                                        file_name = write_folder + '/' + tokenized_id
                                         # create the folder if it does not exist in this dir
                                         if not os.path.exists(os.path.dirname(file_name)):
                                             try:
