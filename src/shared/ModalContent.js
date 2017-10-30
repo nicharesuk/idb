@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Image, Icon } from 'semantic-ui-react';
 import styles from './ModalContent.scss';
-import ShowModalContent from '../shows/ShowModalContent';
+import AnimeModalContent from '../anime/AnimeModalContent';
 import CharacterModalContent from '../characters/CharacterModalContent';
-import PersonModalContent from '../people/PersonModalContent';
+import ActorModalContent from '../actors/ActorModalContent';
 import MangaModalContent from '../manga/MangaModalContent';
 import { getSingleModel } from './Requests';
 
@@ -37,11 +37,11 @@ class ModalContent extends Component {
 
   getContentNode = () => {
     if        (this.state.type === "animes") {
-      return <ShowModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
+      return <AnimeModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "characters") {
       return <CharacterModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "actors") {
-      return <PersonModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
+      return <ActorModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "mangas") {
       return <MangaModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else {

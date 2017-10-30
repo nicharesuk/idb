@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import style from './App.scss';
 import HomePage from '../homepage/HomePage';
-import ShowsPage from '../shows/ShowsPage';
+import AnimePage from '../anime/AnimePage';
 import CharactersPage from '../characters/CharactersPage';
-import PeoplePage from '../people/PeoplePage';
+import ActorsPage from '../actors/ActorsPage';
 import MangaPage from '../manga/MangaPage';
 import SearchPage from '../search/SearchPage';
 import { Switch, Route } from 'react-router-dom';
@@ -16,8 +16,8 @@ const pages = [
   },
   {
     name: "Anime",
-    link: "/shows",
-    node: (props) => <ShowsPage {...props} />,
+    link: "/anime",
+    node: (props) => <AnimePage {...props} />,
   },
   {
     name: "Characters",
@@ -31,15 +31,13 @@ const pages = [
   },
   {
     name: "Voice Actors",
-    link: "/people",
-    node: (props) => <PeoplePage {...props} />,
+    link: "/actors",
+    node: (props) => <ActorsPage {...props} />,
   },
   {
     name: "Search",
     link: "/search",
     node: (props) => <SearchPage {...props} />,
-    filters: [],
-    sorts: [],
   }
 ];
 
