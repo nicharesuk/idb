@@ -1,6 +1,15 @@
 import axios from 'axios';
 
-export function getModelData (model, callback, number) {
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
+// ^ We will use these functions to craft the filter url parameter
+
+export function getModelData ({model, callback, sort, filters}) {
+  // TODO: Use filters and sorts to modify the axios call
+  // console.log("Sort");
+  // console.log(sort);
+  // console.log("Filters");
+  // console.log(filters);
   axios({
     method: 'get',
     url: `api/${model}`,

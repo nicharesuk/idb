@@ -3,7 +3,7 @@ import styles from './ThumbnailPage.scss';
 import ThumbnailCard from './ThumbnailCard';
 import PropTypes from 'prop-types';
 import { Modal, Loader } from 'semantic-ui-react';
-import ModalContent from './ModalContent';
+import ModalContent from '../modal/ModalContent';
 
 class ThumbnailPage extends Component {
   state = {

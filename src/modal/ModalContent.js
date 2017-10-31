@@ -6,7 +6,7 @@ import AnimeModalContent from '../anime/AnimeModalContent';
 import CharacterModalContent from '../characters/CharacterModalContent';
 import ActorModalContent from '../actors/ActorModalContent';
 import MangaModalContent from '../manga/MangaModalContent';
-import { getSingleModel } from './Requests';
+import { getSingleModel } from '../shared/Requests';
 
 class ModalContent extends Component {
 

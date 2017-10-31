@@ -10,7 +10,7 @@ import { Switch, Route } from 'react-router-dom';
 
 const pages = [
   {
-    name: "Homepage",
+    name: "Home",
     link: "/",
     node: (props) => <HomePage {...props} />,
   },
@@ -30,7 +30,7 @@ const pages = [
     node: (props) => <MangaPage {...props} />,
   },
   {
-    name: "Voice Actors",
+    name: "Actors",
     link: "/actors",
     node: (props) => <ActorsPage {...props} />,
   },
@@ -43,6 +43,23 @@ const pages = [
 
 class App extends Component {
 
+  state = {
+    searchText: "",
+  }
+
+  updateSearch = (text) => {
+    this.setState({
+      searchText: text,
+    });
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    // TODO: Implement search action. We will need to change to the
+    // search page and use the search text to filter results
+    console.log(this.state.searchText);
+  }
+
   render() {
     return (
       <div className={style.appContainer}>
@@ -53,7 +70,14 @@ class App extends Component {
                 key={page.name}
                 exact={page.link === "/"}
                 path={page.link} 
-                render={() => page.node({pages: pages})} />
+                render={() => (
+                  page.node({
+                    pages: pages,
+                    searchText: this.state.searchText,
+                    updateSearch: this.updateSearch,
+                    handleSubmit: this.handleSubmit,
+                  })
+                )} />
             );
           })}
         </Switch>

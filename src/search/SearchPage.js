@@ -6,20 +6,15 @@ import PropTypes from 'prop-types';
 
 class SearchPage extends Component {
 
-  state = {
-    data: []
-  }
-
-  componentWillMount = () => {
-    getModelData('actors', (data) => this.setState({data}));
-  }
-
   render() {
     // https://github.com/bvaughn/react-highlight-words
     return (
       <div style={{width: "100%", height: "100%"}}>
         <NavMenu
-          pages={this.props.pages} />
+          pages={this.props.pages}
+          searchText={this.props.searchText}
+          updateSearch={this.props.updateSearch}
+          handleSubmit={this.props.handleSubmit} />
       </div>
     );
   }
@@ -27,6 +22,9 @@ class SearchPage extends Component {
 
 SearchPage.propTypes = {
   pages: PropTypes.array,
+  searchText: PropTypes.string,
+  updateSearch: PropTypes.func,
+  handleSubmit: PropTypes.func,
 }
 
 export default SearchPage;
