@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 // import styles from './AnimePage.scss';
-import ThumbnailPage from '../shared/ThumbnailPage';
-import { getModelData } from '../shared/Requests';
 import getStartYear from '../shared/GetStartYear';
-import NavMenu from '../shared/NavMenu';
 import PropTypes from 'prop-types';
+import FiltersContainer from '../shared/FiltersContainer';
 
 // TODO: Fill in all filters and sorts for this page
 
@@ -12,7 +10,7 @@ const filters = [
   {
     name: "Genre",
     field: "genre",
-    op: "has",
+    op: "like",
     values: [
       {
         name: "All",
@@ -22,12 +20,42 @@ const filters = [
         name: "Action",
         value: "Action",
       },
+
+      {
+        name: "Comedy",
+        value: "Comedy",
+      },
+
+      {
+        name: "Romance",
+        value: "Romance",
+      },
+
+      {
+        name: "Mystery",
+        value: "Mystery",
+      },
+
+      {
+        name: "Magic",
+        value: "Magic",
+      },
+
+      {
+        name: "Fantasy",
+        value: "Fantasy",
+      },
+
+      {
+        name: "Sci-Fi",
+        value: "Sci-Fi",
+      },
     ],
   },
   {
     name: "Status",
     field: "status",
-    op: "has",
+    op: "eq",
     values: [
       {
         name: "All",
@@ -56,84 +84,33 @@ const sorts = [
   },
 ];
 
-class ShowsPage extends Component {
+class AnimePage extends Component {
 
-  state = {
-    data: [],
-    filters: filters.map(filter => ({activeValue: 0, ...filter})),
-    activeSortIndex: 0,
-  }
-
-  componentWillMount = () => {
-    this.getInstances({});
-  }
-
-  getActiveFilters = (filters) => {
-    return filters.filter(filter => filter.activeValue !== 0).map(filter => ({
-      name: filter.name,
-      field: filter.field,
-      op: filter.op,
-      value: filter.values[filter.activeValue].value,
-    }));
-  }
-
-  getInstances = ({newSort, newFilters}) => {
-    const sort = newSort !== undefined ? newSort : sorts[this.state.activeSortIndex].field;
-    const filters = newFilters ? newFilters : this.getActiveFilters(this.state.filters); 
-    getModelData({
-      model: 'animes',
-      sort,
-      filters,
-      callback: (data) => this.setState({data}),
-    });
-  }
-
-  changeSort = (activeSortIndex) => {
-    this.setState({activeSortIndex, data: []});
-    this.getInstances({newSort: sorts[activeSortIndex].field});
-  }
-
-  updateFilters = (filterIndex, valueIndex) => {
-    const newFilters = [...this.state.filters];
-    newFilters[filterIndex].activeValue = valueIndex;
-    this.setState({filters: newFilters, data: []});
-    this.getInstances({
-      newFilters: this.getActiveFilters(newFilters),
-    });
+  handleModel = (anime) => {
+    return {
+      ...anime,
+      subInfo_1: `${getStartYear(anime.aired)}`,
+      subInfo_2: `${anime.num_episodes} episodes`,
+    }
   }
 
   render() {
     return (
-      <div style={{width: "100%", height: "100%"}}>
-        <NavMenu
-          filters={this.state.filters}
-          updateFilters={this.updateFilters}
-          sorts={sorts}
-          changeSort={this.changeSort}
-          activeSortIndex={this.state.activeSortIndex}
-          pages={this.props.pages}
-          searchText={this.props.searchText}
-          updateSearch={this.props.updateSearch}
-          handleSubmit={this.props.handleSubmit} />
-        <ThumbnailPage
-          type="animes"
-          data={this.state.data.map(show => {
-            return {
-              ...show,
-              subInfo_1: `${getStartYear(show.aired)}`,
-              subInfo_2: `${show.num_episodes} episodes`,
-            }
-          })} />
-      </div>
+      <FiltersContainer
+        {...this.props}
+        filters={filters}
+        sorts={sorts}
+        type="animes"
+        handleModel={this.handleModel} />
     );
   }
 }
 
-ShowsPage.propTypes = {
+AnimePage.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
   updateSearch: PropTypes.func,
   handleSubmit: PropTypes.func,
 }
 
-export default ShowsPage;
+export default AnimePage;

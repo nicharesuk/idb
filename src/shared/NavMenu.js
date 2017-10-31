@@ -14,7 +14,6 @@ class NavMenu extends Component {
         <div className={style.header}>
           <Menu
             inverted
-            pointing
             secondary
             size='large'>
             {this.props.pages.map(page => {
@@ -22,7 +21,7 @@ class NavMenu extends Component {
                 <Link key={page.name} to={page.link}>
                   <Menu.Item
                     as='div'
-                    active={page.link === "/" ? window.location.href.endsWith("/?#/") : window.location.href.includes(page.link)}>
+                    active={page.link === "/" ? window.location.href.endsWith("/#/") : window.location.href.includes(page.link)}>
                     {page.name}
                   </Menu.Item>
                 </Link>
@@ -30,8 +29,6 @@ class NavMenu extends Component {
             })}
             <Menu.Menu className={style.menu} position="right">
               {filters.map((filter, filterIndex) => {
-                console.log(filter.name);
-                console.log(filter.activeValue);
                 const filterText = `${filter.name}: ${filter.values[filter.activeValue].name}`;
                 return (
                   <Dropdown key={filterIndex} item text={filterText}>

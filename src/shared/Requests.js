@@ -6,15 +6,19 @@ import axios from 'axios';
 
 export function getModelData ({model, callback, sort, filters}) {
   // TODO: Use filters and sorts to modify the axios call
-  // console.log("Sort");
-  // console.log(sort);
-  // console.log("Filters");
-  // console.log(filters);
   axios({
     method: 'get',
     url: `api/${model}`,
-    headers: {'Accept': 'application/vnd.api+json'}
+    headers: {'Accept': 'application/vnd.api+json'},
+    params: {
+      "filter[objects]": JSON.stringify(filters),
+      "sort": sort,
+    },
   }).then((response) => {
+    if (!response.data.data) {
+      callback([]);
+      return;
+    }
     const data = response.data.data.map(obj => {
       return {
         id: obj.id,

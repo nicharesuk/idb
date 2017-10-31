@@ -16,7 +16,7 @@
   align-content: flex-start;
 }
 
-.loaderContainer {
+.emptyContainer {
   background-color: #17181b;
   height: 100%;
   width: 100%;
@@ -27,4 +27,8 @@
 
 .modal {
   height: 92%;
+}
+
+.noResults {
+  color: white;
 }

@@ -25,15 +25,22 @@ class ThumbnailPage extends Component {
   }
 
   render() {
-    if (!this.props.data.length) {
+    if (this.props.loading) {
       return (
-        <div className={styles.loaderContainer}>
+        <div className={styles.emptyContainer}>
           <Loader
             size="massive"
             active
             inverted>
             Loading
           </Loader>
+        </div>
+      );
+    }
+    if (!this.props.data.length) {
+      return (
+        <div className={styles.emptyContainer}>
+          <h1 className={styles.noResults}>No Results</h1>
         </div>
       );
     }
@@ -67,6 +74,7 @@ class ThumbnailPage extends Component {
 }
 
 ThumbnailPage.propTypes = {
+  loading: PropTypes.bool,
   type: PropTypes.string,
   data: PropTypes.array,
 }
