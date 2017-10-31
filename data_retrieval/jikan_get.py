@@ -161,13 +161,11 @@ def get_matches(read_match, write_match, read_folder, write_folder, url_type, *a
         print('')
 
 def get_manga_matches():
-    # count = 0
     for filename in os.listdir('jikan_anime'):
         read_file = 'jikan_anime/' + filename
         with open(read_file) as datafile:
             data = json.load(datafile)
             print(filename)
-            # if count < 100:
             if 'related' in data:
                 related = data['related']
                 if 'Adaptation' in related:

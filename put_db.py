@@ -43,7 +43,7 @@ with app.app_context():
 
     existing_character = {}
     existing_actor = {}
-    existing_manga = set()
+    existing_manga = {}
 
     for anime_file_num in os.listdir(data_folder + jikan_anime):
         with open(data_folder + jikan_anime + anime_file_num) as anime_datafile:
@@ -148,97 +148,103 @@ with app.app_context():
                 if 'Adaptation' in anime_json_data['related']:
                     adaptation_obj = related['Adaptation']
 
-                    manga_id = None
+                    manga_id_list = []
                     if isinstance(adaptation_obj[0], list):
                         for list_obj in related['Adaptation']:
                             tokens = list_obj[1].split('/')
-                            manga_id = tokens[2]
+                            manga_id_list.append(tokens[2])
 
                     else:
                         manga = related['Adaptation']
                         manga = manga[1].split('/')
-                        manga_id = manga[2]
+                        manga_id_list.append(manga[2])
+                
+                    for manga_id in manga_id_list:
+                        if manga_id in existing_manga:
+                            final_anime.mangas.add(created_manga[existing_manga[manga_id]])
 
-                    if manga_id in existing_manga:
-                        continue
+                        elif os.path.exists(data_folder + jikan_manga + manga_id):
+                            print("manga id: " + manga_id)
+                            with open(data_folder + jikan_manga + manga_id) as manga_datafile:
+                                manga_json_data = json.load(manga_datafile)
 
-                    if os.path.exists(data_folder + jikan_manga + manga_id):
-                        print("manga id: " + manga_id)
-                        with open(data_folder + jikan_manga + manga_id) as manga_datafile:
-                            manga_json_data = json.load(manga_datafile)
+                                manga_title = None
+                                if manga_json_data['type'] == 'Manga':
+                                    manga_title = manga_json_data['title']
+                                elif manga_json_data['type'] == 'Novel':
+                                    manga_title = manga_json_data['title'] + ' - (Novel)'
+                                
+                                manga_title_english = None
+                                try:
+                                    manga_title_english = manga_json_data['title-english']
+                                except KeyError:
+                                    pass
 
-                            manga_title = manga_json_data['title']
-                            
-                            manga_title_english = None
-                            try:
-                                manga_title_english = manga_json_data['title-english']
-                            except KeyError:
-                                pass
+                                manga_title_japanese = None
+                                try:
+                                    manga_title_japanese = manga_json_data['japanese']
+                                except KeyError:
+                                    pass
 
-                            manga_title_japanese = None
-                            try:
-                                manga_title_japanese = manga_json_data['japanese']
-                            except KeyError:
-                                pass
+                                list_authors = []
+                                for json_author in manga_json_data['author']:
+                                    list_authors.append(json_author['name'])
+                                manga_author = ', '.join(list_authors)
 
-                            list_authors = []
-                            for json_author in manga_json_data['author']:
-                                list_authors.append(json_author['name'])
-                            manga_author = ', '.join(list_authors)
+                                manga_published = manga_json_data['published']
+                                
+                                manga_score = None
+                                try:
+                                    manga_score = manga_json_data['score'][0]
+                                except KeyError:
+                                    pass
+                                
 
-                            manga_published = manga_json_data['published']
-                            
-                            manga_score = None
-                            try:
-                                manga_score = manga_json_data['score'][0]
-                            except KeyError:
-                                pass
-                            
+                                manga_chapters = manga_json_data['chapters']
+                                manga_synopsis = manga_json_data['synopsis']
+                                manga_type = manga_json_data['type']
+                                manga_picture = manga_json_data['image']
+                                manga_status = manga_json_data['status']
 
-                            manga_chapters = manga_json_data['chapters']
-                            manga_synopsis = manga_json_data['synopsis']
-                            manga_type = manga_json_data['type']
-                            manga_picture = manga_json_data['image']
-                            manga_status = manga_json_data['status']
+                                manga_genre_list = []
+                                for genre in manga_json_data['genre']:
+                                    manga_genre_list.append(genre[1])
 
-                            manga_genre_list = []
-                            for genre in manga_json_data['genre']:
-                                manga_genre_list.append(genre[1])
+                                manga_genre = ', '.join(manga_genre_list)
 
-                            manga_genre = ', '.join(manga_genre_list)
+                                final_manga = Manga(title=manga_title, title_english=manga_title_english, title_japanese=manga_title_japanese, author=manga_author, published=manga_published, score=manga_score, num_chapters=manga_chapters, synopsis=manga_synopsis, media_type=manga_type, picture=manga_picture, status=manga_status, genre=manga_genre)
+                                created_manga.append(final_manga)
+                                existing_manga[manga_id] = len(created_manga) - 1
 
-                            final_manga = Manga(title=manga_title, title_english=manga_title_english, title_japanese=manga_title_japanese, author=manga_author, published=manga_published, score=manga_score, num_chapters=manga_chapters, synopsis=manga_synopsis, media_type=manga_type, picture=manga_picture, status=manga_status, genre=manga_genre)
-                            created_manga.append(final_manga)
-                            existing_manga.add(manga_id)
-
-                            final_anime.mangas.add(final_manga)
+                                final_anime.mangas.add(final_manga)
 
 
-                            for manga_character in manga_json_data['character']:
-                                manga_character_id = (manga_character['url'].split('/'))[4]
+                                for manga_character in manga_json_data['character']:
+                                    manga_character_id = (manga_character['url'].split('/'))[4]
 
-                                if manga_character_id in existing_character:
-                                    final_manga.characters.add(created_characters[existing_character[manga_character_id]])
-                                else:
-                                    if os.path.exists(data_folder + jikan_character + manga_character_id):
-                                        with open(data_folder + jikan_character + manga_character_id) as manga_character_datafile:
-                                            manga_character_json_data = json.load(manga_character_datafile)
+                                    if manga_character_id in existing_character:
+                                        final_manga.characters.add(created_characters[existing_character[manga_character_id]])
+                                    else:
+                                        if os.path.exists(data_folder + jikan_character + manga_character_id):
+                                            with open(data_folder + jikan_character + manga_character_id) as manga_character_datafile:
+                                                manga_character_json_data = json.load(manga_character_datafile)
 
-                                            try:
-                                                manga_character_name = manga_character_json_data['name']
-                                            except KeyError:
-                                                continue
-                                            
-                                            manga_character_japanese_name = manga_character_json_data['name-japanese']
-                                            manga_character_about = manga_character_json_data['about']
-                                            manga_character_pic = manga_character_json_data['image']
+                                                try:
+                                                    manga_character_name = manga_character_json_data['name']
+                                                except KeyError:
+                                                    continue
+                                                
+                                                manga_character_japanese_name = manga_character_json_data['name-japanese']
+                                                manga_character_about = manga_character_json_data['about']
+                                                manga_character_pic = manga_character_json_data['image']
 
-                                            print("Creating manga character: " + manga_character_id)
-                                            final_manga_character = Character(name=manga_character_name, japanese_name=manga_character_japanese_name, about=manga_character_about, picture=manga_character_pic)
-                                            created_characters.append(final_manga_character)
-                                            existing_character[manga_character_id] = len(created_characters) - 1
+                                                print("Creating manga character: " + manga_character_id)
+                                                final_manga_character = Character(name=manga_character_name, japanese_name=manga_character_japanese_name, about=manga_character_about, picture=manga_character_pic)
+                                                created_characters.append(final_manga_character)
+                                                existing_character[manga_character_id] = len(created_characters) - 1
 
-                                            final_manga.characters.add(final_manga_character)
+                                                final_manga.characters.add(final_manga_character)
+
 
     for anime in created_anime:
         db.session.add(anime)

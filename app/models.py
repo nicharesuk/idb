@@ -52,9 +52,9 @@ class Anime(db.Model):
 
 class Manga(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(80), unique=True, nullable=False)
-    title_english = db.Column(db.String(80), unique=True)
-    title_japanese = db.Column(db.String(80), unique=True)
+    title = db.Column(db.String(80), nullable=False)
+    title_english = db.Column(db.String(80))
+    title_japanese = db.Column(db.String(80))
     author = db.Column(db.Text, nullable=False)
     published = db.Column(db.String(80), nullable=False)
     genre = db.Column(db.Text, nullable=False)
