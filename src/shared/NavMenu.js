@@ -9,6 +9,7 @@ class NavMenu extends Component {
   render() {
     const { filters, sorts, activeSortIndex} = this.props;
     const activeSortText = sorts.length ? sorts[activeSortIndex].name : "";
+    const href = window.location.href;
     return (
       <div>
         <div className={style.header}>
@@ -21,7 +22,7 @@ class NavMenu extends Component {
                 <Link key={page.name} to={page.link}>
                   <Menu.Item
                     as='div'
-                    active={page.link === "/" ? window.location.href.endsWith("/#/") : window.location.href.includes(page.link)}>
+                    active={page.link === "/" ? href.endsWith("/#/") : href.includes(page.link)}>
                     {page.name}
                   </Menu.Item>
                 </Link>
@@ -48,6 +49,17 @@ class NavMenu extends Component {
               {sorts.length ? 
                 <Dropdown item text={`Sort by: ${activeSortText}`}>
                   <Dropdown.Menu>
+                    <Dropdown.Item
+                      active={this.props.ascending}
+                      onClick={() => this.props.changeDirection(true)}>
+                      Ascending
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      active={!this.props.ascending}
+                      onClick={() => this.props.changeDirection(false)}>
+                      Descending
+                    </Dropdown.Item>
+                    <Dropdown.Divider />
                     {sorts.map((sort, index) => (
                       <Dropdown.Item
                         key={index}
@@ -91,6 +103,8 @@ NavMenu.propTypes = {
   updateFilters: PropTypes.func,
   sorts: PropTypes.array,
   changeSort: PropTypes.func,
+  ascending: PropTypes.bool,
+  changeDirection: PropTypes.func,
   activeSortIndex: PropTypes.number,
   pages: PropTypes.array.isRequired,
   searchText: PropTypes.string,

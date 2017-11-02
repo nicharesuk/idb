@@ -11,6 +11,7 @@ class FiltersContainer extends Component {
     filters: this.props.filters.map(filter => ({activeValue: 0, ...filter})),
     activeSortIndex: 0,
     loading: true,
+    ascending: true,
   }
 
   componentWillMount = () => {
@@ -25,8 +26,9 @@ class FiltersContainer extends Component {
     }));
   }
 
-  getInstances = ({newSort, newFilters}) => {
-    let sort = []
+  getInstances = ({newSort, newFilters, newDirection}) => {
+    const ascending = newDirection !== undefined ? newDirection : this.state.ascending;
+    let sort = ""
     if (newSort === undefined) {
       if (this.props.sorts.length) {
         sort = this.props.sorts[this.state.activeSortIndex].field;
@@ -34,7 +36,8 @@ class FiltersContainer extends Component {
     } else {
       sort = newSort;
     }
-    const filters = newFilters ? newFilters : this.getActiveFilters(this.state.filters); 
+    sort = ascending ? sort : `-${sort}`;
+    const filters = newFilters ? newFilters : this.getActiveFilters(this.state.filters);
     getModelData({
       model: this.props.type,
       sort,
@@ -46,6 +49,14 @@ class FiltersContainer extends Component {
   changeSort = (activeSortIndex) => {
     this.setState({activeSortIndex, data: [], loading: true});
     this.getInstances({newSort: this.props.sorts[activeSortIndex].field});
+  }
+
+  changeDirection = (ascending) => {
+    if (ascending === this.state.ascending) {
+      return;
+    }
+    this.setState({ascending, data: [], loading: true});
+    this.getInstances({newDirection: ascending});
   }
 
   updateFilters = (filterIndex, valueIndex) => {
@@ -65,6 +76,8 @@ class FiltersContainer extends Component {
           updateFilters={this.updateFilters}
           sorts={this.props.sorts}
           changeSort={this.changeSort}
+          ascending={this.state.ascending}
+          changeDirection={this.changeDirection}
           activeSortIndex={this.state.activeSortIndex}
           pages={this.props.pages}
           searchText={this.props.searchText}

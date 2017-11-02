@@ -9,6 +9,10 @@
   left: 0;
   overflow-x: hidden;
   overflow-y: overlay;
+  padding-bottom: 50px;
+}
+
+.items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,4 +35,10 @@
 
 .noResults {
   color: white;
+}
+
+.ghost {
+  width: 134px;
+  margin-right: 10px;
+  margin-left: 10px;
 }

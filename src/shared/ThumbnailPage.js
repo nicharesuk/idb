@@ -5,10 +5,28 @@ import PropTypes from 'prop-types';
 import { Modal, Loader } from 'semantic-ui-react';
 import ModalContent from '../modal/ModalContent';
 
+const THUMBNAIL_WIDTH = 134 + 20;
+
 class ThumbnailPage extends Component {
+ 
   state = {
     modalOpen: false,
     selectedIndex: 0,
+    windowWidth: '0',
+    windowHeight: '0',
+  }
+
+  componentDidMount = () => {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight});
   }
 
   openModalAction = (index) => {
@@ -44,6 +62,11 @@ class ThumbnailPage extends Component {
         </div>
       );
     }
+    const numGhosts = Math.floor(this.state.windowWidth / THUMBNAIL_WIDTH);
+    const ghosts = [];
+    for (let i = 0; i < numGhosts; i++) {
+      ghosts.push(<div key={`ghost-${i}`} className={styles.ghost}></div>);
+    }
     return (
       <div className={styles.container}>
         <Modal
@@ -56,18 +79,21 @@ class ThumbnailPage extends Component {
             type={this.props.type}
             onClose={this.closeModalAction} />
         </Modal>
-        {this.props.data.map((instance, index) => (
-          <div
-            onClick={() => this.openModalAction(index)}
-            key={`thumbnail-component-${index}`}>
-            <ThumbnailCard
-              title={instance.title}
-              picture={instance.picture}
-              score={instance.score}
-              subInfo_1={instance.subInfo_1}
-              subInfo_2={instance.subInfo_2} />
-          </div>
-        ))}
+        <div className={styles.items}>
+          {this.props.data.map((instance, index) => (
+            <div
+              onClick={() => this.openModalAction(index)}
+              key={`thumbnail-component-${index}`}>
+              <ThumbnailCard
+                title={instance.title}
+                picture={instance.picture}
+                score={instance.score}
+                subInfo_1={instance.subInfo_1}
+                subInfo_2={instance.subInfo_2} />
+            </div>
+          ))}
+          {ghosts}
+        </div>
       </div>
     );
   }
