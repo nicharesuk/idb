@@ -12,6 +12,8 @@ class FiltersContainer extends Component {
     activeSortIndex: 0,
     loading: true,
     ascending: true,
+    page: 1,
+    maxPage: 1,
   }
 
   componentWillMount = () => {
@@ -26,8 +28,9 @@ class FiltersContainer extends Component {
     }));
   }
 
-  getInstances = ({newSort, newFilters, newDirection}) => {
+  getInstances = ({newSort, newFilters, newDirection, newPage}) => {
     const ascending = newDirection !== undefined ? newDirection : this.state.ascending;
+
     let sort = ""
     if (newSort === undefined) {
       if (this.props.sorts.length) {
@@ -37,34 +40,50 @@ class FiltersContainer extends Component {
       sort = newSort;
     }
     sort = ascending ? sort : `-${sort}`;
+
     const filters = newFilters ? newFilters : this.getActiveFilters(this.state.filters);
+
+    const page = newPage !== undefined ? newPage : this.state.page;
+
     getModelData({
       model: this.props.type,
       sort,
       filters,
-      callback: (data) => this.setState({data, loading: false}),
+      page,
+      callback: (data, maxPage) => {
+        this.setState({data, maxPage, loading: false});
+      },
     });
   }
 
+  changePage = (newPage) => {
+    if (newPage === this.state.page) {
+      return;
+    }
+    this.setState({page: newPage, data: [], loading: true});
+    this.getInstances({newPage});
+  }
+
   changeSort = (activeSortIndex) => {
-    this.setState({activeSortIndex, data: [], loading: true});
-    this.getInstances({newSort: this.props.sorts[activeSortIndex].field});
+    this.setState({activeSortIndex, data: [], loading: true, page: 1});
+    this.getInstances({newSort: this.props.sorts[activeSortIndex].field, newPage: 1});
   }
 
   changeDirection = (ascending) => {
     if (ascending === this.state.ascending) {
       return;
     }
-    this.setState({ascending, data: [], loading: true});
-    this.getInstances({newDirection: ascending});
+    this.setState({ascending, data: [], loading: true, page: 1});
+    this.getInstances({newDirection: ascending, newPage: 1});
   }
 
   updateFilters = (filterIndex, valueIndex) => {
     const newFilters = [...this.state.filters];
     newFilters[filterIndex].activeValue = valueIndex;
-    this.setState({filters: newFilters, data: [], loading: true});
+    this.setState({filters: newFilters, data: [], loading: true, page: 1});
     this.getInstances({
       newFilters: this.getActiveFilters(newFilters),
+      newPage: 1,
     });
   }
 
@@ -86,7 +105,10 @@ class FiltersContainer extends Component {
         <ThumbnailPage
           loading={this.state.loading}
           type={this.props.type}
-          data={this.state.data.map(instance => this.props.handleModel(instance))} />
+          data={this.state.data.map(instance => this.props.handleModel(instance))}
+          currentPage={this.state.page}
+          maxPage={this.state.maxPage}
+          changePage={this.changePage} />
       </div>
     );
   }

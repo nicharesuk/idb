@@ -4,6 +4,8 @@ import ThumbnailCard from './ThumbnailCard';
 import PropTypes from 'prop-types';
 import { Modal, Loader } from 'semantic-ui-react';
 import ModalContent from '../modal/ModalContent';
+import PageList from './PageList';
+import ReactDOM from 'react-dom';
 
 const THUMBNAIL_WIDTH = 134 + 20;
 
@@ -40,6 +42,10 @@ class ThumbnailPage extends Component {
     this.setState({
       modalOpen: false,
     });
+  }
+
+  componentDidUpdate = () => {
+    ReactDOM.findDOMNode(this).scrollTop = 0
   }
 
   render() {
@@ -93,6 +99,12 @@ class ThumbnailPage extends Component {
             </div>
           ))}
           {ghosts}
+          <div className={styles.pageList}>
+            <PageList
+              currentPage={this.props.currentPage}
+              maxPage={this.props.maxPage}
+              changePage={this.props.changePage} />
+          </div>
         </div>
       </div>
     );
@@ -103,6 +115,9 @@ ThumbnailPage.propTypes = {
   loading: PropTypes.bool,
   type: PropTypes.string,
   data: PropTypes.array,
+  currentPage: PropTypes.number,
+  maxPage: PropTypes.number,
+  changePage: PropTypes.func,
 }
 
 export default ThumbnailPage;

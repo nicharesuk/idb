@@ -4,7 +4,7 @@ import axios from 'axios';
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
 // ^ We will use these functions to craft the filter url parameter
 
-export function getModelData ({model, callback, sort, filters}) {
+export function getModelData ({model, callback, sort, filters, page}) {
   // TODO: Use filters and sorts to modify the axios call
   axios({
     method: 'get',
@@ -13,12 +13,15 @@ export function getModelData ({model, callback, sort, filters}) {
     params: {
       "filter[objects]": JSON.stringify(filters),
       "sort": sort,
+      "page[number]": page,
     },
   }).then((response) => {
     if (!response.data.data) {
-      callback([]);
+      callback([], 1);
       return;
     }
+    const lastLink = response.data.links.last
+    const maxPage = lastLink ? parseInt(lastLink.slice(-1), 10) : 1;
     const data = response.data.data.map(obj => {
       return {
         id: obj.id,
@@ -27,7 +30,7 @@ export function getModelData ({model, callback, sort, filters}) {
         ...obj.attributes,
       }
     });
-    callback(data);
+    callback(data, maxPage);
   });
 }
 
