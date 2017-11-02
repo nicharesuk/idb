@@ -15,7 +15,7 @@ class ModalContent extends Component {
           {this.props.title}
         </div>
         <div className={styles.content}>
-          {this.props.data.map((element, index) => {
+          {this.props.data.sort().map((element, index) => {
             const color = index % 2 === 0 ? "#1f2025" : "transparent";
             return (
               <div
