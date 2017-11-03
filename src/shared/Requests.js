@@ -4,6 +4,8 @@ import axios from 'axios';
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
 // ^ We will use these functions to craft the filter url parameter
 
+const PAGE_SIZE = 60;
+
 export function getModelData ({model, callback, sort, filters, page}) {
   // TODO: Use filters and sorts to modify the axios call
   axios({
@@ -20,8 +22,11 @@ export function getModelData ({model, callback, sort, filters, page}) {
       callback([], 1);
       return;
     }
-    const lastLink = response.data.links.last
-    const maxPage = lastLink ? parseInt(lastLink.slice(-1), 10) : 1;
+
+    console.log(response);
+    const total = response.data.meta.total;
+    const maxPage = Math.ceil(total / PAGE_SIZE);
+
     const data = response.data.data.map(obj => {
       return {
         id: obj.id,
