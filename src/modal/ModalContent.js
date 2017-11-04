@@ -20,7 +20,7 @@ class ModalContent extends Component {
   }
 
   componentWillMount = () => {
-    this.getModelData(this.props.type, this.props.dataObject.id);
+    this.getModelData(this.props.type, this.props.id);
   }
 
   getModelData = (type, id) => {
@@ -74,7 +74,7 @@ class ModalContent extends Component {
 }
 
 ModalContent.propTypes = {
-  dataObject: PropTypes.object,
+  id: PropTypes.string,
   type: PropTypes.string,
   onClose: PropTypes.func,
 }

@@ -1,34 +1,17 @@
 import React, { Component } from 'react';
-import styles from './ThumbnailPage.scss';
-import ThumbnailCard from './ThumbnailCard';
+import styles from './SearchResults.scss';
 import PropTypes from 'prop-types';
 import { Loader } from 'semantic-ui-react';
 import ModalInstance from '../modal/ModalInstance';
-import PageList from './PageList';
+import PageList from '../shared/PageList';
 import ReactDOM from 'react-dom';
 
-const THUMBNAIL_WIDTH = 134 + 20;
-
-class ThumbnailPage extends Component {
+class SearchResults extends Component {
  
   state = {
     modalOpen: false,
     selectedIndex: 0,
-    windowWidth: '0',
-    windowHeight: '0',
-  }
 
-  componentDidMount = () => {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-  }
-
-  componentWillUnmount = () => {
-    window.removeEventListener('resize', this.updateWindowDimensions);
-  }
-
-  updateWindowDimensions = () => {
-    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight});
   }
 
   openModalAction = (index) => {
@@ -68,11 +51,6 @@ class ThumbnailPage extends Component {
         </div>
       );
     }
-    const numGhosts = Math.floor(this.state.windowWidth / THUMBNAIL_WIDTH);
-    const ghosts = [];
-    for (let i = 0; i < numGhosts; i++) {
-      ghosts.push(<div key={`ghost-${i}`} className={styles.ghost}></div>);
-    }
     return (
       <div className={styles.container}>
         <ModalInstance
@@ -81,6 +59,7 @@ class ThumbnailPage extends Component {
           onClose={this.closeModalAction}
           open={this.state.modalOpen} />
         <div className={styles.items}>
+        {/*
           {this.props.data.map((instance, index) => (
             <div
               onClick={() => this.openModalAction(index)}
@@ -94,6 +73,7 @@ class ThumbnailPage extends Component {
             </div>
           ))}
           {ghosts}
+        */}
           <div className={styles.pageList}>
             <PageList
               currentPage={this.props.currentPage}
@@ -106,13 +86,12 @@ class ThumbnailPage extends Component {
   }
 }
 
-ThumbnailPage.propTypes = {
+SearchResults.propTypes = {
   loading: PropTypes.bool,
-  type: PropTypes.string,
   data: PropTypes.array,
   currentPage: PropTypes.number,
   maxPage: PropTypes.number,
   changePage: PropTypes.func,
 }
 
-export default ThumbnailPage;
+export default SearchResults;
