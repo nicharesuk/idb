@@ -5,6 +5,7 @@ import { Loader } from 'semantic-ui-react';
 import ModalInstance from '../modal/ModalInstance';
 import PageList from '../shared/PageList';
 import ReactDOM from 'react-dom';
+import Result from './Result';
 
 class SearchResults extends Component {
  
@@ -55,25 +56,21 @@ class SearchResults extends Component {
       <div className={styles.container}>
         <ModalInstance
           id={this.props.data[this.state.selectedIndex].id}
-          type={this.props.type}
+          type={this.props.data[this.state.selectedIndex].type}
           onClose={this.closeModalAction}
           open={this.state.modalOpen} />
         <div className={styles.items}>
-        {/*
           {this.props.data.map((instance, index) => (
             <div
+              className={styles.result}
+              style={{backgroundColor: index % 2 === 0 ? "#1f2025" : "transparent"}}
               onClick={() => this.openModalAction(index)}
-              key={`thumbnail-component-${index}`}>
-              <ThumbnailCard
-                title={instance.title}
-                picture={instance.picture}
-                score={instance.score}
-                subInfo_1={instance.subInfo_1}
-                subInfo_2={instance.subInfo_2} />
+              key={`result-component-${index}`}>
+                <Result
+                  data={instance}
+                  searchText={this.props.searchText} />
             </div>
           ))}
-          {ghosts}
-        */}
           <div className={styles.pageList}>
             <PageList
               currentPage={this.props.currentPage}
@@ -92,6 +89,7 @@ SearchResults.propTypes = {
   currentPage: PropTypes.number,
   maxPage: PropTypes.number,
   changePage: PropTypes.func,
+  searchText: PropTypes.string,
 }
 
 export default SearchResults;

@@ -1,9 +1,5 @@
 import axios from 'axios';
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
-// ^ We will use these functions to craft the filter url parameter
-
 const PAGE_SIZE = 60;
 
 function getMaxPage(response, pageSize) {
@@ -134,7 +130,6 @@ export function getSearchData ({searchText, models, callback, page}) {
     return;
   }
   const calls = models.map(model => {
-    //console.log('Getting model attributes');
     const filters = getFilters(searchText, model);
     return getData({model, sort: "", filters, page: 1, pageSize: PAGE_SIZE});
   })
@@ -145,7 +140,6 @@ export function getSearchData ({searchText, models, callback, page}) {
     // datas.forEach((data) => total += data.length);
 
     const allData = [].concat.apply([], datas);
-    console.log(allData);
 
     callback(allData);
   });

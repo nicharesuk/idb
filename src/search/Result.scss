@@ -1,0 +1,23 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  &:hover {
+    background-color: #26272d;
+  }
+}
+
+.stringContainer {
+  color: white;
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.strings {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: calc(100% - 134px);
+}

@@ -59,7 +59,8 @@ class SearchPage extends Component {
           data={this.state.data}
           currentPage={this.state.page}
           maxPage={this.state.maxPage}
-          changePage={this.changePage} />
+          changePage={this.changePage}
+          searchText={this.props.currentSearch} />
       </div>
     );
   }
