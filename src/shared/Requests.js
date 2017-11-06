@@ -124,14 +124,14 @@ function getFilters(searchText, model) {
   return filters;
 }
 
-export function getSearchData ({searchText, models, callback, page}) {
+export function getSearchData ({searchText, activeModels, callback, page}) {
   if (!searchText) {
     callback([]);
     return;
   }
-  const calls = models.map(model => {
-    const filters = getFilters(searchText, model);
-    return getData({model, sort: "", filters, page: 1, pageSize: PAGE_SIZE});
+  const calls = models.filter(m => activeModels.includes(m.name)).map(model => {
+    const filters = getFilters(searchText, model.name);
+    return getData({model: model.name, sort: "", filters, page: 1, pageSize: PAGE_SIZE});
   })
   axios.all(calls).then((responses) => {
     const datas = responses.map(response => configureData(response));

@@ -9,8 +9,8 @@
   overflow-y: overlay;
   padding-bottom: 40px;
   padding-top: 50px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .items {
@@ -23,13 +23,15 @@
 
 .result {
   width: 100%;
-  margin: 20px;
   cursor: pointer;
 }
 
 .emptyContainer {
-  background-color: #17181b;
-  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  min-height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;

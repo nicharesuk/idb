@@ -4,6 +4,29 @@ import { getSearchData } from '../shared/Requests';
 import NavMenu from '../shared/NavMenu';
 import PropTypes from 'prop-types';
 
+const searchFilters = [
+  {
+    name: "Anime",
+    value: "animes",
+    color: "red",
+  },
+  {
+    name: "Characters",
+    value: "characters",
+    color: "purple",
+  },
+  {
+    name: "Mangas",
+    value: "mangas",
+    color: "yellow",
+  },
+  {
+    name: "Actors",
+    value: "actors",
+    color: "blue",
+  },
+];
+
 class SearchPage extends Component {
 
   state = {
@@ -11,26 +34,28 @@ class SearchPage extends Component {
     loading: true,
     page: 1,
     maxPage: 1,
+    activeFilters: [],
   }
 
   componentWillMount = () => {
-    this.getInstances(this.props.currentSearch, 1);
+    this.getInstances({});
   }
 
   componentWillReceiveProps = (nextProps) => {
     if (nextProps.currentSearch !== this.props.currentSearch) {
-      this.setState({data: [], loading: true});
-      this.getInstances(nextProps.currentSearch, 1);
+      this.setState({data: [], loading: true, page: 1, activeFilters: []});
+      this.getInstances({newSearch: nextProps.currentSearch, newPage: 1, newFilters: []});
     }
   }
 
-  getInstances = (search, page) => {
-
-    // const page = newPage !== undefined ? newPage : this.state.page;
+  getInstances = ({newSearch, newFilters, newPage}) => {
+    const search = newSearch !== undefined ? newSearch : this.props.currentSearch;
+    const filters = newFilters !== undefined ? newFilters : this.state.activeFilters;
+    const page = newPage !== undefined ? newPage : this.state.page;
 
     getSearchData({
       searchText: search,
-      models: ["animes", "characters", "mangas", "actors"],
+      activeModels: filters.length !== 0 ? filters : searchFilters.map(f => f.value),
       page: `${page}`,
       callback: (data) => {
         this.setState({data, loading: false});
@@ -44,6 +69,11 @@ class SearchPage extends Component {
     }
     this.setState({page: newPage, data: [], loading: true});
     this.getInstances({newPage});
+  }
+
+  updateFilters = (activeFilters) => {
+    this.setState({activeFilters, page: 1, data: [], loading: true});
+    this.getInstances({newFilters: activeFilters, page: 1});
   }
 
   render() {
@@ -60,7 +90,10 @@ class SearchPage extends Component {
           currentPage={this.state.page}
           maxPage={this.state.maxPage}
           changePage={this.changePage}
-          searchText={this.props.currentSearch} />
+          searchText={this.props.currentSearch}
+          searchFilters={searchFilters}
+          activeFilters={this.state.activeFilters}
+          updateFilters={this.updateFilters} />
       </div>
     );
   }

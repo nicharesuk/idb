@@ -6,6 +6,7 @@ import ModalInstance from '../modal/ModalInstance';
 import PageList from '../shared/PageList';
 import ReactDOM from 'react-dom';
 import Result from './Result';
+import ButtonRow from './ButtonRow';
 
 class SearchResults extends Component {
  
@@ -33,33 +34,35 @@ class SearchResults extends Component {
   }
 
   render() {
-    if (this.props.loading) {
-      return (
-        <div className={styles.emptyContainer}>
-          <Loader
-            size="massive"
-            active
-            inverted>
-            Loading
-          </Loader>
-        </div>
-      );
-    }
-    if (!this.props.data.length) {
-      return (
-        <div className={styles.emptyContainer}>
-          <h1 className={styles.noResults}>No Results</h1>
-        </div>
-      );
-    }
     return (
       <div className={styles.container}>
-        <ModalInstance
-          id={this.props.data[this.state.selectedIndex].id}
-          type={this.props.data[this.state.selectedIndex].type}
-          onClose={this.closeModalAction}
-          open={this.state.modalOpen} />
+        {this.props.loading ?
+          <div className={styles.emptyContainer}>
+            <Loader
+              size="massive"
+              active
+              inverted>
+              Loading
+            </Loader>
+          </div> : null
+        }
+        {!this.props.data.length && !this.props.loading ?
+          <div className={styles.emptyContainer}>
+            <h1 className={styles.noResults}>No Results</h1>
+          </div> : null
+        }
+        {this.props.data.length ?
+          <ModalInstance
+            id={this.props.data[this.state.selectedIndex].id}
+            type={this.props.data[this.state.selectedIndex].type}
+            onClose={this.closeModalAction}
+            open={this.state.modalOpen} /> : null
+        }
         <div className={styles.items}>
+          <ButtonRow
+            searchFilters={this.props.searchFilters}
+            activeFilters={this.props.activeFilters}
+            updateFilters={this.props.updateFilters} />
           {this.props.data.map((instance, index) => (
             <div
               className={styles.result}
@@ -90,6 +93,9 @@ SearchResults.propTypes = {
   maxPage: PropTypes.number,
   changePage: PropTypes.func,
   searchText: PropTypes.string,
+  searchFilters: PropTypes.array,
+  activeFilters: PropTypes.array,
+  updateFilters: PropTypes.func,
 }
 
 export default SearchResults;
