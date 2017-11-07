@@ -57,7 +57,7 @@ def fix_person():
                 outfile.write(line)
 
 if __name__ == "__main__":
-    fix_anime()
-    fix_manga()
-    fix_character()
-    fix_person()
+    # fix_anime()
+    # fix_manga()
+    # fix_character()
+    # fix_person()
