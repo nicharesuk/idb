@@ -35,7 +35,11 @@ class SearchResults extends Component {
 
   render() {
     const shouldButtonRowShow = this.props.searchText.length;
-    const data = this.props.data;
+    const data = this.props.data.sort((a, b) => {
+      if(a.id < b.id) return -1;
+      if(a.id > b.id) return 1;
+      return 0;
+    });
     const index = this.state.selectedIndex;
     const modalId = data[index] ? data[index].id : null;
     const modalType = data[index] ? data[index].type : null;

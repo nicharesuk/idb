@@ -10,6 +10,13 @@ import Highlighter from 'react-highlight-words';
 const MAX_CHARACTERS = 100;
 const MAX_RESULTS = 4;
 
+const typeColors = {
+  animes: "#ff5144",
+  characters: "#dc73ff",
+  mangas: "#ffe21f",
+  actors: "#54c8ff",
+}
+
 class Result extends Component {
   state = {
     active: false,
@@ -62,6 +69,7 @@ class Result extends Component {
     return (
       <div
         className={styles.container}
+        style={{borderRightColor: typeColors[this.props.data.type]}}
         onMouseEnter={this.handleShow}
         onMouseLeave={this.handleHide}>
           <Image
