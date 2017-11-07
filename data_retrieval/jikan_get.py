@@ -142,6 +142,9 @@ def get_manga_matches():
 # Runs through the anime we have locally, gets the first main character, gets the Japanese voice actor for that character
 # Limited to one per show
 def get_matches_people(read_folder, write_folder, url_type):
+    existing_actors = set()
+    for actor_id in os.listdir(write_folder):
+        existing_actors.add(actor_id)
 
     for filename in os.listdir(read_folder):
         print('in people')
@@ -158,8 +161,20 @@ def get_matches_people(read_folder, write_folder, url_type):
                                         if 'url' in actor:
                                             tokenized_id = (actor['url'].split('/'))[4]
 
+                                            if tokenized_id in existing_actors:
+                                                continue
+
                                             url = url_type + tokenized_id
-                                            r = requests.get(url).json()
+                                            print(url)
+                                            rjson = None
+                                            try:
+                                                request = requests.get(url)
+                                                rjson = request.json()
+                                            except requests.exceptions.ConnectionError:
+                                                print("TIME OUT")
+
+                                            if isinstance(rjson, bool):
+                                                continue
 
                                             file_name = write_folder + '/' + tokenized_id
                                             # create the folder if it does not exist in this dir
@@ -171,9 +186,10 @@ def get_matches_people(read_folder, write_folder, url_type):
                                                         raise
                                             # write the file
                                             with open(file_name, 'w') as outfile:
-                                                r['language'] = language
-                                                json.dump(r, outfile)
-                                                print(data['title'])
+
+                                                rjson['language'] = language
+                                                json.dump(rjson, outfile)
+                                                print(data['title'] + " ID: " + filename)
                                             print('')
 
 
@@ -223,6 +239,16 @@ def delete_bad_anime():
                 print(filename + " has no characters\n")
                 os.remove(file_path)
 
+def delete_bad_actors():
+    read_folder = 'jikan_person'
+    for filename in os.listdir(read_folder):
+        file_path = read_folder + '/' + filename
+        with open(file_path) as datafile:
+            data = json.load(datafile)
+            if 'error' in data and len(data['error']) > 0:
+                print(filename + " is an error\n")
+                os.remove(file_path)
+
 
 # ----
 # main
@@ -237,7 +263,7 @@ if __name__ == "__main__":
     # get_manga_matches()
 
     # jikan_get_anime_range(ANIME_URL, 34000, 33500, -1, DIR_ANIME)
-    get_matches_people(DIR_ANIME, "jikan_person", 'http://jikan.me/api/person/')    
+    # get_matches_people(DIR_ANIME, "jikan_person", 'http://jikan.me/api/person/')    
     # get_matches_character('jikan_manga', 'jikan_character', 'http://jikan.me/api/character/')
 
     # multi_anime = [1142,23327,2966,265,23755,264,10800,22507,137,136,4224,19815,139,11981,28851,35788,32935,11665,32937,24415,34096,7054,12029,2921,31043,14397,2402,31758,19647,572,30503,9890,31757,813,33486,33255,34376,33095,10379,5028,263,5460,23273,9989,11577,36259,31181,32867,23847,13601,329,962,12531,5300,2559,57,7311,19,5690,31051,35843,30346,11771,2418,372,28735,820,2251,5205,9260,6594,16498,16664,2904,3002,31988,31933,28891,12859,392,32902,17389,34822,25681,4081,27821,34534,2025,4282,3297,15227,26055,16782,5258,25537,13759,4722,19363,34036,16067,34240,918,1033,523,11123,12431,1842,28725,30709,28805,585,16894,22789,31240,9253,18617,14513,245,28223,32366,1559,8129,34591,32005,7785,21329,10030,21,15335,6675,23283,33,32,24687,853,24701,36038,1535,3091,31174,10863,513,512,9969,431,35180,578,9735,338,32983,30654,4181,35062,18195,35067,45,457,17074,25781,18115,18689,7655,4107,22145,199,19123,15417,22135,170,31658,11741,1453,31715,15323,5941,12031,31964,23317,1889,13125,1506,30276,21939,4477,1257,28701,25777,10153,1210,9130,32188,2581,10408,20899,467,6,11977,32182,2685,164,9863,437,2246,1364,31812,5341,28171,9756,6114,18,4155,5420,34599,34076,24277,1519,28957,31646,28675,33674,5081,1365,5114,35247,30,558,10271,33352,6811,10165,4565,11979,185,21557,9617,5365,6746,239,235,14719,7674,11917,6945,20651,22535,11061,32995,22297,12115,21899,20583,877,44,10087,43,2236,1,2001,5,5681,10162,7472,10937,759,1698,12355,777,205,721,16706,3901,30230,34542,2167,138,32282,35413,627,32281,6864,486,3701,23623,5040,6547,4938,12365,1827,3784,121,3226,3702,1604,36275,6467,25835,1367,6336,34618,33051,28977,801,11843,1575]
@@ -247,5 +273,6 @@ if __name__ == "__main__":
     # get_manga_from_anime(110)
 
     # delete_bad_anime()
+    delete_bad_actors()
 
     print("END OF SCRIPT\n")
