@@ -4,6 +4,112 @@ import { getSearchData } from '../shared/Requests';
 import NavMenu from '../shared/NavMenu';
 import PropTypes from 'prop-types';
 
+const models = [
+  {
+    name: "animes",
+    attributes: [
+      {
+        name: "Title",
+        key: "title",
+      },
+      {
+        name: "Media Type",
+        key: "media_type",
+      },
+      {
+        name: "Rating",
+        key: "rating",
+      },
+      {
+        name: "Aired",
+        key: "aired",
+      },
+      {
+        name: "Genre",
+        key: "genre",
+      },
+      {
+        name: "Status",
+        key: "status",
+      },
+      {
+        name: "Synopsis",
+        key: "synopsis",
+      },
+    ],
+  },
+  {
+    name: "characters",
+    attributes: [
+      {
+        name: "About",
+        key: "about",
+      },
+      {
+        name: "Name",
+        key: "name",
+      }
+    ],
+  },
+  {
+    name: "mangas",
+    attributes: [
+      {
+        name: "Title",
+        key: "title",
+      },
+      {
+        name: "Published",
+        key: "published",
+      },
+      {
+        name: "Media Type",
+        key: "media_type",
+      },
+      {
+        name: "Author",
+        key: "author",
+      },
+      {
+        name: "Genre",
+        key: "genre",
+      },
+      {
+        name: "Status",
+        key: "status",
+      },
+      {
+        name: "Synopsis",
+        key: "synopsis",
+      },
+    ],
+  },
+  {
+    name: "actors",
+    attributes: [
+      {
+        name: "Birthday",
+        key: "birthday",
+      },
+      {
+        name: "Language",
+        key: "language",
+      },
+      {
+        name: "Name",
+        key: "name",
+      },
+    ],
+  },
+];
+
+const keyNames = {};
+models.forEach(model => {
+  model.attributes.forEach(attr => {
+    keyNames[attr.key] = attr.name;
+  })
+})
+
 const searchFilters = [
   {
     name: "Anime",
@@ -53,12 +159,21 @@ class SearchPage extends Component {
     const filters = newFilters !== undefined ? newFilters : this.state.activeFilters;
     const page = newPage !== undefined ? newPage : this.state.page;
 
+    const slimModels = models.map(m => ({
+      name: m.name,
+      attributes: m.attributes.map(attr => attr.key),
+    }));
+
     getSearchData({
+      models: slimModels,
       searchText: search,
       activeModels: filters.length !== 0 ? filters : searchFilters.map(f => f.value),
       page: `${page}`,
-      callback: (data) => {
-        this.setState({data, loading: false});
+      callback: (data, maxPage) => {
+        this.setState({
+          data,
+          maxPage: maxPage ? maxPage : 1,
+          loading: false});
       },
     });
   }
@@ -73,7 +188,7 @@ class SearchPage extends Component {
 
   updateFilters = (activeFilters) => {
     this.setState({activeFilters, page: 1, data: [], loading: true});
-    this.getInstances({newFilters: activeFilters, page: 1});
+    this.getInstances({newFilters: activeFilters, newPage: 1});
   }
 
   render() {
@@ -85,6 +200,7 @@ class SearchPage extends Component {
           updateSearch={this.props.updateSearch}
           handleSubmit={this.props.handleSubmit} />
         <SearchResults
+          keyNames={keyNames}
           loading={this.state.loading}
           data={this.state.data}
           currentPage={this.state.page}

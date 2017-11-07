@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const PAGE_SIZE = 60;
+const SEARCH_PAGE_SIZE = 20;
 
 function getMaxPage(response, pageSize) {
   const total = response.data.meta.total;
@@ -27,13 +28,12 @@ function getData({model, sort, filters, page, pageSize}) {
       "filter[objects]": JSON.stringify(filters),
       "sort": sort,
       "page[number]": page,
-      "page[size]": PAGE_SIZE,
+      "page[size]": pageSize,
     },
   });
 }
 
 export function getModelData ({model, callback, sort, filters, page}) {
-  // TODO: Use filters and sorts to modify the axios call
   getData({model, sort, filters, page, pageSize: PAGE_SIZE})
   .then((response) => {
     if (!response.data.data) {
@@ -74,44 +74,7 @@ export function getSingleModel (model, callback, number) {
   });
 }
 
-const models = [
-  {
-    name: "animes",
-    attributes: [
-      "aired",
-      "genre",
-      "status",
-      "synopsis",
-    ],
-  },
-  {
-    name: "characters",
-    attributes: [
-      "about",
-      "name",
-    ],
-  },
-  {
-    name: "mangas",
-    attributes: [
-      "author",
-      "genre",
-      "status",
-      "synopsis",
-    ],
-  },
-  {
-    name: "actors",
-    attributes: [
-      "birthday",
-      "language",
-      "name",
-    ],
-  },
-];
-
-function getFilters(searchText, model) {
-  const attributes = models.find(modelObj => modelObj.name === model).attributes;
+function getFilters(searchText, attributes) {
   const filters = [
     {
       or: attributes.map(attr => ({
@@ -124,23 +87,24 @@ function getFilters(searchText, model) {
   return filters;
 }
 
-export function getSearchData ({searchText, activeModels, callback, page}) {
+export function getSearchData ({models, searchText, activeModels, callback, page}) {
   if (!searchText) {
     callback([]);
     return;
   }
   const calls = models.filter(m => activeModels.includes(m.name)).map(model => {
-    const filters = getFilters(searchText, model.name);
-    return getData({model: model.name, sort: "", filters, page: 1, pageSize: PAGE_SIZE});
+    const attributes = model.attributes;
+    const filters = getFilters(searchText, attributes);
+    return getData({model: model.name, sort: "", filters, page: page, pageSize: SEARCH_PAGE_SIZE});
   })
   axios.all(calls).then((responses) => {
     const datas = responses.map(response => configureData(response));
+    const maxPages = responses.map(response => getMaxPage(response, SEARCH_PAGE_SIZE));
 
-    // const total = 0;
-    // datas.forEach((data) => total += data.length);
+    const maxMaxPage = Math.max(...maxPages);
 
     const allData = [].concat.apply([], datas);
 
-    callback(allData);
+    callback(allData, maxMaxPage);
   });
 }

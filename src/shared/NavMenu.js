@@ -22,7 +22,7 @@ class NavMenu extends Component {
                 <Link key={page.name} to={page.link}>
                   <Menu.Item
                     as='div'
-                    active={page.link === "/" ? href.endsWith("/#/") : href.includes(page.link)}>
+                    active={href.endsWith(page.link)}>
                     {page.name}
                   </Menu.Item>
                 </Link>

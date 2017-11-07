@@ -7,7 +7,8 @@ import Highlighter from 'react-highlight-words';
 // Maybe use this?
 // http://fusejs.io/
 
-const CONTEXT_PADDING = 100;
+const CONTEXT_PADDING = 60;
+const MAX_RESULTS = 4;
 
 class Result extends Component {
   state = {
@@ -17,23 +18,37 @@ class Result extends Component {
   handleShow = () => this.setState({ active: true })
   handleHide = () => this.setState({ active: false })
 
+  sanitizeText = (fullText, index) => {
+    const low  = Math.max(0, index - CONTEXT_PADDING);
+    const high = Math.min(fullText.length, index + this.props.searchText.length + CONTEXT_PADDING);
+    let text = `${fullText.substring(low, high)}`
+    if (low !== 0) {
+      text = `...${text}`;
+    }
+    if (high !== text.length) {
+      text = `${text}...`;
+    }
+    return text;
+  }
+
   // Only handles strings, not numbers
   // Only handles one result per attribute
-  // Adds '...' on everything regardless if it is the full text
-  // Need to 'trim'
+  // Doesn't give preference to one result over another
 
   render() {
     const { active } = this.state;
     const data = this.props.data;
-    const strings = [];
+    const results = [];
     const searchText = this.props.searchText.toLowerCase();
     for(const key in data) {
-      if (typeof data[key] === 'string') {
+      if (key in this.props.keyNames && typeof data[key] === 'string') {
         const index = data[key].toLowerCase().indexOf(searchText);
         if(index !== -1) {
-          const low  = Math.max(0, index - CONTEXT_PADDING);
-          const high = Math.min(data[key].length, index + this.props.searchText.length + CONTEXT_PADDING);
-          strings.push(`...${data[key].substring(low, high)}...`);
+          const text = this.sanitizeText(data[key], index);
+          results.push({
+            name: key,
+            data: text,
+          });
         }
       }
     }
@@ -50,13 +65,19 @@ class Result extends Component {
             shape="rounded"
             src={this.props.data.picture} />
           <div className={styles.strings}>
-            {strings.map(string => (
+            {results.slice(0, MAX_RESULTS).map((result, index) => (
               <div
-                key={string}
+                key={`${result.name}`}
                 className={styles.stringContainer}>
+                <div>
+                  {`${this.props.keyNames[result.name]}:`}
+                </div>
                 <Highlighter
+                  unhighlightClassName={styles.noWrap}
+                  activeClassName={styles.noWrap}
+                  highlightClassName={styles.noWrap}
                   searchWords={[this.props.searchText]}
-                  textToHighlight={string} />
+                  textToHighlight={result.data} />
               </div>
             ))}
           </div>
@@ -66,6 +87,7 @@ class Result extends Component {
 }
 
 Result.propTypes = {
+  keyNames: PropTypes.object,
   data: PropTypes.object,
   searchText: PropTypes.string,
 }

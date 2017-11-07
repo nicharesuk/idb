@@ -34,6 +34,8 @@ class SearchResults extends Component {
   }
 
   render() {
+    const shouldButtonRowShow = this.props.searchText.length &&
+        (this.props.data.length || this.props.activeFilters.length || this.props.loading);
     return (
       <div className={styles.container}>
         {this.props.loading ?
@@ -48,7 +50,9 @@ class SearchResults extends Component {
         }
         {!this.props.data.length && !this.props.loading ?
           <div className={styles.emptyContainer}>
-            <h1 className={styles.noResults}>No Results</h1>
+            <h1 className={styles.noResults}>
+              {!this.props.searchText.length ? "Make a search" : "No Results"}
+            </h1>
           </div> : null
         }
         {this.props.data.length ?
@@ -59,10 +63,12 @@ class SearchResults extends Component {
             open={this.state.modalOpen} /> : null
         }
         <div className={styles.items}>
-          <ButtonRow
-            searchFilters={this.props.searchFilters}
-            activeFilters={this.props.activeFilters}
-            updateFilters={this.props.updateFilters} />
+          {shouldButtonRowShow ?
+            <ButtonRow
+              searchFilters={this.props.searchFilters}
+              activeFilters={this.props.activeFilters}
+              updateFilters={this.props.updateFilters} /> : null
+          }
           {this.props.data.map((instance, index) => (
             <div
               className={styles.result}
@@ -70,15 +76,18 @@ class SearchResults extends Component {
               onClick={() => this.openModalAction(index)}
               key={`result-component-${index}`}>
                 <Result
+                  keyNames={this.props.keyNames}
                   data={instance}
                   searchText={this.props.searchText} />
             </div>
           ))}
           <div className={styles.pageList}>
-            <PageList
-              currentPage={this.props.currentPage}
-              maxPage={this.props.maxPage}
-              changePage={this.props.changePage} />
+            {this.props.data.length ?
+              <PageList
+                currentPage={this.props.currentPage}
+                maxPage={this.props.maxPage}
+                changePage={this.props.changePage} /> : null
+            }
           </div>
         </div>
       </div>
@@ -87,6 +96,7 @@ class SearchResults extends Component {
 }
 
 SearchResults.propTypes = {
+  keyNames: PropTypes.object,
   loading: PropTypes.bool,
   data: PropTypes.array,
   currentPage: PropTypes.number,
