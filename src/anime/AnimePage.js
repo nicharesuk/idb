@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import styles from './MangaPage.scss
+// import styles from './AnimePage.scss';
 import getStartYear from '../shared/GetStartYear';
 import PropTypes from 'prop-types';
 import FiltersContainer from '../shared/FiltersContainer';
@@ -63,11 +63,11 @@ const filters = [
       },
       {
         name: "Finished",
-        value: "Finished",
+        value: "Finished Airing",
       },
       {
-        name: "Publishing",
-        value: "Publishing",
+        name: "Airing",
+        value: "Currently Airing",
       },
     ],
   },
@@ -84,14 +84,13 @@ const sorts = [
   },
 ];
 
-class MangaPage extends Component {
+class AnimePage extends Component {
 
-  handleModel = (manga) => {
-    const subInfo_2 = manga.num_chapters === "Unknown" ? "" : `${manga.num_chapters} chapters`
+  handleModel = (anime) => {
     return {
-      ...manga,
-      subInfo_1: `${getStartYear(manga.published)}`,
-      subInfo_2: subInfo_2,
+      ...anime,
+      subInfo_1: `${getStartYear(anime.aired)}`,
+      subInfo_2: `${anime.num_episodes} episodes`,
     }
   }
 
@@ -101,17 +100,16 @@ class MangaPage extends Component {
         {...this.props}
         filters={filters}
         sorts={sorts}
-        type="mangas"
+        type="animes"
         handleModel={this.handleModel} />
     );
   }
 }
 
-MangaPage.propTypes = {
+AnimePage.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
   handleSubmit: PropTypes.func,
 }
 
-
-export default MangaPage;
+export default AnimePage;

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Image, Icon } from 'semantic-ui-react';
 import styles from './ModalContent.scss';
-import ShowModalContent from '../shows/ShowModalContent';
+import AnimeModalContent from '../anime/AnimeModalContent';
 import CharacterModalContent from '../characters/CharacterModalContent';
-import PersonModalContent from '../people/PersonModalContent';
+import ActorModalContent from '../actors/ActorModalContent';
 import MangaModalContent from '../manga/MangaModalContent';
-import { getSingleModel } from './Requests';
+import { getSingleModel } from '../shared/Requests';
 
 class ModalContent extends Component {
 
@@ -20,7 +20,7 @@ class ModalContent extends Component {
   }
 
   componentWillMount = () => {
-    this.getModelData(this.props.type, this.props.dataObject.id);
+    this.getModelData(this.props.type, this.props.id);
   }
 
   getModelData = (type, id) => {
@@ -37,11 +37,11 @@ class ModalContent extends Component {
 
   getContentNode = () => {
     if        (this.state.type === "animes") {
-      return <ShowModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
+      return <AnimeModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "characters") {
       return <CharacterModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "actors") {
-      return <PersonModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
+      return <ActorModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else if (this.state.type === "mangas") {
       return <MangaModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else {
@@ -74,7 +74,7 @@ class ModalContent extends Component {
 }
 
 ModalContent.propTypes = {
-  dataObject: PropTypes.object,
+  id: PropTypes.string,
   type: PropTypes.string,
   onClose: PropTypes.func,
 }

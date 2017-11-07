@@ -6,11 +6,17 @@ import APIContainer from './APIContainer';
 import apidata from './APIData.js';
 import ToolContainer from './ToolContainer';
 import tooldata from './ToolData.js';
+import NavMenu from '../shared/NavMenu';
+import PropTypes from 'prop-types';
 
 class HomePage extends Component {
   render() {
     return (
       <div className={styles.home_container}>
+        <NavMenu
+          pages={this.props.pages}
+          searchText={this.props.searchText}
+          handleSubmit={this.props.handleSubmit} />
         <div className={styles.splash}></div>
         <div className={styles.about_container}>
           <div className={styles.motivation}>
@@ -71,6 +77,12 @@ class HomePage extends Component {
       </div>
     );
   }
+}
+
+HomePage.propTypes = {
+  pages: PropTypes.array.isRequired,
+  searchText: PropTypes.string,
+  handleSubmit: PropTypes.func,
 }
 
 export default HomePage;

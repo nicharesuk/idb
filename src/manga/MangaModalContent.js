@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ModalDetails from '../shared/ModalDetails';
+import ModalDetails from '../modal/ModalDetails';
 
 class MangaDetails extends Component {
 
