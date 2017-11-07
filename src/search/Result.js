@@ -7,7 +7,7 @@ import Highlighter from 'react-highlight-words';
 // Maybe use this?
 // http://fusejs.io/
 
-const CONTEXT_PADDING = 60;
+const MAX_CHARACTERS = 100;
 const MAX_RESULTS = 4;
 
 class Result extends Component {
@@ -19,13 +19,20 @@ class Result extends Component {
   handleHide = () => this.setState({ active: false })
 
   sanitizeText = (fullText, index) => {
-    const low  = Math.max(0, index - CONTEXT_PADDING);
-    const high = Math.min(fullText.length, index + this.props.searchText.length + CONTEXT_PADDING);
-    let text = `${fullText.substring(low, high)}`
-    if (low !== 0) {
+
+    const numBelow = Math.ceil((MAX_CHARACTERS - 1) / 2);
+    const numAbove = Math.floor((MAX_CHARACTERS - 1) / 2);
+
+    const topLeftover = Math.max(0, numAbove - (fullText.length - index));
+    const botLeftover = Math.max(0, numBelow - (index - 1));
+    const first = Math.max(0, index - (numBelow + topLeftover));
+    const last = Math.min(fullText.length, index + (numAbove + botLeftover));
+
+    let text = fullText.substring(first, last);
+    if (first !== 0) {
       text = `...${text}`;
     }
-    if (high !== text.length) {
+    if (last !== fullText.length) {
       text = `${text}...`;
     }
     return text;
