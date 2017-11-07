@@ -4,39 +4,20 @@ import PropTypes from 'prop-types';
 import { Button } from 'semantic-ui-react';
 
 class SearchResults extends Component {
- 
-  handleButtonClick = (value) => {
-    if (this.props.activeFilters.includes(value)) {
-      return;
-    }
-    const newFilters = [
-      ...this.props.activeFilters,
-      value,
-    ];
-    this.props.updateFilters(newFilters);
-  }
 
   render() {
     return (
       <div className={styles.buttonRow}>
-        <div className={styles.button}>
-          <Button
-            size="large"
-            inverted
-            active={this.props.activeFilters.length === 0}
-            onClick={() => this.props.updateFilters([])}>
-            All
-          </Button>
-        </div>
-        {this.props.searchFilters.map(filter => (
+        {this.props.filters.map((filter, index) => (
           <div key={filter.name} className={styles.button}>
             <Button
               className={styles.button}
               size="large"
+              as="a"
               inverted
-              color={filter.color}
-              active={this.props.activeFilters.includes(filter.value)}
-              onClick={() => this.handleButtonClick(filter.value)}>
+              color={filter.color ? filter.color : undefined}
+              active={filter.active}
+              onClick={() => this.props.updateFilters(index)}>
               {filter.name}
             </Button>
           </div>
@@ -47,8 +28,7 @@ class SearchResults extends Component {
 }
 
 SearchResults.propTypes = {
-  searchFilters: PropTypes.array,
-  activeFilters: PropTypes.array,
+  filters: PropTypes.array,
   updateFilters: PropTypes.func,
 }
 

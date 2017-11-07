@@ -73,15 +73,19 @@ class ThumbnailPage extends Component {
     for (let i = 0; i < numGhosts; i++) {
       ghosts.push(<div key={`ghost-${i}`} className={styles.ghost}></div>);
     }
+
+    const data = this.props.data;
+    const index = this.state.selectedIndex;
+    const modalId = data[index] ? data[index].id : null;
     return (
       <div className={styles.container}>
         <ModalInstance
-          id={this.props.data[this.state.selectedIndex].id}
+          id={modalId}
           type={this.props.type}
           onClose={this.closeModalAction}
           open={this.state.modalOpen} />
         <div className={styles.items}>
-          {this.props.data.map((instance, index) => (
+          {data.map((instance, index) => (
             <div
               onClick={() => this.openModalAction(index)}
               key={`thumbnail-component-${index}`}>

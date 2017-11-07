@@ -34,8 +34,11 @@ class SearchResults extends Component {
   }
 
   render() {
-    const shouldButtonRowShow = this.props.searchText.length &&
-        (this.props.data.length || this.props.activeFilters.length || this.props.loading);
+    const shouldButtonRowShow = this.props.searchText.length;
+    const data = this.props.data;
+    const index = this.state.selectedIndex;
+    const modalId = data[index] ? data[index].id : null;
+    const modalType = data[index] ? data[index].type : null;
     return (
       <div className={styles.container}>
         {this.props.loading ?
@@ -57,16 +60,15 @@ class SearchResults extends Component {
         }
         {this.props.data.length ?
           <ModalInstance
-            id={this.props.data[this.state.selectedIndex].id}
-            type={this.props.data[this.state.selectedIndex].type}
+            id={modalId}
+            type={modalType}
             onClose={this.closeModalAction}
             open={this.state.modalOpen} /> : null
         }
         <div className={styles.items}>
           {shouldButtonRowShow ?
             <ButtonRow
-              searchFilters={this.props.searchFilters}
-              activeFilters={this.props.activeFilters}
+              filters={this.props.filters}
               updateFilters={this.props.updateFilters} /> : null
           }
           {this.props.data.map((instance, index) => (
@@ -103,8 +105,7 @@ SearchResults.propTypes = {
   maxPage: PropTypes.number,
   changePage: PropTypes.func,
   searchText: PropTypes.string,
-  searchFilters: PropTypes.array,
-  activeFilters: PropTypes.array,
+  filters: PropTypes.array,
   updateFilters: PropTypes.func,
 }
 
