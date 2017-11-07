@@ -43,7 +43,6 @@ class CharactersPage extends Component {
 CharactersPage.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
-  updateSearch: PropTypes.func,
   handleSubmit: PropTypes.func,
 }
 

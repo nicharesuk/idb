@@ -38,6 +38,10 @@ class SearchResults extends Component {
     const data = this.props.data.sort((a, b) => {
       if(a.id < b.id) return -1;
       if(a.id > b.id) return 1;
+      const aName = a.title ? a.title : a.name;
+      const bName = b.title ? b.title : b.name;
+      if(aName < bName) return -1;
+      if(aName > bName) return 1;
       return 0;
     });
     const index = this.state.selectedIndex;

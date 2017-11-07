@@ -100,7 +100,6 @@ class FiltersContainer extends Component {
           activeSortIndex={this.state.activeSortIndex}
           pages={this.props.pages}
           searchText={this.props.searchText}
-          updateSearch={this.props.updateSearch}
           handleSubmit={this.props.handleSubmit} />
         <ThumbnailPage
           loading={this.state.loading}
@@ -122,7 +121,6 @@ FiltersContainer.defaultProps = {
 FiltersContainer.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
-  updateSearch: PropTypes.func,
   handleSubmit: PropTypes.func,
   handleModel: PropTypes.func,
   filters: PropTypes.array,

@@ -153,14 +153,14 @@ class SearchPage extends Component {
   }
 
   componentWillReceiveProps = (nextProps) => {
-    if (nextProps.currentSearch !== this.props.currentSearch) {
+    if (nextProps.searchText !== this.props.searchText) {
       this.setState({data: [], loading: true, page: 1});
-      this.getInstances({newSearch: nextProps.currentSearch, newPage: 1});
+      this.getInstances({newSearch: nextProps.searchText, newPage: 1});
     }
   }
 
   getInstances = ({newSearch, newFilters, newPage}) => {
-    const search = newSearch !== undefined ? newSearch : this.props.currentSearch;
+    const search = newSearch !== undefined ? newSearch : this.props.searchText;
     const filters = newFilters !== undefined ? newFilters : this.state.filters;
     const page = newPage !== undefined ? newPage : this.state.page;
 
@@ -223,7 +223,6 @@ class SearchPage extends Component {
         <NavMenu
           pages={this.props.pages}
           searchText={this.props.searchText}
-          updateSearch={this.props.updateSearch}
           handleSubmit={this.props.handleSubmit} />
         <SearchResults
           keyNames={keyNames}
@@ -232,7 +231,7 @@ class SearchPage extends Component {
           currentPage={this.state.page}
           maxPage={this.state.maxPage}
           changePage={this.changePage}
-          searchText={this.props.currentSearch}
+          searchText={this.props.searchText}
           filters={this.state.filters}
           updateFilters={this.updateFilters} />
       </div>
@@ -243,8 +242,6 @@ class SearchPage extends Component {
 SearchPage.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
-  currentSearch: PropTypes.string,
-  updateSearch: PropTypes.func,
   handleSubmit: PropTypes.func,
 }
 

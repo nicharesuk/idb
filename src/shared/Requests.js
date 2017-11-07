@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const PAGE_SIZE = 60;
-const SEARCH_PAGE_SIZE = 20;
+const SEARCH_PAGE_SIZE = 10;
 
 function getMaxPage(response, pageSize) {
   const total = response.data.meta.total;

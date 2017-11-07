@@ -6,6 +6,15 @@ import { Link } from 'react-router-dom';
 
 class NavMenu extends Component {
 
+  state = {
+    searchText: this.props.searchText,
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.handleSubmit(this.state.searchText);
+  }
+
   render() {
     const { filters, sorts, activeSortIndex} = this.props;
     const activeSortText = sorts.length ? sorts[activeSortIndex].name : "";
@@ -74,18 +83,16 @@ class NavMenu extends Component {
             </Menu.Menu>
           </Menu>
         </div>
-        {this.props.search ? 
-          <div
-            className={style.search}>
-            <form onSubmit={this.props.handleSubmit}>
-              <Search
-                size="mini"
-                value={this.props.searchText}
-                onSearchChange={(e) => this.props.updateSearch(e.target.value)}
-                showNoResults={false} />
-            </form>
-          </div> : null
-        }
+        <div
+          className={style.search}>
+          <form onSubmit={this.handleSubmit}>
+            <Search
+              size="mini"
+              value={this.state.searchText}
+              onSearchChange={(e) => this.setState({searchText: e.target.value})}
+              showNoResults={false} />
+          </form>
+        </div>
       </div>
     );
   }
@@ -94,7 +101,6 @@ class NavMenu extends Component {
 NavMenu.defaultProps = {
   filters: [],
   sorts: [],
-  search: true,
   activeSortIndex: 0,
 }
 
@@ -108,9 +114,7 @@ NavMenu.propTypes = {
   activeSortIndex: PropTypes.number,
   pages: PropTypes.array.isRequired,
   searchText: PropTypes.string,
-  updateSearch: PropTypes.func,
   handleSubmit: PropTypes.func,
-  search: PropTypes.bool,
 }
 
 export default NavMenu;

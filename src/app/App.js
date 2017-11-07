@@ -46,20 +46,10 @@ class App extends Component {
 
   state = {
     searchText: "",
-    currentSearch: "",
   }
 
-  updateSearch = (text) => {
-    this.setState({
-      searchText: text,
-    });
-  }
-
-  handleSubmit = (e) => {
-    e.preventDefault();
-    // TODO: Implement search action. We will need to change to the
-    // search page and use the search text to filter results
-    this.setState({currentSearch: this.state.searchText});
+  handleSubmit = (searchText) => {
+    this.setState({searchText});
     this.context.router.history.push('/search');
   }
 
@@ -77,8 +67,6 @@ class App extends Component {
                   page.node({
                     pages: pages,
                     searchText: this.state.searchText,
-                    currentSearch: this.state.currentSearch,
-                    updateSearch: this.updateSearch,
                     handleSubmit: this.handleSubmit,
                   })
                 )} />

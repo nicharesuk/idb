@@ -110,7 +110,6 @@ class MangaPage extends Component {
 MangaPage.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
-  updateSearch: PropTypes.func,
   handleSubmit: PropTypes.func,
 }
 

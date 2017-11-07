@@ -15,7 +15,8 @@ class HomePage extends Component {
       <div className={styles.home_container}>
         <NavMenu
           pages={this.props.pages}
-          search={false} />
+          searchText={this.props.searchText}
+          handleSubmit={this.props.handleSubmit} />
         <div className={styles.splash}></div>
         <div className={styles.about_container}>
           <div className={styles.motivation}>
@@ -79,7 +80,9 @@ class HomePage extends Component {
 }
 
 HomePage.propTypes = {
-  pages: PropTypes.array,
+  pages: PropTypes.array.isRequired,
+  searchText: PropTypes.string,
+  handleSubmit: PropTypes.func,
 }
 
 export default HomePage;
