@@ -196,9 +196,9 @@ def get_matches_people(read_folder, write_folder, url_type):
 # Runs through the anime we have locally, gets the first main character, and adds them to jikan_character
 # Limited to one per show
 def get_matches_character(read_folder, write_folder, url_type):
-    existing_actors = set()
+    existing_characters = set()
     for actor_id in os.listdir(write_folder):
-        existing_actors.add(actor_id)
+        existing_characters.add(actor_id)
 
     for filename in os.listdir(read_folder):
         with open(read_folder + '/' + filename) as datafile:
@@ -213,7 +213,7 @@ def get_matches_character(read_folder, write_folder, url_type):
 
                                 url = url_type + tokenized_id
 
-                                if tokenized_id in existing_actors:
+                                if tokenized_id in existing_characters:
                                     continue
 
                                 print(url)
@@ -294,6 +294,6 @@ if __name__ == "__main__":
 
     # delete_bad_anime()
     # delete_bad_actors()
-    delete_bad_characters()
+    # delete_bad_characters()
 
     print("END OF SCRIPT\n")
