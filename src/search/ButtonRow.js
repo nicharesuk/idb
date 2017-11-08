@@ -8,20 +8,41 @@ class SearchResults extends Component {
   render() {
     return (
       <div className={styles.buttonRow}>
-        {this.props.filters.map((filter, index) => (
-          <div key={filter.name} className={styles.button}>
-            <Button
-              className={styles.button}
-              size="large"
-              as="a"
-              inverted
-              color={filter.color ? filter.color : undefined}
-              active={filter.active}
-              onClick={() => this.props.updateFilters(index)}>
-              {filter.name}
-            </Button>
-          </div>
-        ))}
+        <div className={styles.row}>
+          {this.props.filters.map((filter, index) => (
+            <div key={filter.name} className={styles.button}>
+              <Button
+                size="large"
+                as="a"
+                inverted
+                color={filter.color ? filter.color : undefined}
+                active={filter.active}
+                onClick={() => this.props.updateFilters(index)}>
+                {filter.name}
+              </Button>
+            </div>
+          ))}
+        </div>
+        <div className={styles.button}>
+          <Button
+            inverted
+            color="grey"
+            attached='left'
+            active={this.props.orSearch}
+            onClick={() => this.props.updateOperation(true)}
+            size="large">
+            Or
+          </Button>
+          <Button
+            inverted
+            attached='right'
+            color="grey"
+            active={!this.props.orSearch}
+            onClick={() => this.props.updateOperation(false)}
+            size="large">
+            And
+          </Button>
+        </div>
       </div>
     );
   }
@@ -30,6 +51,8 @@ class SearchResults extends Component {
 SearchResults.propTypes = {
   filters: PropTypes.array,
   updateFilters: PropTypes.func,
+  orSearch: PropTypes.bool,
+  updateOperation: PropTypes.func,
 }
 
 export default SearchResults;

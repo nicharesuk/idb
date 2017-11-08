@@ -47,6 +47,7 @@ class SearchResults extends Component {
     const index = this.state.selectedIndex;
     const modalId = data[index] ? data[index].id : null;
     const modalType = data[index] ? data[index].type : null;
+    const searchWords = this.props.searchText.split(' ').filter(w => w.length !== 0).map(w => w.toLowerCase());
     return (
       <div className={styles.container}>
         {this.props.loading ?
@@ -77,7 +78,9 @@ class SearchResults extends Component {
           {shouldButtonRowShow ?
             <ButtonRow
               filters={this.props.filters}
-              updateFilters={this.props.updateFilters} /> : null
+              updateFilters={this.props.updateFilters}
+              orSearch={this.props.orSearch}
+              updateOperation={this.props.updateOperation} /> : null
           }
           {this.props.data.map((instance, index) => (
             <div
@@ -88,7 +91,7 @@ class SearchResults extends Component {
                 <Result
                   keyNames={this.props.keyNames}
                   data={instance}
-                  searchText={this.props.searchText} />
+                  searchWords={searchWords} />
             </div>
           ))}
           <div className={styles.pageList}>
@@ -115,6 +118,8 @@ SearchResults.propTypes = {
   searchText: PropTypes.string,
   filters: PropTypes.array,
   updateFilters: PropTypes.func,
+  orSearch: PropTypes.bool,
+  updateOperation: PropTypes.func,
 }
 
 export default SearchResults;
