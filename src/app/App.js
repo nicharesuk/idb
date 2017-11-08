@@ -1,65 +1,61 @@
 import React, { Component } from 'react';
 import style from './App.scss';
-import { Menu } from 'semantic-ui-react';
 import HomePage from '../homepage/HomePage';
-import ShowsPage from '../shows/ShowsPage';
+import AnimePage from '../anime/AnimePage';
 import CharactersPage from '../characters/CharactersPage';
-import PeoplePage from '../people/PeoplePage';
+import ActorsPage from '../actors/ActorsPage';
 import MangaPage from '../manga/MangaPage';
-import { Link, Switch, Route } from 'react-router-dom';
+import SearchPage from '../search/SearchPage';
+import { Switch, Route } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const pages = [
   {
-    name: "Homepage",
+    name: "Home",
     link: "/",
-    node: <HomePage />,
+    node: (props) => <HomePage {...props} />,
   },
   {
     name: "Anime",
-    link: "/shows",
-    node: <ShowsPage />,
+    link: "/anime",
+    node: (props) => <AnimePage {...props} />,
   },
   {
     name: "Characters",
     link: "/characters",
-    node: <CharactersPage />,
+    node: (props) => <CharactersPage {...props} />,
   },
   {
     name: "Manga",
     link: "/manga",
-    node: <MangaPage />,
+    node: (props) => <MangaPage {...props} />,
   },
   {
-    name: "Voice Actors",
-    link: "/people",
-    node: <PeoplePage />,
+    name: "Actors",
+    link: "/actors",
+    node: (props) => <ActorsPage {...props} />,
+  },
+  {
+    name: "Search",
+    link: "/search",
+    node: (props) => <SearchPage {...props} />,
   }
 ];
 
 class App extends Component {
 
+  state = {
+    searchText: "",
+  }
+
+  handleSubmit = (searchText) => {
+    this.setState({searchText});
+    this.context.router.history.push('/search');
+  }
+
   render() {
     return (
       <div className={style.appContainer}>
-        <div className={style.header}>
-          <Menu
-            inverted
-            pointing
-            secondary
-            size='large'>
-            {pages.map(page => {
-              return (
-                <Link key={page.name} to={page.link}>
-                  <Menu.Item
-                    as='div'
-                    active={page.link === "/" ? window.location.href.endsWith("/#/") : window.location.href.includes(page.link)}>
-                    {page.name}
-                  </Menu.Item>
-                </Link>
-              );
-            })}
-          </Menu>
-        </div>
         <Switch>
           {pages.map(page => {
             return (
@@ -67,7 +63,13 @@ class App extends Component {
                 key={page.name}
                 exact={page.link === "/"}
                 path={page.link} 
-                render={() => page.node} />
+                render={() => (
+                  page.node({
+                    pages: pages,
+                    searchText: this.state.searchText,
+                    handleSubmit: this.handleSubmit,
+                  })
+                )} />
             );
           })}
         </Switch>
@@ -75,5 +77,11 @@ class App extends Component {
     );
   }
 }
+
+App.contextTypes = {
+  router: PropTypes.shape({
+    history: PropTypes.object.isRequired,
+  }),
+};
 
 export default App;
