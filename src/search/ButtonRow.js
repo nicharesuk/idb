@@ -23,25 +23,25 @@ class SearchResults extends Component {
             </div>
           ))}
         </div>
-        <div className={styles.row}>
-          <div className={styles.button}>
-            <Button
-              inverted
-              active={this.props.orSearch}
-              onClick={() => this.props.updateOperation(true)}
-              size="large">
-              Or
-            </Button>
-          </div>
-          <div className={styles.button}>
-            <Button
-              inverted
-              active={!this.props.orSearch}
-              onClick={() => this.props.updateOperation(false)}
-              size="large">
-              And
-            </Button>
-          </div>
+        <div className={styles.button}>
+          <Button
+            inverted
+            color="grey"
+            attached='left'
+            active={this.props.orSearch}
+            onClick={() => this.props.updateOperation(true)}
+            size="large">
+            Or
+          </Button>
+          <Button
+            inverted
+            attached='right'
+            color="grey"
+            active={!this.props.orSearch}
+            onClick={() => this.props.updateOperation(false)}
+            size="large">
+            And
+          </Button>
         </div>
       </div>
     );
