@@ -2,9 +2,15 @@
 .buttonRow {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .button {

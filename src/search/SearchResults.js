@@ -78,7 +78,9 @@ class SearchResults extends Component {
           {shouldButtonRowShow ?
             <ButtonRow
               filters={this.props.filters}
-              updateFilters={this.props.updateFilters} /> : null
+              updateFilters={this.props.updateFilters}
+              orSearch={this.props.orSearch}
+              updateOperation={this.props.updateOperation} /> : null
           }
           {this.props.data.map((instance, index) => (
             <div
@@ -116,6 +118,8 @@ SearchResults.propTypes = {
   searchText: PropTypes.string,
   filters: PropTypes.array,
   updateFilters: PropTypes.func,
+  orSearch: PropTypes.bool,
+  updateOperation: PropTypes.func,
 }
 
 export default SearchResults;

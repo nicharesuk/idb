@@ -84,16 +84,25 @@ function getFiltersForWord(searchWord, attributes) {
   };
 }
 
-function getFilters(searchWords, attributes) {
-  const filters = [
-    {
-      or: searchWords.filter(w => w.length !== 0).map(word => getFiltersForWord(word, attributes)),
-    },
-  ];
+function getFilters(searchWords, attributes, orSearch) {
+  let filters;
+  if (orSearch) {
+    filters = [
+      {
+        or: searchWords.filter(w => w.length !== 0).map(word => getFiltersForWord(word, attributes)),
+      },
+    ];
+  } else {
+    filters = [
+      {
+        and: searchWords.filter(w => w.length !== 0).map(word => getFiltersForWord(word, attributes)),
+      },
+    ];
+  }
   return filters;
 }
 
-export function getSearchData ({models, searchText, activeModels, callback, page}) {
+export function getSearchData ({models, searchText, activeModels, callback, page, orSearch}) {
   if (!searchText) {
     callback([]);
     return;
@@ -101,7 +110,7 @@ export function getSearchData ({models, searchText, activeModels, callback, page
   const calls = models.filter(m => activeModels.includes(m.name)).map(model => {
     const attributes = model.attributes;
     const searchWords = searchText.split(' ');
-    const filters = getFilters(searchWords, attributes);
+    const filters = getFilters(searchWords, attributes, orSearch);
     return getData({model: model.name, sort: "", filters, page: page, pageSize: SEARCH_PAGE_SIZE});
   })
   axios.all(calls).then((responses) => {

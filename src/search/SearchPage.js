@@ -145,6 +145,7 @@ class SearchPage extends Component {
     loading: true,
     page: 1,
     maxPage: 1,
+    orSearch: true,
     filters: searchFilters.map(filter => ({...filter, active: filter.value === "all"})),
   }
 
@@ -159,10 +160,11 @@ class SearchPage extends Component {
     }
   }
 
-  getInstances = ({newSearch, newFilters, newPage}) => {
+  getInstances = ({newSearch, newFilters, newPage, newOrSearch}) => {
     const search = newSearch !== undefined ? newSearch : this.props.searchText;
     const filters = newFilters !== undefined ? newFilters : this.state.filters;
     const page = newPage !== undefined ? newPage : this.state.page;
+    const orSearch = newOrSearch !== undefined ? newOrSearch : this.state.orSearch;
 
     let activeFilters = [];
     if (filters[0].active) {
@@ -181,6 +183,7 @@ class SearchPage extends Component {
       searchText: search,
       activeModels: activeFilters,
       page: `${page}`,
+      orSearch,
       callback: (data, maxPage) => {
         this.setState({
           data,
@@ -217,6 +220,14 @@ class SearchPage extends Component {
     this.getInstances({newFilters: filters, newPage: 1});
   }
 
+  updateOperation = (orSearch) => {
+    if (orSearch === this.state.orSearch) {
+      return;
+    }
+    this.setState({orSearch, page: 1, data: [], loading: true});
+    this.getInstances({newOrSearch: orSearch, newPage: 1});
+  }
+
   render() {
     return (
       <div style={{width: "100%", height: "100%"}}>
@@ -233,7 +244,9 @@ class SearchPage extends Component {
           changePage={this.changePage}
           searchText={this.props.searchText}
           filters={this.state.filters}
-          updateFilters={this.updateFilters} />
+          updateFilters={this.updateFilters}
+          orSearch={this.state.orSearch}
+          updateOperation={this.updateOperation} />
       </div>
     );
   }
