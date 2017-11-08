@@ -55,7 +55,11 @@ with app.app_context():
             anime_score = anime_json_data['score'][0]
             anime_episodes = anime_json_data['episodes']
             anime_synopsis = anime_json_data['synopsis']
+
             anime_type = anime_json_data['type']
+            if anime_type == None:
+                anime_type = 'Unknown'
+
             anime_pic = anime_json_data['image']
             anime_status = anime_json_data['status']
             anime_youtube = None
@@ -98,6 +102,8 @@ with app.app_context():
                                 character_japanese_name = character_json_data['name-japanese']
                                 character_about = character_json_data['about']
                                 character_pic = character_json_data['image']
+                                if not character_pic:
+                                    character_pic = None
 
                                 print("Creating character with MAL ID:" + anime_character_id)
                                 final_character = Character(name=character_name, japanese_name=character_japanese_name, about=character_about, picture=character_pic)
@@ -169,11 +175,11 @@ with app.app_context():
                                 manga_json_data = json.load(manga_datafile)
 
                                 manga_title = None
-                                if manga_json_data['type'] == 'Manga':
-                                    manga_title = manga_json_data['title']
-                                elif manga_json_data['type'] == 'Novel':
+                                if manga_json_data['type'] == 'Novel':
                                     manga_title = manga_json_data['title'] + ' - (Novel)'
-                                
+                                else:
+                                    manga_title = manga_json_data['title']
+
                                 manga_title_english = None
                                 try:
                                     manga_title_english = manga_json_data['title-english']
