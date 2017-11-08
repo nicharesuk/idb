@@ -50,6 +50,7 @@ class HomePage extends Component {
               <div><a href="http://docs.nicharesuk.apiary.io/#">Apiary API</a></div>
               <div><a href="https://github.com/nicharesuk/idb">Github Repository</a></div>
               <div><a href="https://utexas.app.box.com/v/weebmdreport">Technical Report</a></div>
+              <div><a href="https://utexas.app.box.com/v/weebmduml">UML Diagram</a></div>
               <div><a href="https://trello.com/b/KrhsKbmQ/weebmd">Trello Board</a></div>
             </div>
           </div>
