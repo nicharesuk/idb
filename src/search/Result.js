@@ -53,12 +53,14 @@ class Result extends Component {
     const { active } = this.state;
     const data = this.props.data;
     const results = [];
-    const searchText = this.props.searchText.toLowerCase();
-    for(const key in data) {
-      if (key in this.props.keyNames && typeof data[key] === 'string') {
-        const index = data[key].toLowerCase().indexOf(searchText);
-        if(index !== -1) {
-          const text = this.sanitizeText(data[key], index);
+
+    for (const key in data) {
+      if (key in this.props.keyNames) {
+        const indices = this.props.searchWords.map(w => data[key].toLowerCase().indexOf(w));
+        const matches = indices.filter(index => index !== -1);
+        if (matches.length) {
+          const minIndex = Math.min(...matches);
+          const text = this.sanitizeText(data[key], minIndex);
           results.push({
             name: key,
             data: text,
@@ -66,6 +68,7 @@ class Result extends Component {
         }
       }
     }
+
     return (
       <div
         className={styles.container}
@@ -91,7 +94,7 @@ class Result extends Component {
                   unhighlightClassName={styles.noWrap}
                   activeClassName={styles.noWrap}
                   highlightClassName={styles.noWrap}
-                  searchWords={[this.props.searchText]}
+                  searchWords={this.props.searchWords}
                   textToHighlight={result.data} />
               </div>
             ))}
@@ -104,7 +107,7 @@ class Result extends Component {
 Result.propTypes = {
   keyNames: PropTypes.object,
   data: PropTypes.object,
-  searchText: PropTypes.string,
+  searchWords: PropTypes.array,
 }
 
 export default Result;

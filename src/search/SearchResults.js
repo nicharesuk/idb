@@ -47,6 +47,7 @@ class SearchResults extends Component {
     const index = this.state.selectedIndex;
     const modalId = data[index] ? data[index].id : null;
     const modalType = data[index] ? data[index].type : null;
+    const searchWords = this.props.searchText.split(' ').filter(w => w.length !== 0).map(w => w.toLowerCase());
     return (
       <div className={styles.container}>
         {this.props.loading ?
@@ -88,7 +89,7 @@ class SearchResults extends Component {
                 <Result
                   keyNames={this.props.keyNames}
                   data={instance}
-                  searchText={this.props.searchText} />
+                  searchWords={searchWords} />
             </div>
           ))}
           <div className={styles.pageList}>

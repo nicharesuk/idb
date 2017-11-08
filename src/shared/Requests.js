@@ -74,15 +74,21 @@ export function getSingleModel (model, callback, number) {
   });
 }
 
-function getFilters(searchText, attributes) {
+function getFiltersForWord(searchWord, attributes) {
+  return {
+    or: attributes.map(attr => ({
+      name: attr,
+      op: "like",
+      val: `%${searchWord}%`
+    })),
+  };
+}
+
+function getFilters(searchWords, attributes) {
   const filters = [
     {
-      or: attributes.map(attr => ({
-        name: attr,
-        op: "like",
-        val: `%${searchText}%`
-      })),
-    }
+      or: searchWords.filter(w => w.length !== 0).map(word => getFiltersForWord(word, attributes)),
+    },
   ];
   return filters;
 }
@@ -94,7 +100,8 @@ export function getSearchData ({models, searchText, activeModels, callback, page
   }
   const calls = models.filter(m => activeModels.includes(m.name)).map(model => {
     const attributes = model.attributes;
-    const filters = getFilters(searchText, attributes);
+    const searchWords = searchText.split(' ');
+    const filters = getFilters(searchWords, attributes);
     return getData({model: model.name, sort: "", filters, page: page, pageSize: SEARCH_PAGE_SIZE});
   })
   axios.all(calls).then((responses) => {
