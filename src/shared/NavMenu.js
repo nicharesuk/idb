@@ -21,8 +21,13 @@ class NavMenu extends Component {
     const href = window.location.href;
     return (
       <div>
+        <img 
+          className={style.icon} 
+          src="https://i.lensdump.com/i/6QYIA.png"
+          alt="weeb md icon">
+        </img>
         <div className={style.header}>
-          <Menu
+          <Menu className={style.mainMenu}
             inverted
             secondary
             size='large'>
