@@ -5,7 +5,7 @@ import ModalDetails from '../modal/ModalDetails';
 class CharacterDetails extends Component {
 
   render() {
-    const { name, about, japanese_name, included} = this.props.dataObject;
+    const { name, about, japanese_name, role, included} = this.props.dataObject;
 
     let actorList = [];
     let animeList = [];
@@ -36,7 +36,7 @@ class CharacterDetails extends Component {
     return (
       <ModalDetails
         title={name}
-        detailsList={[japanese_name]}
+        detailsList={[japanese_name, `${role} Character`]}
         paragraph={about}
         lists={lists} />
     );
