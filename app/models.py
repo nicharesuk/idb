@@ -43,7 +43,7 @@ class Anime(db.Model):
     rating = db.Column(db.Text)
     genre = db.Column(db.Text)
 
-    characters = db.relationship('Character', secondary=anime_character, back_populates="animes", collection_class=set)
+    characters = db.relationship('Character', secondary=anime_character, back_populates="animes")
     actors = db.relationship('Actor', secondary=actor_anime, back_populates="animes")
     mangas = db.relationship('Manga', secondary=manga_anime, back_populates="animes")
 
