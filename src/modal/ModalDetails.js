@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './ModalDetails.scss';
 import ScrollableList from './ScrollableList';
+import { Modal, Embed } from 'semantic-ui-react';
 
 class ModalDetails extends Component {
 
@@ -29,13 +30,19 @@ class ModalDetails extends Component {
           </div>
           <div className={styles.paragraph}>
             {this.props.website ?
-              <div className={styles.link}>
+              (this.props.websiteText === "Link to trailer" ? 
+                <Modal trigger={<a>{this.props.websiteText} <br /></a>}>
+                  <Embed id={this.props.website} source="youtube">
+                  </Embed>
+                </Modal> : 
+                <div className={styles.link}>
                 <a
                   href={this.props.website}
                   target="_blank">
                   {this.props.websiteText} <br />
                 </a>
-              </div> : null
+              </div>) : 
+              null
             }
             <div>
               {this.props.paragraph}
