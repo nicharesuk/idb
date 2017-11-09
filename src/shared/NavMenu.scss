@@ -13,11 +13,22 @@
 .search {
   background-color: #000;
   position: fixed;
-  top: 8px;
+  top: 6px;
   right: 20px;
   z-index: 100;
 }
 
 .menu {
   padding-right: 200px;
+  padding-left:80px;
+}
+
+.icon {
+  height: 30px;
+  width: auto;
+  position: fixed;
+  top: 6px;
+  left: 20px;
+  z-index:100;
+  border-radius:5%;
 }

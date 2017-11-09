@@ -21,8 +21,12 @@ class NavMenu extends Component {
     const href = window.location.href;
     return (
       <div>
+        <img 
+          className={style.icon} 
+          src="https://media.giphy.com/media/D7Qzw12q9s8Tu/giphy.gif">
+        </img>
         <div className={style.header}>
-          <Menu
+          <Menu className={style.menu}
             inverted
             secondary
             size='large'>
