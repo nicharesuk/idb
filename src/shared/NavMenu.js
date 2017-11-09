@@ -23,7 +23,7 @@ class NavMenu extends Component {
       <div>
         <img 
           className={style.icon} 
-          src="https://media.giphy.com/media/D7Qzw12q9s8Tu/giphy.gif"
+          src="https://i.lensdump.com/i/6QYIA.png"
           alt="weeb md icon">
         </img>
         <div className={style.header}>
