@@ -3,6 +3,7 @@ import styles from './ThumbnailCard.scss';
 import { Image } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
 import ReactStars from 'react-stars'
+import defaultImage from './DefaultImage';
 
 class ThumbnailCard extends Component {
   state = {}
@@ -21,7 +22,7 @@ class ThumbnailCard extends Component {
             width="134px"
             height="196px"
             shape="rounded"
-            src={this.props.picture} />
+            src={this.props.picture ? this.props.picture : defaultImage} />
           {this.props.score !== -1 && this.props.score !== null ?
             <div
               style={{visibility: active ? "visible" : "hidden"}}
