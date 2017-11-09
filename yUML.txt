@@ -1,6 +1,6 @@
-[Anime|id:int; title:string; aired:string; score:float; num_episodes:int; synopsis:string; media_type:string; picture:string; status:string; youtube_id:string; rating:string; genre:string],
-[Manga|id:int; title:string; title_english:string; title_japanese:string; author:string; published:string; genre:string; score:float; num_chapters:int; synopsis:string; media_type:string; picture:string; status:string;],
-[Character|id:int; name:string; about:string; japanese_name:string; picture:string],
+[Anime|id:int; title:string; aired:string; score:float; num_episodes:int; synopsis:string; media_type:string; picture:string; status:string; youtube_id:string; rating:string; genre:string; media_type:string],
+[Manga|id:int; title:string; title_english:string; title_japanese:string; author:string; published:string; genre:string; score:float; num_chapters:int; synopsis:string; media_type:string; picture:string; status:string; media_type:string],
+[Character|id:int; name:string; about:string; japanese_name:string; picture:string; role:string],
 [Actor|id:int; name:string; given_name:string; language:string; birthday:string; picture:string; website:string],
 
 [Anime]1-mangas 0..*[Manga_anime],
