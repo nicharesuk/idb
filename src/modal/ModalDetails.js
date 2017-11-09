@@ -31,18 +31,20 @@ class ModalDetails extends Component {
           <div className={styles.paragraph}>
             {this.props.website ?
               (this.props.websiteText === "Link to trailer" ? 
-                <Modal trigger={<a>{this.props.websiteText} <br /></a>}>
-                  <Embed id={this.props.website} source="youtube">
-                  </Embed>
-                </Modal> : 
+                <div className={styles.link}>
+                  <Modal trigger={<a>{this.props.websiteText} <br /></a>}>
+                    <Embed id={this.props.website} source="youtube">
+                    </Embed>
+                  </Modal>
+                </div> : 
                 <div className={styles.link}>
                   <a
                     href={this.props.website}
                     target="_blank">
                     {this.props.websiteText} <br />
                   </a>
-                </div>) : 
-              null
+                </div>
+							) : null
             }
             <div>
               {this.props.paragraph}
