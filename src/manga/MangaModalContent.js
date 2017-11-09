@@ -5,7 +5,7 @@ import ModalDetails from '../modal/ModalDetails';
 class MangaDetails extends Component {
 
   render() {
-    const { title, published, score, num_chapters, synopsis, status, genre, included} = this.props.dataObject;
+    const { media_type, title, published, score, num_chapters, synopsis, status, genre, included} = this.props.dataObject;
 
     let characterList = [];
     let animeList = [];
@@ -29,7 +29,7 @@ class MangaDetails extends Component {
     return (
       <ModalDetails
         title={title}
-        detailsList={[published, `Chapters: ${num_chapters}`, status, score, genre ]}
+        detailsList={[published, `Chapters: ${num_chapters}`, status, score, genre, media_type ]}
         paragraph={synopsis}
         lists={lists}/>
     );

@@ -5,7 +5,7 @@ import ModalDetails from '../modal/ModalDetails';
 class ShowModalContent extends Component {
 
   render() {
-    const { title, aired, score, num_episodes, youtube_id, synopsis, status, rating, genre, included} = this.props.dataObject;
+    const { media_type, title, aired, score, num_episodes, youtube_id, synopsis, status, rating, genre, included} = this.props.dataObject;
 
     let characterList = [];
     let mangaList = [];
@@ -29,7 +29,7 @@ class ShowModalContent extends Component {
     return (
       <ModalDetails
         title={title}
-        detailsList={[aired, `${num_episodes}`, status, rating, score, genre ]}
+        detailsList={[aired, `${num_episodes}`, status, rating, score, genre, media_type ]}
         website={youtube_id ? youtube_id : null}
         websiteText={"Link to trailer"}
         paragraph={synopsis}
