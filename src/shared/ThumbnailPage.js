@@ -12,8 +12,6 @@ const THUMBNAIL_WIDTH = 134 + 20;
 class ThumbnailPage extends Component {
  
   state = {
-    modalOpen: false,
-    selectedIndex: 0,
     windowWidth: '0',
     windowHeight: '0',
   }
@@ -71,15 +69,10 @@ class ThumbnailPage extends Component {
     }
 
     const data = this.props.data;
-    const index = this.state.selectedIndex;
-    const modalId = data[index] ? data[index].id : null;
     return (
       <div className={styles.container}>
         <ModalInstance
-          id={modalId}
-          type={this.props.type}
-          onClose={this.closeModalAction}
-          open={this.state.modalOpen} />
+          onClose={this.closeModalAction} />
         <div className={styles.items}>
           {data.map((instance, index) => (
             <div

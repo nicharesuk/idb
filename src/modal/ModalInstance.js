@@ -9,7 +9,6 @@ class ModalInstance extends Component {
 
   render() {
     const params = queryString.parse(window.location.search);
-    console.log(window.location);
     const openModal = !!params.id && !!params.type;
     return (
       <Modal
@@ -27,10 +26,7 @@ class ModalInstance extends Component {
 }
 
 ModalInstance.propTypes = {
-  open: PropTypes.bool,
   onClose: PropTypes.func,
-  id: PropTypes.string,
-  type: PropTypes.string,
 }
 
 export default ModalInstance;
