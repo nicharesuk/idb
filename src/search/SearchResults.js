@@ -16,17 +16,12 @@ class SearchResults extends Component {
 
   }
 
-  openModalAction = (index) => {
-    this.setState({
-      modalOpen: true,
-      selectedIndex: index,
-    });
+  openModalAction = (id, type) => {
+    this.context.router.history.push(`/search?type=${type}&id=${id}`);
   }
 
   closeModalAction = () => {
-    this.setState({
-      modalOpen: false,
-    });
+    this.context.router.history.push(`/search`);
   }
 
   componentDidUpdate = () => {
@@ -86,7 +81,7 @@ class SearchResults extends Component {
             <div
               className={styles.result}
               style={{backgroundColor: index % 2 === 0 ? "#1f2025" : "transparent"}}
-              onClick={() => this.openModalAction(index)}
+              onClick={() => this.openModalAction(instance.id, instance.type)}
               key={`result-component-${index}`}>
                 <Result
                   keyNames={this.props.keyNames}
@@ -107,6 +102,12 @@ class SearchResults extends Component {
     );
   }
 }
+
+SearchResults.contextTypes = {
+  router: PropTypes.shape({
+    history: PropTypes.object.isRequired,
+  }),
+};
 
 SearchResults.propTypes = {
   keyNames: PropTypes.object,

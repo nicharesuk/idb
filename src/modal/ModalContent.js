@@ -15,13 +15,16 @@ class ModalContent extends Component {
     super(props);
 
     this.state = {
-      type: props.type,
       dataObject: null,
     };
   }
 
   componentWillMount = () => {
     this.getModelData(this.props.type, this.props.id);
+  }
+
+  componentWillReceiveProps = (nextProps) => {
+    this.getModelData(nextProps.type, nextProps.id);
   }
 
   getModelData = (type, id) => {
@@ -33,17 +36,17 @@ class ModalContent extends Component {
 
   changeContent = (type, index) => {
     const id = this.state.dataObject.included.filter(obj => obj.type === type)[index].id;
-    this.getModelData(type, id);
+    this.context.router.history.push(`/${window.location.pathname.substring(1)}?type=${type}&id=${id}`);
   }
 
   getContentNode = () => {
-    if        (this.state.type === "animes") {
+    if        (this.props.type === "animes") {
       return <AnimeModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
-    } else if (this.state.type === "characters") {
+    } else if (this.props.type === "characters") {
       return <CharacterModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
-    } else if (this.state.type === "actors") {
+    } else if (this.props.type === "actors") {
       return <ActorModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
-    } else if (this.state.type === "mangas") {
+    } else if (this.props.type === "mangas") {
       return <MangaModalContent dataObject={this.state.dataObject} onChange={this.changeContent} />
     } else {
       return null;
@@ -73,6 +76,12 @@ class ModalContent extends Component {
     );
   }
 }
+
+ModalContent.contextTypes = {
+  router: PropTypes.shape({
+    history: PropTypes.object.isRequired,
+  }),
+};
 
 ModalContent.propTypes = {
   id: PropTypes.string,

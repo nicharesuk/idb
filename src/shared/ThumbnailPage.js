@@ -32,16 +32,12 @@ class ThumbnailPage extends Component {
   }
 
   openModalAction = (index) => {
-    this.setState({
-      modalOpen: true,
-      selectedIndex: index,
-    });
+    const id = this.props.data[index].id;
+    this.context.router.history.push(`/${this.props.type}?type=${this.props.type}&id=${id}`);
   }
 
   closeModalAction = () => {
-    this.setState({
-      modalOpen: false,
-    });
+    this.context.router.history.push(`/${this.props.type}`);
   }
 
   componentDidUpdate = () => {
@@ -109,6 +105,13 @@ class ThumbnailPage extends Component {
     );
   }
 }
+
+
+ThumbnailPage.contextTypes = {
+  router: PropTypes.shape({
+    history: PropTypes.object.isRequired,
+  }),
+};
 
 ThumbnailPage.propTypes = {
   loading: PropTypes.bool,
