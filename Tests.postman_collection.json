@@ -1,0 +1,512 @@
+{
+	"info": {
+		"name": "Tests",
+		"_postman_id": "ae90f285-9060-c45e-e8fc-9f703120c69e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "weebmd.me/api/animes/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":{\"attributes\":{\"aired\":\"Apr 3, 1998 to Apr 24, 1999\",\"genre\":\"Action, Adventure, Comedy, Drama, Sci-Fi, Space\",\"media_type\":\"TV\",\"num_episodes\":26,\"picture\":\"https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg\",\"rating\":\"R - 17+ (violence &amp; profanity)\",\"score\":8.81,\"status\":\"Finished Airing\",\"synopsis\":\"In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as &quot;Cowboys.&quot; The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member&#039;s dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]\",\"title\":\"Cowboy Bebop\",\"youtube_id\":\"qig4KOK2R2g\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/animes/1\"},\"relationships\":{\"actors\":{\"data\":[{\"id\":\"1041\",\"type\":\"actors\"},{\"id\":\"286\",\"type\":\"actors\"},{\"id\":\"220\",\"type\":\"actors\"},{\"id\":\"2\",\"type\":\"actors\"},{\"id\":\"1\",\"type\":\"actors\"},{\"id\":\"1042\",\"type\":\"actors\"},{\"id\":\"266\",\"type\":\"actors\"},{\"id\":\"213\",\"type\":\"actors\"}],\"links\":{\"related\":\"/api/animes/1/actors\",\"self\":\"/api/animes/1/relationships/actors\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/animes/1/characters\",\"self\":\"/api/animes/1/relationships/characters\"}},\"mangas\":{\"data\":[{\"id\":\"1\",\"type\":\"mangas\"},{\"id\":\"2\",\"type\":\"mangas\"}],\"links\":{\"related\":\"/api/animes/1/mangas\",\"self\":\"/api/animes/1/relationships/mangas\"}}},\"type\":\"animes\"},\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"self\":\"/api/animes\"},\"meta\":{}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/animes/1",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"animes",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/mangas/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":{\"attributes\":{\"author\":\"Kuga, Cain\",\"genre\":\"Action, Adventure, Comedy, Sci-Fi, Shoujo\",\"media_type\":\"Manga\",\"num_chapters\":10,\"picture\":\"https://myanimelist.cdn-dena.com/images/manga/3/176770.jpg\",\"published\":\"May  1, 1998 to Oct  10, 1998\",\"score\":6.87,\"status\":\"Finished\",\"synopsis\":\"Kai Lucas hires the Bebop crew to find his mischievous doppelganger, but the bounty goes bust and Spike and Jet once again find themselves broke - and hungry. And to add to their woes, Spike ends up mysteriously on the police&#039;s most wanted list, either the butt of a joke or the victim of a severe computer glitch. But what&#039;s worse, being targeted by every bounty hunter in the solar system, or taking on a kid-genius, a genius puppy and a genus: fatale, species: femme as part of the crew. Well, if Scorpion or the Dragon Head Family doesn&#039;t kill them, the extra mouths to feed certainly will. (Source: Tokyopop)\",\"title\":\"Shooting Star Bebop: Cowboy Bebop\",\"title_english\":\"Cowboy Bebop: Shooting Star\",\"title_japanese\":\"シューティングスタービバップ―カウボーイビバップ\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/mangas/1\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/mangas/1/animes\",\"self\":\"/api/mangas/1/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/mangas/1/characters\",\"self\":\"/api/mangas/1/relationships/characters\"}}},\"type\":\"mangas\"},\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"self\":\"/api/mangas\"},\"meta\":{}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/mangas/1",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"mangas",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/characters/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":{\"attributes\":{\"about\":\"The self-invented personal name of an elite net-diver from Earth, hacker \\\\\"Radical Edward\\\\\" is a very strange, somewhat androgynous, teenage girl assumed to be around 13 years in age. She has a feral aspect reflected in her mannerisms, bare feet, strange postures and gangling walk.\\\\n \\\\n Ed could be considered a \\\\\"free spirit\\\\\"; she is fond of silly exclamations and childish rhymes, easily distracted, and the show\\'s primary source of physical humor.\\\\n \\\\n Over the course of the show she rarely walks anywhere, preferring to run, crawl, flip, roll, walk on her hands, or even just saunter. Ed is always barefoot. In one episode, she considers putting on socks and shoes, but quickly removes them, as even wearing socks hampers her, and she falls over seconds after putting them on; she also appears to be exceptionally strong and flexible, being able to support her weight on her arms for several minutes at a time, and to scratch her nose with her toe.\\\\n \\\\n In the English version, she almost always refers to herself in the third person.\\\\n \\\\n Not much is known about her origins, only that she spent some of her earlier childhood in an orphanage after being left there by her father, a man named Afedersiniz Hesap L&uuml;tfen (he calls Ed \\\\\"Fran&ccedil;oise\\\\\", and may be of Turkish origin as his name means \\\\\"excuse me, check please\\\\\" in Turkish). In the manga it is revealed that she was a friend of a timid young boy in the orphanage known simply as \\\\\"Tomato\\\\\" (which also happens to be the brand name scrawled in katakana on her PC) who, like Ed, knew a great deal about computers and the net, and it is probably safe to assume that his friendship with Ed helped turn her into the genius-hacker she is today.\\\\n \\\\n Ed\\'s primary use to the Bebop crew is as a hacker; she is widely known to be a whiz kid behind a computer. Ed\\'s computer of choice is a carry-along Tomato desktop, an homage to the portable flatpanel-outfitted Apple IIc from the 80s, and when traveling by foot she will balance it on her head.\\\\n \\\\n Ed has a strong rapport with Jet, who acts as a surrogate father, and Faye, who acts as something of a big sister (much to Faye\\'s chagrin). Ed also seems to be the only person who can understand Ein (though in a few instances Jet could understand Ein also).\\\\n\\\\n\",\"japanese_name\":\"(エドワード・ウォン・ハウ・ペペル・チブルスキー4世)\",\"name\":\"Edward Wong Hau Pepelu Tivrusky IV\",\"picture\":\"https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg\",\"role\":\"Main\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/characters/1\"},\"relationships\":{\"actors\":{\"data\":[{\"id\":\"1\",\"type\":\"actors\"},{\"id\":\"2\",\"type\":\"actors\"}],\"links\":{\"related\":\"/api/characters/1/actors\",\"self\":\"/api/characters/1/relationships/actors\"}},\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"},{\"id\":\"2\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/characters/1/animes\",\"self\":\"/api/characters/1/relationships/animes\"}},\"mangas\":{\"data\":[{\"id\":\"1\",\"type\":\"mangas\"},{\"id\":\"2\",\"type\":\"mangas\"}],\"links\":{\"related\":\"/api/characters/1/mangas\",\"self\":\"/api/characters/1/relationships/mangas\"}}},\"type\":\"characters\"},\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"self\":\"/api/characters\"},\"meta\":{}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/characters/1",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"characters",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/actors/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":{\"attributes\":{\"birthday\":\"Apr  28, 1973\",\"given_name\":null,\"language\":\"English\",\"name\":\"Fahn, Melissa\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg\",\"website\":\"http://www.melissafahn.com/\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/actors/1\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/1/animes\",\"self\":\"/api/actors/1/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/1/characters\",\"self\":\"/api/actors/1/relationships/characters\"}}},\"type\":\"actors\"},\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"self\":\"/api/actors\"},\"meta\":{}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/actors/1",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"actors",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/animes/1/actors",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":[{\"attributes\":{\"birthday\":\"Apr  28, 1973\",\"given_name\":null,\"language\":\"English\",\"name\":\"Fahn, Melissa\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg\",\"website\":\"http://www.melissafahn.com/\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/actors/1\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/1/animes\",\"self\":\"/api/actors/1/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/1/characters\",\"self\":\"/api/actors/1/relationships/characters\"}}},\"type\":\"actors\"},{\"attributes\":{\"birthday\":\"Jul  3, 1981\",\"given_name\":\"葵\",\"language\":\"Japanese\",\"name\":\"Tada, Aoi\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/2/27665.jpg\",\"website\":\"http://yaplog.jp/tada_aoi/\"},\"id\":\"2\",\"links\":{\"self\":\"http://weebmd.me/api/actors/2\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/2/animes\",\"self\":\"/api/actors/2/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/2/characters\",\"self\":\"/api/actors/2/relationships/characters\"}}},\"type\":\"actors\"},{\"attributes\":{\"birthday\":\"Jun  17, 1961\",\"given_name\":\"宏一\",\"language\":\"Japanese\",\"name\":\"Yamadera, Kouichi\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/3/44674.jpg\",\"website\":\"http://across-ent.com/talent/men/koichi_yamadera.html\"},\"id\":\"213\",\"links\":{\"self\":\"http://weebmd.me/api/actors/213\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"},{\"id\":\"75\",\"type\":\"animes\"},{\"id\":\"76\",\"type\":\"animes\"},{\"id\":\"413\",\"type\":\"animes\"},{\"id\":\"440\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/213/animes\",\"self\":\"/api/actors/213/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"257\",\"type\":\"characters\"},{\"id\":\"258\",\"type\":\"characters\"},{\"id\":\"959\",\"type\":\"characters\"},{\"id\":\"961\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/213/characters\",\"self\":\"/api/actors/213/relationships/characters\"}}},\"type\":\"actors\"},{\"attributes\":{\"birthday\":\"Feb  20, 1960\",\"given_name\":null,\"language\":\"English\",\"name\":\"Lee, Wendee\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/1/35525.jpg\",\"website\":\"http://www.wendeelee.com/\"},\"id\":\"220\",\"links\":{\"self\":\"http://weebmd.me/api/actors/220\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"},{\"id\":\"4\",\"type\":\"animes\"},{\"id\":\"10\",\"type\":\"animes\"},{\"id\":\"78\",\"type\":\"animes\"},{\"id\":\"80\",\"type\":\"animes\"},{\"id\":\"99\",\"type\":\"animes\"},{\"id\":\"103\",\"type\":\"animes\"},{\"id\":\"111\",\"type\":\"animes\"},{\"id\":\"193\",\"type\":\"animes\"},{\"id\":\"435\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/220/animes\",\"self\":\"/api/actors/220/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"265\",\"type\":\"characters\"},{\"id\":\"266\",\"type\":\"characters\"},{\"id\":\"945\",\"type\":\"characters\"},{\"id\":\"946\",\"type\":\"characters\"},{\"id\":\"947\",\"type\":\"characters\"},{\"id\":\"948\",\"type\":\"characters\"},{\"id\":\"968\",\"type\":\"characters\"},{\"id\":\"985\",\"type\":\"characters\"},{\"id\":\"1444\",\"type\":\"characters\"},{\"id\":\"1569\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/220/characters\",\"self\":\"/api/actors/220/relationships/characters\"}}},\"type\":\"actors\"},{\"attributes\":{\"birthday\":\"Apr  29, 1960\",\"given_name\":null,\"language\":\"English\",\"name\":\"Blum, Steven\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/3/45741.jpg\",\"website\":\"http://www.steveblumvoices.com\"},\"id\":\"266\",\"links\":{\"self\":\"http://weebmd.me/api/actors/266\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"},{\"id\":\"80\",\"type\":\"animes\"},{\"id\":\"93\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/266/animes\",\"self\":\"/api/actors/266/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"324\",\"type\":\"characters\"},{\"id\":\"998\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/266/characters\",\"self\":\"/api/actors/266/relationships/characters\"}}},\"type\":\"actors\"},{\"attributes\":{\"birthday\":\"Mar  30, 1967\",\"given_name\":\"めぐみ\",\"language\":\"Japanese\",\"name\":\"Hayashibara, Megumi\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/1/40734.jpg\",\"website\":\"http://www.starchild.co.jp/artist/hayashi/index.html\"},\"id\":\"286\",\"links\":{\"self\":\"http://weebmd.me/api/actors/286\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"},{\"id\":\"64\",\"type\":\"animes\"},{\"id\":\"81\",\"type\":\"animes\"},{\"id\":\"103\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/286/animes\",\"self\":\"/api/actors/286/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"940\",\"type\":\"characters\"},{\"id\":\"947\",\"type\":\"characters\"},{\"id\":\"1544\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/286/characters\",\"self\":\"/api/actors/286/relationships/characters\"}}},\"type\":\"actors\"},{\"attributes\":{\"birthday\":\"Sep  1, 1953\",\"given_name\":null,\"language\":\"English\",\"name\":\"Billingslea, Beau\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/3/43568.jpg\",\"website\":null},\"id\":\"1041\",\"links\":{\"self\":\"http://weebmd.me/api/actors/1041\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/1041/animes\",\"self\":\"/api/actors/1041/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1572\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/1041/characters\",\"self\":\"/api/actors/1041/relationships/characters\"}}},\"type\":\"actors\"},{\"attributes\":{\"birthday\":\"May  16, 1951\",\"given_name\":\"運昇\",\"language\":\"Japanese\",\"name\":\"Ishizuka, Unshou\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/2/17135.jpg\",\"website\":\"http://www.aoni.co.jp/actor/a/ishizuka-unsho.html\"},\"id\":\"1042\",\"links\":{\"self\":\"http://weebmd.me/api/actors/1042\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/1042/animes\",\"self\":\"/api/actors/1042/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1572\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/1042/characters\",\"self\":\"/api/actors/1042/relationships/characters\"}}},\"type\":\"actors\"}],\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"first\":\"http://weebmd.me/api/animes/1/actors?page[size]=60&page[number]=1\",\"last\":\"http://weebmd.me/api/animes/1/actors?page[size]=60&page[number]=1\",\"next\":null,\"prev\":null,\"self\":\"/api/animes\"},\"meta\":{\"total\":8}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/animes/1/actors",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"animes",
+						"1",
+						"actors"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/animes/1/mangas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":[{\"attributes\":{\"author\":\"Kuga, Cain\",\"genre\":\"Action, Adventure, Comedy, Sci-Fi, Shoujo\",\"media_type\":\"Manga\",\"num_chapters\":10,\"picture\":\"https://myanimelist.cdn-dena.com/images/manga/3/176770.jpg\",\"published\":\"May  1, 1998 to Oct  10, 1998\",\"score\":6.87,\"status\":\"Finished\",\"synopsis\":\"Kai Lucas hires the Bebop crew to find his mischievous doppelganger, but the bounty goes bust and Spike and Jet once again find themselves broke - and hungry. And to add to their woes, Spike ends up mysteriously on the police&#039;s most wanted list, either the butt of a joke or the victim of a severe computer glitch. But what&#039;s worse, being targeted by every bounty hunter in the solar system, or taking on a kid-genius, a genius puppy and a genus: fatale, species: femme as part of the crew. Well, if Scorpion or the Dragon Head Family doesn&#039;t kill them, the extra mouths to feed certainly will. (Source: Tokyopop)\",\"title\":\"Shooting Star Bebop: Cowboy Bebop\",\"title_english\":\"Cowboy Bebop: Shooting Star\",\"title_japanese\":\"シューティングスタービバップ―カウボーイビバップ\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/mangas/1\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/mangas/1/animes\",\"self\":\"/api/mangas/1/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/mangas/1/characters\",\"self\":\"/api/mangas/1/relationships/characters\"}}},\"type\":\"mangas\"},{\"attributes\":{\"author\":\"Watanabe, Shinichiro, Nanten, Yutaka, Yatate, Hajime\",\"genre\":\"Action, Adventure, Comedy, Sci-Fi, Shoujo\",\"media_type\":\"Manga\",\"num_chapters\":11,\"picture\":\"https://myanimelist.cdn-dena.com/images/manga/5/166652.jpg\",\"published\":\"Apr  8, 1999 to Apr  10, 2000\",\"score\":7.23,\"status\":\"Finished\",\"synopsis\":\"Spike, Jet, Faye and Ed—cowboys on the new frontier. Together this band of interplanetary bounty hunters takes on the jobs that anyone in their right mind would turn down. (Source: Tokyopop)\",\"title\":\"Cowboy Bebop\",\"title_english\":\"Cowboy Bebop\",\"title_japanese\":\"カウボーイビバップ\"},\"id\":\"2\",\"links\":{\"self\":\"http://weebmd.me/api/mangas/2\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/mangas/2/animes\",\"self\":\"/api/mangas/2/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/mangas/2/characters\",\"self\":\"/api/mangas/2/relationships/characters\"}}},\"type\":\"mangas\"}],\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"first\":\"http://weebmd.me/api/animes/1/mangas?page[size]=60&page[number]=1\",\"last\":\"http://weebmd.me/api/animes/1/mangas?page[size]=60&page[number]=1\",\"next\":null,\"prev\":null,\"self\":\"/api/animes\"},\"meta\":{\"total\":2}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/animes/1/mangas",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"animes",
+						"1",
+						"mangas"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/mangas/1/animes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":[{\"attributes\":{\"aired\":\"Apr 3, 1998 to Apr 24, 1999\",\"genre\":\"Action, Adventure, Comedy, Drama, Sci-Fi, Space\",\"media_type\":\"TV\",\"num_episodes\":26,\"picture\":\"https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg\",\"rating\":\"R - 17+ (violence &amp; profanity)\",\"score\":8.81,\"status\":\"Finished Airing\",\"synopsis\":\"In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as &quot;Cowboys.&quot; The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member&#039;s dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]\",\"title\":\"Cowboy Bebop\",\"youtube_id\":\"qig4KOK2R2g\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/animes/1\"},\"relationships\":{\"actors\":{\"data\":[{\"id\":\"1041\",\"type\":\"actors\"},{\"id\":\"286\",\"type\":\"actors\"},{\"id\":\"220\",\"type\":\"actors\"},{\"id\":\"2\",\"type\":\"actors\"},{\"id\":\"1\",\"type\":\"actors\"},{\"id\":\"1042\",\"type\":\"actors\"},{\"id\":\"266\",\"type\":\"actors\"},{\"id\":\"213\",\"type\":\"actors\"}],\"links\":{\"related\":\"/api/animes/1/actors\",\"self\":\"/api/animes/1/relationships/actors\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/animes/1/characters\",\"self\":\"/api/animes/1/relationships/characters\"}},\"mangas\":{\"data\":[{\"id\":\"1\",\"type\":\"mangas\"},{\"id\":\"2\",\"type\":\"mangas\"}],\"links\":{\"related\":\"/api/animes/1/mangas\",\"self\":\"/api/animes/1/relationships/mangas\"}}},\"type\":\"animes\"}],\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"first\":\"http://weebmd.me/api/mangas/1/animes?page[size]=60&page[number]=1\",\"last\":\"http://weebmd.me/api/mangas/1/animes?page[size]=60&page[number]=1\",\"next\":null,\"prev\":null,\"self\":\"/api/mangas\"},\"meta\":{\"total\":1}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/mangas/1/animes",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"mangas",
+						"1",
+						"animes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/characters/1/animes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":[{\"attributes\":{\"aired\":\"Apr 3, 1998 to Apr 24, 1999\",\"genre\":\"Action, Adventure, Comedy, Drama, Sci-Fi, Space\",\"media_type\":\"TV\",\"num_episodes\":26,\"picture\":\"https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg\",\"rating\":\"R - 17+ (violence &amp; profanity)\",\"score\":8.81,\"status\":\"Finished Airing\",\"synopsis\":\"In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as &quot;Cowboys.&quot; The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member&#039;s dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]\",\"title\":\"Cowboy Bebop\",\"youtube_id\":\"qig4KOK2R2g\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/animes/1\"},\"relationships\":{\"actors\":{\"data\":[{\"id\":\"1041\",\"type\":\"actors\"},{\"id\":\"286\",\"type\":\"actors\"},{\"id\":\"220\",\"type\":\"actors\"},{\"id\":\"2\",\"type\":\"actors\"},{\"id\":\"1\",\"type\":\"actors\"},{\"id\":\"1042\",\"type\":\"actors\"},{\"id\":\"266\",\"type\":\"actors\"},{\"id\":\"213\",\"type\":\"actors\"}],\"links\":{\"related\":\"/api/animes/1/actors\",\"self\":\"/api/animes/1/relationships/actors\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/animes/1/characters\",\"self\":\"/api/animes/1/relationships/characters\"}},\"mangas\":{\"data\":[{\"id\":\"1\",\"type\":\"mangas\"},{\"id\":\"2\",\"type\":\"mangas\"}],\"links\":{\"related\":\"/api/animes/1/mangas\",\"self\":\"/api/animes/1/relationships/mangas\"}}},\"type\":\"animes\"},{\"attributes\":{\"aired\":\"Sep 1, 2001\",\"genre\":\"Action, Space, Drama, Mystery, Sci-Fi\",\"media_type\":\"Movie\",\"num_episodes\":1,\"picture\":\"https://myanimelist.cdn-dena.com/images/anime/6/14331.jpg\",\"rating\":\"R - 17+ (violence &amp; profanity)\",\"score\":8.41,\"status\":\"Finished Airing\",\"synopsis\":\"Another day, another bounty—such is the life of the often unlucky crew of the Bebop. However, this routine is interrupted when Faye, who is chasing a fairly worthless target on Mars, witnesses an oil tanker suddenly explode, causing mass hysteria. As casualties mount due to a strange disease spreading through the smoke from the blast, a whopping three hundred million woolong price is placed on the head of the supposed perpetrator. With lives at stake and a solution to their money problems in sight, the Bebop crew springs into action. Spike, Jet, Faye, and Edward, followed closely by Ein, split up to pursue different leads across Alba City. Through their individual investigations, they discover a cover-up scheme involving a pharmaceutical company, revealing a plot that reaches much further than the ragtag team of bounty hunters could have realized. [Written by MAL Rewrite]\",\"title\":\"Cowboy Bebop: Tengoku no Tobira\",\"youtube_id\":null},\"id\":\"2\",\"links\":{\"self\":\"http://weebmd.me/api/animes/2\"},\"relationships\":{\"actors\":{\"data\":[{\"id\":\"833\",\"type\":\"actors\"},{\"id\":\"1039\",\"type\":\"actors\"},{\"id\":\"3\",\"type\":\"actors\"},{\"id\":\"1040\",\"type\":\"actors\"}],\"links\":{\"related\":\"/api/animes/2/actors\",\"self\":\"/api/animes/2/relationships/actors\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"2\",\"type\":\"characters\"},{\"id\":\"1571\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/animes/2/characters\",\"self\":\"/api/animes/2/relationships/characters\"}},\"mangas\":{\"data\":[],\"links\":{\"related\":\"/api/animes/2/mangas\",\"self\":\"/api/animes/2/relationships/mangas\"}}},\"type\":\"animes\"}],\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"first\":\"http://weebmd.me/api/characters/1/animes?page[size]=60&page[number]=1\",\"last\":\"http://weebmd.me/api/characters/1/animes?page[size]=60&page[number]=1\",\"next\":null,\"prev\":null,\"self\":\"/api/characters\"},\"meta\":{\"total\":2}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/characters/1/animes",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"characters",
+						"1",
+						"animes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/characters/1/mangas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":[{\"attributes\":{\"author\":\"Kuga, Cain\",\"genre\":\"Action, Adventure, Comedy, Sci-Fi, Shoujo\",\"media_type\":\"Manga\",\"num_chapters\":10,\"picture\":\"https://myanimelist.cdn-dena.com/images/manga/3/176770.jpg\",\"published\":\"May  1, 1998 to Oct  10, 1998\",\"score\":6.87,\"status\":\"Finished\",\"synopsis\":\"Kai Lucas hires the Bebop crew to find his mischievous doppelganger, but the bounty goes bust and Spike and Jet once again find themselves broke - and hungry. And to add to their woes, Spike ends up mysteriously on the police&#039;s most wanted list, either the butt of a joke or the victim of a severe computer glitch. But what&#039;s worse, being targeted by every bounty hunter in the solar system, or taking on a kid-genius, a genius puppy and a genus: fatale, species: femme as part of the crew. Well, if Scorpion or the Dragon Head Family doesn&#039;t kill them, the extra mouths to feed certainly will. (Source: Tokyopop)\",\"title\":\"Shooting Star Bebop: Cowboy Bebop\",\"title_english\":\"Cowboy Bebop: Shooting Star\",\"title_japanese\":\"シューティングスタービバップ―カウボーイビバップ\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/mangas/1\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/mangas/1/animes\",\"self\":\"/api/mangas/1/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/mangas/1/characters\",\"self\":\"/api/mangas/1/relationships/characters\"}}},\"type\":\"mangas\"},{\"attributes\":{\"author\":\"Watanabe, Shinichiro, Nanten, Yutaka, Yatate, Hajime\",\"genre\":\"Action, Adventure, Comedy, Sci-Fi, Shoujo\",\"media_type\":\"Manga\",\"num_chapters\":11,\"picture\":\"https://myanimelist.cdn-dena.com/images/manga/5/166652.jpg\",\"published\":\"Apr  8, 1999 to Apr  10, 2000\",\"score\":7.23,\"status\":\"Finished\",\"synopsis\":\"Spike, Jet, Faye and Ed—cowboys on the new frontier. Together this band of interplanetary bounty hunters takes on the jobs that anyone in their right mind would turn down. (Source: Tokyopop)\",\"title\":\"Cowboy Bebop\",\"title_english\":\"Cowboy Bebop\",\"title_japanese\":\"カウボーイビバップ\"},\"id\":\"2\",\"links\":{\"self\":\"http://weebmd.me/api/mangas/2\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/mangas/2/animes\",\"self\":\"/api/mangas/2/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/mangas/2/characters\",\"self\":\"/api/mangas/2/relationships/characters\"}}},\"type\":\"mangas\"}],\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"first\":\"http://weebmd.me/api/characters/1/mangas?page[size]=60&page[number]=1\",\"last\":\"http://weebmd.me/api/characters/1/mangas?page[size]=60&page[number]=1\",\"next\":null,\"prev\":null,\"self\":\"/api/characters\"},\"meta\":{\"total\":2}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/characters/1/mangas",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"characters",
+						"1",
+						"mangas"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/characters/1/actors",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":[{\"attributes\":{\"birthday\":\"Apr  28, 1973\",\"given_name\":null,\"language\":\"English\",\"name\":\"Fahn, Melissa\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/2/29855.jpg\",\"website\":\"http://www.melissafahn.com/\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/actors/1\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/1/animes\",\"self\":\"/api/actors/1/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/1/characters\",\"self\":\"/api/actors/1/relationships/characters\"}}},\"type\":\"actors\"},{\"attributes\":{\"birthday\":\"Jul  3, 1981\",\"given_name\":\"葵\",\"language\":\"Japanese\",\"name\":\"Tada, Aoi\",\"picture\":\"https://myanimelist.cdn-dena.com/images/voiceactors/2/27665.jpg\",\"website\":\"http://yaplog.jp/tada_aoi/\"},\"id\":\"2\",\"links\":{\"self\":\"http://weebmd.me/api/actors/2\"},\"relationships\":{\"animes\":{\"data\":[{\"id\":\"1\",\"type\":\"animes\"}],\"links\":{\"related\":\"/api/actors/2/animes\",\"self\":\"/api/actors/2/relationships/animes\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/actors/2/characters\",\"self\":\"/api/actors/2/relationships/characters\"}}},\"type\":\"actors\"}],\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"first\":\"http://weebmd.me/api/characters/1/actors?page[size]=60&page[number]=1\",\"last\":\"http://weebmd.me/api/characters/1/actors?page[size]=60&page[number]=1\",\"next\":null,\"prev\":null,\"self\":\"/api/characters\"},\"meta\":{\"total\":2}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/characters/1/actors",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"characters",
+						"1",
+						"actors"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "weebmd.me/api/actors/1/animes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Output is ok\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(JSON.stringify(jsonData)).to.eql('{\"data\":[{\"attributes\":{\"aired\":\"Apr 3, 1998 to Apr 24, 1999\",\"genre\":\"Action, Adventure, Comedy, Drama, Sci-Fi, Space\",\"media_type\":\"TV\",\"num_episodes\":26,\"picture\":\"https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg\",\"rating\":\"R - 17+ (violence &amp; profanity)\",\"score\":8.81,\"status\":\"Finished Airing\",\"synopsis\":\"In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as &quot;Cowboys.&quot; The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member&#039;s dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]\",\"title\":\"Cowboy Bebop\",\"youtube_id\":\"qig4KOK2R2g\"},\"id\":\"1\",\"links\":{\"self\":\"http://weebmd.me/api/animes/1\"},\"relationships\":{\"actors\":{\"data\":[{\"id\":\"1041\",\"type\":\"actors\"},{\"id\":\"286\",\"type\":\"actors\"},{\"id\":\"220\",\"type\":\"actors\"},{\"id\":\"2\",\"type\":\"actors\"},{\"id\":\"1\",\"type\":\"actors\"},{\"id\":\"1042\",\"type\":\"actors\"},{\"id\":\"266\",\"type\":\"actors\"},{\"id\":\"213\",\"type\":\"actors\"}],\"links\":{\"related\":\"/api/animes/1/actors\",\"self\":\"/api/animes/1/relationships/actors\"}},\"characters\":{\"data\":[{\"id\":\"1\",\"type\":\"characters\"},{\"id\":\"1572\",\"type\":\"characters\"},{\"id\":\"1573\",\"type\":\"characters\"},{\"id\":\"1574\",\"type\":\"characters\"}],\"links\":{\"related\":\"/api/animes/1/characters\",\"self\":\"/api/animes/1/relationships/characters\"}},\"mangas\":{\"data\":[{\"id\":\"1\",\"type\":\"mangas\"},{\"id\":\"2\",\"type\":\"mangas\"}],\"links\":{\"related\":\"/api/animes/1/mangas\",\"self\":\"/api/animes/1/relationships/mangas\"}}},\"type\":\"animes\"}],\"jsonapi\":{\"version\":\"1.0\"},\"links\":{\"first\":\"http://weebmd.me/api/actors/1/animes?page[size]=60&page[number]=1\",\"last\":\"http://weebmd.me/api/actors/1/animes?page[size]=60&page[number]=1\",\"next\":null,\"prev\":null,\"self\":\"/api/actors\"},\"meta\":{\"total\":1}}');\r",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "weebmd.me/api/actors/1/animes",
+					"host": [
+						"weebmd",
+						"me"
+					],
+					"path": [
+						"api",
+						"actors",
+						"1",
+						"animes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
