@@ -82,5 +82,11 @@ export default [
     name: "Flask-SQLAlchemy",
     imgURL: "https://i.lensdump.com/i/EntD7.png",
     info: "SQL Toolkit"
+  },
+  {
+    id: 15,
+    name: "Flask-Restless",
+    imgURL: "http://flask-restless.readthedocs.io/en/stable/_static/flask-restless-small.png",
+    info: "RESTful APIs"
   }
 ]
