@@ -311,6 +311,17 @@ def update_anime_empty_string():
 
         db.session.commit()
 
+def update_character_role():
+    with app.app_context():
+        db.init_app(app)
+
+        characters = Character.query.filter_by(role=None).all()
+
+        for character in characters:
+            character.role = "Main"
+
+        db.session.commit()
+
 if __name__ == "__main__":
 
-    update_anime_empty_string()
+    update_character_role()

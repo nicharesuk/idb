@@ -78,6 +78,7 @@ class Character(db.Model):
     about = db.Column(db.Text, nullable=False)
     japanese_name = db.Column(db.String(80))
     picture = db.Column(db.Text)
+    role = db.Column(db.String(80))
     
     actors = db.relationship('Actor', secondary=actor_character, back_populates="characters", collection_class=set)
     mangas = db.relationship('Manga', secondary=manga_character, back_populates="characters", collection_class=set)
