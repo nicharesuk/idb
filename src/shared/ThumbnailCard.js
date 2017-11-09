@@ -16,7 +16,7 @@ class ThumbnailCard extends Component {
       <div className={styles.container} onMouseEnter={this.handleShow} onMouseLeave={this.handleHide}>
         <div className={styles.relative}>
           <Image
-            className={active ? styles.dim : ""}
+            className={active ? (this.props.score !== -1 ? styles.dim : styles.outline) : ""}
             bordered={active}
             width="134px"
             height="196px"
