@@ -7,6 +7,7 @@ import CharacterModalContent from '../characters/CharacterModalContent';
 import ActorModalContent from '../actors/ActorModalContent';
 import MangaModalContent from '../manga/MangaModalContent';
 import { getSingleModel } from '../shared/Requests';
+import defaultImage from '../shared/DefaultImage';
 
 class ModalContent extends Component {
 
@@ -63,7 +64,7 @@ class ModalContent extends Component {
         <div className={styles.imageContainer}>
           <Image
             fluid
-            src={this.state.dataObject.picture} />
+            src={this.state.dataObject.picture ? this.state.dataObject.picture : defaultImage} />
         </div>
         <div className={styles.content}>
           {this.getContentNode()}

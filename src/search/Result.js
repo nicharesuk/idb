@@ -3,6 +3,7 @@ import styles from './Result.scss';
 import { Image } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
 import Highlighter from 'react-highlight-words';
+import defaultImage from '../shared/DefaultImage';
 
 // Maybe use this?
 // http://fusejs.io/
@@ -81,7 +82,7 @@ class Result extends Component {
             width="134px"
             height="196px"
             shape="rounded"
-            src={this.props.data.picture} />
+            src={this.props.data.picture ? this.props.data.picture : defaultImage} />
           <div className={styles.strings}>
             <div className={styles.title}>
                 <b>
