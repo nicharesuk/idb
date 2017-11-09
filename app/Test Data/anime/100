@@ -1,17 +1,17 @@
 {
   "data": {
     "attributes": {
-      "aired": "Oct 7, 2005 to Mar 31, 2006", 
-      "genre": "Comedy, Drama, Fantasy, Magic", 
+      "aired": "Apr 3, 2016 to Jun 26, 2016", 
+      "genre": "Action, Comedy, School, Shounen, Super Power", 
       "media_type": "TV", 
-      "num_episodes": 26, 
-      "picture": "https://myanimelist.cdn-dena.com/images/anime/2/46897.jpg", 
+      "num_episodes": 13, 
+      "picture": "https://myanimelist.cdn-dena.com/images/anime/10/78745.jpg", 
       "rating": "PG-13 - Teens 13 or older", 
-      "score": 7.38, 
+      "score": 8.42, 
       "status": "Finished Airing", 
-      "synopsis": "Arika Yumemiya has traveled far in search of her goal: the prestigious Gualderobe Academy. This is the school where young girls are trained to become Otomes, protectors of royal leaders throughout the lands. Here, Arika makes plenty of friends, but some enemies know something about her past that she does not. Nevertheless, her spirit and determination will keep pushing her forward. Adapted from its predecessor, Mai-HiME, this series is not a direct sequel, but an alternate universe setting featuring some of the Mai-HiME cast (though with different personalities). (Source: ANN)", 
-      "title": "Mai-Otome", 
-      "youtube_id": null
+      "synopsis": "The appearance of &quot;quirks,&quot; newly discovered super powers, has been steadily increasing over the years, with 80 percent of humanity possessing various abilities from manipulation of elements to shapeshifting. This leaves the remainder of the world completely powerless, and Izuku Midoriya is one such individual. Since he was a child, the ambitious middle schooler has wanted nothing more than to be a hero. Izuku&#039;s unfair fate leaves him admiring heroes and taking notes on them whenever he can. But it seems that his persistence has borne some fruit: Izuku meets the number one hero and his personal idol, All Might. All Might&#039;s quirk is a unique ability that can be inherited, and he has chosen Izuku to be his successor! Enduring many months of grueling training, Izuku enrolls in UA High, a prestigious high school famous for its excellent hero training program, and this year&#039;s freshmen look especially promising. With his bizarre but talented classmates and the looming threat of a villainous organization, Izuku will soon learn what it really means to be a hero. [Written by MAL Rewrite]", 
+      "title": "Boku no Hero Academia", 
+      "youtube_id": "D5fYOnwYkj4"
     }, 
     "id": "100", 
     "links": {
@@ -21,15 +21,59 @@
       "actors": {
         "data": [
           {
-            "id": "424", 
+            "id": "736", 
             "type": "actors"
           }, 
           {
-            "id": "422", 
+            "id": "735", 
             "type": "actors"
           }, 
           {
-            "id": "423", 
+            "id": "949", 
+            "type": "actors"
+          }, 
+          {
+            "id": "149", 
+            "type": "actors"
+          }, 
+          {
+            "id": "279", 
+            "type": "actors"
+          }, 
+          {
+            "id": "734", 
+            "type": "actors"
+          }, 
+          {
+            "id": "38", 
+            "type": "actors"
+          }, 
+          {
+            "id": "1038", 
+            "type": "actors"
+          }, 
+          {
+            "id": "338", 
+            "type": "actors"
+          }, 
+          {
+            "id": "278", 
+            "type": "actors"
+          }, 
+          {
+            "id": "239", 
+            "type": "actors"
+          }, 
+          {
+            "id": "110", 
+            "type": "actors"
+          }, 
+          {
+            "id": "111", 
+            "type": "actors"
+          }, 
+          {
+            "id": "950", 
             "type": "actors"
           }
         ], 
@@ -41,15 +85,23 @@
       "characters": {
         "data": [
           {
-            "id": "342", 
+            "id": "129", 
             "type": "characters"
           }, 
           {
-            "id": "343", 
+            "id": "339", 
             "type": "characters"
           }, 
           {
-            "id": "341", 
+            "id": "930", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1111", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1457", 
             "type": "characters"
           }
         ], 
@@ -61,7 +113,7 @@
       "mangas": {
         "data": [
           {
-            "id": "75", 
+            "id": "249", 
             "type": "mangas"
           }
         ], 

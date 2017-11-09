@@ -6,10 +6,10 @@
       "media_type": "TV", 
       "num_episodes": 26, 
       "picture": "https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg", 
-      "rating": "R - 17+ (violence & profanity)", 
+      "rating": "R - 17+ (violence &amp; profanity)", 
       "score": 8.81, 
       "status": "Finished Airing", 
-      "synopsis": "In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as \"Cowboys.\" The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels\u2014Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong\u2014the crew embarks on thrilling adventures that unravel each member's dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]", 
+      "synopsis": "In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as &quot;Cowboys.&quot; The ragtag team aboard the spaceship Bebop are two such individuals. Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels\u2014Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong\u2014the crew embarks on thrilling adventures that unravel each member&#039;s dark and mysterious past little by little. Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after. [Written by MAL Rewrite]", 
       "title": "Cowboy Bebop", 
       "youtube_id": "qig4KOK2R2g"
     }, 
@@ -21,11 +21,15 @@
       "actors": {
         "data": [
           {
-            "id": "5", 
+            "id": "1041", 
             "type": "actors"
           }, 
           {
-            "id": "8", 
+            "id": "286", 
+            "type": "actors"
+          }, 
+          {
+            "id": "220", 
             "type": "actors"
           }, 
           {
@@ -33,23 +37,19 @@
             "type": "actors"
           }, 
           {
-            "id": "4", 
-            "type": "actors"
-          }, 
-          {
             "id": "1", 
             "type": "actors"
           }, 
           {
-            "id": "7", 
+            "id": "1042", 
             "type": "actors"
           }, 
           {
-            "id": "6", 
+            "id": "266", 
             "type": "actors"
           }, 
           {
-            "id": "3", 
+            "id": "213", 
             "type": "actors"
           }
         ], 
@@ -61,19 +61,19 @@
       "characters": {
         "data": [
           {
-            "id": "3", 
-            "type": "characters"
-          }, 
-          {
-            "id": "2", 
-            "type": "characters"
-          }, 
-          {
             "id": "1", 
             "type": "characters"
           }, 
           {
-            "id": "4", 
+            "id": "1572", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1573", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1574", 
             "type": "characters"
           }
         ], 
@@ -86,6 +86,10 @@
         "data": [
           {
             "id": "1", 
+            "type": "mangas"
+          }, 
+          {
+            "id": "2", 
             "type": "mangas"
           }
         ], 

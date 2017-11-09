@@ -1,12 +1,12 @@
 {
   "data": {
     "attributes": {
-      "birthday": "Nov  15, 1978", 
-      "given_name": null, 
-      "language": "English", 
-      "name": "Pronsky, Ben", 
-      "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/3131.jpg", 
-      "website": "http://www.benpronsky.com/"
+      "birthday": "Aug  15, 1995", 
+      "given_name": "\u552f", 
+      "language": "Japanese", 
+      "name": "Ogura, Yui", 
+      "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/41028.jpg", 
+      "website": "http://www.ogurayui.jp/"
     }, 
     "id": "80", 
     "links": {
@@ -16,7 +16,19 @@
       "animes": {
         "data": [
           {
-            "id": "16", 
+            "id": "19", 
+            "type": "animes"
+          }, 
+          {
+            "id": "20", 
+            "type": "animes"
+          }, 
+          {
+            "id": "159", 
+            "type": "animes"
+          }, 
+          {
+            "id": "163", 
             "type": "animes"
           }
         ], 
@@ -28,7 +40,19 @@
       "characters": {
         "data": [
           {
-            "id": "54", 
+            "id": "86", 
+            "type": "characters"
+          }, 
+          {
+            "id": "87", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1297", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1298", 
             "type": "characters"
           }
         ], 
@@ -43,14 +67,15 @@
   "included": [
     {
       "attributes": {
-        "about": "The main character of the series, originally just another above-average student until he decided to enroll at Cromartie. Everyone else at Cromartie assumes that he's the toughest kid in school, since a rabbit would never go into a den of lions (unless it was a really badass rabbit). He has ambitions to change the school for the sake of bettering its student body.\n\n", 
-        "japanese_name": "(\u795e\u5c71 \u9ad8\u5fd7)", 
-        "name": "Takashi Kamiyama", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/77976.jpg"
+        "about": "Despite her slight figure, she is the most voracious of the Seven Sins. She is physically distinguished by one single horn, similar to an alicorn, growing from the center of her forehead.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u30d9\u30eb\u30bc\u30d0\u30d6)", 
+        "name": "Beelzebub ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/7/313876.jpg", 
+        "role": "Main"
       }, 
-      "id": "54", 
+      "id": "86", 
       "links": {
-        "self": "http://www.weebmd.me/api/characters/54"
+        "self": "http://www.weebmd.me/api/characters/86"
       }, 
       "relationships": {
         "actors": {
@@ -61,32 +86,27 @@
             }
           ], 
           "links": {
-            "related": "/api/characters/54/actors", 
-            "self": "/api/characters/54/relationships/actors"
+            "related": "/api/characters/86/actors", 
+            "self": "/api/characters/86/relationships/actors"
           }
         }, 
         "animes": {
           "data": [
             {
-              "id": "16", 
+              "id": "19", 
               "type": "animes"
             }
           ], 
           "links": {
-            "related": "/api/characters/54/animes", 
-            "self": "/api/characters/54/relationships/animes"
+            "related": "/api/characters/86/animes", 
+            "self": "/api/characters/86/relationships/animes"
           }
         }, 
         "mangas": {
-          "data": [
-            {
-              "id": "14", 
-              "type": "mangas"
-            }
-          ], 
+          "data": [], 
           "links": {
-            "related": "/api/characters/54/mangas", 
-            "self": "/api/characters/54/relationships/mangas"
+            "related": "/api/characters/86/mangas", 
+            "self": "/api/characters/86/relationships/mangas"
           }
         }
       }, 
@@ -94,31 +114,369 @@
     }, 
     {
       "attributes": {
-        "aired": "Oct 3, 2003 to Mar 26, 2004", 
-        "genre": "Comedy, School, Shounen", 
+        "aired": "Jan 7, 2017 to Apr 1, 2017", 
+        "genre": "Action, Sci-Fi, School", 
         "media_type": "TV", 
-        "num_episodes": 26, 
-        "picture": "https://myanimelist.cdn-dena.com/images/anime/3/13390.jpg", 
+        "num_episodes": 13, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/4/82560.jpg", 
         "rating": "PG-13 - Teens 13 or older", 
-        "score": 8.01, 
+        "score": 5.74, 
         "status": "Finished Airing", 
-        "synopsis": "Takashi Kamiyama is your typical mild-mannered high school student\u2014polite, aloof, and pacifistic, with a slightly above-average IQ. But would your average high school student really enroll himself at the infamous Cromartie High School, known as a breeding ground for the toughest delinquents out there? Apparently so, as that is exactly what Takashi does, though for reasons he'd rather leave unmentioned. However, one thing is for sure: the \"hard-boiled rabbit in a den full of hungry lions\" is never going to have another dull day. And how could he, now that he's surrounded by mohawked punks, obnoxious robots, and... gorillas? And was that Freddie Mercury riding a horse down the corridor? Follow Takashi as he earnestly dedicates his new high school life to better his school's reputation while his classmates are hellbent on wreaking havoc. [Written by MAL Rewrite] ", 
-        "title": "Sakigake!! Cromartie Koukou", 
-        "youtube_id": null
+        "synopsis": "It&#039;s the near future. The newly established girls&#039; private school Goryoukan Academy has another face. This school has a special unit, Fifth force, who is assembled and selected from the school&#039;s student body in order to fight an enemy called O&#039;bli. This is a story about love, courage and friendship about the girls called Strikers.", 
+        "title": "Schoolgirl Strikers: Animation Channel", 
+        "youtube_id": "-VTLojBujhE"
       }, 
-      "id": "16", 
+      "id": "163", 
       "links": {
-        "self": "http://www.weebmd.me/api/animes/16"
+        "self": "http://www.weebmd.me/api/animes/163"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "77", 
+              "id": "404", 
               "type": "actors"
             }, 
             {
-              "id": "78", 
+              "id": "344", 
+              "type": "actors"
+            }, 
+            {
+              "id": "80", 
+              "type": "actors"
+            }, 
+            {
+              "id": "76", 
+              "type": "actors"
+            }, 
+            {
+              "id": "96", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/163/actors", 
+            "self": "/api/animes/163/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "463", 
+              "type": "characters"
+            }, 
+            {
+              "id": "705", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1222", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1297", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1314", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/163/characters", 
+            "self": "/api/animes/163/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "101", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "102", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/163/mangas", 
+            "self": "/api/animes/163/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "about": "No biography written.\n\n", 
+        "japanese_name": "(\u30ea\u30f3\u30cd\u30fb\u30d9\u30eb\u30ea\u30cd\u30c3\u30bf)", 
+        "name": "Rinne Berlinetta", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/314866.jpg", 
+        "role": "Main"
+      }, 
+      "id": "87", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/87"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "80", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/87/actors", 
+            "self": "/api/characters/87/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "20", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/87/animes", 
+            "self": "/api/characters/87/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/87/mangas", 
+            "self": "/api/characters/87/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "No biography written.\n\n", 
+        "japanese_name": "(\u83dc\u68ee \u307e\u306a)", 
+        "name": "Mana Namori", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/13/315120.jpg", 
+        "role": "Main"
+      }, 
+      "id": "1297", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/1297"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "80", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1297/actors", 
+            "self": "/api/characters/1297/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "163", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1297/animes", 
+            "self": "/api/characters/1297/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "101", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "102", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1297/mangas", 
+            "self": "/api/characters/1297/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "aired": "Oct 2, 2016 to Dec 18, 2016", 
+        "genre": "Action, Drama, Magic", 
+        "media_type": "TV", 
+        "num_episodes": 12, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/2/82015.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 7.28, 
+        "status": "Finished Airing", 
+        "synopsis": "Raised up in the same orphanage, Fuuka and Rinne were once close friends but parted company after a quarrel ended up with Rinne overwhelmed Fuuka with her martial art skills. Fuuka has a life in poverty after leaving the orphanage. An accidental encounter with renowned martial arts champion Einhald Stratos discovered Fuuka&#039;s hidden talent in fighting; Einhald offered Fuuka a job and coaching, encouraging her to meet up with Rinne again\u2014in a ring. (Source: ANN)", 
+        "title": "ViVid Strike!", 
+        "youtube_id": "Yq5ILlY1UGQ"
+      }, 
+      "id": "20", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/20"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "80", 
+              "type": "actors"
+            }, 
+            {
+              "id": "67", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/20/actors", 
+            "self": "/api/animes/20/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "87", 
+              "type": "characters"
+            }, 
+            {
+              "id": "88", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1296", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1357", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/20/characters", 
+            "self": "/api/animes/20/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/20/mangas", 
+            "self": "/api/animes/20/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "about": "A girl in the year above Hinako. She works at a cafe and is always wearing a maid outfit. She might be small, but she does her best.\n\n", 
+        "japanese_name": "(\u67ca \u771f\u96ea)", 
+        "name": "Mayuki Hiiragi", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/5/324351.jpg", 
+        "role": "Main"
+      }, 
+      "id": "1298", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/1298"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "80", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1298/actors", 
+            "self": "/api/characters/1298/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "159", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1298/animes", 
+            "self": "/api/characters/1298/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "99", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1298/mangas", 
+            "self": "/api/characters/1298/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "aired": "Apr 15, 2017 to Jul 29, 2017", 
+        "genre": "Ecchi, Fantasy", 
+        "media_type": "TV", 
+        "num_episodes": 12, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/7/86621.jpg", 
+        "rating": "R+ - Mild Nudity", 
+        "score": 5.67, 
+        "status": "Finished Airing", 
+        "synopsis": "You, will you be a worshipper of the devil lords? These beautiful lords lead humans to the seven deadly sins: pride, envy, wrath, sloth, greed, gluttony, and lust. A revealing fantasy that craves to corrupt and steal true happiness starts now. (Source: MAL News)", 
+        "title": "Sin: Nanatsu no Taizai", 
+        "youtube_id": "eqiRF7ovKM4"
+      }, 
+      "id": "19", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/19"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "487", 
+              "type": "actors"
+            }, 
+            {
+              "id": "986", 
+              "type": "actors"
+            }, 
+            {
+              "id": "988", 
+              "type": "actors"
+            }, 
+            {
+              "id": "80", 
+              "type": "actors"
+            }, 
+            {
+              "id": "987", 
+              "type": "actors"
+            }, 
+            {
+              "id": "989", 
+              "type": "actors"
+            }, 
+            {
+              "id": "573", 
               "type": "actors"
             }, 
             {
@@ -126,49 +484,207 @@
               "type": "actors"
             }, 
             {
-              "id": "80", 
+              "id": "985", 
+              "type": "actors"
+            }, 
+            {
+              "id": "384", 
+              "type": "actors"
+            }, 
+            {
+              "id": "580", 
+              "type": "actors"
+            }, 
+            {
+              "id": "990", 
+              "type": "actors"
+            }, 
+            {
+              "id": "78", 
+              "type": "actors"
+            }, 
+            {
+              "id": "540", 
+              "type": "actors"
+            }, 
+            {
+              "id": "243", 
+              "type": "actors"
+            }, 
+            {
+              "id": "355", 
+              "type": "actors"
+            }, 
+            {
+              "id": "71", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/animes/16/actors", 
-            "self": "/api/animes/16/relationships/actors"
+            "related": "/api/animes/19/actors", 
+            "self": "/api/animes/19/relationships/actors"
           }
         }, 
         "characters": {
           "data": [
             {
-              "id": "54", 
+              "id": "85", 
               "type": "characters"
             }, 
             {
-              "id": "52", 
+              "id": "86", 
               "type": "characters"
             }, 
             {
-              "id": "51", 
+              "id": "1299", 
               "type": "characters"
             }, 
             {
-              "id": "53", 
+              "id": "1300", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1301", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1302", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1303", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1304", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1305", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1344", 
               "type": "characters"
             }
           ], 
           "links": {
-            "related": "/api/animes/16/characters", 
-            "self": "/api/animes/16/relationships/characters"
+            "related": "/api/animes/19/characters", 
+            "self": "/api/animes/19/relationships/characters"
           }
         }, 
         "mangas": {
           "data": [
             {
-              "id": "14", 
+              "id": "335", 
               "type": "mangas"
             }
           ], 
           "links": {
-            "related": "/api/animes/16/mangas", 
-            "self": "/api/animes/16/relationships/mangas"
+            "related": "/api/animes/19/mangas", 
+            "self": "/api/animes/19/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Apr 7, 2017 to Jun 23, 2017", 
+        "genre": "Slice of Life, Comedy", 
+        "media_type": "TV", 
+        "num_episodes": 12, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/2/84858.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 6.81, 
+        "status": "Finished Airing", 
+        "synopsis": "Hinako lives in the countryside and is poor at speaking. She wants to improve her speech to be able to talk to people fluently, so she moves to Tokyo and plans to join the drama club in high school. When she arrives, however, it turns out her boarding house is a secondhand bookstore, and a beautiful girl who eats books lives there. (Source: MAL News)", 
+        "title": "Hinako Note", 
+        "youtube_id": "NSxpl31tob0"
+      }, 
+      "id": "159", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/159"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "400", 
+              "type": "actors"
+            }, 
+            {
+              "id": "545", 
+              "type": "actors"
+            }, 
+            {
+              "id": "399", 
+              "type": "actors"
+            }, 
+            {
+              "id": "397", 
+              "type": "actors"
+            }, 
+            {
+              "id": "80", 
+              "type": "actors"
+            }, 
+            {
+              "id": "401", 
+              "type": "actors"
+            }, 
+            {
+              "id": "398", 
+              "type": "actors"
+            }, 
+            {
+              "id": "546", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/159/actors", 
+            "self": "/api/animes/159/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "456", 
+              "type": "characters"
+            }, 
+            {
+              "id": "457", 
+              "type": "characters"
+            }, 
+            {
+              "id": "458", 
+              "type": "characters"
+            }, 
+            {
+              "id": "591", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1298", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/159/characters", 
+            "self": "/api/animes/159/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "99", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/159/mangas", 
+            "self": "/api/animes/159/relationships/mangas"
           }
         }
       }, 

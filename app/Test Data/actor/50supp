@@ -1,12 +1,12 @@
 {
   "data": {
     "attributes": {
-      "birthday": "Sep  1, 1981", 
-      "given_name": null, 
-      "language": "English", 
-      "name": "Adamthwaite, Michael", 
-      "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/38119.jpg", 
-      "website": "http://michaeladamthwaite.workbooklive.com/"
+      "birthday": "Feb  6, 1980", 
+      "given_name": "\u9ebb\u7f8e\u5b50", 
+      "language": "Japanese", 
+      "name": "Noto, Mamiko", 
+      "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/18819.jpg", 
+      "website": "http://osawa-inc.co.jp/blocks/index/talent00130.html"
     }, 
     "id": "50", 
     "links": {
@@ -16,7 +16,27 @@
       "animes": {
         "data": [
           {
-            "id": "8", 
+            "id": "11", 
+            "type": "animes"
+          }, 
+          {
+            "id": "26", 
+            "type": "animes"
+          }, 
+          {
+            "id": "66", 
+            "type": "animes"
+          }, 
+          {
+            "id": "157", 
+            "type": "animes"
+          }, 
+          {
+            "id": "284", 
+            "type": "animes"
+          }, 
+          {
+            "id": "386", 
             "type": "animes"
           }
         ], 
@@ -28,7 +48,27 @@
       "characters": {
         "data": [
           {
-            "id": "35", 
+            "id": "52", 
+            "type": "characters"
+          }, 
+          {
+            "id": "53", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1409", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1410", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1411", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1412", 
             "type": "characters"
           }
         ], 
@@ -43,39 +83,27 @@
   "included": [
     {
       "attributes": {
-        "aired": "Sep 8, 1996 to Aug 31, 1997", 
-        "genre": "Drama, Romance, School, Shoujo", 
+        "aired": "Apr 11, 2008 to Jul 25, 2008", 
+        "genre": "Adventure, Mystery, Romance, Sci-Fi", 
         "media_type": "TV", 
-        "num_episodes": 51, 
-        "picture": "https://myanimelist.cdn-dena.com/images/anime/2/42871.jpg", 
-        "rating": "PG-13 - Teens 13 or older", 
-        "score": 7.86, 
+        "num_episodes": 12, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/7/13193.jpg", 
+        "rating": "R+ - Mild Nudity", 
+        "score": 8.25, 
         "status": "Finished Airing", 
-        "synopsis": "Makino Tsukushi, a girl who comes from a poor family, just wants to get through her two last years at Eitoku Gakuen quietly. But once she makes herself known by standing up for her friend to the F4, the four most popular, powerful, and rich boys at the school, she gets the red card: F4's way of a \"Declaration of War.\" But when she doesn't let herself be beaten by them and is starting to fall for one of the F4, Hanazawa Rui, she starts to see that there is more than meets the eye... (Source: ANN)", 
-        "title": "Hana yori Dango", 
-        "youtube_id": null
+        "synopsis": "It is now possible to store memory data, so that the death of your body is not actually &quot;death.&quot; As memories are stored in databanks, they can be &quot;transferred&quot; to new bodies. Because so-called &quot;memory trading&quot; now occurs, it is now possible to steal memories and illegally alter them. Society has fallen apart as authority has become lost and stagnant. One day, a man awakens in a ruined room. His name is Kaiba. He has no memories, but he does have a pendant with a picture of an unknown woman inside. In the skies are roiling clouds and electrical storms, impossible to pass without losing one&#039;s memories; above them lies the elusive realm of the rich and powerful, who barter others&#039; bodies and memories for their own enjoyment and longevity. Below lies a troubled and dangerous world where good bodies are hard to come by and real money is scarce. After suddenly being attacked, Kaiba escapes into space, and during his travels meets all sorts of people and regains his memories. Throughout it, he continues to be troubled by the world&#039;s problems, as well as his own existence. And what of the woman in the pendant, Neiro?", 
+        "title": "Kaiba", 
+        "youtube_id": "KFI_Fl1sRWg"
       }, 
-      "id": "8", 
+      "id": "386", 
       "links": {
-        "self": "http://www.weebmd.me/api/animes/8"
+        "self": "http://www.weebmd.me/api/animes/386"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "51", 
-              "type": "actors"
-            }, 
-            {
-              "id": "53", 
-              "type": "actors"
-            }, 
-            {
-              "id": "54", 
-              "type": "actors"
-            }, 
-            {
-              "id": "55", 
+              "id": "261", 
               "type": "actors"
             }, 
             {
@@ -83,45 +111,598 @@
               "type": "actors"
             }, 
             {
-              "id": "52", 
+              "id": "895", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/animes/8/actors", 
-            "self": "/api/animes/8/relationships/actors"
+            "related": "/api/animes/386/actors", 
+            "self": "/api/animes/386/relationships/actors"
           }
         }, 
         "characters": {
           "data": [
             {
-              "id": "36", 
+              "id": "829", 
               "type": "characters"
             }, 
             {
-              "id": "37", 
+              "id": "830", 
               "type": "characters"
             }, 
             {
-              "id": "35", 
+              "id": "1410", 
               "type": "characters"
             }
           ], 
           "links": {
-            "related": "/api/animes/8/characters", 
-            "self": "/api/animes/8/relationships/characters"
+            "related": "/api/animes/386/characters", 
+            "self": "/api/animes/386/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/386/mangas", 
+            "self": "/api/animes/386/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Oct 6, 2017 to ?", 
+        "genre": "Game, Comedy", 
+        "media_type": "TV", 
+        "num_episodes": 10, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/3/87463.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 7.61, 
+        "status": "Currently Airing", 
+        "synopsis": "Moriko Morioka is a 30-year-old single NEET woman. After dropping out from reality, she has taken off in search for a fulfilling life and ended up in a net game or &quot;netoge.&quot; In the netoge world, she began her new life as a refreshing and handsome character named Hayashi. While starting out as a beginner, a pretty character named Lily reached out to help her. Meanwhile, in the real world, awaits a shocking encounter with a good-looking elite company employee, a mysterious blue-eyed blonde. (Source: MAL News)", 
+        "title": "Net-juu no Susume", 
+        "youtube_id": "6B8Ie4bxabo"
+      }, 
+      "id": "157", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/157"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "551", 
+              "type": "actors"
+            }, 
+            {
+              "id": "50", 
+              "type": "actors"
+            }, 
+            {
+              "id": "281", 
+              "type": "actors"
+            }, 
+            {
+              "id": "579", 
+              "type": "actors"
+            }, 
+            {
+              "id": "392", 
+              "type": "actors"
+            }, 
+            {
+              "id": "211", 
+              "type": "actors"
+            }, 
+            {
+              "id": "54", 
+              "type": "actors"
+            }, 
+            {
+              "id": "393", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/157/actors", 
+            "self": "/api/animes/157/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "451", 
+              "type": "characters"
+            }, 
+            {
+              "id": "978", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1406", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1412", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/157/characters", 
+            "self": "/api/animes/157/relationships/characters"
           }
         }, 
         "mangas": {
           "data": [
             {
-              "id": "8", 
+              "id": "167", 
               "type": "mangas"
             }
           ], 
           "links": {
-            "related": "/api/animes/8/mangas", 
-            "self": "/api/animes/8/relationships/mangas"
+            "related": "/api/animes/157/mangas", 
+            "self": "/api/animes/157/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Oct 5, 2004 to Mar 29, 2005", 
+        "genre": "Comedy, Romance, School, Shounen", 
+        "media_type": "TV", 
+        "num_episodes": 26, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/4/75488.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 8.04, 
+        "status": "Finished Airing", 
+        "synopsis": "Just the words \"I love you,\" and everything changes\u2014such is the nature of the bittersweet trials of high school romance. Tenma Tsukamoto, a second year, is on a quest to confess her feelings to the boy she likes. Kenji Harima, a delinquent with a sizable reputation, is in a similar situation, as he cannot properly convey his feelings to the one he loves. Between school, friends, rivalries, and hobbies, these two will find that high school romance is no walk in the park, especially as misunderstandings further complicate their plight. School Rumble is a high-octane romantic comedy full of relatable situations, as Tenma and Kenji both try to win the hearts of those they desire. [Written by MAL Rewrite]", 
+        "title": "School Rumble", 
+        "youtube_id": "0Uv3_zjM448"
+      }, 
+      "id": "11", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/11"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "14", 
+              "type": "actors"
+            }, 
+            {
+              "id": "1010", 
+              "type": "actors"
+            }, 
+            {
+              "id": "695", 
+              "type": "actors"
+            }, 
+            {
+              "id": "337", 
+              "type": "actors"
+            }, 
+            {
+              "id": "50", 
+              "type": "actors"
+            }, 
+            {
+              "id": "81", 
+              "type": "actors"
+            }, 
+            {
+              "id": "424", 
+              "type": "actors"
+            }, 
+            {
+              "id": "49", 
+              "type": "actors"
+            }, 
+            {
+              "id": "15", 
+              "type": "actors"
+            }, 
+            {
+              "id": "1038", 
+              "type": "actors"
+            }, 
+            {
+              "id": "855", 
+              "type": "actors"
+            }, 
+            {
+              "id": "340", 
+              "type": "actors"
+            }, 
+            {
+              "id": "12", 
+              "type": "actors"
+            }, 
+            {
+              "id": "48", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/11/actors", 
+            "self": "/api/animes/11/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "15", 
+              "type": "characters"
+            }, 
+            {
+              "id": "51", 
+              "type": "characters"
+            }, 
+            {
+              "id": "52", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1413", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1414", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1415", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1545", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/11/characters", 
+            "self": "/api/animes/11/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "343", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/11/mangas", 
+            "self": "/api/animes/11/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Apr 7, 2004 to Sep 28, 2005", 
+        "genre": "Drama, Horror, Mystery, Police, Psychological, Seinen, Thriller", 
+        "media_type": "TV", 
+        "num_episodes": 74, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/10/18793.jpg", 
+        "rating": "R+ - Mild Nudity", 
+        "score": 8.69, 
+        "status": "Finished Airing", 
+        "synopsis": "Dr. Kenzou Tenma is a renowned brain surgeon of Japanese descent working in Europe. Highly lauded by his peers as one of the great young minds that will revolutionize the field, he is blessed with a beautiful fianc\u00e9e and is on the cusp of a big promotion in the hospital he works at. But all of that is about to change with a grave dilemma that Kenzou faces one night\u2014whether to save the life of a small boy or that of the town&#039;s mayor. Despite being pressured by his superiors to perform surgery on the mayor, his morals force him to perform the surgery on the other critical patient, saving his life and forfeiting the mayor&#039;s. A doctor is taught to believe that all life is equal; however, when a series of murders occur in the surgeon&#039;s vicinity, all of the evidence pointing to the boy he saved, Kenzou&#039;s beliefs are shaken. Along his journey to unravel the true identity of his little patient, Kenzou discovers that the fate of the world may be intertwined with the mysterious child. [Written by MAL Rewrite]", 
+        "title": "Monster", 
+        "youtube_id": "9aS-EgdAq6U"
+      }, 
+      "id": "66", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/66"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "201", 
+              "type": "actors"
+            }, 
+            {
+              "id": "833", 
+              "type": "actors"
+            }, 
+            {
+              "id": "200", 
+              "type": "actors"
+            }, 
+            {
+              "id": "50", 
+              "type": "actors"
+            }, 
+            {
+              "id": "835", 
+              "type": "actors"
+            }, 
+            {
+              "id": "832", 
+              "type": "actors"
+            }, 
+            {
+              "id": "202", 
+              "type": "actors"
+            }, 
+            {
+              "id": "1013", 
+              "type": "actors"
+            }, 
+            {
+              "id": "837", 
+              "type": "actors"
+            }, 
+            {
+              "id": "839", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/66/actors", 
+            "self": "/api/animes/66/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "239", 
+              "type": "characters"
+            }, 
+            {
+              "id": "240", 
+              "type": "characters"
+            }, 
+            {
+              "id": "991", 
+              "type": "characters"
+            }, 
+            {
+              "id": "992", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1409", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/66/characters", 
+            "self": "/api/animes/66/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "38", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/66/mangas", 
+            "self": "/api/animes/66/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Apr 29, 2005 to Oct 28, 2005", 
+        "genre": "Action, Supernatural, Vampire", 
+        "media_type": "TV", 
+        "num_episodes": 24, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/10/24649.jpg", 
+        "rating": "R - 17+ (violence & profanity)", 
+        "score": 7.42, 
+        "status": "Finished Airing", 
+        "synopsis": "The background is in the distant future after the destruction brought about by Armageddon. The war between the vampires and the humans continue to persist. In order to protect the humans from the vampires, the Vatican has to rely on other allies to counter the situation. The protagonist, Abel Nightroad, is a traveling priest from the Vatican and a crusnik, a vampire that drinks the blood of vampires. He is a member of the \"Ax\", a special operations group led by Cardinal Catherina Sforza. He encounters a young girl called Esther, who decides to go with him to Rome and train at the Vatican. Soon after he meets her, the order of Rozencreuz, led by Abel's twin, Cain, tries to continue the war so they can rule the world. It's up to Abel and the AX to try and stop them.", 
+        "title": "Trinity Blood", 
+        "youtube_id": "35GXUVBRIEM"
+      }, 
+      "id": "284", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/284"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "50", 
+              "type": "actors"
+            }, 
+            {
+              "id": "596", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/284/actors", 
+            "self": "/api/animes/284/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "1411", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/284/characters", 
+            "self": "/api/animes/284/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "190", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/284/mangas", 
+            "self": "/api/animes/284/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Oct 5, 2007 to Mar 28, 2008", 
+        "genre": "Comedy, Drama, Romance, School, Slice of Life, Supernatural", 
+        "media_type": "TV", 
+        "num_episodes": 23, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/13/8498.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 8.24, 
+        "status": "Finished Airing", 
+        "synopsis": "Tomoya Okazaki is a delinquent who finds life dull and believes he&#039;ll never amount to anything. Along with his friend Sunohara, he skips school and plans to waste his high school days away. One day while walking to school, Tomoya passes a young girl muttering quietly to herself. Without warning she exclaims &quot;Anpan!&quot; (a popular Japanese food) which catches Tomoya&#039;s attention. He soon discovers the girl&#039;s name is Nagisa Furukawa and that she exclaims things she likes in order to motivate herself. Nagisa claims they are now friends, but Tomoya walks away passing the encounter off as nothing. However, Tomoya finds he is noticing Nagisa more and more around school. Eventually he concedes and befriends her. Tomoya learns Nagisa has been held back a year due to a severe illness and that her dream is to revive the school&#039;s drama club. Claiming he has nothing better to do, he decides to help her achieve this goal along with the help of four other girls. As Tomoya spends more time with the girls, he learns more about them and their problems. As he attempts to help each girl overcome her respective obstacle, he begins to realize life isn&#039;t as dull as he once thought. [Written by MAL Rewrite]", 
+        "title": "Clannad", 
+        "youtube_id": "pTTsmwHxHns"
+      }, 
+      "id": "26", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/26"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "256", 
+              "type": "actors"
+            }, 
+            {
+              "id": "50", 
+              "type": "actors"
+            }, 
+            {
+              "id": "91", 
+              "type": "actors"
+            }, 
+            {
+              "id": "602", 
+              "type": "actors"
+            }, 
+            {
+              "id": "92", 
+              "type": "actors"
+            }, 
+            {
+              "id": "1038", 
+              "type": "actors"
+            }, 
+            {
+              "id": "89", 
+              "type": "actors"
+            }, 
+            {
+              "id": "132", 
+              "type": "actors"
+            }, 
+            {
+              "id": "257", 
+              "type": "actors"
+            }, 
+            {
+              "id": "90", 
+              "type": "actors"
+            }, 
+            {
+              "id": "51", 
+              "type": "actors"
+            }, 
+            {
+              "id": "451", 
+              "type": "actors"
+            }, 
+            {
+              "id": "979", 
+              "type": "actors"
+            }, 
+            {
+              "id": "895", 
+              "type": "actors"
+            }, 
+            {
+              "id": "117", 
+              "type": "actors"
+            }, 
+            {
+              "id": "1037", 
+              "type": "actors"
+            }, 
+            {
+              "id": "980", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/26/actors", 
+            "self": "/api/animes/26/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "53", 
+              "type": "characters"
+            }, 
+            {
+              "id": "104", 
+              "type": "characters"
+            }, 
+            {
+              "id": "105", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1262", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1263", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1264", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1265", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1266", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/26/characters", 
+            "self": "/api/animes/26/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "330", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "331", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/26/mangas", 
+            "self": "/api/animes/26/relationships/mangas"
           }
         }
       }, 

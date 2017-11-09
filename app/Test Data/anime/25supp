@@ -1,17 +1,17 @@
 {
   "data": {
     "attributes": {
-      "aired": "Sep 11, 2002 to Sep 10, 2003", 
-      "genre": "Slice of Life, Comedy, Sports, Shounen", 
+      "aired": "Jan 8, 2016 to Jul 1, 2016", 
+      "genre": "Action, Comedy, School, Shounen", 
       "media_type": "TV", 
-      "num_episodes": 52, 
-      "picture": "https://myanimelist.cdn-dena.com/images/anime/12/49655.jpg", 
+      "num_episodes": 25, 
+      "picture": "https://myanimelist.cdn-dena.com/images/anime/8/77966.jpg", 
       "rating": "PG-13 - Teens 13 or older", 
-      "score": 7.7, 
+      "score": 8.66, 
       "status": "Finished Airing", 
-      "synopsis": "Kyosuke Kano has lived under the shadow of his successful brother Seisuke all his life who is a professional soccer player. Tired of being compared and downgraded at, he abandoned playing soccer until a boy from his new highschool discovered him and asked him to join their team. Kyosuke joins it and befriends two other first year players named Rodrigo and Sakai with the dream of becoming professional soccer players themselves. (Source: ANN) ", 
-      "title": "Hungry Heart: Wild Striker", 
-      "youtube_id": null
+      "synopsis": "The students return as school is back in session for the second semester. Following their exploits on the island during summer vacation, Class 3-E continues to sharpen their blades with their sights set on their teacher, the slippery Koro-sensei. They have more to worry about than just their teacher, however, as enemy assassins, both old and new, are out for the increased bounty on the octopus&#039; head. Moreover, their rivals in Class A, as well as Kunugigaoka Junior High&#039;s fearsome principal, stand to block Class E from achieving academic excellence. With all of these obstacles opposing them, the group must continue to work together in order to overcome their foes and accomplish their goal of successfully assassinating their teacher. [Written by MAL Rewrite]", 
+      "title": "Ansatsu Kyoushitsu (TV) 2nd Season", 
+      "youtube_id": "tZiHgr0kd7E"
     }, 
     "id": "25", 
     "links": {
@@ -21,15 +21,35 @@
       "actors": {
         "data": [
           {
-            "id": "125", 
+            "id": "174", 
             "type": "actors"
           }, 
           {
-            "id": "123", 
+            "id": "736", 
             "type": "actors"
           }, 
           {
-            "id": "124", 
+            "id": "86", 
+            "type": "actors"
+          }, 
+          {
+            "id": "322", 
+            "type": "actors"
+          }, 
+          {
+            "id": "981", 
+            "type": "actors"
+          }, 
+          {
+            "id": "88", 
+            "type": "actors"
+          }, 
+          {
+            "id": "87", 
+            "type": "actors"
+          }, 
+          {
+            "id": "63", 
             "type": "actors"
           }
         ], 
@@ -41,19 +61,19 @@
       "characters": {
         "data": [
           {
-            "id": "78", 
+            "id": "101", 
             "type": "characters"
           }, 
           {
-            "id": "79", 
+            "id": "102", 
             "type": "characters"
           }, 
           {
-            "id": "81", 
+            "id": "1277", 
             "type": "characters"
           }, 
           {
-            "id": "80", 
+            "id": "1375", 
             "type": "characters"
           }
         ], 
@@ -65,7 +85,7 @@
       "mangas": {
         "data": [
           {
-            "id": "19", 
+            "id": "333", 
             "type": "mangas"
           }
         ], 
@@ -80,22 +100,22 @@
   "included": [
     {
       "attributes": {
-        "author": "Takahashi, Yoichi", 
-        "genre": "Comedy, School, Shounen, Sports", 
+        "author": "Matsui, Yuusei", 
+        "genre": "Action, Comedy, School, Shounen", 
         "media_type": "Manga", 
-        "num_chapters": 49, 
-        "picture": "https://myanimelist.cdn-dena.com/images/manga/1/4814.jpg", 
-        "published": "2002 to 2004", 
-        "score": 7.22, 
+        "num_chapters": 187, 
+        "picture": "https://myanimelist.cdn-dena.com/images/manga/2/90819.jpg", 
+        "published": "Jul  2, 2012 to Apr  25, 2016", 
+        "score": 8.34, 
         "status": "Finished", 
-        "synopsis": "Kyosuke Kano has lived under the shadow of his successful brother Seisuke all his life who is a professional soccer player. Tired of being compared and downgraded at, he abandoned playing soccer until a boy from his new high school discovered him and asked him to join their team. Kyosuke joins it and befriends two other first year players named Rodrigo and Sakai with the dream of becoming professional soccer players themselves. (Source: MU)", 
-        "title": "Hungry Heart", 
-        "title_english": null, 
-        "title_japanese": "\u30cf\u30f3\u30b0\u30ea\u30fc\u30cf\u30fc\u30c8"
+        "synopsis": "In the blink of an eye, the night sky is forever changed when, with a great explosion, the moon is blasted into a permanent crescent. Confronting the governments of the world, a yellow tentacled monster boasts that it was the one responsible for the catastrophe, and in a year&#039;s time, it will do the same to Earth. Zooming around at Mach 20, the creature makes a peculiar demand: a teaching position at the prestigious Kunugigaoka Junior High School. Desperate to keep the creature in one place, the government agrees, and so the students of Class 3-E find themselves faced with an impossible task\u2014assassinate the creature responsible for destroying the moon. Although the fate of the world now rests on their shoulders, the class has more personal issues to deal with. Trapped at the bottom of Kunugigaoka&#039;s hierarchical education system, they face harsh discrimination from both teachers and students alike. Defeatism abound, they don&#039;t believe themselves capable of success in daily life, let alone against a monster that surpasses the abilities of any human. But as the enigmatic creature\u2014whom they dub Koro-sensei\u2014educates them in both assassination and academia, the children slowly find the courage to rise up and take aim at their target: the greatest teacher the world has ever seen. [Written by MAL Rewrite] Included one-shot: Volume 21: Tokyo Department Sensou Taikenki (Tokyo Department Store War Chronicles)", 
+        "title": "Ansatsu Kyoushitsu", 
+        "title_english": "Assassination Classroom", 
+        "title_japanese": "\u6697\u6bba\u6559\u5ba4"
       }, 
-      "id": "19", 
+      "id": "333", 
       "links": {
-        "self": "http://www.weebmd.me/api/mangas/19"
+        "self": "http://www.weebmd.me/api/mangas/333"
       }, 
       "relationships": {
         "animes": {
@@ -106,32 +126,32 @@
             }
           ], 
           "links": {
-            "related": "/api/mangas/19/animes", 
-            "self": "/api/mangas/19/relationships/animes"
+            "related": "/api/mangas/333/animes", 
+            "self": "/api/mangas/333/relationships/animes"
           }
         }, 
         "characters": {
           "data": [
             {
-              "id": "78", 
+              "id": "101", 
               "type": "characters"
             }, 
             {
-              "id": "79", 
+              "id": "102", 
               "type": "characters"
             }, 
             {
-              "id": "81", 
+              "id": "1277", 
               "type": "characters"
             }, 
             {
-              "id": "80", 
+              "id": "1375", 
               "type": "characters"
             }
           ], 
           "links": {
-            "related": "/api/mangas/19/characters", 
-            "self": "/api/mangas/19/relationships/characters"
+            "related": "/api/mangas/333/characters", 
+            "self": "/api/mangas/333/relationships/characters"
           }
         }
       }, 

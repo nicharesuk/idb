@@ -1,10 +1,11 @@
 {
   "data": {
     "attributes": {
-      "about": "A transfer student from Brazil who wants to go pro in order to help his large family. While he appears to be cold, self-centered and only driven by money at first, his attitude radically changes after his meeting with Kyosuke. Rodrigo is Jyoyo's playmaker, who earns the interest of several professional J. League clubs. In the final year, he becomes the captain of Akanegaoka.\n \n (Source: Wikipedia)\n\n", 
-      "japanese_name": "(\u30ed\u30c9\u30ea\u30b4)", 
-      "name": "Rodrigo ", 
-      "picture": "https://myanimelist.cdn-dena.com/images/characters/10/26248.jpg"
+      "about": "The younger sister of Setsuna Mudo and the reincarnation of the soul of the former Great Cherub, Gabriel. Gabriel was also one of the Four Elemental Angels, the Angel of Water, and she vocally opposed Sevotharte's violent actions as Prime Minister. To get Gabriel out of the way, he paralyzed her with a needle and sent her soul to Earth, so that she could unwittingly serve him as Setsuna's guardian angel. When Sara dies, her soul is taken up to heaven by Zaphikel to study its unusual spiritual energy signature. Metatron removes Sevy's needle from the back of Gabriel's neck and Sara's soul awakens in it. She awakens blind and remains so until she is healed when she uses Gabriel's water powers to help Raphael revive Setsuna. She is in love with Setsuna. Her soul was returned to her original body by Raphael, who claims to love her. This is not true, for through Sara, Raphael was to realise that his true love was someone else close to him. Sara has a pure, innocent heart, but she has a fierce temper and sharp tongue.\n\n", 
+      "japanese_name": "(\u7121\u9053\u7d17\u7f85)", 
+      "name": "Sara Mudo", 
+      "picture": "https://myanimelist.cdn-dena.com/images/characters/15/63226.jpg", 
+      "role": "Main"
     }, 
     "id": "80", 
     "links": {
@@ -14,7 +15,11 @@
       "actors": {
         "data": [
           {
-            "id": "125", 
+            "id": "74", 
+            "type": "actors"
+          }, 
+          {
+            "id": "999", 
             "type": "actors"
           }
         ], 
@@ -26,7 +31,7 @@
       "animes": {
         "data": [
           {
-            "id": "25", 
+            "id": "18", 
             "type": "animes"
           }
         ], 
@@ -38,7 +43,7 @@
       "mangas": {
         "data": [
           {
-            "id": "19", 
+            "id": "336", 
             "type": "mangas"
           }
         ], 
@@ -53,106 +58,59 @@
   "included": [
     {
       "attributes": {
-        "author": "Takahashi, Yoichi", 
-        "genre": "Comedy, School, Shounen, Sports", 
-        "media_type": "Manga", 
-        "num_chapters": 49, 
-        "picture": "https://myanimelist.cdn-dena.com/images/manga/1/4814.jpg", 
-        "published": "2002 to 2004", 
-        "score": 7.22, 
-        "status": "Finished", 
-        "synopsis": "Kyosuke Kano has lived under the shadow of his successful brother Seisuke all his life who is a professional soccer player. Tired of being compared and downgraded at, he abandoned playing soccer until a boy from his new high school discovered him and asked him to join their team. Kyosuke joins it and befriends two other first year players named Rodrigo and Sakai with the dream of becoming professional soccer players themselves. (Source: MU)", 
-        "title": "Hungry Heart", 
-        "title_english": null, 
-        "title_japanese": "\u30cf\u30f3\u30b0\u30ea\u30fc\u30cf\u30fc\u30c8"
-      }, 
-      "id": "19", 
-      "links": {
-        "self": "http://www.weebmd.me/api/mangas/19"
-      }, 
-      "relationships": {
-        "animes": {
-          "data": [
-            {
-              "id": "25", 
-              "type": "animes"
-            }
-          ], 
-          "links": {
-            "related": "/api/mangas/19/animes", 
-            "self": "/api/mangas/19/relationships/animes"
-          }
-        }, 
-        "characters": {
-          "data": [
-            {
-              "id": "81", 
-              "type": "characters"
-            }, 
-            {
-              "id": "80", 
-              "type": "characters"
-            }, 
-            {
-              "id": "79", 
-              "type": "characters"
-            }, 
-            {
-              "id": "78", 
-              "type": "characters"
-            }
-          ], 
-          "links": {
-            "related": "/api/mangas/19/characters", 
-            "self": "/api/mangas/19/relationships/characters"
-          }
-        }
-      }, 
-      "type": "mangas"
-    }, 
-    {
-      "attributes": {
-        "aired": "Sep 11, 2002 to Sep 10, 2003", 
-        "genre": "Slice of Life, Comedy, Sports, Shounen", 
-        "media_type": "TV", 
-        "num_episodes": 52, 
-        "picture": "https://myanimelist.cdn-dena.com/images/anime/12/49655.jpg", 
-        "rating": "PG-13 - Teens 13 or older", 
-        "score": 7.7, 
+        "aired": "May 25, 2000 to Aug 25, 2000", 
+        "genre": "Action, Drama, Romance, Shoujo, Supernatural", 
+        "media_type": "OVA", 
+        "num_episodes": 3, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/11/45208.jpg", 
+        "rating": "R+ - Mild Nudity", 
+        "score": 6.43, 
         "status": "Finished Airing", 
-        "synopsis": "Kyosuke Kano has lived under the shadow of his successful brother Seisuke all his life who is a professional soccer player. Tired of being compared and downgraded at, he abandoned playing soccer until a boy from his new highschool discovered him and asked him to join their team. Kyosuke joins it and befriends two other first year players named Rodrigo and Sakai with the dream of becoming professional soccer players themselves. (Source: ANN) ", 
-        "title": "Hungry Heart: Wild Striker", 
-        "youtube_id": null
+        "synopsis": "Setsuna Mudo is a college freshman, just trying to get by without running afoul of his bullying seniors. It doesn't help that he's in love with his sister, Sara, who only sees him once a month. But there's more to his life than just keeping his head down. Setsuna is ambushed by mysterious beings, angels, and demons, all professing to know his true destiny. The angels say he is the reincarnation of their leader Alexiel, while the demons claim he led them to war against God himself. As Setsuna struggles with his identity in such strange times, the eternal conflict between Heaven and Hell threatens to reignite. Will he be prepared when it does?", 
+        "title": "Tenshi Kinryouku", 
+        "youtube_id": "g6mvmLyN66g"
       }, 
-      "id": "25", 
+      "id": "18", 
       "links": {
-        "self": "http://www.weebmd.me/api/animes/25"
+        "self": "http://www.weebmd.me/api/animes/18"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "123", 
+              "id": "73", 
               "type": "actors"
             }, 
             {
-              "id": "124", 
+              "id": "1000", 
               "type": "actors"
             }, 
             {
-              "id": "125", 
+              "id": "999", 
+              "type": "actors"
+            }, 
+            {
+              "id": "72", 
+              "type": "actors"
+            }, 
+            {
+              "id": "74", 
+              "type": "actors"
+            }, 
+            {
+              "id": "809", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/animes/25/actors", 
-            "self": "/api/animes/25/relationships/actors"
+            "related": "/api/animes/18/actors", 
+            "self": "/api/animes/18/relationships/actors"
           }
         }, 
         "characters": {
           "data": [
             {
-              "id": "81", 
+              "id": "79", 
               "type": "characters"
             }, 
             {
@@ -160,33 +118,92 @@
               "type": "characters"
             }, 
             {
-              "id": "79", 
-              "type": "characters"
-            }, 
-            {
-              "id": "78", 
+              "id": "1329", 
               "type": "characters"
             }
           ], 
           "links": {
-            "related": "/api/animes/25/characters", 
-            "self": "/api/animes/25/relationships/characters"
+            "related": "/api/animes/18/characters", 
+            "self": "/api/animes/18/relationships/characters"
           }
         }, 
         "mangas": {
           "data": [
             {
-              "id": "19", 
+              "id": "336", 
               "type": "mangas"
             }
           ], 
           "links": {
-            "related": "/api/animes/25/mangas", 
-            "self": "/api/animes/25/relationships/mangas"
+            "related": "/api/animes/18/mangas", 
+            "self": "/api/animes/18/relationships/mangas"
           }
         }
       }, 
       "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "author": "Yuki, Kaori", 
+        "genre": "Fantasy, Romance, Shoujo", 
+        "media_type": "Manga", 
+        "num_chapters": 120, 
+        "picture": "https://myanimelist.cdn-dena.com/images/manga/2/176257.jpg", 
+        "published": "Feb 1995 to Feb 2001", 
+        "score": 8.03, 
+        "status": "Finished", 
+        "synopsis": "The angel Alexiel loved God, but she rebelled against Heaven when she saw how disgracefully the other angels were behaving. She was finally captured, and as punishment sent to Earth to live an endless series of tragic lives. She now inhabits the body of Setsuna Mudo, a troubled teen in love with his sister Sara. Setsuna&#039;s misery mirrors the chaos among the angels, and their combined passions threaten to destroy both Heaven and Earth.", 
+        "title": "Tenshi Kinryouku", 
+        "title_english": "Angel Sanctuary", 
+        "title_japanese": "\u5929\u4f7f\u7981\u731f\u533a"
+      }, 
+      "id": "336", 
+      "links": {
+        "self": "http://www.weebmd.me/api/mangas/336"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "18", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/mangas/336/animes", 
+            "self": "/api/mangas/336/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "79", 
+              "type": "characters"
+            }, 
+            {
+              "id": "80", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1327", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1328", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1329", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/mangas/336/characters", 
+            "self": "/api/mangas/336/relationships/characters"
+          }
+        }
+      }, 
+      "type": "mangas"
     }
   ], 
   "jsonapi": {
