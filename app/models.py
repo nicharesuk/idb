@@ -44,8 +44,8 @@ class Anime(db.Model):
     genre = db.Column(db.Text)
 
     characters = db.relationship('Character', secondary=anime_character, back_populates="animes", collection_class=set)
-    actors = db.relationship('Actor', secondary=actor_anime, back_populates="animes", collection_class=set)
-    mangas = db.relationship('Manga', secondary=manga_anime, back_populates="animes", collection_class=set)
+    actors = db.relationship('Actor', secondary=actor_anime, back_populates="animes")
+    mangas = db.relationship('Manga', secondary=manga_anime, back_populates="animes")
 
     def __repr__(self):
         return '<Anime %r>' % self.title
@@ -65,8 +65,8 @@ class Manga(db.Model):
     picture = db.Column(db.Text, unique=True, nullable=False)
     status = db.Column(db.String(80), nullable=False)
 
-    characters = db.relationship('Character', secondary=manga_character, back_populates="mangas", collection_class=set)
-    animes = db.relationship('Anime', secondary=manga_anime, back_populates="mangas", collection_class=set)
+    characters = db.relationship('Character', secondary=manga_character, back_populates="mangas")
+    animes = db.relationship('Anime', secondary=manga_anime, back_populates="mangas")
 
     def __repr__(self):
         return '<Manga %r>' % self.title
@@ -80,9 +80,9 @@ class Character(db.Model):
     picture = db.Column(db.Text)
     role = db.Column(db.String(80))
     
-    actors = db.relationship('Actor', secondary=actor_character, back_populates="characters", collection_class=set)
-    mangas = db.relationship('Manga', secondary=manga_character, back_populates="characters", collection_class=set)
-    animes = db.relationship('Anime', secondary=anime_character, back_populates="characters", collection_class=set)
+    actors = db.relationship('Actor', secondary=actor_character, back_populates="characters")
+    mangas = db.relationship('Manga', secondary=manga_character, back_populates="characters")
+    animes = db.relationship('Anime', secondary=anime_character, back_populates="characters")
 
     def __repr__(self):
         return '<Character %r>' % self.name
@@ -96,8 +96,8 @@ class Actor(db.Model):
     picture = db.Column(db.Text, unique=True)
     website = db.Column(db.Text)
 
-    characters = db.relationship('Character', secondary=actor_character, back_populates="actors", collection_class=set)
-    animes = db.relationship('Anime', secondary=actor_anime, back_populates="actors", collection_class=set)
+    characters = db.relationship('Character', secondary=actor_character, back_populates="actors")
+    animes = db.relationship('Anime', secondary=actor_anime, back_populates="actors")
 
     def __repr__(self):
         return '<Actor %r>' % self.name
