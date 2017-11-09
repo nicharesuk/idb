@@ -1,18 +1,18 @@
 {
   "data": {
     "attributes": {
-      "author": "Higuchi, Tachibana", 
-      "genre": "Comedy, Drama, Fantasy, Magic, Shoujo, Supernatural", 
+      "author": "CLAMP", 
+      "genre": "Action, Adventure, Drama, Fantasy, Shounen", 
       "media_type": "Manga", 
-      "num_chapters": 180, 
-      "picture": "https://myanimelist.cdn-dena.com/images/manga/1/190844.jpg", 
-      "published": "Sep  5, 2002 to Jun  20, 2013", 
-      "score": 8.4, 
+      "num_chapters": 233, 
+      "picture": "https://myanimelist.cdn-dena.com/images/manga/2/27076.jpg", 
+      "published": "May  21, 2003 to Oct  7, 2009", 
+      "score": 8.38, 
       "status": "Finished", 
-      "synopsis": "For Mikan, there was no better friend than Hotaru (though Hotaru sometimes seems to have other sentiments). They often played together. But Hotaru is a very special child, and she agrees to go to a school in Tokyo which the government reserved only for geniuses. This left a very lonely Mikan at home. When Hotaru fails to keep her promise and come home for holidays, her young friend is very disappointed and rather angry. But upon overhearing a conversation between Hotaru's mother and a teacher, Mikan realizes that her friend's reasons for leaving might not have been what they seemed. So Mikan takes it upon herself to run away and go to Hotaru's school. There she discovers the so-called \"genius academy\" is actually a school for people gifted with special powers called \"alices.\" Her friend Hotaru is one of these, and after a chance encounter with a teacher, Mikan suddenly finds herself enrolled. Finally, the two friends are reunited, but is Mikan actually one of those so-called Alices? (Source: Aerie Scans)", 
-      "title": "Gakuen Alice", 
-      "title_english": "Gakuen Alice", 
-      "title_japanese": "\u5b66\u5712\u30a2\u30ea\u30b9"
+      "synopsis": "The famous CLAMP brings back the characters from all their creations for an ultimate showdown in this multi-dimensional tale. This is the story of four travelers, bound by fate and by a treacherous journey. Sakura is the princess of Clow Kingdom, and possessor of a strange power that promises to change the world. Syaoran is an aspiring archaeologist and her childhood friend. When a powerful but elusive figure decides to use Sakura&#039;s abilities for his own ends, her memories take the form of feathers and scatter across countless dimensions, and Syaoran is forced to go on a desperate journey to retrieve them. While seeking help from the Dimensional Witch, Syaoran and Sakura meet two more strange travelers. They are Fay D. Flourite, a magician fleeing his home world and his past, and Kurogane, a rough-mannered ninja trying to return to the home from which he was banished. They agree to accompany Syaoran on his quest so they can begin their own. However, the ability to cross worlds demands a great price, and each of them must pay the Dimensional Witch what they value most. Longing to restore the princess to her old self, Syaoran agrees to pay that which he values most to save her\u2014their relationship. Even if he gathers all of Sakura&#039;s memories, she will never remember their past together... But the very moment the group forms, their destinies are sealed into a tragic course. True motives surface, affections shift, and prophesies become real. The future reads only of betrayal, abandonment, and devastation\u2014unless the mismatched travelers can change it.", 
+      "title": "Tsubasa: RESERVoir CHRoNiCLE", 
+      "title_english": "Tsubasa: RESERVoir CHRoNiCLE", 
+      "title_japanese": "\u30c4\u30d0\u30b5 -RESERVoir CHRoNiCLE-"
     }, 
     "id": "55", 
     "links": {
@@ -22,7 +22,11 @@
       "animes": {
         "data": [
           {
-            "id": "75", 
+            "id": "146", 
+            "type": "animes"
+          }, 
+          {
+            "id": "384", 
             "type": "animes"
           }
         ], 
@@ -34,19 +38,59 @@
       "characters": {
         "data": [
           {
-            "id": "260", 
+            "id": "36", 
             "type": "characters"
           }, 
           {
-            "id": "261", 
+            "id": "282", 
             "type": "characters"
           }, 
           {
-            "id": "263", 
+            "id": "320", 
             "type": "characters"
           }, 
           {
-            "id": "262", 
+            "id": "321", 
+            "type": "characters"
+          }, 
+          {
+            "id": "820", 
+            "type": "characters"
+          }, 
+          {
+            "id": "821", 
+            "type": "characters"
+          }, 
+          {
+            "id": "822", 
+            "type": "characters"
+          }, 
+          {
+            "id": "823", 
+            "type": "characters"
+          }, 
+          {
+            "id": "824", 
+            "type": "characters"
+          }, 
+          {
+            "id": "825", 
+            "type": "characters"
+          }, 
+          {
+            "id": "867", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1268", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1347", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1480", 
             "type": "characters"
           }
         ], 
@@ -61,38 +105,47 @@
   "included": [
     {
       "attributes": {
-        "about": "Gender: Male \n Birthday: November 27 \n Horoscope: Sagittarius \n Age: 11 \n Alice: Fire \n Alice Stone Color: Red \n Height: 140 cm \n Weight: 34.5 kg \n \n Natsume is a extremely intelligent, to the point of being considered a genius, and despite this, ditches class frequently. Hated and feared by a lot of students at the academy because of his dangerous Alice and cold attitude. Due to the isolation he feels from most of his classmates and hatred many student feel about him he is often bullied even though he comes to ignore it, although the class he is a part of holds him in very high regard and often follows his orders. \n \n He is thoroughly unhappy with the school and is always suspicious of the intentions of adults because he believes that they use their power over the younger students to hurt and abuse. He is involved in top-secret missions for the Academy which are shady and haven't quite been explained in the story yet, although he often returns injured. \n \n He is paired up as Mikan's partner in class by the their mostly-absent class teacher, Narumi. Although at first he rebels strongly against this duty, he later accepts it and begins to enjoy Mikan's company, along with the company of his classmates and finds himself getting friendlier as the series progresses, although he never quite loses his dangerous edge and temper. \n \n He possesses the fire Alice. It is revealed early on that since Natsume has such a powerful Alice, it causes a lot of stress on his body to use and shortens his lifespan immensely. He had been showing the symptoms of a life shortening Alice for a year before the start of the series and had been progressing quickly due to the constant use of his abilities for missions for the Academy. Because of this, he can be seen quite a few times through the manga coughing blood or even going unconcious.\n \n The story for Natsume entering the Academy was the rumor that he was a murderer and once set fire to a village. However, it turns out that his younger sister Aoi lost control of her Alice and accidentally set the buildings ablaze, losing her Alice, memories and her sight in the process. Aoi is used as a hostage to get Natsume to cooperate when he gets testy, and even after Aoi is released, he continues to perform his missions to keep Mikan and Ruka safe. \n \n He has a close group of friends, which at first is only Ruka, the only person at the Academy who understands his reasons for being there and originally agreed to come to the Academy because of Natsume. Later, though, he grows deeply fond of Mikan and finds himself trying to protect her from the dark side of the Academy. He gets extremely jealous whenever if Narumi, Tsubasa or any other male character gets too close with her, something that is often used against him by the older boys for teasing. He's often seen kicking the older guys shins, holding Mikan back from hugging others or burning the tips of Mikan's hair to get her attention again.\n \n He is the only Special Star in the Elementary Division, thus entitling him to a lot of luxurious things that he never really gets to take advantage of.\n \n In chapter 50, he kisses Mikan during the Christmas party, to which their relationship develops. In the most recent chapters, he searches relentlessly to find Mikan since she was taken away by the Academy for her Alice and when he finally finds her, he manages to get her to confess as a 'reward' for tracking her down. He does confess in return.\n In the epilogue, it shows that Mikan and Natsume continue their relationship and get married.\n\n", 
-        "japanese_name": "(\u65e5\u5411 \u68d7)", 
-        "name": "Natsume Hyuuga", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/118829.jpg"
+        "about": "Syaoran is strong and kind character, mostly referred to as \"boy\". Syaoran, although cheerful and knightly, is carrying  the wounds from his past in his heart. Adopted by archaeologist, Fujitaka, he accidentally came into the country of Clow. Here he met daughter of king, Sakura. Currently he is traveling together with Fai, Kurogane and Sakura, in order to regain Sakura's lost memories, in form of feathers. But to do so, he had to give up his most precious thing - his relationship with her. Thus, even if she regains all her memories, she won't remember him.\n \n One of Syaoran's eyes is blind and seems to be connected to mysterious events surrounding him and his past.\n \n <b>Manga Spoilers</b>\n It is later revealed he is actually a clone of the original Syaoran. He was created by Fei Wong Reed to collect and scatter Sakura's feathers. Before being captured by Fei Wong Reed the original Syaoran manages to place some of his \"heart\" within one of the clone's eyes. At the end of the manga, Syaoran eventually turns against his creator and aids the original Syaoran in trying to save Sakura; however, Fei Wong kills Syaoran. Syaoran is reborn in another world, along with Clone Sakura, and he becomes his original's father. He and Sakura raise the original Syaoran until they send him to Clow Country to meet with his destined person, afterwards sealing themselves inside the glass tube. Sakura and Syaoran, after breaking free from the tube, cleanse the feathers, but both ultimately disappear after Kurogane kills Fei Wong, leaving behind only a feather which Syaoran's original absorbs.\n \n Source: Wikipedia\n \n In Horitsuba Gakuen, he is Syaoron's twin brother who likes Sakura.\n\n", 
+        "japanese_name": "(\u5c0f\u72fc)", 
+        "name": "Syaoran ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/88326.jpg", 
+        "role": "Main"
       }, 
-      "id": "263", 
+      "id": "1480", 
       "links": {
-        "self": "http://www.weebmd.me/api/characters/263"
+        "self": "http://www.weebmd.me/api/characters/1480"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "346", 
+              "id": "34", 
+              "type": "actors"
+            }, 
+            {
+              "id": "35", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/characters/263/actors", 
-            "self": "/api/characters/263/relationships/actors"
+            "related": "/api/characters/1480/actors", 
+            "self": "/api/characters/1480/relationships/actors"
           }
         }, 
         "animes": {
           "data": [
             {
-              "id": "75", 
+              "id": "384", 
+              "type": "animes"
+            }, 
+            {
+              "id": "146", 
               "type": "animes"
             }
           ], 
           "links": {
-            "related": "/api/characters/263/animes", 
-            "self": "/api/characters/263/relationships/animes"
+            "related": "/api/characters/1480/animes", 
+            "self": "/api/characters/1480/relationships/animes"
           }
         }, 
         "mangas": {
@@ -100,11 +153,15 @@
             {
               "id": "55", 
               "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
             }
           ], 
           "links": {
-            "related": "/api/characters/263/mangas", 
-            "self": "/api/characters/263/relationships/mangas"
+            "related": "/api/characters/1480/mangas", 
+            "self": "/api/characters/1480/relationships/mangas"
           }
         }
       }, 
@@ -112,38 +169,34 @@
     }, 
     {
       "attributes": {
-        "about": "Birthday: January 1 \n Height: 138 cm \n Weight: 33 kg \n Age: 10-11 \n Alice: Nullification Stealing-Alice \n Alice stone color: Mandarin Orange \n \n Mikan is the protagonist of the story.  She is a cute, energetic, good-natured girl, but her clumsiness lands her into trouble. She is a very up-an-at-it  and athletic person, much to annoyance of her down-to-earth friend, Hotaru. She used to live with her grandfather in the countryside. \n \n She was shocked to hear that Hotaru was moving back to the city to go to an academy for young 'geniuses' like her. When she heard rumors that students were like slaves in Alice Academy (which she felt was a possibility, since they gave money to parents for sending their children to the school), Mikan left her grandfather and her home to go after Hotaru by herself. She was then accepted to Alice Academy by Narumi-sensei and could attend Alice Academy with Hotaru and many other children with extraordinary powers.\n \n Her Alice is Nullification, which can resist the effect of Pheromone type Alices and completely negate the powers of other Alices in close proximity to her. She also possesses the Stealing Alice that can steal alices and turn them into colored rocks, which she inherited from her mother. Both of her Alices are very rare and special.\n \n She once belonged to the Special Ability Class. Later, she gets transferred to the Dangerous Ability Class, and becomes the Elementary Principal's precious favorite. She is currently a Single Star, but it's most likely changed to Special Star due to the fact she is highly favored by the principal.\n \n Throughout the story, she has a lot of effect on Natsume and Ruka, who have both started to fall in love with her. As the story progresses she becomes liked and admired by a lot of the people that used to feel uneasy about her Alice. Even her relationship with Hotaru grows stronger. Her name means \"Mandarin Orange\" in Japanese.\n \n After she loses her Alice Mikan is forced to leave Academy and have her memories erased to assure that no one in the outside world will try to target her to gain information about the school. Not knowing anything about the fate of Natsume and Hotaru she goes back to her grandfather, but she's allowed to take Bear with her under the condition that it will not reveal it's true nature to anyone. \n \n Four years later, Mikan is a highschool student and lives peacefully in the country protected by Shiki's barrier. One day Mikan is targeted by unknown people and is saved by Narumi. At the same time one of her captured and supposed childhood friends is revealed to be Hijiri Goshima in disguise. Confused, Mikan has some flashbacks but doesn't seem to remember anyone clearly. She stumbles just to find Natsume right behind her back. \n In the epilogue, it shows that Mikan and Natsume continue their relationship and get married. \n\n", 
-        "japanese_name": "(\u4f50\u5009 \u871c\u67d1)", 
-        "name": "Mikan Sakura", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/3/119501.jpg"
+        "about": "Height: 152 cm\n \n Chii is a Persocom who is found by Hideki Motosuwa in a garbage dump. At first, she is only able to say \"Chii\", thus earning her that name. Later on, she is taught various things, and is eventually able to communicate with other people. \n \n She is a Chobit, a legendary Persocom that is capable of thinking independently and feeling human emotions. Her real name is Elda. She was created to be a \"little sister\" to Freya, the first Chobit, after Chitose Hibiya noticed Freya becoming increasingly sad. After Freya eventually breaks down, Elda takes Freya's mind into her own in an attempt to save her. In the manga, this causes her own memories to reset. In the anime, Hibiya resets Elda's memories in order to find the One just for her.\n \n Chi has a special program installed on her designed to connect to every persocom on the planet. In the manga, if Chi fails to find the One just for her, she would delete the ability for persocoms to recognize humans from one another. In the anime, if Chi does find the One just for her, the program would give all persocoms the ability to feel real emotions.\n\n", 
+        "japanese_name": "(\u3061\u3043)", 
+        "name": "Chii ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/6/92991.jpg", 
+        "role": "Main"
       }, 
-      "id": "261", 
+      "id": "820", 
       "links": {
-        "self": "http://www.weebmd.me/api/characters/261"
+        "self": "http://www.weebmd.me/api/characters/820"
       }, 
       "relationships": {
         "actors": {
-          "data": [
-            {
-              "id": "344", 
-              "type": "actors"
-            }
-          ], 
+          "data": [], 
           "links": {
-            "related": "/api/characters/261/actors", 
-            "self": "/api/characters/261/relationships/actors"
+            "related": "/api/characters/820/actors", 
+            "self": "/api/characters/820/relationships/actors"
           }
         }, 
         "animes": {
           "data": [
             {
-              "id": "75", 
+              "id": "383", 
               "type": "animes"
             }
           ], 
           "links": {
-            "related": "/api/characters/261/animes", 
-            "self": "/api/characters/261/relationships/animes"
+            "related": "/api/characters/820/animes", 
+            "self": "/api/characters/820/relationships/animes"
           }
         }, 
         "mangas": {
@@ -151,11 +204,15 @@
             {
               "id": "55", 
               "type": "mangas"
+            }, 
+            {
+              "id": "253", 
+              "type": "mangas"
             }
           ], 
           "links": {
-            "related": "/api/characters/261/mangas", 
-            "self": "/api/characters/261/relationships/mangas"
+            "related": "/api/characters/820/mangas", 
+            "self": "/api/characters/820/relationships/mangas"
           }
         }
       }, 
@@ -163,38 +220,38 @@
     }, 
     {
       "attributes": {
-        "about": "Nickname: Ruka-Pyon, Ru-Chan \n Gender: Male \n Age: 10 \n Alice: Animal Pheromone \n Alice Stone Color: Milky White \n Birthday: March 16 \n Horoscope:Pisces \n Height: 140 cm \n Weight: 35 kg \n \n Ruka is Natsume's childhood friend and often referred by Mikan throughout the story as \"Ruka-pyon.\" He has a gentle and pleasant personality that balances out that of Natsume's. Even though he tries to hide his feelings for Mikan Sakura, the grown-ups already know about it and even teased Ruka many times by the Watching Over Ruka Group. He always carries around a rabbit and has a way with animals, they seem to attract to him. He is also the main target of Hotaru, who loves clicking funny pictures of him and selling them.\n \n He belongs to the Somatic class. He is a Triple Star student like Hotaru.\n\n", 
-        "japanese_name": "(\u4e43\u6728 \u6d41\u67b6)", 
-        "name": "Ruka Nogi", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/118382.jpg"
+        "about": "Being one extremely experienced in her industry, Y\u016bko is not foolish enough to give away her real name like Watanuki. That aside, Y\u016bko has served as a major catalyst for Watanuki&#039;s transformation, acting somewhat as his mentor. She loves to drink and eat Watanuki&#039;s wonderful cooking and dragging Watanuki on crazy outings at the drop of a hat.\n \n Despite this immature and free-spirited attitude, Y\u016bko has been known to be sage-like and serious when the time calls for it. Y\u016bko seems to know the true hitsuzen that Watanuki will follow, and has often offered cryptic messages to warn him of impending danger or a folk tale that he should take a bit more seriously. She also seems to truly care about him, making sure he is safe at night, sending the Kudakitsune (pipe-fox) with him for extra protection, or calling D\u014dmeki when he needs saving.\n \n Y\u016bko is very powerful when it comes to magic and knowledge and is highly respected within the spirit realm. However, she doesn&#039;t often appear to get directly involved in things beyond whatever contract she has with those making wishes. Sometimes, she sends Watanuki to do jobs for her, such as when she granted a wish from Himawari. Y\u016bko seems to take the role of someone playing chess when it comes to the big picture of things that are going on. \n \n In Horitsuba Gakuen, she is a ruthless principal, who always climbs into rooms through the window.\n\n", 
+        "japanese_name": "(\u58f1\u539f\u4f91\u5b50)", 
+        "name": "Yuuko Ichihara", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/10/93193.jpg", 
+        "role": "Main"
       }, 
-      "id": "260", 
+      "id": "821", 
       "links": {
-        "self": "http://www.weebmd.me/api/characters/260"
+        "self": "http://www.weebmd.me/api/characters/821"
       }, 
       "relationships": {
         "actors": {
-          "data": [
-            {
-              "id": "343", 
-              "type": "actors"
-            }
-          ], 
+          "data": [], 
           "links": {
-            "related": "/api/characters/260/actors", 
-            "self": "/api/characters/260/relationships/actors"
+            "related": "/api/characters/821/actors", 
+            "self": "/api/characters/821/relationships/actors"
           }
         }, 
         "animes": {
           "data": [
             {
-              "id": "75", 
+              "id": "92", 
+              "type": "animes"
+            }, 
+            {
+              "id": "382", 
               "type": "animes"
             }
           ], 
           "links": {
-            "related": "/api/characters/260/animes", 
-            "self": "/api/characters/260/relationships/animes"
+            "related": "/api/characters/821/animes", 
+            "self": "/api/characters/821/relationships/animes"
           }
         }, 
         "mangas": {
@@ -202,11 +259,15 @@
             {
               "id": "55", 
               "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
             }
           ], 
           "links": {
-            "related": "/api/characters/260/mangas", 
-            "self": "/api/characters/260/relationships/mangas"
+            "related": "/api/characters/821/mangas", 
+            "self": "/api/characters/821/relationships/mangas"
           }
         }
       }, 
@@ -214,38 +275,47 @@
     }, 
     {
       "attributes": {
-        "about": "Age: 10\n Birthday: October 25 \n Height: 139 cm \n Weight: 30 kg \n Alice: Invention \n Alice stone color: purple\n \n Hotaru is an extremely intelligent and rational girl. She is considered to be a geek and more than a little strange because of her aloofness. Like Natsume, she is usually poker-faced, but possesses some humor in her. She may treat Mikan unkindly most of the time, but it is apparent that she deeply cares for her. Somehow, she likes to bully people she likes.\n \n Hotaru is Mikan's best friend and the main reason why Mikan came to the academy. She and Mikan have what may seem to be a doubtful and strange relationship. Hotaru comes off as cold, quiet, geeky, and bad-mouthed but calm. Her \"stupid\" points are her tendency of being a \"pig\" when it comes to food and her greedy side, this happens in a comical manner. Her Alice is Invention, which allows her to create unique and strange inventions.\n \n She belongs to the Technical Class. She is currently a Triple Star.\n \n Her name \"\u86cd - Hotaru\" means \"Firefly.\"\n \n After Mikan wasn't able to save collapsed Natsume with her fading alice, Hotaru joined her brother and Nodacchi on their mission to find a way to save Natsume. Before departing she promises Mikan that she will be able to see her 'most important person' again. Then they travel back in time to the moment right after Natsume has lost consciousness. Despite Nodacchi's earlier warnings not to disrupt spacetime even further, which can cause unexpected events, Hotaru tries to save Natsume, but her brother stops her and heals him with his alice. Knowing the risk of changing the past they have no choice but to wait for their 'punishment'. Still Hotaru pleads to Noda to let her say farewell to Mikan before she leaves Academy and has her memories erased. After their meeting, Hotaru returns to spacetime without explaining Mikan anything and begging her in thoughts not to completely forget her if possible. As Noda and Natsume are about to go back to the present, Hotaru and Subaru are pulled deep into spacetime and disappear. \n \n After four years Hotaru and her brother are still trapped in spacetime, but are able to communicate with others through mushroom earphones. After regaining her memories, Mikan, Natsume and Ruka are ready for a quest to find and bring Hotaru back.\n \n In the epilogue, it shows that Hotaru and her brother stay in the spacetime, but she shares a happy reunion with Mikan and the others. \n\n", 
-        "japanese_name": "(\u4eca\u4e95 \u86cd)", 
-        "name": "Hotaru Imai", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/9/247981.jpg"
+        "about": "Mysterious person kept asleep in a liquid chamber at Fei Wong Reed's palace, with his left eye covered by a piece of cloth, his hands and arms by binding spells and wearing clothes marking Fei Wong Reed's bat symbol.\n \n Syaoran Name:\n Syaoran's name is Chinese in origin, commonly romanized from Chinese as Xiaolang. His given name, Syaoran (\u5c0f\u72fc), in both Chinese and Japanese, means \"little wolf\". His last name, Li (\u674e), is a common Chinese surname, meaning \"plum\". In Korea and occasionally in Taiwan and Hong Kong, it is romanized as Lee.\n \n <b>Manga Spoilers:</b>\n In fact, this Syaoran is the original while the Syaoran at Sakura's side is only a clone that Fei Wong Reed created. This Syaoran is of Clow Reed's bloodline and can thus use magic. He gave his eye and with it half of his heart to his clone to stop Fei Wong's plan temporarily. He was depicted as a villain, occasionally controlling the protagonist's movements, until it was discovered that the protagonist Syaoran is his clone.\n \n Syaoran is the son of Clone Syaoran and Clone Sakura (who were reincarnated in the another world). As a child, Syaoran was sent to Clow Country by his mother and father for seven days, because he was \"needed\". After a week with Sakura, he decides to remain in the country with Sakura. She falls under attack, and Syaoran hesitates to save her, which causes her to have a curse cast upon her that willl eventually kill her. Seven years after Syaoran's arrival, this curse takes full effect, and Syaoran hastily wishes that he could turn back time to the day he failed to protect her. Fei Wong Reed appears to grant his wish, exacting his freedom and time as a price, also creating \"replacement being\" for him, Watanuki. Syaoran becomes a prisoner of Fei Wong, his time rewound to seven years earlier, until the day the seal on the Clone's eye is broken.\n \n This Syaoran is able to summon the sword used by his father, which was passed down to him along with the alias \"Syaoran\". His real name is unknown. He uses the same spells as his father, including the devastating lighting based attack 'Raitei Shourai'.\n \n His real name is Tsubasa, as revealed at the end of the manga.  This is the same as Real Sakura's name.\n (Source: Wikipedia)\n \n In Horitsuba Gakuen, he is Syaoran's twin brother called Syaoron (\u30b7\u30e3\u30aa\u30ed\u30f3, \u5c0f\u9f8d).\n\n", 
+        "japanese_name": "(\u674e\u5c0f\u72fc)", 
+        "name": "Syaoran Li", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/4/89318.jpg", 
+        "role": "Main"
       }, 
-      "id": "262", 
+      "id": "36", 
       "links": {
-        "self": "http://www.weebmd.me/api/characters/262"
+        "self": "http://www.weebmd.me/api/characters/36"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "345", 
+              "id": "34", 
+              "type": "actors"
+            }, 
+            {
+              "id": "35", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/characters/262/actors", 
-            "self": "/api/characters/262/relationships/actors"
+            "related": "/api/characters/36/actors", 
+            "self": "/api/characters/36/relationships/actors"
           }
         }, 
         "animes": {
           "data": [
             {
-              "id": "75", 
+              "id": "384", 
+              "type": "animes"
+            }, 
+            {
+              "id": "146", 
               "type": "animes"
             }
           ], 
           "links": {
-            "related": "/api/characters/262/animes", 
-            "self": "/api/characters/262/relationships/animes"
+            "related": "/api/characters/36/animes", 
+            "self": "/api/characters/36/relationships/animes"
           }
         }, 
         "mangas": {
@@ -253,11 +323,15 @@
             {
               "id": "55", 
               "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
             }
           ], 
           "links": {
-            "related": "/api/characters/262/mangas", 
-            "self": "/api/characters/262/relationships/mangas"
+            "related": "/api/characters/36/mangas", 
+            "self": "/api/characters/36/relationships/mangas"
           }
         }
       }, 
@@ -265,69 +339,611 @@
     }, 
     {
       "attributes": {
-        "aired": "Oct 30, 2004 to May 14, 2005", 
-        "genre": "Comedy, Magic, School, Shoujo", 
-        "media_type": "TV", 
-        "num_episodes": 26, 
-        "picture": "https://myanimelist.cdn-dena.com/images/anime/4/18118.jpg", 
-        "rating": "G - All Ages", 
-        "score": 7.78, 
+        "about": "Fai's introduction is in chapter two of the manga, in which he is shown sealing away King Ashura of Celes country at the bottom of a pool. He transforms his creation Chii (originally from Chobits) into a net-like shield, instructing her to alert him if King Ashura should awake. He then uses his magic to transport himself through dimensions, to the shop of the Space-Time Witch, Yuuko Ichihara.\n \n Out of his travel companions, Fai&rsquo;s motives for joining the group are the least clear. He was the only one to arrive at Yuuko's shop purposefully, by use of his own means. His wish was to never return to Celes country, but as the price for this would have been too great, he travels worlds with the group instead. He fears King Ashura&rsquo;s awakening, believing King Ashura will chase him through different worlds. The basis for this fear is as yet unknown. \n \n According to CLAMP, the correct pronunciation of his name would rhyme with \"eye\", so instead of spelling it like \"Fay\", as they intended, they thought that this would confuse readers. Thus, they stuck with the spelling of \"Fai\".\n \n <b>Spoiler:</b>\n \"When Fai's past is finally revealed, it is shown that \"Fai\" is actually named Yuui, and his twin brother is the real Fai. In Valeria Country, though the birth of the second prince's son was highly anticipated, the birth of twins was considered to be a bad omen. Shortly after their birth, the second prince died, and their mother committed suicide out of guilt for giving birth to them. In addition, the country suffered many misfortunes, and the twins, when combined, bore powerful magic that rivaled that of the current king.\n \n The king decided that making them unhappy was the only way to break the \"curse\", and since both refused to kill each other, they were locked up separately in a place where magic is ineffective and time does not flow: a tower residing in a deep valley; Fai was imprisoned atop the tower, and Yuui was confined at the base of the tower. Both were condemned to stay there \"until the world's destruction.\"\n \n Despite their unhappiness, the number of bodies dumped into the base of the tower began to grow. Yuui tried endlessly to climb up towards Fai, so they could escape, but he did not succeed. Eventually, the king became insane, and he executed every person in the country, save Yuui and Fai. He then jumped into the valley himself and committing suicide in front of a horrified Yuui, reminding him that their birth was the reason for the country's misfortune, and that they would now \"pay for that sin\" by being the only people alive in Valeria.\n \n Eventually, Fei Wong Reed appeared from another world, and offered to free one of them. Fai chose to save Yuui, resulting in Fai being thrown from the tower to his death. Fei Wong then convinced Yuui that he is at fault of his brother's death and that Fai might be revived, allowing Fei Wong to use Yuui's guilt in order to turn him into his pawn. In order to bring his twin back to life, Yuui allowed Fei Wong to bestow two curses upon him, one of which was removed from Yuui's memory. Fei Wong then told Yuui that someone would free him from the valley, and that he would have to go on a journey, protecting \"a princess\" (Sakura), and killing any obstacles along the way. Fei Wong then tells Yuui that when he finds a magical feather, he should put it into Fai's body to prevent it from rotting, and that he should begin his journey when he finds a second feather, which he should give to Sakura.\n \n Later, King Ashura came to Valeria from another world in order to retrieve Yuui and took him to Celes. When Ashura asked what Yuui's name was, Yuui said it was \"Fai\". Ashura later gave Fai the last name \"Fluorite\", the name of a precious talisman mineral, and he eventually earned the title 'D', given to the highest magician in Celes. And thus, Yuui became the protagonist \"Fai D. Flourite\". He found his two feathers while helping villagers during an avalanche, and decided to use one to create a person, Chii, in his mother's image, Chii.\n \n Ashura eventually tutored Fai in magic and comforted him whenever he felt unable to overcome his dark past. When Fai discovered that he could only learn \"magic that kills people\", Ashura told him that his smile held the ability to heal others. In exchange for everything that he had done for him, Ashura asked Fai to promise that he would eliminate anyone who threatened Celes.\n \n Due Fai's first curse, Ashura traced a magical seal on Fai's body in the form of a Phoenix tattoo, which suppressed his powers from growing any further, and though Fai protested, Ashura told him that Fai's first curse would break after it was fulfilled once, and he wanted to be the one that Fai would kill. Ashura then erased what he had told him from Fai's memory.\n \n Several years later, a mysterious and deadly monster began to kill Celes's innocent civilians. Fai swore to defeat the beast, but found out that Ashura was the monster. Fai, at first, blamed himself for what happened to Ashura, thinking that \"the curse of the twins\" was what had caused Ashura to kill, but Ashura told him that his magic grows when he kills, and that he always knew that he would become a murderer, even though he was not sure why. Fai realized that Ashura had brought him under his care for the sole purpose of killing him when he reached this state. Unable to bring himself to kill Ashura, Fai cast a spell on him, putting him into a deep sleep. However, no magic spell was permanent, so the king would eventually awaken. In order to avoid having to face Ashura when he woke, Fai used his magic to teleport himself to the Dimensional Witch, where he began his journey.\n \n (Source: Wikipedia)\n \n In Horitsuba Gakuen, he is the chemistry teacher.\n\n", 
+        "japanese_name": "(\u30d5\u30a1\u30a4\u30fbD\u30fb\u30d5\u30ed\u30fc\u30e9\u30a4\u30c8)", 
+        "name": "Fai D. Flourite", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/27431.jpg", 
+        "role": "Main"
+      }, 
+      "id": "867", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/867"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "255", 
+              "type": "actors"
+            }, 
+            {
+              "id": "260", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/867/actors", 
+            "self": "/api/characters/867/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "384", 
+              "type": "animes"
+            }, 
+            {
+              "id": "146", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/867/animes", 
+            "self": "/api/characters/867/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/867/mangas", 
+            "self": "/api/characters/867/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "A replica of a dimensional god Mokona made by Clow Reed and Yuuko.\n \n Soel was created specifically for Sakura, as a counter-measure for certain events foretold to happen in her journey by Clow Reed. It is \"the thing\" given to tsubasa crew as a means to travel between dimensions.\n \n Soel, is more energetic and cheerful than its counterpart, Black Mokona, Larg. Soel likes to tease the tsubasa team members, especially Kurogane.\n \n Soel's main functions include dimensional travel, universal translator and communicating with Black Mokona. It is later revealed that these functions are part of his \"108 Secret Skills\".\n \n Soel bears an earring on her right ear, while Larg has one on his left ear.\n \n The Earring is later revealed to contain one-time ability to \"repel\" magical curses. However the ability itself was not explained.\n \n In Horitsuba Gakuen, she is a twin with Mokona.\n \n (This is not the same Mokona which appears in CLAMP's other work, Rayearth.)\n\n", 
+        "japanese_name": "(\u30e2\u30b3\u30ca\uff1d\u30e2\u30c9\u30ad)", 
+        "name": "Mokona Modoki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/53075.jpg", 
+        "role": "Main"
+      }, 
+      "id": "1347", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/1347"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "359", 
+              "type": "actors"
+            }, 
+            {
+              "id": "70", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1347/actors", 
+            "self": "/api/characters/1347/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "384", 
+              "type": "animes"
+            }, 
+            {
+              "id": "146", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1347/animes", 
+            "self": "/api/characters/1347/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1347/mangas", 
+            "self": "/api/characters/1347/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthday: April 1 \n \n Watanuki is a high school student whose life has been a rather difficult one&mdash;not only have both his parents died, forcing him to live alone, but he is plagued daily by spirits that only he can see (both the ability to see them and the cause of their attacks are evidently heritable traits&mdash;apparently Watanuki's blood smells very delicious to spirits). \n \n One day, Watanuki enters into an agreement with Yuuko to work for her in exchange for the fulfillment of his wish&ndash;to never see spirits again. This marks the beginning of Watanuki's very involved part-time job, a fated meeting with a certain quartet from Tsubasa: Reservoir Chronicle, and so many \"chance\" happenings which occur not out of coincidence, but \"hitsuzen\".\n \n Watanuki is known for a having both a volatile and caring nature to him. Depending upon the person he talks to, his emotions tend to be overly exaggerated. With Himawari he throws himself into the air accompanied by hearts and a \"Himawari-chaaaaan!!\" squeal. With Domeki, he almost always expresses irritation with various facial expressions, screaming, and arm motions that reminds Himawari of an angry cat. With the exception of these two and Y\u016bko, Watanuki tends to address everyone around him with formality and kindness.\n \n One of Watanuki's greater problems, especially early on in the manga, is his lack of self-worth. He found absolutely no value in himself and would often use himself to aid another, even if his life were at stake. \n \n An example of this is when he willingly gives up his right eye to the Spider's Grudge to save Domeki's, without considering how much his decision might hurt Domeki. He's forced to face up to this problem when trying to save the Zashiki-Warashi from the Joro-Gumo, when the spider matron harshly chastises him for his lack of consideration for both his own self and those who cared about him. Faced with the facts of how much he's hurt those around him, Watanuki begins to see some value in himself. He will still often use himself to save others, but now he is mindful of just how much his actions hurt other people.\n Life for Watanuki changes significantly once he starts working as Yuuko's assistant (rather, her very indignant indentured servant) who not only cooks (wonderfully), cleans (diligently), and complains (constantly), but finds himself performing very odd jobs and learning more about the occult. \n \n (Source: Wikipedia, xxxHolic Wikia)\n\n", 
+        "japanese_name": "(\u56db\u6708 \u4e00\u65e5\u541b\u5c0b)", 
+        "name": "Kimihiro Watanuki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/14/47223.jpg", 
+        "role": "Main"
+      }, 
+      "id": "823", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/823"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/823/actors", 
+            "self": "/api/characters/823/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "92", 
+              "type": "animes"
+            }, 
+            {
+              "id": "382", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/823/animes", 
+            "self": "/api/characters/823/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/823/mangas", 
+            "self": "/api/characters/823/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthday: April 1\n Age: 10-12 (anime), 14 (manga)\n Grade: 4-6\n Height: 138-143 cm\n Blood type: A\n Favorite subject: Physical Education, Music\n Subject dislike: Mathematics\n Extracurricular Activity: Cheerleading\n Favorite color: pink, white\n Favorite flower: Cherry blossom (sakura)\n Favorite food: Ebi Fry, Fried rice with eggs, noodles\n Least favorite food: Konnyaku\n Best recipe: pancakes\n Family: Father (Fujitaka Kinomoto), mother (Nadeshiko Kinomoto, deceased), brother (Touya Kinomoto)\n \n Sakura is an extremely energetic and cheerful character. She is very athletic, being a member of her school&#039;s cheer leading squad and an excellent runner. Her \"invincible spell,\" \"Everything will surely be all right\" (\"Zettai daijoubu da yo\"), has carried her through innumerable trials and obstacles as she masters her magical skills. She often comes across as naive, clumsy, and clueless, but she is perceptive, sweet and loyal. She has a best friend named Tomoyo and is often recorded by her in action. She is loved by Syaoran Li. She is cute and caring and has a big brother that is a chick magnet. She has a pretty normal life, except that she is the Cardcaptor, responsible for collecting all the Clow Cards, and also knows a magical \"Beast of the Seal\" named Kero who loves sweets.\n\n", 
+        "japanese_name": "(\u6728\u4e4b\u672c \u3055\u304f\u3089)", 
+        "name": "Sakura Kinomoto", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/5/86417.jpg", 
+        "role": "Main"
+      }, 
+      "id": "822", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/822"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/822/actors", 
+            "self": "/api/characters/822/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "193", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/822/animes", 
+            "self": "/api/characters/822/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "123", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/822/mangas", 
+            "self": "/api/characters/822/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Ohjiro Mihara is Ichiro(Icchan) Mihara's younger stepbrother. He has been involved with Angelic Layer for many years, in a large part because it was what brought him and Icchan together after their parents married each other. Ohjiro competes in Kobe and has been the champion of the Kansai Regional games, as well as being the runner-up in the national tournament for two consecutive years. He has a desperate desire to defeat Shuko Suzuhara's angel Athena to get over a childhood crush he had on her. His angel is Wizard, his special ability is Magic Guard. In the anime Ohjiro and Misaki even go on a date in episode 22. Then it is not until episode 23 that he confesses to Misaki that he is falling in love with her.\n \n Wikipedia.com \n\n", 
+        "japanese_name": "(\u4e09\u539f\u738b\u4e8c\u90ce)", 
+        "name": "Ohjiro Mihara", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/6/110144.jpg", 
+        "role": "Main"
+      }, 
+      "id": "824", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/824"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/824/actors", 
+            "self": "/api/characters/824/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/824/animes", 
+            "self": "/api/characters/824/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "54", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "55", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/824/mangas", 
+            "self": "/api/characters/824/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Kurogane is serious and extremely perceptive, being able to quickly discern Syaoran's fighting ability (along with Syaoran's blind right eye) as well as Fai D. Flourite's true nature and fighting capabilities. While he seems rather irreverent, he is also very loyal. He is likely the most experienced fighter in the group and wiser than he appears. He becomes Syaoran's sword fighting teacher, presenting the boy with the same philosophy he believes in: a sword is used to cut only when needed and not used to cut anything if it is not necessary. While serious, Kurogane is very easily irked by others, especially by Mokona Modoki and Fai, who keep calling him ridiculously cutesy nicknames such as \"Kuro-puu\", \"Kuro-wan-wan\" or \"Kuro-rin\". However abrasive and ruthless Kurogane may seem, he has a compassionate nature and a desire to protect. An example of this would be how Kurogane continually questions Fai on his actions and character, and lets the wizard know that he should stop hanging onto his past and embrace the future with his new companions. Or, Kurogane's own statement that \"If someone wants to take away the ones I want to protect, I'll kill them too\".\n \n His compassion and protective nature is especially clear when his actions early in the series are compared to his actions later on. He had straight out told Syaoran in their first world, the Hanshin Republic, that the quest has nothing at all to do with him. In the next world they visit (Koryo Country) however, Kurogane offers his services to help raid the castle of an evil lord, and stays behind in battle to let Syaoran go on ahead. Eventually, he risks a loss in strength to avenge his comrades' \"death\" (they were of course still alive) by defeating their killer in battle. It is noted that after he finds out Fai and Syaoran are still alive, he lost his passion for the battle.\n \n He obtained a new sword in Outo called the Souhi (Blue Ice or Pale Ice) and taught Syaoran the skills of sword fighting and sensing attacks from the left. \n \n At the beginning of the story, Kurogane told Syaoran that he would not help in finding Sakura's feathers, since it was not related to him. However, he ended up aiding Syaoran and the others anyway, teaching Syaoran how to fight and use a sword as well.\n \n In the Tokyo arc, Kurogane was involved in a short fight with Kamui. Later, he wished to Yuuko to save Fai's life, after Fai's eye was ripped out by the clone Syaoran. Through an arrangement by Yuuko, Kurogane and Kamui mixed their blood and forced Fai to drink it. Fai thus became a vampire and survived. Since it was not Fai's wish to live but Kurogane's, Fai can only take blood from Kurogane. Fai painfully refrained from calling Kurogane nicknames from then on, in an effort to distance himself from Kurogane.\n \n Kurogane noticed that Fai and Sakura were up to something in the Infinity world, but did not say anything. After Sakura left, however, he finally spoke up, refusing to let Fai give up his eyesight to go to Celes. Kurogane told Yuuko they would all pay a fourth of the price to go save Sakura's body from Celes.\n \n In the latter parts of Volume 20, Ashura used his magic to show Syaoran, Kurogane, and Mokona visions of Fai's tragic past. This caused an angry and betrayed Kurogane to unsheathe his sword and attack Ashura and Fai. He and Fai fought a fierce battle that devastated the room around them. In the mayhem, Kurogane destroyed the body of Fai's twin and managed to overpower Fai in that moment of weakness, saying to the overpowered Fai something along the lines of \"I thought I already told you I don't have anything to do with your past\". Kurogane then turned on Ashura, demanding to know why he'd shown them Fai's memories. The king responded by saying that he only wanted Fai to \"grant his wish\" and kill him. Ashura then launched vicious spells against Fai, Kurogane, Syaoran, Mokona, and a defenseless Sakura's body in order to force Fai's hand. In the chaos that followed, one of the massive ice stagamites that he conjured pierced Kurogane through his lower right side.\n \n Korogane is then apparently spared the damage due to the protective spell that placed upon him before leaving Japan by Tomoyo. He then stabs King Ashura, and after the King's death the group is seen possibly leaving for the next world.\n \n Fai's second curse caused him to suck up the world of Ceres; Fai tries to transport Kurogane and the others out of the small sphere that Ceres has become, but he doesn't have enough magic to do so. He only succeeds in transporting Syaoran, Sakura, and Mokona. Then Mokona's earring (a magical tool made by Yuuko) was able to drill a hole into the sphere, but only one person could pass through. When Fai told Kurogane to leave him, Kurogane cut off his left arm and left it and Souhi as a sacrifice and rescued Fai.\n \n In chapter 167, Kurogane wakes up and finds himself back in his country, with Princess Tomoyo by his bed. Tomoyo welcomes Kurogane home and asks him if he has found out the true meaning of strength, to which he replies that he doesn't know. However, he explains to Tomoyo that he doesn't regret giving up his arm to take Fai with him, and tells her that he knows that some things can't be protected only by (physical) strength. This surprises Tomoyo, but she acknowledges that Kurogane has definitely realized the true meaning of strength. She then lets Fai into Kurogane's room. Kurogane seems genuinely pleased to see Fai, while Fai doesn't express much emotion, until suddenly he punches Kurogane. Kurogane doesn't quite react to this, far too startled. Fai then smiles at him, saying \"This is payback, Kuro-sama.\" The smile seems like the real thing, and Fai has gone back to using suffixes on Kurogane's name. Kurogane grins back, promising to beat Fai up for that.\n \n In chapter 169, Kurogane is approached by Fuuma who has come to Nihon Country with an artificial arm from Piffle Country, however Kurogane refuses the arm by saying that he \"will not pay anything to that witch for it.\" Fai replies by saying that he had agreed to pay the price while he slept, and gives up the last of his magic. In the second to last page of 169, Kurogane is seen with the arm attached, but claims that it \"feels weird.\"\n In Horitsuba Gakuen, he is the PE teacher.\n\n", 
+        "japanese_name": "(\u9ed2\u92fc)", 
+        "name": "Kurogane ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/12/77672.jpg", 
+        "role": "Main"
+      }, 
+      "id": "282", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/282"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "239", 
+              "type": "actors"
+            }, 
+            {
+              "id": "238", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/282/actors", 
+            "self": "/api/characters/282/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "384", 
+              "type": "animes"
+            }, 
+            {
+              "id": "146", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/282/animes", 
+            "self": "/api/characters/282/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/282/mangas", 
+            "self": "/api/characters/282/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthday: April 1\n Age: 14\n \n At the start of the series in both manga and anime, Sakura is the princess of the Kingdom of Clow who has feelings for Syaoran, her childhood friend.\n \n When she is about to confess her feelings, a mysterious force causes her own dormant magical powers to manifest in the form of feathered wings. When her feathers are scattered across time and space, Syaoran vows to recover all of them because each feather represents a memory Sakura has had since birth and are connected to her heart; without the feathers, she will die.\n \n Fei-Wong Reed (the mysterious villain in the series) reflects on the ability of people like the High Priest Yukito, Princess Tomoyo of Nihon, and Y\u016bko to cross dimensions and comments that the power concealed within Sakura and the ruins in Clow Country surpasses them all.\n \n In order to cross dimensions, Sakura must pay Y\u016bko the thing most important to her and she pays Y\u016bko in an indirect way but her price is pretty much the same as Syaoran - her memories of him. When she awakes in the Hanshin Republic the first person she sees is Syaoran, but she does not remember anything about him, asking \"Who are you?\"\n \n At times, such as in \u014cuto, Sakura comes extremely close to remembering Syaoran but it is quickly erased once more from her memory. Syaoran, having known this would happen previously, will never tell her anything about their previous relationship. At most, all Sakura knows about Syaoran is what she has relearned from the adventures together with Mokona, Fai, and Kurogane, although she knows she knew him previously and he was very important to her. It is also clear that she is falling in love with him once more.\n \n Sakura possesses unnaturally good luck; both Chun Hyang and Y\u016bko call her \"a favored daughter of the gods\". This is what allowed her to travel dimensions safely until Y\u016bko asks for her good luck as a price. According to Yukito and Syaoran, Sakura also has the ability to \"hear\" the voices of those who cannot be heard, such as spirits of nature, and to see ghosts. Such as the time in the Country of Jade, she can see Princess Emeraude while others couldn&#039;t. She can also see the future in visions, though this ability is unreliable and nothing she has control over.\n \n Sakura&#039;s personality is passive and weary, exhausted from her loss of memories. However as the series goes on, she becomes more stronger and independent. Syaoran states, even though she&#039;s lost most of her memories, she&#039;ll never change. She helps the group whenever she can, whether it&#039;s washing dishes or saving their lives.\n \n However, later in the manga, her personality undergoes a change after the clone Syaoran leaves her. As she voices to  Fai, no matter how identical the two Syaorans may be, the real Syaoran is still not the one she knows. Subsequent chapters show Sakura with a much darker personality, accompanied with gothic clothing.\n \n In the Infinity Arc, the group spent a few months fighting in a tournament, supposedly wanting to use the prize money to restore a world the clone Syaoran destroyed. However, the truth is that she was after the real prize - a robot (who is identical to Freya from Chobits) who can let one person and one person alone travel across dimensions.\n \n It is later revealed that Fai is under a curse that forces him to kill if he ever meets a person that is stronger than him. And in volume one, you can see that Y\u016bko was not hit by the rain, nor did she touch any of the people directly; this was because she was in another dimension to prevent Fai&#039;s curse from being activated. But when Sakura receives two feathers in the Infinity Arc, she was made stronger than Fai&#039;s halved magic and so he stabbed her, seemingly possessed. Sakura had a vision that after killing her, he would go insane and kill everyone else, eventually committing suicide, but she used the robot to transport her soul to a dream world, thus saving herself and stopping Fai from going insane.\n \n Later, it&#039;s revealed that she was not the original target of the curse, as the real Syaoran was. This is explained further in her appearance in xxxHolic; she changed the future so that Syaoran would not be killed. As she explains to Watanuki (Xxxholic chapter 140), her coldness to the real Syaoran was because she was trying to follow the dream as close as possible up to that near fatal event. It&#039;s later learned that Sakura can still be saved. The two places where her body and her soul went contains two feathers. Her soul went to the world of dreams, where it will be aided by the other Syaoran. So the real Syaoran, Fai, Mokona and Kurogane went to Celes Country to rescue the body of Sakura, as Y\u016bko told them it&#039;s the body they should rescue first, then the soul.\n \n At the end of the manga, her soul is eventually killed by the clone Syaoran, but just before her death, she reveals that she is a clone of the real Sakura. Her purpose was to map out other dimensions for Fei Wang, who created her, by finding the feathers. She is reincarnated in the original Sakura&#039;s body in the past, with her memories intact by Y\u016bko, along with the clone Syaoran. In this life she is friends with Hikaru, Umi, and Fuu, of the Magic Knights. Syaoran and Sakura eventually meet and give birth to a boy, who turns out to be the original Syaoran.  They raise him until it is time for him to begin the events of the series, and then they are sealed in a glass tube in order to await the time where Reed attempts to shatter reality. Sakura and Syaoran, after breaking free from the tube, cleanse the feathers, but both ultimately disappear after Kurogane kills Fei Wong, leaving behind only a feather which Sakura&#039;s original absorbs.\n (Source: Wikipedia, CLAMP Wikia)\n\n", 
+        "japanese_name": "(\u30b5\u30af\u30e9)", 
+        "name": "Sakura ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/14/47457.jpg", 
+        "role": "Main"
+      }, 
+      "id": "1268", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/1268"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "358", 
+              "type": "actors"
+            }, 
+            {
+              "id": "88", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1268/actors", 
+            "self": "/api/characters/1268/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "384", 
+              "type": "animes"
+            }, 
+            {
+              "id": "146", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1268/animes", 
+            "self": "/api/characters/1268/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1268/mangas", 
+            "self": "/api/characters/1268/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Hikaru is an angel created by a junior high school student named Misaki (Misakchi). When Misaki made Hikaru she wanted her to be a speedy type. Hikaru made Misaki a miracle rookie by being the best that she can be. She made Misaki the champion of Angelic Layer.\n \n Hikaru also makes an appearance as the last fighter in chess in the Tsubasa manga.\n\nNo voice actors have been added to this character. Help improve our database by searching for a voice actor, and adding this character to their roles <a href=\"/voiceactor.php\">here</a>.\n\n<h2><div class=\"floatRightHeader\"><a href=\"/character/12313/Hikaru/featured\">See More</a></div>Recent Featured Articles</h2><div class=\"detail-page-featured-article\"><div class=\"news-list\">", 
+        "japanese_name": "(\u30d2\u30ab\u30eb)", 
+        "name": "Hikaru ", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/86799.jpg", 
+        "role": "Main"
+      }, 
+      "id": "320", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/320"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/320/actors", 
+            "self": "/api/characters/320/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "503", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/320/animes", 
+            "self": "/api/characters/320/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "54", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "55", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/320/mangas", 
+            "self": "/api/characters/320/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Tamayo is 12 years old and is a friend and classmate of Misaki. She nicknames Misaki \"Misakichi\" and is rather eccentric. One of her favorite activities is practicing her martial arts techniques on her unwilling friend Kotaro. She always loudly cheers for Misaki at Angelic Layer matches and defends her against those who question her ability. It is later revealed that Tamayo has always held intimate feelings for Kotaro, which may be one reason why she always added \"chan\" (which Kotaro complains is only meant for \"girls and little kids\") to the end of his name instead of \"kun\", despite him being in middle school. She offers to be Misaki's \"second\" in her national game match against the Angelic Layer Company's angel due to Hatoko becoming ill before Misaki accepts Ohjiro's offer to be her second. \n \n (Source: Wikipedia) \n\n", 
+        "japanese_name": "(\u6728\u5d0e\u73e0\u4ee3)", 
+        "name": "Tamayo Kizuki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/2/73061.jpg", 
+        "role": "Main"
+      }, 
+      "id": "825", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/825"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/825/actors", 
+            "self": "/api/characters/825/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "503", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/825/animes", 
+            "self": "/api/characters/825/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "54", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "55", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/825/mangas", 
+            "self": "/api/characters/825/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "aired": "Nov 16, 2007 to Mar 17, 2008", 
+        "genre": "Action, Adventure, Drama, Romance, Fantasy, Shounen", 
+        "media_type": "OVA", 
+        "num_episodes": 3, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/4/49129.jpg", 
+        "rating": "R - 17+ (violence &amp; profanity)", 
+        "score": 8.41, 
         "status": "Finished Airing", 
-        "synopsis": "Mikan Sakura is a normal 10-year-old girl. Optimistic, energetic, and overall a very sweet child, Mikan is the complete opposite of the aloof, intelligent, and somewhat cold-hearted, Hotaru Imai. Despite their glaring differences, the two girls have been best friends for a very long time. So when Hotaru suddenly transfers to Alice Academy, a prestigious school in the city, her best friend is devastated\u2014especially when she hears of the horrible rumors regarding the academy's harsh treatment of students. Beset with worry, Mikan runs away to see her best friend! Upon her arrival, Mikan learns of \"Alices,\" individuals gifted with various supernatural abilities, and that the school is an institution built by the government to train and protect them. Discovering that she has her own unique powers, Mikan enrolls in the academy, and, after a lot of trouble, finally reunites with Hotaru. Gakuen Alice is a heartwarming comedy that follows Mikan and her friends' adventures in the academy, as well as their attempt to uncover the mysteries surrounding the problematic, fire-wielding student Natsume Hyuuga. [Written by MAL Rewrite]", 
-        "title": "Gakuen Alice", 
-        "youtube_id": "JoAH-2fw7Rc"
+        "synopsis": "Continuing their journey from Record Country (the place that held the book of memories), Syaoran and company land into Tokyo Country, a blood-filled country under war from opposing factions for natural resources and survival. While reluctantly involved in the race to live, the group faces their own problems as certain revelations are made, changing their journey forever. A shocking betrayal and a battle that risks all of their lives. After this revelation, they will never be the same again.", 
+        "title": "Tsubasa: Tokyo Revelations", 
+        "youtube_id": "flJJk7I_Zt0"
       }, 
-      "id": "75", 
+      "id": "146", 
       "links": {
-        "self": "http://www.weebmd.me/api/animes/75"
+        "self": "http://www.weebmd.me/api/animes/146"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "345", 
+              "id": "70", 
               "type": "actors"
             }, 
             {
-              "id": "344", 
+              "id": "359", 
               "type": "actors"
             }, 
             {
-              "id": "346", 
+              "id": "255", 
               "type": "actors"
             }, 
             {
-              "id": "343", 
+              "id": "260", 
+              "type": "actors"
+            }, 
+            {
+              "id": "88", 
+              "type": "actors"
+            }, 
+            {
+              "id": "34", 
+              "type": "actors"
+            }, 
+            {
+              "id": "358", 
+              "type": "actors"
+            }, 
+            {
+              "id": "239", 
+              "type": "actors"
+            }, 
+            {
+              "id": "35", 
+              "type": "actors"
+            }, 
+            {
+              "id": "238", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/animes/75/actors", 
-            "self": "/api/animes/75/relationships/actors"
+            "related": "/api/animes/146/actors", 
+            "self": "/api/animes/146/relationships/actors"
           }
         }, 
         "characters": {
           "data": [
             {
-              "id": "260", 
+              "id": "36", 
               "type": "characters"
             }, 
             {
-              "id": "261", 
+              "id": "282", 
               "type": "characters"
             }, 
             {
-              "id": "263", 
+              "id": "867", 
               "type": "characters"
             }, 
             {
-              "id": "262", 
+              "id": "1268", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1347", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1480", 
               "type": "characters"
             }
           ], 
           "links": {
-            "related": "/api/animes/75/characters", 
-            "self": "/api/animes/75/relationships/characters"
+            "related": "/api/animes/146/characters", 
+            "self": "/api/animes/146/relationships/characters"
           }
         }, 
         "mangas": {
@@ -338,12 +954,131 @@
             }
           ], 
           "links": {
-            "related": "/api/animes/75/mangas", 
-            "self": "/api/animes/75/relationships/mangas"
+            "related": "/api/animes/146/mangas", 
+            "self": "/api/animes/146/relationships/mangas"
           }
         }
       }, 
       "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Mar 17, 2009 to May 15, 2009", 
+        "genre": "Action, Adventure, Mystery, Supernatural, Drama, Magic, Romance, Fantasy, Shounen", 
+        "media_type": "OVA", 
+        "num_episodes": 2, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/9/33841.jpg", 
+        "rating": "R - 17+ (violence &amp; profanity)", 
+        "score": 8.22, 
+        "status": "Finished Airing", 
+        "synopsis": "Tsubasa/xxxHOLiC Project A 4 part OVA released with the limited editions of the Tsubasa and xxxHOLiC volumes. There are two OVAs for each series, with plots linked together. They cover the Nihon Country Arc and scarcely some of the Celes Country Arc. (Source: Official Project Website)", 
+        "title": "Tsubasa: Shunraiki", 
+        "youtube_id": "I6IW3hP_H1E"
+      }, 
+      "id": "384", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/384"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/384/actors", 
+            "self": "/api/animes/384/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "36", 
+              "type": "characters"
+            }, 
+            {
+              "id": "282", 
+              "type": "characters"
+            }, 
+            {
+              "id": "867", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1268", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1347", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1480", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/384/characters", 
+            "self": "/api/animes/384/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/384/mangas", 
+            "self": "/api/animes/384/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "about": "Second copy of dimensional god Mokona made by Clow Reed and Yuuko. \n \n Black Mokona or \"Larg\"  isn&rsquo;t quite as enthusiastic and energetic as White Mokona, but nevertheless a teaser, which results in a reaction from Watanuki similar to Kurogane's. As Soel was made especially for Sakura, Larg was made for Watanuki.\n \n Little is known about Larg, except that it is able to see ghosts, something the White Mokona, Soel, cannot do, and that its main purpose is to stay in contact with Soel, so that Yuuko can know where the group is and assist them if necessary. Also, Black Mokona is used for teleporting things to the White Mokona and vice-versa. It is done by swallowing by one of them and spitting them out by other.  Yuuko has also remarked that of the two Mokona, the red earring on the white one possesses the ability to enhance magical power while the blue earring on black one has the ability to seal magical power.\n \n Like Yuuko, Black Mokona loves to drink sake. The name Larg comes from the rune Laguz meaning water. Larg is officially \"male\".\n \n In Horitsuba Gakuen, he is a twin of girl Mokona.\n\n", 
+        "japanese_name": "(\u30e2\u30b3\u30ca\uff1d\u30e2\u30c9\u30ad)", 
+        "name": "Mokona Modoki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/52268.jpg", 
+        "role": "Main"
+      }, 
+      "id": "321", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/321"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/321/actors", 
+            "self": "/api/characters/321/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/321/animes", 
+            "self": "/api/characters/321/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "55", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "56", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/321/mangas", 
+            "self": "/api/characters/321/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
     }
   ], 
   "jsonapi": {

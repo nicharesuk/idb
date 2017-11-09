@@ -1,16 +1,16 @@
 {
   "data": {
     "attributes": {
-      "aired": "Apr 9, 1999 to Oct 20, 2000", 
-      "genre": "Sci-Fi, Adventure, Comedy, Magic", 
+      "aired": "Oct 6, 2008 to Mar 30, 2009", 
+      "genre": "Comedy, Drama, Romance, Shoujo", 
       "media_type": "TV", 
-      "num_episodes": 52, 
-      "picture": "https://myanimelist.cdn-dena.com/images/anime/6/20229.jpg", 
-      "rating": "PG - Children", 
-      "score": 6.9, 
+      "num_episodes": 25, 
+      "picture": "https://myanimelist.cdn-dena.com/images/anime/11/84022.jpg", 
+      "rating": "PG-13 - Teens 13 or older", 
+      "score": 8.25, 
       "status": "Finished Airing", 
-      "synopsis": "Yui is an average schoolgirl who lives in a future where all computers are supported by a single global network known as COMNET. Yui is a computer-illiterate girl who after a computer-lab accident is approached by IR, a raccoon looking corrector computer program, which tells her she must save COMNET. She must stop the rogue A.I. (Artificial Intelligence) computer program known as Grosser and his hench-programs from taking over the world. Grosser was originally designed to be that manager of all of COMNET. At first she's very reluctant to play the heroine because of her complete lack of knowledge and ability with computers. To save COMNET she must find and gain the trust of the other seven wayward corrector programs. They must also find the creator or COMNET Professor Inukai, to help stop Grosser for good. (Source: ANN)", 
-      "title": "Corrector Yui", 
+      "synopsis": "Bright, diligent, and yet na\u00efve 16-year-old Kyouko Mogami works hard to support the career and dreams of her childhood friend, crush, and rising pop icon, Shoutarou Fuwa. Toiling endlessly at burger joints and tea ceremonies, the innocent Kyouko remains unaware that day in day out, all her tireless efforts have been taken for granted, until, one day, she finds out that her beloved Shou sees her as nothing but a free servant. Shocked, heartbroken and enraged, she vows to take revenge on the rookie star by entering the ruthless world of entertainment herself. As she steps into this new life, Kyouko will face new challenges as well as people who will push her out of her comfort zone. Based on the best-selling shoujo manga by Yoshiki Nakamura, Skip Beat showcases the growth of a young woman who slowly unlearns how to work herself to the bone for the satisfaction of others and takes her future into her own hands instead. [Written by MAL Rewrite]", 
+      "title": "Skip Beat!", 
       "youtube_id": null
     }, 
     "id": "13", 
@@ -21,7 +21,27 @@
       "actors": {
         "data": [
           {
-            "id": "69", 
+            "id": "1008", 
+            "type": "actors"
+          }, 
+          {
+            "id": "1010", 
+            "type": "actors"
+          }, 
+          {
+            "id": "58", 
+            "type": "actors"
+          }, 
+          {
+            "id": "57", 
+            "type": "actors"
+          }, 
+          {
+            "id": "59", 
+            "type": "actors"
+          }, 
+          {
+            "id": "36", 
             "type": "actors"
           }
         ], 
@@ -33,7 +53,15 @@
       "characters": {
         "data": [
           {
-            "id": "46", 
+            "id": "61", 
+            "type": "characters"
+          }, 
+          {
+            "id": "62", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1467", 
             "type": "characters"
           }
         ], 
@@ -45,7 +73,7 @@
       "mangas": {
         "data": [
           {
-            "id": "12", 
+            "id": "10", 
             "type": "mangas"
           }
         ], 
@@ -60,16 +88,16 @@
   "included": [
     {
       "attributes": {
-        "birthday": "Nov  6, 1966", 
-        "given_name": "\u9999\u8863", 
+        "birthday": "Jun  8, 1983", 
+        "given_name": "\u771f\u5b88", 
         "language": "Japanese", 
-        "name": "Araki, Kae", 
-        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/33905.jpg", 
-        "website": null
+        "name": "Miyano, Mamoru", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/42141.jpg", 
+        "website": "http://miyanomamoru.com/"
       }, 
-      "id": "69", 
+      "id": "1008", 
       "links": {
-        "self": "http://www.weebmd.me/api/actors/69"
+        "self": "http://www.weebmd.me/api/actors/1008"
       }, 
       "relationships": {
         "animes": {
@@ -77,23 +105,103 @@
             {
               "id": "13", 
               "type": "animes"
+            }, 
+            {
+              "id": "29", 
+              "type": "animes"
+            }, 
+            {
+              "id": "130", 
+              "type": "animes"
+            }, 
+            {
+              "id": "169", 
+              "type": "animes"
+            }, 
+            {
+              "id": "191", 
+              "type": "animes"
+            }, 
+            {
+              "id": "248", 
+              "type": "animes"
+            }, 
+            {
+              "id": "269", 
+              "type": "animes"
+            }, 
+            {
+              "id": "305", 
+              "type": "animes"
+            }, 
+            {
+              "id": "360", 
+              "type": "animes"
+            }, 
+            {
+              "id": "409", 
+              "type": "animes"
+            }, 
+            {
+              "id": "505", 
+              "type": "animes"
             }
           ], 
           "links": {
-            "related": "/api/actors/69/animes", 
-            "self": "/api/actors/69/relationships/animes"
+            "related": "/api/actors/1008/animes", 
+            "self": "/api/actors/1008/relationships/animes"
           }
         }, 
         "characters": {
           "data": [
             {
-              "id": "46", 
+              "id": "62", 
+              "type": "characters"
+            }, 
+            {
+              "id": "395", 
+              "type": "characters"
+            }, 
+            {
+              "id": "470", 
+              "type": "characters"
+            }, 
+            {
+              "id": "605", 
+              "type": "characters"
+            }, 
+            {
+              "id": "654", 
+              "type": "characters"
+            }, 
+            {
+              "id": "840", 
+              "type": "characters"
+            }, 
+            {
+              "id": "874", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1007", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1238", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1252", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1390", 
               "type": "characters"
             }
           ], 
           "links": {
-            "related": "/api/actors/69/characters", 
-            "self": "/api/actors/69/relationships/characters"
+            "related": "/api/actors/1008/characters", 
+            "self": "/api/actors/1008/relationships/characters"
           }
         }
       }, 
@@ -101,26 +209,291 @@
     }, 
     {
       "attributes": {
-        "about": "She's a dark and mysterious girl who becomes a Corrector on her own in the 2nd season after the Teddy Bear of the \"missing little girl\" (named I-chan) stole Yui's original ComCon for Ai so she could help his little mistress.\n \n Her bitter experience in the past seems to be the reason for her cold, apathetic demeanor as a mask to protect herself; she actually wants to save her mother, Azusa,who is in a coma after an accident in the net.\n \n While at most times she performs her job with mostly cold, no-nonsense efficiency, Yui's compassionate actions sometimes make her think twice and then go out of her way to help Yui. The Correctors distrust her but Dr. Inukai actually think she's not a bad person, letting Ai keep the ComCon after she promises to give it back to him when she's done dealing with the reason that made her take up the Corrector tasks.\n \n \n [source: Wikipedia]\n \n\n", 
-        "japanese_name": "(\u7be0\u5d0e \u611b )", 
-        "name": "Ai Shinozaki", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/5/104394.jpg"
+        "birthday": "May  19, 1971", 
+        "given_name": null, 
+        "language": "English", 
+        "name": "George, Grant", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/48362.jpg", 
+        "website": "http://grantgeorge.com/"
       }, 
-      "id": "46", 
+      "id": "58", 
       "links": {
-        "self": "http://www.weebmd.me/api/characters/46"
+        "self": "http://www.weebmd.me/api/actors/58"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/58/animes", 
+            "self": "/api/actors/58/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "62", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/58/characters", 
+            "self": "/api/actors/58/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "birthday": "Mar  11, 1982", 
+        "given_name": null, 
+        "language": "English", 
+        "name": "Daymond, Robbie", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/42942.jpg", 
+        "website": "http://www.robbiedaymond.com/"
+      }, 
+      "id": "36", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/36"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "animes"
+            }, 
+            {
+              "id": "56", 
+              "type": "animes"
+            }, 
+            {
+              "id": "113", 
+              "type": "animes"
+            }, 
+            {
+              "id": "114", 
+              "type": "animes"
+            }, 
+            {
+              "id": "228", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/36/animes", 
+            "self": "/api/actors/36/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "37", 
+              "type": "characters"
+            }, 
+            {
+              "id": "38", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1467", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1468", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1469", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/36/characters", 
+            "self": "/api/actors/36/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "birthday": "Apr  21, 1973", 
+        "given_name": "\u514b\u5e78", 
+        "language": "Japanese", 
+        "name": "Konishi, Katsuyuki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/42160.jpg", 
+        "website": "http://www.kenproduction.co.jp/talent/member.php?mem=m21"
+      }, 
+      "id": "59", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/59"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "animes"
+            }, 
+            {
+              "id": "124", 
+              "type": "animes"
+            }, 
+            {
+              "id": "308", 
+              "type": "animes"
+            }, 
+            {
+              "id": "319", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/59/animes", 
+            "self": "/api/actors/59/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "63", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1388", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1389", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1467", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/59/characters", 
+            "self": "/api/actors/59/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "birthday": "Jan  20, 1985", 
+        "given_name": "\u9ebb\u91cc\u5948", 
+        "language": "Japanese", 
+        "name": "Inoue, Marina", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/42668.jpg", 
+        "website": "http://www.sigma7.co.jp/profile/w_56.html"
+      }, 
+      "id": "57", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/57"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "12", 
+              "type": "animes"
+            }, 
+            {
+              "id": "13", 
+              "type": "animes"
+            }, 
+            {
+              "id": "82", 
+              "type": "animes"
+            }, 
+            {
+              "id": "124", 
+              "type": "animes"
+            }, 
+            {
+              "id": "132", 
+              "type": "animes"
+            }, 
+            {
+              "id": "178", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/57/animes", 
+            "self": "/api/actors/57/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "61", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1391", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1392", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1393", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1396", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1460", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/57/characters", 
+            "self": "/api/actors/57/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "about": "Age: 17\n Birthday: May 29\n Horoscope: Gemini\n Height: 178 cm\n \n His real name is Shoutarou. He keeps it hidden because he finds it as a very old and traditional name.His natural hair color is brown but he later bleached it blonde. He is a typical stuck-up star, and is also very ruthless. Shou had no qualms about tricking Kyouko into going with him to Tokyo so she could be a free servant for him. He also had even less qualms about being extremely cruel to her when she discovered this. Shou eventually figured out that Kyouko was in L.M.E., and was surprised to see her transformation. It is also revealed that he has more feelings for her than he originally thought, though most of these lean toward a general possessiveness for Kyouko, who had been his constant companion and servant since childhood.\n \n (Source: Wikipedia)\n\n", 
+        "japanese_name": "(\u4e0d\u7834 \u677e\u592a\u90ce)", 
+        "name": "Shoutarou Fuwa", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/13/90780.jpg", 
+        "role": "Main"
+      }, 
+      "id": "62", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/62"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "69", 
+              "id": "58", 
+              "type": "actors"
+            }, 
+            {
+              "id": "1008", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/characters/46/actors", 
-            "self": "/api/characters/46/relationships/actors"
+            "related": "/api/characters/62/actors", 
+            "self": "/api/characters/62/relationships/actors"
           }
         }, 
         "animes": {
@@ -131,15 +504,20 @@
             }
           ], 
           "links": {
-            "related": "/api/characters/46/animes", 
-            "self": "/api/characters/46/relationships/animes"
+            "related": "/api/characters/62/animes", 
+            "self": "/api/characters/62/relationships/animes"
           }
         }, 
         "mangas": {
-          "data": [], 
+          "data": [
+            {
+              "id": "10", 
+              "type": "mangas"
+            }
+          ], 
           "links": {
-            "related": "/api/characters/46/mangas", 
-            "self": "/api/characters/46/relationships/mangas"
+            "related": "/api/characters/62/mangas", 
+            "self": "/api/characters/62/relationships/mangas"
           }
         }
       }, 
@@ -147,22 +525,78 @@
     }, 
     {
       "attributes": {
-        "author": "Asamiya, Kia", 
-        "genre": "Comedy, Fantasy, Game, Magic, Sci-Fi, Shoujo", 
-        "media_type": "Manga", 
-        "num_chapters": 9, 
-        "picture": "https://myanimelist.cdn-dena.com/images/manga/3/126119.jpg", 
-        "published": "Mar  3, 1999 to Nov  2, 1999", 
-        "score": null, 
-        "status": "Finished", 
-        "synopsis": "A schoolgirl gains self-confidence, new friends, and a cache of chic outfits when she becomes the computer-programming magical girl, Corrector Yui. She must stop the rogue A.I. Gurossa (Artificial Intelligence computer program) and his hench-programs from taking control of the global computer network. In this future, all human activity is supported by computers, so it's possible to control the world using the network. (Source: MU)", 
-        "title": "Corrector Yui", 
-        "title_english": null, 
-        "title_japanese": "\u30b3\u30ec\u30af\u30bf\u30fc\u30fb\u30e6\u30a4"
+        "about": "Age: 20-21\n Birthday: February 10 (Aquarius)\n Height: 190 cm\n Blood type: A\n \n Ren is, in outward appearances, an extremely nice and polite star; however, he shows his true self whenever he is around Kyouko. At the age of twenty, Ren has lived a large portion of his life in America. After Ren's encounter with Reino (from Vie Ghoul), it is revealed that \"Tsuruga Ren\" is only a stage name with his real name being Kuon Hizuri.\n \n Ren harbors what he thinks is an unrequited love for Kyouko. Because of his past as Kuon, he does not believe he has the right to be happy. He also had a long period of denial for his feelings because of the age difference.\n \n Kuon met Kyouko when they were young at a creek behind the ryoukan that the Fuwas owned. Kyouko is not yet aware that Tsuruga Ren, Kuon Hizuri, and her \"fairy-prince Corn\" are the same person.\n \n When Kuon tried to begin his acting career in America, he was unable to escape from the shadow of his father, Hizuri Kuu or Shuhei Hozu. Often his performance would be inadequate and he would often be fired. Takarada Lory, a family friend, offers Ren an opportunity to leave his identity behind to become Tsuruga Ren.\n \n In Ren&rsquo;s past he was constantly picked on or bullied by Americans for being mixed with Japanese and Russian and his friend Rick helped him in these instances, but one day when he was being beat up he turned into evil Kuon when he had enough and decided to use martial arts to hurt people. Rick came to help him, but instead told him to catch himself while one of the bullies that he beat up ran away and Rick&rsquo;s girlfriend was pushed into the road while a car was speeding, so Rick ran to save her but the car couldn't stop so Rick was ran over and killed. Tina blamed the instance on Kuon by calling him a &ldquo;MURDERER&rdquo; so Ren made a promise to never revert back to those ways and to never have happiness again. He also uses his watch which stopped at an odd time of 2:13 and calls it handcuffs in order to remind him of what occurred in the past and to remember the promise he made.\n\n", 
+        "japanese_name": "(\u6566\u8cc0 \u84ee / \u4e45\u9060 \u30d2\u30ba\u308a)", 
+        "name": "Ren Tsuruga", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/59129.jpg", 
+        "role": "Main"
       }, 
-      "id": "12", 
+      "id": "1467", 
       "links": {
-        "self": "http://www.weebmd.me/api/mangas/12"
+        "self": "http://www.weebmd.me/api/characters/1467"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "59", 
+              "type": "actors"
+            }, 
+            {
+              "id": "36", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1467/actors", 
+            "self": "/api/characters/1467/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1467/animes", 
+            "self": "/api/characters/1467/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "10", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/1467/mangas", 
+            "self": "/api/characters/1467/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "author": "Nakamura, Yoshiki", 
+        "genre": "Comedy, Drama, Romance, Shoujo", 
+        "media_type": "Manga", 
+        "num_chapters": "Unknown", 
+        "picture": "https://myanimelist.cdn-dena.com/images/manga/2/26110.jpg", 
+        "published": "Feb  15, 2002 to ?", 
+        "score": 8.69, 
+        "status": "Publishing", 
+        "synopsis": "Sixteen-year-old Kyouko Mogami followed her childhood friend and love interest Shoutarou &quot;Shou&quot; Fuwa to Tokyo to support him while he works toward his dream of becoming a top idol in the entertainment industry. But after finding out that Shou considers her as little more than a mere housekeeper, she swears to enact revenge by entering the entertainment industry herself and beating him at his own game! However, Kyouko&#039;s revenge plan suffers a setback almost immediately when she is rejected by the talent agency of her choice. Fortunately, the president of the agency gives her a second chance, and places her in the newly made &quot;Love Me&quot; section. Kyouko then begins her long journey to stardom, cultivating her skills as an actress and forming relationships with new friends along the way. [Written by MAL Rewrite]", 
+        "title": "Skip Beat!", 
+        "title_english": "Skip Beat!", 
+        "title_japanese": "\u30b9\u30ad\u30c3\u30d7\u30fb\u30d3\u30fc\u30c8\uff01"
+      }, 
+      "id": "10", 
+      "links": {
+        "self": "http://www.weebmd.me/api/mangas/10"
       }, 
       "relationships": {
         "animes": {
@@ -173,19 +607,169 @@
             }
           ], 
           "links": {
-            "related": "/api/mangas/12/animes", 
-            "self": "/api/mangas/12/relationships/animes"
+            "related": "/api/mangas/10/animes", 
+            "self": "/api/mangas/10/relationships/animes"
           }
         }, 
         "characters": {
-          "data": [], 
+          "data": [
+            {
+              "id": "61", 
+              "type": "characters"
+            }, 
+            {
+              "id": "62", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1467", 
+              "type": "characters"
+            }
+          ], 
           "links": {
-            "related": "/api/mangas/12/characters", 
-            "self": "/api/mangas/12/relationships/characters"
+            "related": "/api/mangas/10/characters", 
+            "self": "/api/mangas/10/relationships/characters"
           }
         }
       }, 
       "type": "mangas"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthday: December 25\n Age: 16-17 (in the story so far)\n Height: 163 cm\n Blood type: B\n \n Kyouko's life has always known only one aim&mdash;to please others. Be it her mother who didn't care much for her, or Sho's family, who took her in after she was abandoned. Suddenly, childhood friend Sho asks country bumpkin Kyouko if she wants to go to the city with him. He aims to be a big star and wishes for her support. When he commits an unthinkable crime to Kyouko's frail self-esteem, he awakens another side in her.\n \n She changes from being an innocent girl to a woman full of the desire of revenge toward the man that used her like a stepping stone; but she didn't know that, in her way to making him suffer and cry at her feet, she would begin a whole new life into the show business and find herself having a great talent and love towards acting.\n \n Now Kyouko is some sort of cute, joyful, and full-of-purpose woman...while also being a \"woman who holds grudges\" and acts in some crazy and unexpected ways, although she is still not able to recognize her own value and talent, and even less the way other people see her.\n \n In the manga, while not aware of her talent, Kyouko is very protective of her love life as she is also very dense with people's word with her. She's afraid to love again due to Fuwa Shou abandoning her. Tsuruga Ren as her senpai is in very close relationship to her and might as well be in love with her. On the other side Shou wants his existence in her life to be the biggest for he knows that Kyouko won't forgive him so easily. During the shooting for \"Dark Moon\" she encounters 'Vie Ghoul' a band out to destroy Shou. The vocalist Reino was interested in Kyouko and the trouble begins.\n\n", 
+        "japanese_name": "(\u6700\u4e0a \u30ad\u30e7\u30fc\u30b3)", 
+        "name": "Kyouko Mogami", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/13/59130.jpg", 
+        "role": "Main"
+      }, 
+      "id": "61", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/61"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "1010", 
+              "type": "actors"
+            }, 
+            {
+              "id": "57", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/61/actors", 
+            "self": "/api/characters/61/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "13", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/61/animes", 
+            "self": "/api/characters/61/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [
+            {
+              "id": "10", 
+              "type": "mangas"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/61/mangas", 
+            "self": "/api/characters/61/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "birthday": "Nov  16, 1981", 
+        "given_name": null, 
+        "language": "English", 
+        "name": "Glass, Caitlin", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/40237.jpg", 
+        "website": "http://www.caitlinglass.com/"
+      }, 
+      "id": "1010", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/1010"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "11", 
+              "type": "animes"
+            }, 
+            {
+              "id": "13", 
+              "type": "animes"
+            }, 
+            {
+              "id": "113", 
+              "type": "animes"
+            }, 
+            {
+              "id": "188", 
+              "type": "animes"
+            }, 
+            {
+              "id": "189", 
+              "type": "animes"
+            }, 
+            {
+              "id": "305", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/1010/animes", 
+            "self": "/api/actors/1010/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "52", 
+              "type": "characters"
+            }, 
+            {
+              "id": "61", 
+              "type": "characters"
+            }, 
+            {
+              "id": "491", 
+              "type": "characters"
+            }, 
+            {
+              "id": "492", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1167", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1551", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/1010/characters", 
+            "self": "/api/actors/1010/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
     }
   ], 
   "jsonapi": {

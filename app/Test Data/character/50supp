@@ -1,10 +1,11 @@
 {
   "data": {
     "attributes": {
-      "about": "Arisa is Shipon's best friend at the Stellvia foundation. They meet on the shuttle going to the station from Earth at the beginning of the term, and find themselves rooming together and in the same class as well. Though Arisa is nowhere near Shipon in academic or piloting ability, she finds Shipon to be an inspiration to improve herself, and calls Shipon her \"Star of Hope\". Later in the series, she begins focusing on becoming a mechanic, rather than a pilot. (wikipedia)\n\n", 
-      "japanese_name": "(\u30a2\u30ea\u30b5\u30fb\u30b0\u30ec\u30f3\u30ce\u30fc\u30b9)", 
-      "name": "Arisa Glennorth", 
-      "picture": "https://myanimelist.cdn-dena.com/images/characters/13/92407.jpg"
+      "about": "Age: 19; 21\n Birthdate: March 2\n Zodiac: Pisces\n Height: 177 cm (5' 9\")\n Blood type: RH-\n Affiliation: Straw Hat Pirates (previously; Baratie)\n Position: Cook\n Devil Fruit: none\n Bounty:177,000,000 (previously: 77,000,000)\n Sanji is the chain-smoking chef of the Straw Hat Pirate Crew. He has superb fighting skills that only make use of his legs, in an effort to minimize damage to his hands which would impair his cooking skills.Except a single fight where he uses knives against a fellow chef. Sanji uses an array of powerful and varied kicking moves when he fights. His cooking skills are world class, and he was mentored in both cooking and fighting by Chef \"Red Leg\" Zeff of the Baratie. He was born in the North Blue, but grew up in the East Blue.\n \n Sanji is trash-talking and serious, and usually gruff and impatient, especially around men. This is contrasted by his \"love-cook\" side, as he is very amorous around women. Sanji is completely devoted to any beautiful woman, usually losing all common sense and composure in front of them, then attempting to comically swoon them. This behavior has earned him the nickname \"ero-cook\", or perverted cook. He can also be very chivalrous and gentlemanly around woman, volunteering to help them in various tasks and situations, whether they need help or not. He has sworn to never let insult or injury happen to any woman while he can still stand, even if that woman is trying to kill him. This is often problematic in his fighting as he can't attack female opponents, and would rather die than hurt them. All this is apparently the result of a \"strict upbringing\". To contradict his gentlemanly behavior, Sanji also enjoys seeing women wear skimpy clothing, and can be a voyeur.\n \n His goal in life is to find the All Blue, a legendary ocean, which contains all the fish in the world. As such, it would be paradise for any cook with as much love for his work as Sanji, who holds great respect for the tools, ingredients, and art of cooking. So great is his devotion to his calling, that Sanji will not let any person or creature starve, regardless of them being friend or foe.\n \n Being the crew's chef, he looks out for the health of his crew mates. Sanji respects Luffy as a captain, but often gets angry at him for eating too much, showing disrespect for the aesthetics of cooking, and generally being daft and irresponsible. He is constantly in petty fights with Zoro (sometimes calling him Marimo) over each others' traits and they have developed a rivalry, but have managed to make a devastating team together. He is very protective of the female crew members and Nami likes to take advantage of him, exploiting his extreme servility. Sanji originally wanted to cook Chopper, but has come to respect him as a crew member and friend. He's also good friends with Usopp; they team up and interact often, and Sanji understands him quite well. In short, he cares as much for the crew as any Straw Hat should, but unlike Zoro, Sanji shows these feelings more.\n \n It is revealed that Sanji is the third son of the Vinsmokes, a family of killers. His father and one of the Yonkou, Big Mom, has arranged a marriage between him and the 35th daughter of the Charlotte family, Pudding.\n\n", 
+      "japanese_name": "(\u30b5\u30f3\u30b8)", 
+      "name": "Sanji ", 
+      "picture": "https://myanimelist.cdn-dena.com/images/characters/5/136769.jpg", 
+      "role": "Main"
     }, 
     "id": "50", 
     "links": {
@@ -14,11 +15,11 @@
       "actors": {
         "data": [
           {
-            "id": "76", 
+            "id": "48", 
             "type": "actors"
           }, 
           {
-            "id": "75", 
+            "id": "47", 
             "type": "actors"
           }
         ], 
@@ -30,7 +31,23 @@
       "animes": {
         "data": [
           {
-            "id": "15", 
+            "id": "275", 
+            "type": "animes"
+          }, 
+          {
+            "id": "276", 
+            "type": "animes"
+          }, 
+          {
+            "id": "381", 
+            "type": "animes"
+          }, 
+          {
+            "id": "277", 
+            "type": "animes"
+          }, 
+          {
+            "id": "274", 
             "type": "animes"
           }
         ], 
@@ -42,7 +59,7 @@
       "mangas": {
         "data": [
           {
-            "id": "13", 
+            "id": "180", 
             "type": "mangas"
           }
         ], 
@@ -57,59 +74,34 @@
   "included": [
     {
       "attributes": {
-        "aired": "Apr 3, 2003 to Sep 25, 2003", 
-        "genre": "Action, Romance, Sci-Fi, Space", 
+        "aired": "Oct 20, 1999 to ?", 
+        "genre": "Action, Adventure, Comedy, Super Power, Drama, Fantasy, Shounen", 
         "media_type": "TV", 
-        "num_episodes": 26, 
-        "picture": "https://myanimelist.cdn-dena.com/images/anime/10/15225.jpg", 
+        "num_episodes": 0, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/6/73245.jpg", 
         "rating": "PG-13 - Teens 13 or older", 
-        "score": 7.46, 
-        "status": "Finished Airing", 
-        "synopsis": "The year is 2356 A.D. - 189 years after a distant supernova caused a global catastrophe that wiped out 99% of the world population. To keep track on all space activities, mankind has built colossal space stations called \"foundations\" all over the Solar System. After passing the Space Academy entrance exams, Shima Katase embarks to the Earth-based foundation Stellvia to fulfill her dream of seeing the galaxy and to prevent another interstellar catastrophe from destroying Earth. (Source: ANN)", 
-        "title": "Uchuu no Stellvia", 
-        "youtube_id": "m5jz6LjlpGo"
+        "score": 8.55, 
+        "status": "Currently Airing", 
+        "synopsis": "Gol D. Roger was known as the &quot;Pirate King,&quot; the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece\u2014which promises an unlimited amount of riches and fame\u2014and quite possibly the pinnacle of glory and the title of the Pirate King. Enter Monkey D. Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy\u2019s reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes\u2014One Piece. [Written by MAL Rewrite]", 
+        "title": "One Piece", 
+        "youtube_id": "um-tFlVamOI"
       }, 
-      "id": "15", 
+      "id": "276", 
       "links": {
-        "self": "http://www.weebmd.me/api/animes/15"
+        "self": "http://www.weebmd.me/api/animes/276"
       }, 
       "relationships": {
         "actors": {
-          "data": [
-            {
-              "id": "75", 
-              "type": "actors"
-            }, 
-            {
-              "id": "73", 
-              "type": "actors"
-            }, 
-            {
-              "id": "74", 
-              "type": "actors"
-            }, 
-            {
-              "id": "76", 
-              "type": "actors"
-            }, 
-            {
-              "id": "71", 
-              "type": "actors"
-            }, 
-            {
-              "id": "72", 
-              "type": "actors"
-            }
-          ], 
+          "data": [], 
           "links": {
-            "related": "/api/animes/15/actors", 
-            "self": "/api/animes/15/relationships/actors"
+            "related": "/api/animes/276/actors", 
+            "self": "/api/animes/276/relationships/actors"
           }
         }, 
         "characters": {
           "data": [
             {
-              "id": "49", 
+              "id": "33", 
               "type": "characters"
             }, 
             {
@@ -117,25 +109,459 @@
               "type": "characters"
             }, 
             {
-              "id": "48", 
+              "id": "203", 
+              "type": "characters"
+            }, 
+            {
+              "id": "665", 
+              "type": "characters"
+            }, 
+            {
+              "id": "667", 
+              "type": "characters"
+            }, 
+            {
+              "id": "668", 
+              "type": "characters"
+            }, 
+            {
+              "id": "931", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1426", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1546", 
               "type": "characters"
             }
           ], 
           "links": {
-            "related": "/api/animes/15/characters", 
-            "self": "/api/animes/15/relationships/characters"
+            "related": "/api/animes/276/characters", 
+            "self": "/api/animes/276/relationships/characters"
           }
         }, 
         "mangas": {
           "data": [
             {
-              "id": "13", 
+              "id": "180", 
+              "type": "mangas"
+            }, 
+            {
+              "id": "181", 
               "type": "mangas"
             }
           ], 
           "links": {
-            "related": "/api/animes/15/mangas", 
-            "self": "/api/animes/15/relationships/mangas"
+            "related": "/api/animes/276/mangas", 
+            "self": "/api/animes/276/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Aug 25, 2012", 
+        "genre": "Action, Adventure, Comedy, Drama, Fantasy, Shounen, Super Power", 
+        "media_type": "Special", 
+        "num_episodes": 1, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/5/41415.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 8.24, 
+        "status": "Finished Airing", 
+        "synopsis": "A retelling of the Arlong Park arc, with new animation.", 
+        "title": "One Piece: Episode of Nami - Koukaishi no Namida to Nakama no Kizuna", 
+        "youtube_id": null
+      }, 
+      "id": "274", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/274"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "1036", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/274/actors", 
+            "self": "/api/animes/274/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "50", 
+              "type": "characters"
+            }, 
+            {
+              "id": "203", 
+              "type": "characters"
+            }, 
+            {
+              "id": "665", 
+              "type": "characters"
+            }, 
+            {
+              "id": "666", 
+              "type": "characters"
+            }, 
+            {
+              "id": "667", 
+              "type": "characters"
+            }, 
+            {
+              "id": "931", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/274/characters", 
+            "self": "/api/animes/274/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/274/mangas", 
+            "self": "/api/animes/274/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Dec 12, 2009", 
+        "genre": "Action, Adventure, Comedy, Drama, Fantasy, Shounen", 
+        "media_type": "Movie", 
+        "num_episodes": 1, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/12/75894.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 8.36, 
+        "status": "Finished Airing", 
+        "synopsis": "Upon hearing news that islands in East Blue are being destroyed, Monkey D. Luffy and his crew go to investigate. On their way, however, an outlandish pirate ship appears out of the sky, helmed by the infamous pirate Shiki &quot;the Golden Lion&quot;\u2014a man who ate the Float-Float Fruit and the first ever prisoner to escape from Impel Down. In his quest to defeat the World Government, Shiki kidnaps Nami to be his own navigator and sends the rest of the Straw Hat Pirates to his floating islands as hostages, leaving her in a dilemma. Separated in a land under Shiki&#039;s absolute control, Luffy and his crew must survive the mystifying terrain in order to bring back their navigator and friend. [Written by MAL Rewrite]", 
+        "title": "One Piece Film: Strong World", 
+        "youtube_id": "3n58UPvcD7I"
+      }, 
+      "id": "277", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/277"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/277/actors", 
+            "self": "/api/animes/277/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "33", 
+              "type": "characters"
+            }, 
+            {
+              "id": "50", 
+              "type": "characters"
+            }, 
+            {
+              "id": "203", 
+              "type": "characters"
+            }, 
+            {
+              "id": "665", 
+              "type": "characters"
+            }, 
+            {
+              "id": "667", 
+              "type": "characters"
+            }, 
+            {
+              "id": "668", 
+              "type": "characters"
+            }, 
+            {
+              "id": "669", 
+              "type": "characters"
+            }, 
+            {
+              "id": "931", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1426", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1546", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/277/characters", 
+            "self": "/api/animes/277/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/277/mangas", 
+            "self": "/api/animes/277/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Aug 24, 2013", 
+        "genre": "Action, Adventure, Comedy, Drama, Fantasy, Shounen, Super Power", 
+        "media_type": "Special", 
+        "num_episodes": 1, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/9/61015.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 8.28, 
+        "status": "Finished Airing", 
+        "synopsis": "The story arcs aboard the Straw Hat Crew&#039;s first ship Going Merry (Merry Go in some adaptations) are recreated with brand-new animation, from Luffy and Usopp&#039;s fight and Robin&#039;s disappearance to the crew&#039;s final farewell to the ship. Going Merry is treated as another member of the Straw Hats as Luffy, Zoro, Nami, and the rest of the crew set sail for the legendary treasure, the One Piece. (Source: ANN)", 
+        "title": "One Piece: Episode of Merry - Mou Hitori no Nakama no Monogatari", 
+        "youtube_id": null
+      }, 
+      "id": "275", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/275"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/275/actors", 
+            "self": "/api/animes/275/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "33", 
+              "type": "characters"
+            }, 
+            {
+              "id": "50", 
+              "type": "characters"
+            }, 
+            {
+              "id": "203", 
+              "type": "characters"
+            }, 
+            {
+              "id": "665", 
+              "type": "characters"
+            }, 
+            {
+              "id": "667", 
+              "type": "characters"
+            }, 
+            {
+              "id": "668", 
+              "type": "characters"
+            }, 
+            {
+              "id": "931", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1546", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/275/characters", 
+            "self": "/api/animes/275/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/275/mangas", 
+            "self": "/api/animes/275/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "animes"
+    }, 
+    {
+      "attributes": {
+        "aired": "Dec 15, 2012", 
+        "genre": "Action, Adventure, Comedy, Drama, Fantasy, Shounen", 
+        "media_type": "Movie", 
+        "num_episodes": 1, 
+        "picture": "https://myanimelist.cdn-dena.com/images/anime/6/44297.jpg", 
+        "rating": "PG-13 - Teens 13 or older", 
+        "score": 8.34, 
+        "status": "Finished Airing", 
+        "synopsis": "The Straw Hat Pirates enter the rough seas of the New World in search of the hidden treasures of the Pirate King, Gol D. Roger\uff0dOne Piece. On their voyage, the pirates come across a terrifying, powerful man, former Marine Admiral Z. Z is accused of having stolen the &quot;Dyna Stones&quot;, weapons believed to have the power to shake up the New World. The Marine Headquarters believes Z is about to use it to end the pirate era, and with it, the lives of many innocent people. In fear of such a phenomenal event, marines start to take action against the former admiral. Even if it means stumbling upon marines and the navy, the Straw Hat Pirates decided to chase after Z and stop him from causing havoc. As they continue to embark on their ventures, the pirates bump into new and familiar acquaintances.", 
+        "title": "One Piece Film: Z", 
+        "youtube_id": "1gGt1Mg_zSo"
+      }, 
+      "id": "381", 
+      "links": {
+        "self": "http://www.weebmd.me/api/animes/381"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "165", 
+              "type": "actors"
+            }, 
+            {
+              "id": "174", 
+              "type": "actors"
+            }, 
+            {
+              "id": "921", 
+              "type": "actors"
+            }, 
+            {
+              "id": "46", 
+              "type": "actors"
+            }, 
+            {
+              "id": "31", 
+              "type": "actors"
+            }, 
+            {
+              "id": "691", 
+              "type": "actors"
+            }, 
+            {
+              "id": "175", 
+              "type": "actors"
+            }, 
+            {
+              "id": "265", 
+              "type": "actors"
+            }, 
+            {
+              "id": "599", 
+              "type": "actors"
+            }, 
+            {
+              "id": "32", 
+              "type": "actors"
+            }, 
+            {
+              "id": "1038", 
+              "type": "actors"
+            }, 
+            {
+              "id": "922", 
+              "type": "actors"
+            }, 
+            {
+              "id": "904", 
+              "type": "actors"
+            }, 
+            {
+              "id": "239", 
+              "type": "actors"
+            }, 
+            {
+              "id": "12", 
+              "type": "actors"
+            }, 
+            {
+              "id": "47", 
+              "type": "actors"
+            }, 
+            {
+              "id": "166", 
+              "type": "actors"
+            }, 
+            {
+              "id": "596", 
+              "type": "actors"
+            }, 
+            {
+              "id": "48", 
+              "type": "actors"
+            }, 
+            {
+              "id": "598", 
+              "type": "actors"
+            }, 
+            {
+              "id": "746", 
+              "type": "actors"
+            }, 
+            {
+              "id": "597", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/381/actors", 
+            "self": "/api/animes/381/relationships/actors"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "33", 
+              "type": "characters"
+            }, 
+            {
+              "id": "50", 
+              "type": "characters"
+            }, 
+            {
+              "id": "196", 
+              "type": "characters"
+            }, 
+            {
+              "id": "203", 
+              "type": "characters"
+            }, 
+            {
+              "id": "665", 
+              "type": "characters"
+            }, 
+            {
+              "id": "667", 
+              "type": "characters"
+            }, 
+            {
+              "id": "668", 
+              "type": "characters"
+            }, 
+            {
+              "id": "931", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1426", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1546", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/animes/381/characters", 
+            "self": "/api/animes/381/relationships/characters"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/animes/381/mangas", 
+            "self": "/api/animes/381/relationships/mangas"
           }
         }
       }, 

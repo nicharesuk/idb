@@ -4,7 +4,8 @@
       "about": "The self-invented personal name of an elite net-diver from Earth, hacker \"Radical Edward\" is a very strange, somewhat androgynous, teenage girl assumed to be around 13 years in age. She has a feral aspect reflected in her mannerisms, bare feet, strange postures and gangling walk.\n \n Ed could be considered a \"free spirit\"; she is fond of silly exclamations and childish rhymes, easily distracted, and the show's primary source of physical humor.\n \n Over the course of the show she rarely walks anywhere, preferring to run, crawl, flip, roll, walk on her hands, or even just saunter. Ed is always barefoot. In one episode, she considers putting on socks and shoes, but quickly removes them, as even wearing socks hampers her, and she falls over seconds after putting them on; she also appears to be exceptionally strong and flexible, being able to support her weight on her arms for several minutes at a time, and to scratch her nose with her toe.\n \n In the English version, she almost always refers to herself in the third person.\n \n Not much is known about her origins, only that she spent some of her earlier childhood in an orphanage after being left there by her father, a man named Afedersiniz Hesap L&uuml;tfen (he calls Ed \"Fran&ccedil;oise\", and may be of Turkish origin as his name means \"excuse me, check please\" in Turkish). In the manga it is revealed that she was a friend of a timid young boy in the orphanage known simply as \"Tomato\" (which also happens to be the brand name scrawled in katakana on her PC) who, like Ed, knew a great deal about computers and the net, and it is probably safe to assume that his friendship with Ed helped turn her into the genius-hacker she is today.\n \n Ed's primary use to the Bebop crew is as a hacker; she is widely known to be a whiz kid behind a computer. Ed's computer of choice is a carry-along Tomato desktop, an homage to the portable flatpanel-outfitted Apple IIc from the 80s, and when traveling by foot she will balance it on her head.\n \n Ed has a strong rapport with Jet, who acts as a surrogate father, and Faye, who acts as something of a big sister (much to Faye's chagrin). Ed also seems to be the only person who can understand Ein (though in a few instances Jet could understand Ein also).\n\n", 
       "japanese_name": "(\u30a8\u30c9\u30ef\u30fc\u30c9\u30fb\u30a6\u30a9\u30f3\u30fb\u30cf\u30a6\u30fb\u30da\u30da\u30eb\u30fb\u30c1\u30d6\u30eb\u30b9\u30ad\u30fc4\u4e16)", 
       "name": "Edward Wong Hau Pepelu Tivrusky IV", 
-      "picture": "https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg"
+      "picture": "https://myanimelist.cdn-dena.com/images/characters/16/30533.jpg", 
+      "role": "Main"
     }, 
     "id": "1", 
     "links": {
@@ -32,6 +33,10 @@
           {
             "id": "1", 
             "type": "animes"
+          }, 
+          {
+            "id": "2", 
+            "type": "animes"
           }
         ], 
         "links": {
@@ -43,6 +48,10 @@
         "data": [
           {
             "id": "1", 
+            "type": "mangas"
+          }, 
+          {
+            "id": "2", 
             "type": "mangas"
           }
         ], 

@@ -1,17 +1,17 @@
 {
   "data": {
     "attributes": {
-      "aired": "Oct 30, 2004 to May 14, 2005", 
-      "genre": "Comedy, Magic, School, Shoujo", 
-      "media_type": "TV", 
+      "aired": "May 25, 2012 to Oct 25, 2013", 
+      "genre": "Action, Military, Sci-Fi, Space, Drama", 
+      "media_type": "OVA", 
       "num_episodes": 26, 
-      "picture": "https://myanimelist.cdn-dena.com/images/anime/4/18118.jpg", 
-      "rating": "G - All Ages", 
-      "score": 7.78, 
+      "picture": "https://myanimelist.cdn-dena.com/images/anime/2/36607.jpg", 
+      "rating": "PG-13 - Teens 13 or older", 
+      "score": 8.48, 
       "status": "Finished Airing", 
-      "synopsis": "Mikan Sakura is a normal 10-year-old girl. Optimistic, energetic, and overall a very sweet child, Mikan is the complete opposite of the aloof, intelligent, and somewhat cold-hearted, Hotaru Imai. Despite their glaring differences, the two girls have been best friends for a very long time. So when Hotaru suddenly transfers to Alice Academy, a prestigious school in the city, her best friend is devastated\u2014especially when she hears of the horrible rumors regarding the academy's harsh treatment of students. Beset with worry, Mikan runs away to see her best friend! Upon her arrival, Mikan learns of \"Alices,\" individuals gifted with various supernatural abilities, and that the school is an institution built by the government to train and protect them. Discovering that she has her own unique powers, Mikan enrolls in the academy, and, after a lot of trouble, finally reunites with Hotaru. Gakuen Alice is a heartwarming comedy that follows Mikan and her friends' adventures in the academy, as well as their attempt to uncover the mysteries surrounding the problematic, fire-wielding student Natsume Hyuuga. [Written by MAL Rewrite]", 
-      "title": "Gakuen Alice", 
-      "youtube_id": "JoAH-2fw7Rc"
+      "synopsis": "In the year 2199, Earth faces its greatest crisis. Due to unrelenting bombings by the alien race known as &quot;Gamilas,&quot; the planet can no longer sustain its inhabitants. In exactly one year, humanity is set to become extinct. In desperation, the people of Earth establish the Earth Defense Force, their last defense against the power-hungry Gamilas Empire. However, humanity finds a glimmer of hope after receiving a message from the mysterious planet Iscandar, which offers them a device that would restore Earth to its former glory. With salvation in sight, the Earth Defense Force calls on the prolific Space Battleship Yamato and swiftly assembles a crew to make the 148,000 light-year trek to Iscandar and receive their aid. Among the crew are young officers Susumu Kodai and Daisuke Shima, along with several other newly promoted leaders, all under the command of the distinguished Captain Juuzou Okita. Forced to learn how to handle the ship&#039;s innovative technology while dealing with the onslaught of Gamilas fleets, the inexperienced cast of Uchuu Senkan Yamato 2199 must summon every inch of their resolve to survive the many hardships aboard the Yamato and complete their mission: to save humanity before it&#039;s too late. [Written by MAL Rewrite]", 
+      "title": "Uchuu Senkan Yamato 2199", 
+      "youtube_id": "51utm_LNX8E"
     }, 
     "id": "75", 
     "links": {
@@ -21,19 +21,27 @@
       "actors": {
         "data": [
           {
-            "id": "345", 
+            "id": "262", 
             "type": "actors"
           }, 
           {
-            "id": "346", 
+            "id": "212", 
             "type": "actors"
           }, 
           {
-            "id": "344", 
+            "id": "922", 
             "type": "actors"
           }, 
           {
-            "id": "343", 
+            "id": "895", 
+            "type": "actors"
+          }, 
+          {
+            "id": "213", 
+            "type": "actors"
+          }, 
+          {
+            "id": "664", 
             "type": "actors"
           }
         ], 
@@ -45,19 +53,27 @@
       "characters": {
         "data": [
           {
-            "id": "261", 
+            "id": "255", 
             "type": "characters"
           }, 
           {
-            "id": "260", 
+            "id": "256", 
             "type": "characters"
           }, 
           {
-            "id": "263", 
+            "id": "257", 
             "type": "characters"
           }, 
           {
-            "id": "262", 
+            "id": "962", 
+            "type": "characters"
+          }, 
+          {
+            "id": "963", 
+            "type": "characters"
+          }, 
+          {
+            "id": "964", 
             "type": "characters"
           }
         ], 
@@ -69,7 +85,7 @@
       "mangas": {
         "data": [
           {
-            "id": "55", 
+            "id": "286", 
             "type": "mangas"
           }
         ], 
@@ -84,149 +100,27 @@
   "included": [
     {
       "attributes": {
-        "birthday": "Jan  22, 1972", 
-        "given_name": "\u7490\u7f8e", 
-        "language": "Japanese", 
-        "name": "Park, Romi", 
-        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/33763.jpg", 
-        "website": null
+        "about": "The science officer aboard Yamato, Sanada is earnest and dedicated, his ideas frequently saving the ship from destruction. His limbs are\n bionic, the result of a childhood accident which claimed the life of his sister and left him bitterly resentful of science&#039;s arrogance. He was a classmate of Mamoru Kodai, and blames himself for not having repaired the Yukikaze properly before it went into battle. When Susumu Kodai becomes acting captain, Sanada is frequently a source of advice. Sanada is the elder spokesperson for the crew after the deaths of Okita and Engineer Tokugawa.\n \n His Japanese name comes from real-life daimyo Sanada Masayuki. In 2199, he is also the XO (Executive Officer), second to Captain&nbsp;Juzo Okita.\n \n In the 2199 remake Sanada is the First Officer of the Yamato, and he does not mention anything to indicate the existence of his bionic limbs. Also, unlike the original series, where he blamed himself for the repair work of the Yukikaze, Sanada in 2199 felt guilty for Mamoru Kodai due to the fact that he did not inform Kodai that Operation M was actually a suicide mission to distract the Gamilas.\n \n (Source: Yamato Wikia)\n\n", 
+        "japanese_name": "(\u771f\u7530 \u5fd7\u90ce)", 
+        "name": "Shirou Sanada", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/3/160469.jpg", 
+        "role": "Main"
       }, 
-      "id": "346", 
+      "id": "256", 
       "links": {
-        "self": "http://www.weebmd.me/api/actors/346"
-      }, 
-      "relationships": {
-        "animes": {
-          "data": [
-            {
-              "id": "75", 
-              "type": "animes"
-            }
-          ], 
-          "links": {
-            "related": "/api/actors/346/animes", 
-            "self": "/api/actors/346/relationships/animes"
-          }
-        }, 
-        "characters": {
-          "data": [
-            {
-              "id": "263", 
-              "type": "characters"
-            }
-          ], 
-          "links": {
-            "related": "/api/actors/346/characters", 
-            "self": "/api/actors/346/relationships/characters"
-          }
-        }
-      }, 
-      "type": "actors"
-    }, 
-    {
-      "attributes": {
-        "birthday": "Dec  6, 1977", 
-        "given_name": "\u7f8e\u548c", 
-        "language": "Japanese", 
-        "name": "Yasuda, Miwa", 
-        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/17133.jpg", 
-        "website": null
-      }, 
-      "id": "343", 
-      "links": {
-        "self": "http://www.weebmd.me/api/actors/343"
-      }, 
-      "relationships": {
-        "animes": {
-          "data": [
-            {
-              "id": "75", 
-              "type": "animes"
-            }
-          ], 
-          "links": {
-            "related": "/api/actors/343/animes", 
-            "self": "/api/actors/343/relationships/animes"
-          }
-        }, 
-        "characters": {
-          "data": [
-            {
-              "id": "260", 
-              "type": "characters"
-            }
-          ], 
-          "links": {
-            "related": "/api/actors/343/characters", 
-            "self": "/api/actors/343/relationships/characters"
-          }
-        }
-      }, 
-      "type": "actors"
-    }, 
-    {
-      "attributes": {
-        "birthday": "May  30, 1979", 
-        "given_name": "\u7406\u6075", 
-        "language": "Japanese", 
-        "name": "Kugimiya, Rie", 
-        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/44863.jpg", 
-        "website": "http://ameblo.jp/kugimiyarie-blog/"
-      }, 
-      "id": "345", 
-      "links": {
-        "self": "http://www.weebmd.me/api/actors/345"
-      }, 
-      "relationships": {
-        "animes": {
-          "data": [
-            {
-              "id": "75", 
-              "type": "animes"
-            }
-          ], 
-          "links": {
-            "related": "/api/actors/345/animes", 
-            "self": "/api/actors/345/relationships/animes"
-          }
-        }, 
-        "characters": {
-          "data": [
-            {
-              "id": "262", 
-              "type": "characters"
-            }
-          ], 
-          "links": {
-            "related": "/api/actors/345/characters", 
-            "self": "/api/actors/345/relationships/characters"
-          }
-        }
-      }, 
-      "type": "actors"
-    }, 
-    {
-      "attributes": {
-        "about": "Birthday: January 1 \n Height: 138 cm \n Weight: 33 kg \n Age: 10-11 \n Alice: Nullification Stealing-Alice \n Alice stone color: Mandarin Orange \n \n Mikan is the protagonist of the story.  She is a cute, energetic, good-natured girl, but her clumsiness lands her into trouble. She is a very up-an-at-it  and athletic person, much to annoyance of her down-to-earth friend, Hotaru. She used to live with her grandfather in the countryside. \n \n She was shocked to hear that Hotaru was moving back to the city to go to an academy for young 'geniuses' like her. When she heard rumors that students were like slaves in Alice Academy (which she felt was a possibility, since they gave money to parents for sending their children to the school), Mikan left her grandfather and her home to go after Hotaru by herself. She was then accepted to Alice Academy by Narumi-sensei and could attend Alice Academy with Hotaru and many other children with extraordinary powers.\n \n Her Alice is Nullification, which can resist the effect of Pheromone type Alices and completely negate the powers of other Alices in close proximity to her. She also possesses the Stealing Alice that can steal alices and turn them into colored rocks, which she inherited from her mother. Both of her Alices are very rare and special.\n \n She once belonged to the Special Ability Class. Later, she gets transferred to the Dangerous Ability Class, and becomes the Elementary Principal's precious favorite. She is currently a Single Star, but it's most likely changed to Special Star due to the fact she is highly favored by the principal.\n \n Throughout the story, she has a lot of effect on Natsume and Ruka, who have both started to fall in love with her. As the story progresses she becomes liked and admired by a lot of the people that used to feel uneasy about her Alice. Even her relationship with Hotaru grows stronger. Her name means \"Mandarin Orange\" in Japanese.\n \n After she loses her Alice Mikan is forced to leave Academy and have her memories erased to assure that no one in the outside world will try to target her to gain information about the school. Not knowing anything about the fate of Natsume and Hotaru she goes back to her grandfather, but she's allowed to take Bear with her under the condition that it will not reveal it's true nature to anyone. \n \n Four years later, Mikan is a highschool student and lives peacefully in the country protected by Shiki's barrier. One day Mikan is targeted by unknown people and is saved by Narumi. At the same time one of her captured and supposed childhood friends is revealed to be Hijiri Goshima in disguise. Confused, Mikan has some flashbacks but doesn't seem to remember anyone clearly. She stumbles just to find Natsume right behind her back. \n In the epilogue, it shows that Mikan and Natsume continue their relationship and get married. \n\n", 
-        "japanese_name": "(\u4f50\u5009 \u871c\u67d1)", 
-        "name": "Mikan Sakura", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/3/119501.jpg"
-      }, 
-      "id": "261", 
-      "links": {
-        "self": "http://www.weebmd.me/api/characters/261"
+        "self": "http://www.weebmd.me/api/characters/256"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "344", 
+              "id": "922", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/characters/261/actors", 
-            "self": "/api/characters/261/relationships/actors"
+            "related": "/api/characters/256/actors", 
+            "self": "/api/characters/256/relationships/actors"
           }
         }, 
         "animes": {
@@ -237,20 +131,15 @@
             }
           ], 
           "links": {
-            "related": "/api/characters/261/animes", 
-            "self": "/api/characters/261/relationships/animes"
+            "related": "/api/characters/256/animes", 
+            "self": "/api/characters/256/relationships/animes"
           }
         }, 
         "mangas": {
-          "data": [
-            {
-              "id": "55", 
-              "type": "mangas"
-            }
-          ], 
+          "data": [], 
           "links": {
-            "related": "/api/characters/261/mangas", 
-            "self": "/api/characters/261/relationships/mangas"
+            "related": "/api/characters/256/mangas", 
+            "self": "/api/characters/256/relationships/mangas"
           }
         }
       }, 
@@ -258,118 +147,165 @@
     }, 
     {
       "attributes": {
-        "about": "Gender: Male \n Birthday: November 27 \n Horoscope: Sagittarius \n Age: 11 \n Alice: Fire \n Alice Stone Color: Red \n Height: 140 cm \n Weight: 34.5 kg \n \n Natsume is a extremely intelligent, to the point of being considered a genius, and despite this, ditches class frequently. Hated and feared by a lot of students at the academy because of his dangerous Alice and cold attitude. Due to the isolation he feels from most of his classmates and hatred many student feel about him he is often bullied even though he comes to ignore it, although the class he is a part of holds him in very high regard and often follows his orders. \n \n He is thoroughly unhappy with the school and is always suspicious of the intentions of adults because he believes that they use their power over the younger students to hurt and abuse. He is involved in top-secret missions for the Academy which are shady and haven't quite been explained in the story yet, although he often returns injured. \n \n He is paired up as Mikan's partner in class by the their mostly-absent class teacher, Narumi. Although at first he rebels strongly against this duty, he later accepts it and begins to enjoy Mikan's company, along with the company of his classmates and finds himself getting friendlier as the series progresses, although he never quite loses his dangerous edge and temper. \n \n He possesses the fire Alice. It is revealed early on that since Natsume has such a powerful Alice, it causes a lot of stress on his body to use and shortens his lifespan immensely. He had been showing the symptoms of a life shortening Alice for a year before the start of the series and had been progressing quickly due to the constant use of his abilities for missions for the Academy. Because of this, he can be seen quite a few times through the manga coughing blood or even going unconcious.\n \n The story for Natsume entering the Academy was the rumor that he was a murderer and once set fire to a village. However, it turns out that his younger sister Aoi lost control of her Alice and accidentally set the buildings ablaze, losing her Alice, memories and her sight in the process. Aoi is used as a hostage to get Natsume to cooperate when he gets testy, and even after Aoi is released, he continues to perform his missions to keep Mikan and Ruka safe. \n \n He has a close group of friends, which at first is only Ruka, the only person at the Academy who understands his reasons for being there and originally agreed to come to the Academy because of Natsume. Later, though, he grows deeply fond of Mikan and finds himself trying to protect her from the dark side of the Academy. He gets extremely jealous whenever if Narumi, Tsubasa or any other male character gets too close with her, something that is often used against him by the older boys for teasing. He's often seen kicking the older guys shins, holding Mikan back from hugging others or burning the tips of Mikan's hair to get her attention again.\n \n He is the only Special Star in the Elementary Division, thus entitling him to a lot of luxurious things that he never really gets to take advantage of.\n \n In chapter 50, he kisses Mikan during the Christmas party, to which their relationship develops. In the most recent chapters, he searches relentlessly to find Mikan since she was taken away by the Academy for her Alice and when he finally finds her, he manages to get her to confess as a 'reward' for tracking her down. He does confess in return.\n In the epilogue, it shows that Mikan and Natsume continue their relationship and get married.\n\n", 
-        "japanese_name": "(\u65e5\u5411 \u68d7)", 
-        "name": "Natsume Hyuuga", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/118829.jpg"
-      }, 
-      "id": "263", 
-      "links": {
-        "self": "http://www.weebmd.me/api/characters/263"
-      }, 
-      "relationships": {
-        "actors": {
-          "data": [
-            {
-              "id": "346", 
-              "type": "actors"
-            }
-          ], 
-          "links": {
-            "related": "/api/characters/263/actors", 
-            "self": "/api/characters/263/relationships/actors"
-          }
-        }, 
-        "animes": {
-          "data": [
-            {
-              "id": "75", 
-              "type": "animes"
-            }
-          ], 
-          "links": {
-            "related": "/api/characters/263/animes", 
-            "self": "/api/characters/263/relationships/animes"
-          }
-        }, 
-        "mangas": {
-          "data": [
-            {
-              "id": "55", 
-              "type": "mangas"
-            }
-          ], 
-          "links": {
-            "related": "/api/characters/263/mangas", 
-            "self": "/api/characters/263/relationships/mangas"
-          }
-        }
-      }, 
-      "type": "characters"
-    }, 
-    {
-      "attributes": {
-        "birthday": "Jun  9, 1980", 
-        "given_name": "\u4f73\u5948", 
+        "birthday": "Sep  12, 1974", 
+        "given_name": "\u5065\u4e00", 
         "language": "Japanese", 
-        "name": "Ueda, Kana", 
-        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/17311.jpg", 
-        "website": "http://www.uedakana.com/"
-      }, 
-      "id": "344", 
-      "links": {
-        "self": "http://www.weebmd.me/api/actors/344"
-      }, 
-      "relationships": {
-        "animes": {
-          "data": [
-            {
-              "id": "75", 
-              "type": "animes"
-            }
-          ], 
-          "links": {
-            "related": "/api/actors/344/animes", 
-            "self": "/api/actors/344/relationships/animes"
-          }
-        }, 
-        "characters": {
-          "data": [
-            {
-              "id": "261", 
-              "type": "characters"
-            }
-          ], 
-          "links": {
-            "related": "/api/actors/344/characters", 
-            "self": "/api/actors/344/relationships/characters"
-          }
-        }
-      }, 
-      "type": "actors"
-    }, 
-    {
-      "attributes": {
-        "about": "Age: 10\n Birthday: October 25 \n Height: 139 cm \n Weight: 30 kg \n Alice: Invention \n Alice stone color: purple\n \n Hotaru is an extremely intelligent and rational girl. She is considered to be a geek and more than a little strange because of her aloofness. Like Natsume, she is usually poker-faced, but possesses some humor in her. She may treat Mikan unkindly most of the time, but it is apparent that she deeply cares for her. Somehow, she likes to bully people she likes.\n \n Hotaru is Mikan's best friend and the main reason why Mikan came to the academy. She and Mikan have what may seem to be a doubtful and strange relationship. Hotaru comes off as cold, quiet, geeky, and bad-mouthed but calm. Her \"stupid\" points are her tendency of being a \"pig\" when it comes to food and her greedy side, this happens in a comical manner. Her Alice is Invention, which allows her to create unique and strange inventions.\n \n She belongs to the Technical Class. She is currently a Triple Star.\n \n Her name \"\u86cd - Hotaru\" means \"Firefly.\"\n \n After Mikan wasn't able to save collapsed Natsume with her fading alice, Hotaru joined her brother and Nodacchi on their mission to find a way to save Natsume. Before departing she promises Mikan that she will be able to see her 'most important person' again. Then they travel back in time to the moment right after Natsume has lost consciousness. Despite Nodacchi's earlier warnings not to disrupt spacetime even further, which can cause unexpected events, Hotaru tries to save Natsume, but her brother stops her and heals him with his alice. Knowing the risk of changing the past they have no choice but to wait for their 'punishment'. Still Hotaru pleads to Noda to let her say farewell to Mikan before she leaves Academy and has her memories erased. After their meeting, Hotaru returns to spacetime without explaining Mikan anything and begging her in thoughts not to completely forget her if possible. As Noda and Natsume are about to go back to the present, Hotaru and Subaru are pulled deep into spacetime and disappear. \n \n After four years Hotaru and her brother are still trapped in spacetime, but are able to communicate with others through mushroom earphones. After regaining her memories, Mikan, Natsume and Ruka are ready for a quest to find and bring Hotaru back.\n \n In the epilogue, it shows that Hotaru and her brother stay in the spacetime, but she shares a happy reunion with Mikan and the others. \n\n", 
-        "japanese_name": "(\u4eca\u4e95 \u86cd)", 
-        "name": "Hotaru Imai", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/9/247981.jpg"
+        "name": "Suzumura, Kenichi", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/42208.jpg", 
+        "website": "http://intention-k.com/prof/prof.html"
       }, 
       "id": "262", 
       "links": {
-        "self": "http://www.weebmd.me/api/characters/262"
+        "self": "http://www.weebmd.me/api/actors/262"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "7", 
+              "type": "animes"
+            }, 
+            {
+              "id": "75", 
+              "type": "animes"
+            }, 
+            {
+              "id": "154", 
+              "type": "animes"
+            }, 
+            {
+              "id": "256", 
+              "type": "animes"
+            }, 
+            {
+              "id": "305", 
+              "type": "animes"
+            }, 
+            {
+              "id": "385", 
+              "type": "animes"
+            }, 
+            {
+              "id": "448", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/262/animes", 
+            "self": "/api/actors/262/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "316", 
+              "type": "characters"
+            }, 
+            {
+              "id": "317", 
+              "type": "characters"
+            }, 
+            {
+              "id": "964", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1172", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1438", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1517", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1556", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/262/characters", 
+            "self": "/api/actors/262/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "birthday": "May  19, 1954", 
+        "given_name": "\u82b3\u5fe0", 
+        "language": "Japanese", 
+        "name": "Ootsuka, Houchuu", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/2/31023.jpg", 
+        "website": "http://www.crazy-box.co.jp/"
+      }, 
+      "id": "922", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/922"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "75", 
+              "type": "animes"
+            }, 
+            {
+              "id": "381", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/922/animes", 
+            "self": "/api/actors/922/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "196", 
+              "type": "characters"
+            }, 
+            {
+              "id": "256", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/922/characters", 
+            "self": "/api/actors/922/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthday: July 7\n \n A young orphan, it was the death of his parents during a Gamilus planet bomb attack on the Miura Peninsula that drove him to follow in his older brother Mamoru&#039;s footsteps and join the Earth Defence Force. He is initially hot-headed and prone to bursts of anger, and at first blames Captain Okita for the death of his brother in battle. However, he matures during the first season thanks to his responsibility as the Yamato &#039;s battle chief, and ultimately Okita nominates him acting captain when he is unable to continue. Though apparently never formally promoted to captain, Kodai continues commanding the Yamato and its crew for most of the rest of the franchise, only relinquishing command twice: to Yamanami in Be Forever Yamato, and to a revived Okita during Final Yamato. He is also a talented pilot, flying his own Cosmo Zero fighter as the leader of the Black Tigers, and in the second season frequently joining the Cosmo Tigers in battle. \n \n His Japanese given name means \"to go forward, to improve.\"\n \n (Source: Wikipedia) \n\n", 
+        "japanese_name": "(\u53e4\u4ee3 \u9032)", 
+        "name": "Susumu Kodai", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/6/153611.jpg", 
+        "role": "Main"
+      }, 
+      "id": "255", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/255"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "345", 
+              "id": "212", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/characters/262/actors", 
-            "self": "/api/characters/262/relationships/actors"
+            "related": "/api/characters/255/actors", 
+            "self": "/api/characters/255/relationships/actors"
           }
         }, 
         "animes": {
@@ -380,20 +316,15 @@
             }
           ], 
           "links": {
-            "related": "/api/characters/262/animes", 
-            "self": "/api/characters/262/relationships/animes"
+            "related": "/api/characters/255/animes", 
+            "self": "/api/characters/255/relationships/animes"
           }
         }, 
         "mangas": {
-          "data": [
-            {
-              "id": "55", 
-              "type": "mangas"
-            }
-          ], 
+          "data": [], 
           "links": {
-            "related": "/api/characters/262/mangas", 
-            "self": "/api/characters/262/relationships/mangas"
+            "related": "/api/characters/255/mangas", 
+            "self": "/api/characters/255/relationships/mangas"
           }
         }
       }, 
@@ -401,26 +332,27 @@
     }, 
     {
       "attributes": {
-        "about": "Nickname: Ruka-Pyon, Ru-Chan \n Gender: Male \n Age: 10 \n Alice: Animal Pheromone \n Alice Stone Color: Milky White \n Birthday: March 16 \n Horoscope:Pisces \n Height: 140 cm \n Weight: 35 kg \n \n Ruka is Natsume's childhood friend and often referred by Mikan throughout the story as \"Ruka-pyon.\" He has a gentle and pleasant personality that balances out that of Natsume's. Even though he tries to hide his feelings for Mikan Sakura, the grown-ups already know about it and even teased Ruka many times by the Watching Over Ruka Group. He always carries around a rabbit and has a way with animals, they seem to attract to him. He is also the main target of Hotaru, who loves clicking funny pictures of him and selling them.\n \n He belongs to the Somatic class. He is a Triple Star student like Hotaru.\n\n", 
-        "japanese_name": "(\u4e43\u6728 \u6d41\u67b6)", 
-        "name": "Ruka Nogi", 
-        "picture": "https://myanimelist.cdn-dena.com/images/characters/8/118382.jpg"
+        "about": "Desler is the Leader of the alien race known as the Gamilas and the main villain of Space Battleship Yamato. It was Desler who masterminded the attack on Earth, forcing the humans to move underground due to the radioactive meteore-bombs unleashed on the planet by the Gamilas fleet. Although initially portrayed as a dictator bent on conquest seemingly for it's own sake, it's later revealed that Desler seeks to conquer the Earth in order to find a new home for his people, following the imminent destruction of their home-planet. \n \n (Source: starblazers.com) \n\n", 
+        "japanese_name": "(\u30a2\u30d9\u30eb\u30c8\u30fb\u30c7\u30b9\u30e9\u30fc)", 
+        "name": "Aberdt Desler", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/11/153605.jpg", 
+        "role": "Main"
       }, 
-      "id": "260", 
+      "id": "257", 
       "links": {
-        "self": "http://www.weebmd.me/api/characters/260"
+        "self": "http://www.weebmd.me/api/characters/257"
       }, 
       "relationships": {
         "actors": {
           "data": [
             {
-              "id": "343", 
+              "id": "213", 
               "type": "actors"
             }
           ], 
           "links": {
-            "related": "/api/characters/260/actors", 
-            "self": "/api/characters/260/relationships/actors"
+            "related": "/api/characters/257/actors", 
+            "self": "/api/characters/257/relationships/actors"
           }
         }, 
         "animes": {
@@ -431,24 +363,484 @@
             }
           ], 
           "links": {
-            "related": "/api/characters/260/animes", 
-            "self": "/api/characters/260/relationships/animes"
+            "related": "/api/characters/257/animes", 
+            "self": "/api/characters/257/relationships/animes"
           }
         }, 
         "mangas": {
-          "data": [
-            {
-              "id": "55", 
-              "type": "mangas"
-            }
-          ], 
+          "data": [], 
           "links": {
-            "related": "/api/characters/260/mangas", 
-            "self": "/api/characters/260/relationships/mangas"
+            "related": "/api/characters/257/mangas", 
+            "self": "/api/characters/257/relationships/mangas"
           }
         }
       }, 
       "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "birthday": "Dec  12, 1975", 
+        "given_name": "\u6cd5\u5b50", 
+        "language": "Japanese", 
+        "name": "Kuwashima, Houko", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/32905.jpg", 
+        "website": "http://www.aoni.co.jp/actress/ka/kuwashima-houko.html"
+      }, 
+      "id": "895", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/895"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "26", 
+              "type": "animes"
+            }, 
+            {
+              "id": "53", 
+              "type": "animes"
+            }, 
+            {
+              "id": "75", 
+              "type": "animes"
+            }, 
+            {
+              "id": "182", 
+              "type": "animes"
+            }, 
+            {
+              "id": "286", 
+              "type": "animes"
+            }, 
+            {
+              "id": "386", 
+              "type": "animes"
+            }, 
+            {
+              "id": "467", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/895/animes", 
+            "self": "/api/actors/895/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "485", 
+              "type": "characters"
+            }, 
+            {
+              "id": "680", 
+              "type": "characters"
+            }, 
+            {
+              "id": "830", 
+              "type": "characters"
+            }, 
+            {
+              "id": "962", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1058", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1066", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1262", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/895/characters", 
+            "self": "/api/actors/895/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "birthday": "May  4, 1978", 
+        "given_name": "\u5927\u8f14", 
+        "language": "Japanese", 
+        "name": "Ono, Daisuke", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/1/40492.jpg", 
+        "website": "http://daisukeono.com/"
+      }, 
+      "id": "212", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/212"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "74", 
+              "type": "animes"
+            }, 
+            {
+              "id": "75", 
+              "type": "animes"
+            }, 
+            {
+              "id": "99", 
+              "type": "animes"
+            }, 
+            {
+              "id": "113", 
+              "type": "animes"
+            }, 
+            {
+              "id": "115", 
+              "type": "animes"
+            }, 
+            {
+              "id": "175", 
+              "type": "animes"
+            }, 
+            {
+              "id": "217", 
+              "type": "animes"
+            }, 
+            {
+              "id": "314", 
+              "type": "animes"
+            }, 
+            {
+              "id": "360", 
+              "type": "animes"
+            }, 
+            {
+              "id": "405", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/212/animes", 
+            "self": "/api/actors/212/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "255", 
+              "type": "characters"
+            }, 
+            {
+              "id": "965", 
+              "type": "characters"
+            }, 
+            {
+              "id": "966", 
+              "type": "characters"
+            }, 
+            {
+              "id": "967", 
+              "type": "characters"
+            }, 
+            {
+              "id": "968", 
+              "type": "characters"
+            }, 
+            {
+              "id": "969", 
+              "type": "characters"
+            }, 
+            {
+              "id": "970", 
+              "type": "characters"
+            }, 
+            {
+              "id": "971", 
+              "type": "characters"
+            }, 
+            {
+              "id": "972", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1559", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/212/characters", 
+            "self": "/api/actors/212/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthday: September 2181; December 24, 2180 (in Yamato 2199)\n \n Initially Dr. Sado&#039;s nurse, She gained the additional responsibilities aboard Yamato of operating the radar, performing computer calculations, taking care of the crew&#039;s morale and searching planets for food sources. She is from the outset attracted to Susumu Kodai, but conceals her true feelings with girlish glee. As the only significant female crewmember, she is also frequently the victim of fan service. \n \n In the remake, her personality and role changed slightly. Her role of a nurse was replaced by Makoto Harada; as a result, she is a full time radar operator. Her personality was refined to be more straight forward than the classic representation of her.\n \n Her name means \"forest snow.\" it originates from a fan of Matsumoto&#039;s named Miyuki Moriki. \n \n (Source: Yamato Wikia)\n\n", 
+        "japanese_name": "(\u68ee \u96ea)", 
+        "name": "Yuki Mori", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/153613.jpg", 
+        "role": "Main"
+      }, 
+      "id": "962", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/962"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "895", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/962/actors", 
+            "self": "/api/characters/962/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "75", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/962/animes", 
+            "self": "/api/characters/962/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/962/mangas", 
+            "self": "/api/characters/962/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "birthday": "Aug  1, 1952", 
+        "given_name": "\u9686\u4e4b", 
+        "language": "Japanese", 
+        "name": "Sugou, Takayuki", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/10447.jpg", 
+        "website": "http://www.bungakuza.com/member/prof/sugou-takayuki.htm"
+      }, 
+      "id": "664", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/664"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "75", 
+              "type": "animes"
+            }, 
+            {
+              "id": "124", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/664/animes", 
+            "self": "/api/actors/664/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "963", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1501", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/664/characters", 
+            "self": "/api/actors/664/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthday: December 8\n \n The stern captain of the Yamato, utterly devoted to his mission to save Earth from the Gamilus threat, even at the cost of his own life. He is in fact dying, and becomes increasingly ill during the course of the first season, but remains convinced that he will live to see his home world again. He regards Susumu Kodai almost as a replacement for the son he lost in battle, and sorely regrets his son&#039;s death in battle at Pluto, along with the apparent death of Kodai&#039;s older brother, Mamoru. Even when his illness leaves him bedridden, he remains a source of advice to the crew, and to Kodai in particular. In the movie Final Yamato, it is revealed that he was kept in cryogenic suspension for some time until the Earth physicdians could revive him and cure his sickness. He then went on to lead the EDF again in its fight against the Dingirians.\n \n He is based on Leiji Matsumoto&#039;s father, who was a Major in the Imperial Japanese Army Air Force and flew a Nakajima Ki-84 in Battle of Leyte Gulf.\n\n", 
+        "japanese_name": "(\u6c96\u7530 \u5341\u4e09)", 
+        "name": "Juuzou Okita", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/14/153609.jpg", 
+        "role": "Main"
+      }, 
+      "id": "963", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/963"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "664", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/963/actors", 
+            "self": "/api/characters/963/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "75", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/963/animes", 
+            "self": "/api/characters/963/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/963/mangas", 
+            "self": "/api/characters/963/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "about": "Birthday: August 8, 2181\n \n A quieter and more level-headed complement to his best friend Susumu Kodai, Shima becomes chief navigator and helmsman of the Yamato. He suffers from a lack of self-confidence in his ability to control the mighty vessel, despite skillfully saving it on many occasions. Shima and Kodai have frequent arguments in the first series, some of which escalated into physical brawls, but the end results only made their friendship stronger. In the second season, he falls in love with Teresa of Telezart by interstellar radio, and is heartbroken when she elects to remain on her world in the face of the Comet Empire, though he vows to carry on the fight in her name. \n \n He was blown into space by Gamilian troops but was rescued and revived by Teresa.\n \n He loses his life in the line of duty in the movie \"Final Yamato.\"\n (Source: Yamato Wikia)\n\n", 
+        "japanese_name": "(\u5cf6 \u5927\u4ecb)", 
+        "name": "Daisuke Shima", 
+        "picture": "https://myanimelist.cdn-dena.com/images/characters/15/153603.jpg", 
+        "role": "Main"
+      }, 
+      "id": "964", 
+      "links": {
+        "self": "http://www.weebmd.me/api/characters/964"
+      }, 
+      "relationships": {
+        "actors": {
+          "data": [
+            {
+              "id": "262", 
+              "type": "actors"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/964/actors", 
+            "self": "/api/characters/964/relationships/actors"
+          }
+        }, 
+        "animes": {
+          "data": [
+            {
+              "id": "75", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/characters/964/animes", 
+            "self": "/api/characters/964/relationships/animes"
+          }
+        }, 
+        "mangas": {
+          "data": [], 
+          "links": {
+            "related": "/api/characters/964/mangas", 
+            "self": "/api/characters/964/relationships/mangas"
+          }
+        }
+      }, 
+      "type": "characters"
+    }, 
+    {
+      "attributes": {
+        "birthday": "Jun  17, 1961", 
+        "given_name": "\u5b8f\u4e00", 
+        "language": "Japanese", 
+        "name": "Yamadera, Kouichi", 
+        "picture": "https://myanimelist.cdn-dena.com/images/voiceactors/3/44674.jpg", 
+        "website": "http://across-ent.com/talent/men/koichi_yamadera.html"
+      }, 
+      "id": "213", 
+      "links": {
+        "self": "http://www.weebmd.me/api/actors/213"
+      }, 
+      "relationships": {
+        "animes": {
+          "data": [
+            {
+              "id": "1", 
+              "type": "animes"
+            }, 
+            {
+              "id": "75", 
+              "type": "animes"
+            }, 
+            {
+              "id": "76", 
+              "type": "animes"
+            }, 
+            {
+              "id": "413", 
+              "type": "animes"
+            }, 
+            {
+              "id": "440", 
+              "type": "animes"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/213/animes", 
+            "self": "/api/actors/213/relationships/animes"
+          }
+        }, 
+        "characters": {
+          "data": [
+            {
+              "id": "257", 
+              "type": "characters"
+            }, 
+            {
+              "id": "258", 
+              "type": "characters"
+            }, 
+            {
+              "id": "959", 
+              "type": "characters"
+            }, 
+            {
+              "id": "961", 
+              "type": "characters"
+            }, 
+            {
+              "id": "1573", 
+              "type": "characters"
+            }
+          ], 
+          "links": {
+            "related": "/api/actors/213/characters", 
+            "self": "/api/actors/213/relationships/characters"
+          }
+        }
+      }, 
+      "type": "actors"
     }
   ], 
   "jsonapi": {

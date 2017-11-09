@@ -1,17 +1,17 @@
 {
   "data": {
     "attributes": {
-      "aired": "Jan 7, 2005 to Jul 8, 2005", 
-      "genre": "Comedy, Supernatural, Magic, Romance, Seinen", 
-      "media_type": "TV", 
-      "num_episodes": 24, 
-      "picture": "https://myanimelist.cdn-dena.com/images/anime/2/17841.jpg", 
+      "aired": "Nov 21, 2015", 
+      "genre": "Military, School", 
+      "media_type": "Movie", 
+      "num_episodes": 1, 
+      "picture": "https://myanimelist.cdn-dena.com/images/anime/6/76509.jpg", 
       "rating": "PG-13 - Teens 13 or older", 
-      "score": 7.44, 
+      "score": 8.44, 
       "status": "Finished Airing", 
-      "synopsis": "In a world where humans can have their wish granted via the Goddess Help Hotline, a human, Keiichi Morisato, summons the Goddess Belldandy by accident and jokes that she should stay with him forever. Unfortunately for him, his \"wish\" is granted. Suddenly, Keiichi is now living with this gorgeous woman all alone, causing him to be kicked out of the all-male dormitory he was staying in. But soon, after they find lodging in a Buddhist temple, Keiichi and Belldandy's relationship begins to blossom. Although they are both awkward and rather uncomfortable with one another at first, what awaits these two strangers could turn out to be an unexpected romance. [Written by MAL Rewrite]", 
-      "title": "Aa! Megami-sama! (TV)", 
-      "youtube_id": "fohHBnpCoeI"
+      "synopsis": "Sometime after the 63rd sensha-dou tournament, the Japanese Ministry of Education decides to move forward with its plan to decommission Ooarai Girls High School despite their recent triumph in the championship. In order to keep the school open, Miho and her team must win a match against a university sensha-dou team. For this difficult battle, Miho and the others count with the help of their friends from the other schools they previously faced, as well as assistance from new friends from the Chihatan Academy and Keizoku High School. Together, they will join forces to save Ooarai. (Source: Wikipedia)", 
+      "title": "Girls und Panzer der Film", 
+      "youtube_id": "c991IDTFr0g"
     }, 
     "id": "50", 
     "links": {
@@ -19,14 +19,88 @@
     }, 
     "relationships": {
       "actors": {
-        "data": [], 
+        "data": [
+          {
+            "id": "86", 
+            "type": "actors"
+          }, 
+          {
+            "id": "162", 
+            "type": "actors"
+          }, 
+          {
+            "id": "925", 
+            "type": "actors"
+          }, 
+          {
+            "id": "927", 
+            "type": "actors"
+          }, 
+          {
+            "id": "160", 
+            "type": "actors"
+          }, 
+          {
+            "id": "164", 
+            "type": "actors"
+          }, 
+          {
+            "id": "928", 
+            "type": "actors"
+          }, 
+          {
+            "id": "630", 
+            "type": "actors"
+          }, 
+          {
+            "id": "923", 
+            "type": "actors"
+          }, 
+          {
+            "id": "926", 
+            "type": "actors"
+          }, 
+          {
+            "id": "161", 
+            "type": "actors"
+          }, 
+          {
+            "id": "163", 
+            "type": "actors"
+          }
+        ], 
         "links": {
           "related": "/api/animes/50/actors", 
           "self": "/api/animes/50/relationships/actors"
         }
       }, 
       "characters": {
-        "data": [], 
+        "data": [
+          {
+            "id": "192", 
+            "type": "characters"
+          }, 
+          {
+            "id": "193", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1091", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1094", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1095", 
+            "type": "characters"
+          }, 
+          {
+            "id": "1278", 
+            "type": "characters"
+          }
+        ], 
         "links": {
           "related": "/api/animes/50/characters", 
           "self": "/api/animes/50/relationships/characters"
