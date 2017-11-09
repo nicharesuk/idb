@@ -322,6 +322,45 @@ def update_character_role():
 
         db.session.commit()
 
+def update_inappropriate():
+    with app.app_context():
+        db.init_app(app)
+
+        # bad_word = "hentai"
+        # bad_anime = Anime.query.filter(Anime.rating.ilike("%hentai%")).all()
+
+        # for anime in bad_anime:
+        #     db.session.delete(anime)
+        
+        bad_manga = Manga.query.filter(Manga.genre.contains("hentai")).all()
+
+        for manga in bad_manga:
+            db.session.delete(manga)
+            print(manga.title)
+
+        db.session.commit()
+
+def update_empty_relationships():
+    with app.app_context():
+        db.init_app(app)
+
+        # all_anime = Anime.query.all()
+
+        # for anime in all_anime:
+        #     if len(anime.characters) == 0 and len(anime.actors) == 0 and len(anime.mangas) == 0:
+        #         db.session.delete(anime)
+        #         print("DELETED: " + anime.title)
+        
+        all_characters = Character.query.all()
+
+        for character in all_characters:
+            if len(character.animes) == 0 and len(character.actors) == 0 and len(character.mangas) == 0:
+                db.session.delete(character)
+                print("DELETED: " + character.name)
+        
+        db.session.commit()
+        
+        
 if __name__ == "__main__":
 
-    update_character_role()
+    update_empty_relationships()
