@@ -27,7 +27,7 @@ class NavMenu extends Component {
           alt="weeb md icon">
         </img>
         <div className={style.header}>
-          <Menu className={style.menu}
+          <Menu className={style.mainMenu}
             inverted
             secondary
             size='large'>
