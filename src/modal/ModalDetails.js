@@ -44,7 +44,7 @@ class ModalDetails extends Component {
                     {this.props.websiteText} <br />
                   </a>
                 </div>
-							) : null
+              ) : null
             }
             <div>
               {this.props.paragraph}
