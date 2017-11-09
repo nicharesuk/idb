@@ -83,6 +83,10 @@ class Result extends Component {
             shape="rounded"
             src={this.props.data.picture} />
           <div className={styles.strings}>
+            <div
+						  className={styles.stringContainer}>
+              {`${this.props.data.title ? this.props.data.title : this.props.data.name}`}
+            </div>
             {results.slice(0, MAX_RESULTS).map((result, index) => (
               <div
                 key={`${result.name}`}
