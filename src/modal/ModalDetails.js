@@ -36,12 +36,12 @@ class ModalDetails extends Component {
                   </Embed>
                 </Modal> : 
                 <div className={styles.link}>
-                <a
-                  href={this.props.website}
-                  target="_blank">
-                  {this.props.websiteText} <br />
-                </a>
-              </div>) : 
+                  <a
+                    href={this.props.website}
+                    target="_blank">
+                    {this.props.websiteText} <br />
+                  </a>
+                </div>) : 
               null
             }
             <div>
