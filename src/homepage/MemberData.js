@@ -6,8 +6,8 @@ export default [
     role: "Back-End Developer",
     blurb: "Funny Text Here",
     responsibilities: "Unit Testing",
-    commits: "7",
-    issues: "15",
+    commits: "8",
+    issues: "16",
     unittests: "18"
   },
   {
@@ -17,8 +17,8 @@ export default [
     role: "Back-End Developer",
     blurb: "Head Weeb",
     responsibilities: "Hosting, Database Setup, Auto-generate API",
-    commits: "24",
-    issues: "17",
+    commits: "44",
+    issues: "31",
     unittests: "0"
   },
   {
@@ -28,8 +28,8 @@ export default [
     role: "Front-End Developer",
     blurb: "Believes the Back-End is a black box that does what it tells him to do",
     responsibilities: "Front-End Design/Development, User Stories, UML Diagram, Technical Document",
-    commits: "12",
-    issues: "21",
+    commits: "27",
+    issues: "26",
     unittests: "0"
   },
   {
@@ -40,7 +40,7 @@ export default [
     blurb: "Does what Corbin tells him to do",
     responsibilities: "Database Scraping, API Documentation",
     commits: "1",
-    issues: "18",
+    issues: "21",
     unittests: "0"
   },
   {
@@ -50,8 +50,8 @@ export default [
     role: "Front-End Developer",
     blurb: "Chief Bug Creator",
     responsibilities: "Front-end Design/Development, Technical Document",
-    commits: "63",
-    issues: "21",
+    commits: "86",
+    issues: "33",
     unittests: "0"
   },
   {
@@ -61,8 +61,8 @@ export default [
     role: "Front-End Developer",
     blurb: "Occasionally Writes Code",
     responsibilities: "Front-End Design/Development, Technical Document",
-    commits: "14",
-    issues: "15",
+    commits: "23",
+    issues: "17",
     unittests: "0"
   }
 ];
