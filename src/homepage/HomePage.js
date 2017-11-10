@@ -44,8 +44,8 @@ class HomePage extends Component {
               The Stats
             </p>
             <div className={styles.stats_info}>
-              <div>Total commits: 183</div>
-              <div>Total issues: 107</div>
+              <div>Total commits: 275</div>
+              <div>Total issues: 140</div>
               <div>Total unit tests: 18</div>
               <div><a href="http://docs.nicharesuk.apiary.io/#">Apiary API</a></div>
               <div><a href="https://github.com/nicharesuk/idb">Github Repository</a></div>
