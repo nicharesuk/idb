@@ -12,8 +12,6 @@ const THUMBNAIL_WIDTH = 134 + 20;
 class ThumbnailPage extends Component {
  
   state = {
-    modalOpen: false,
-    selectedIndex: 0,
     windowWidth: '0',
     windowHeight: '0',
   }
@@ -32,16 +30,12 @@ class ThumbnailPage extends Component {
   }
 
   openModalAction = (index) => {
-    this.setState({
-      modalOpen: true,
-      selectedIndex: index,
-    });
+    const id = this.props.data[index].id;
+    this.context.router.history.push(`/${this.props.type}?type=${this.props.type}&id=${id}`);
   }
 
   closeModalAction = () => {
-    this.setState({
-      modalOpen: false,
-    });
+    this.context.router.history.push(`/${this.props.type}`);
   }
 
   componentDidUpdate = () => {
@@ -75,15 +69,10 @@ class ThumbnailPage extends Component {
     }
 
     const data = this.props.data;
-    const index = this.state.selectedIndex;
-    const modalId = data[index] ? data[index].id : null;
     return (
       <div className={styles.container}>
         <ModalInstance
-          id={modalId}
-          type={this.props.type}
-          onClose={this.closeModalAction}
-          open={this.state.modalOpen} />
+          onClose={this.closeModalAction} />
         <div className={styles.items}>
           {data.map((instance, index) => (
             <div
@@ -109,6 +98,13 @@ class ThumbnailPage extends Component {
     );
   }
 }
+
+
+ThumbnailPage.contextTypes = {
+  router: PropTypes.shape({
+    history: PropTypes.object.isRequired,
+  }),
+};
 
 ThumbnailPage.propTypes = {
   loading: PropTypes.bool,

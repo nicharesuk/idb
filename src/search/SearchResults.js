@@ -9,24 +9,13 @@ import Result from './Result';
 import ButtonRow from './ButtonRow';
 
 class SearchResults extends Component {
- 
-  state = {
-    modalOpen: false,
-    selectedIndex: 0,
 
-  }
-
-  openModalAction = (index) => {
-    this.setState({
-      modalOpen: true,
-      selectedIndex: index,
-    });
+  openModalAction = (id, type) => {
+    this.context.router.history.push(`/search?type=${type}&id=${id}`);
   }
 
   closeModalAction = () => {
-    this.setState({
-      modalOpen: false,
-    });
+    this.context.router.history.push(`/search`);
   }
 
   componentDidUpdate = () => {
@@ -35,7 +24,7 @@ class SearchResults extends Component {
 
   render() {
     const shouldButtonRowShow = this.props.searchText.length;
-    const data = this.props.data.sort((a, b) => {
+    this.props.data.sort((a, b) => {
       if(a.id < b.id) return -1;
       if(a.id > b.id) return 1;
       const aName = a.title ? a.title : a.name;
@@ -44,9 +33,6 @@ class SearchResults extends Component {
       if(aName > bName) return 1;
       return 0;
     });
-    const index = this.state.selectedIndex;
-    const modalId = data[index] ? data[index].id : null;
-    const modalType = data[index] ? data[index].type : null;
     const searchWords = this.props.searchText.split(' ').filter(w => w.length !== 0).map(w => w.toLowerCase());
     return (
       <div className={styles.container}>
@@ -67,12 +53,8 @@ class SearchResults extends Component {
             </h1>
           </div> : null
         }
-        {this.props.data.length ?
-          <ModalInstance
-            id={modalId}
-            type={modalType}
-            onClose={this.closeModalAction}
-            open={this.state.modalOpen} /> : null
+        <ModalInstance
+          onClose={this.closeModalAction} />
         }
         <div className={styles.items}>
           {shouldButtonRowShow ?
@@ -86,7 +68,7 @@ class SearchResults extends Component {
             <div
               className={styles.result}
               style={{backgroundColor: index % 2 === 0 ? "#1f2025" : "transparent"}}
-              onClick={() => this.openModalAction(index)}
+              onClick={() => this.openModalAction(instance.id, instance.type)}
               key={`result-component-${index}`}>
                 <Result
                   keyNames={this.props.keyNames}
@@ -107,6 +89,12 @@ class SearchResults extends Component {
     );
   }
 }
+
+SearchResults.contextTypes = {
+  router: PropTypes.shape({
+    history: PropTypes.object.isRequired,
+  }),
+};
 
 SearchResults.propTypes = {
   keyNames: PropTypes.object,

@@ -17,7 +17,7 @@ const pages = [
   },
   {
     name: "Anime",
-    link: "/anime",
+    link: "/animes",
     node: (props) => <AnimePage {...props} />,
   },
   {
@@ -27,7 +27,7 @@ const pages = [
   },
   {
     name: "Manga",
-    link: "/manga",
+    link: "/mangas",
     node: (props) => <MangaPage {...props} />,
   },
   {
