@@ -5,7 +5,7 @@ import ModalDetails from '../modal/ModalDetails';
 class PersonDetails extends Component {
 
   render() {
-    const { name, language, birthday, website, included} = this.props.dataObject;
+    const { name, language, birthday, website, included, given_name} = this.props.dataObject;
 
     let characterList = [];
     let animeList = [];
@@ -31,7 +31,7 @@ class PersonDetails extends Component {
         title={name}
         website={website}
         websiteText={"Link to website"}
-        detailsList={[language, `Born on ${birthday}`]}
+        detailsList={[language, `Born on ${birthday}`, given_name]}
         lists={lists} />
     );
   }

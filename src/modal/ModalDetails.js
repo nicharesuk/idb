@@ -7,6 +7,7 @@ import { Modal, Embed } from 'semantic-ui-react';
 class ModalDetails extends Component {
 
   render() {
+    const detailsStrings = this.props.detailsList.filter((detail) => detail !== null)
     return (
       <div className={styles.content}>
         <div className={styles.data}>
@@ -14,12 +15,12 @@ class ModalDetails extends Component {
             {this.props.title}
           </div>
           <div className={styles.details}>
-            {this.props.detailsList.map((detail, index) => (
+            {detailsStrings.map((detail, index) => (
               <div key={index} className={styles.detailContainer}>
                 <div className={styles.detail}>
                   {detail}
                 </div>
-                {index !== this.props.detailsList.length - 1 ?
+                {index !== detailsStrings.length - 1 ?
                   <div className={styles.detail}>
                     •
                   </div> :
