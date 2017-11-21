@@ -5,14 +5,14 @@
 	flex-shrink: 1;
 	max-height: 100%;
 	padding: 10px;
-	padding-top: 24px;
+	padding-top: 30px;
 }
 
 .title {
 	color: white;
 	width: 100%;
-	padding-bottom: 24px;
-	font-size: 2vw;
+	padding-bottom: 30px;
+	font-size: 30px;
 }
 
 .content {
@@ -22,9 +22,9 @@
 
 .innerElement {
 	background-color: transparent;
-	padding: 24px;
+	padding: 20px;
 	margin: 3px;
-	font-size: 1.5vw;
+	font-size: 20px;
 	cursor: pointer;
 	color: white;
 	&:hover {

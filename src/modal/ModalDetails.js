@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './ModalDetails.scss';
 import ScrollableList from './ScrollableList';
-import { Embed, Button } from 'semantic-ui-react';
+import { Embed, Button, Popup } from 'semantic-ui-react';
 
 class ModalDetails extends Component {
 
@@ -33,8 +33,12 @@ class ModalDetails extends Component {
     return (
       <div className={styles.content}>
         <div className={styles.head}>
-          <div className={styles.title}>  
-            {this.props.title}
+          <div className={styles.titleContainer}>
+            <Popup
+              trigger={<a className={styles.titleText}>{this.props.title}</a>}
+              hoverable
+              content={this.props.title}
+            />
           </div>
           <div className={styles.details}>
             {this.props.detailsList.map((detail, index) => (
@@ -56,11 +60,13 @@ class ModalDetails extends Component {
               <Button.Group>
                 <Button
                   inverted
+                  active={this.state.showTrailer === false ? true : false}
                   onClick={this.hideTrailer}>
                   Info
                 </Button>
                 <Button
                   inverted
+                  active={this.state.showTrailer === true ? true : false}
                   onClick={this.showTrailer}>
                   Trailer
                 </Button>
@@ -97,8 +103,7 @@ class ModalDetails extends Component {
               ))}
             </div>
           </div> :
-          <Embed id={this.props.website} aspectRatio="16:9" source="youtube"></Embed>
-
+          <Embed id={this.props.website} aspectRatio="21:9" source="youtube"></Embed>
         }
       </div>
     );
