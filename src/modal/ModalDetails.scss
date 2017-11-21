@@ -1,11 +1,30 @@
 
-.title {
-  font-size: 60px;
+.titleContainer {
   padding-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.titleText {
+  font-size: 60px;
+  color: white;
+  &:hover {
+    color: white;
+  }
 }
 
 .bullet {
   color: white;
+}
+
+.info {
+  height: 70%;
+  max-height: 70%;
+  color: white;
+}
+
+.vid {
+  width: 100%;
 }
 
 .details {
@@ -29,14 +48,17 @@
 
 .paragraph {
   line-height: 21px;
-  max-height: calc(100% - 120px);
+  height: 30%;
+  max-height: 30%;
   overflow: auto;
 }
 
-.data {
-  height: 50%;
-  max-height: 50%;
-  overflow: hidden;
+.head {
+/*  height: 33%;
+  max-height: 33%;
+  overflow: hidden; */
+  display: block;
+  overflow: auto; 
   width: 100%;
   color: white;
 }
@@ -48,7 +70,7 @@
 }
 
 .listsContainer {
-  height: 50%;
+  height: 70%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -59,10 +81,6 @@
   height: 100%;
 }
 
-.link {
-  padding-bottom: 20px;
-}
-
-.link a {
-  cursor: pointer;
+.tabs {
+  padding-bottom: 12px;
 }

@@ -2,16 +2,43 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './ModalDetails.scss';
 import ScrollableList from './ScrollableList';
-import { Modal, Embed } from 'semantic-ui-react';
+import { Embed, Button, Popup } from 'semantic-ui-react';
 
 class ModalDetails extends Component {
 
-  render() {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showTrailer: false
+    };
+
+    this.showTrailer = this.showTrailer.bind(this);
+    this.hideTrailer = this.hideTrailer.bind(this);
+  }
+
+  showTrailer() {
+    this.setState({
+      showTrailer: true
+    });
+  }
+
+  hideTrailer() {
+    this.setState({
+      showTrailer: false
+    });
+  }
+
+  render() { 
     return (
       <div className={styles.content}>
-        <div className={styles.data}>
-          <div className={styles.title}>  
-            {this.props.title}
+        <div className={styles.head}>
+          <div className={styles.titleContainer}>
+            <Popup
+              trigger={<a className={styles.titleText}>{this.props.title}</a>}
+              hoverable
+              content={this.props.title}
+            />
           </div>
           <div className={styles.details}>
             {this.props.detailsList.map((detail, index) => (
@@ -28,39 +55,56 @@ class ModalDetails extends Component {
               </div>   
             ))}
           </div>
-          <div className={styles.paragraph}>
-            {this.props.website ?
-              (this.props.websiteText === "Link to trailer" ? 
-                <div className={styles.link}>
-                  <Modal trigger={<a>{this.props.websiteText} <br /></a>}>
-                    <Embed id={this.props.website} source="youtube">
-                    </Embed>
-                  </Modal>
-                </div> : 
+          {this.props.website && this.props.websiteText === "Link to trailer" ?
+            <div className={styles.tabs}>
+              <Button.Group>
+                <Button
+                  inverted
+                  active={this.state.showTrailer === false ? true : false}
+                  onClick={this.hideTrailer}>
+                  Info
+                </Button>
+                <Button
+                  inverted
+                  active={this.state.showTrailer === true ? true : false}
+                  onClick={this.showTrailer}>
+                  Trailer
+                </Button>
+              </Button.Group>
+            </div> :
+            null
+          }
+        </div>
+        {this.state.showTrailer === false ?
+          <div className={styles.info}>
+            <div className={styles.paragraph}>
+              {this.props.website && this.props.websiteText === "Link to website" ?
                 <div className={styles.link}>
                   <a
                     href={this.props.website}
                     target="_blank">
                     {this.props.websiteText} <br />
                   </a>
-                </div>
-              ) : null
-            }
-            <div>
-              {this.props.paragraph}
+                </div> :
+                null
+              }
+              <div>
+                {this.props.paragraph}
+              </div>
             </div>
-          </div>
-        </div>
-        <div className={styles.divider}></div>
-        <div className={styles.listsContainer}>
-          {this.props.lists.map(list => (
-            <ScrollableList
-              key={list.title}
-              data={list.data}
-              title={list.title}
-              action={list.action} />
-          ))}
-        </div>
+            <div className={styles.divider}></div>
+            <div className={styles.listsContainer}>
+              {this.props.lists.map(list => (
+                <ScrollableList
+                  key={list.title}
+                  data={list.data}
+                  title={list.title}
+                  action={list.action} />
+              ))}
+            </div>
+          </div> :
+          <Embed id={this.props.website} aspectRatio="21:9" source="youtube"></Embed>
+        }
       </div>
     );
   }
