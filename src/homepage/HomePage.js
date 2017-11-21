@@ -4,6 +4,7 @@ import MemberContainer from './MemberContainer';
 import memberdata from './MemberData.js';
 import APIContainer from './APIContainer';
 import apidata from './APIData.js';
+import StatsContainer from './StatsContainer.js';
 import ToolContainer from './ToolContainer';
 import tooldata from './ToolData.js';
 import NavMenu from '../shared/NavMenu';
@@ -43,16 +44,7 @@ class HomePage extends Component {
             <p className={styles.topic}>
               The Stats
             </p>
-            <div className={styles.stats_info}>
-              <div>Total commits: 275</div>
-              <div>Total issues: 140</div>
-              <div>Total unit tests: 18</div>
-              <div><a href="http://docs.nicharesuk.apiary.io/#">Apiary API</a></div>
-              <div><a href="https://github.com/nicharesuk/idb">Github Repository</a></div>
-              <div><a href="https://utexas.app.box.com/v/weebmdreport">Technical Report</a></div>
-              <div><a href="https://utexas.app.box.com/v/weebmduml">UML Diagram</a></div>
-              <div><a href="https://trello.com/b/KrhsKbmQ/weebmd">Trello Board</a></div>
-            </div>
+            <StatsContainer/>
           </div>
           <div className={styles.info}>
             <p className={styles.topic}>

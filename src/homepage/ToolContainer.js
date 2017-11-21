@@ -16,7 +16,8 @@ class ToolContainer extends React.Component {
             key={tool.id}
             name={tool.name}
             imgURL={tool.imgURL}
-            info={tool.info}/>
+            info={tool.info}
+            URL={tool.URL}/>
         ))}
       </div>
     );
