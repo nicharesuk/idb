@@ -8,8 +8,10 @@ class APICard extends React.Component {
   render() {
     return (
       <div className="column">
-        <p className={styles.api_name}>{this.props.name}</p>
-        <p className={styles.api_info}><a href={this.props.URL}>{this.props.URL}</a></p>
+        <a href={this.props.URL}>
+          <p className={styles.api_name}>{this.props.name}</p>
+          <p className={styles.api_info}>{this.props.URL}</p>
+        </a>
       </div>
     );
   }
