@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './PageList.scss';
 import PropTypes from 'prop-types';
+import { Button } from 'semantic-ui-react';
 
 // TODO: Fix the fact that there can be a LOT of pages and it will break styling
 
@@ -25,9 +26,10 @@ class PageList extends Component {
         name: 'First',
         page: 1,
       });
-    } else if (currentPage !== 1) {
+    }
+    if (currentPage !== 1) {
       itemList.push({
-        name: 'Prev',
+        name: '<<',
         page: currentPage - 1,
       });
     }
@@ -37,32 +39,32 @@ class PageList extends Component {
         page: i,
       });
     }
+    if (currentPage !== maxPage) {
+      itemList.push({
+        name: '>>',
+        page: currentPage + 1,
+      });
+    }
     if (last !== maxPage) {
       itemList.push({
         name: 'Last',
         page: maxPage,
-      });
-    } else if (currentPage !== maxPage) {
-      itemList.push({
-        name: 'Next',
-        page: currentPage + 1,
       });
     }
     return (
       <div className={styles.detailContainer}>
           {itemList.map((item, index) => (
             <div key={item.name} className={styles.detailContainer}>
-              <div
-                onClick={() => this.props.changePage(item.page)}
-                className={item.name === `${currentPage}` ? styles.current : styles.link}>
-                {item.name}
+              <div className={styles.button}>
+                <Button
+                  active={item.name === `${currentPage}`}
+                  onClick={() => this.props.changePage(item.page)}
+                  inverted
+                  size="mini"
+                  circular>
+                  {item.name}
+                </Button>
               </div>
-              {index !== itemList.length - 1 ?
-                <div className={styles.bullet}>
-                  •
-                </div> :
-                null
-              }
             </div>   
           ))}
       </div>
