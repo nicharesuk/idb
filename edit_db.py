@@ -359,8 +359,28 @@ def update_empty_relationships():
                 print("DELETED: " + character.name)
         
         db.session.commit()
+
+def delete_manga_model(rowid):
+    with app.app_context():
+        db.init_app(app)
+        
+        manga = Manga.query.filter_by(id=rowid).first()
+
+        if len(manga.animes) == 0:
+
+            for character in manga.characters:
+                if len(character.animes) == 0 and len(character.actors) == 0:
+                    db.session.delete(character)
+                    print("DELETED: " + character.name)
+        else:
+            print("Manga has an anime, cannot delete characters. ID: " + str(rowid))
+
+        db.session.delete(manga)
+        print("Deleted manga ID: " + str(rowid))
+            
+        db.session.commit()
         
         
 if __name__ == "__main__":
 
-    update_empty_relationships()
+    delete_manga_model(370)
