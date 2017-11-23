@@ -9,6 +9,8 @@ import errno
 import filecmp
 import re
 
+import html
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import CheckConstraint
@@ -425,8 +427,35 @@ def fix_bad_genres():
                 model.genre = genre[1]
         
         db.session.commit()
+
+def fix_html():
+    with app.app_context():
+        db.init_app(app)
+        
+        cleanr = re.compile('<.*?>')
+        all_characters = Character.query.all()
+        all_anime = Anime.query.all()
+        all_manga = Manga.query.all()
+
+        # for character in all_characters:
+        #     cleantext = re.sub(cleanr, '', character.about)
+        #     character.about = html.unescape(cleantext)
+
+        # for anime in all_anime:
+        #     cleantext = re.sub(cleanr, '', anime.synopsis)
+        #     anime.synopsis = html.unescape(cleantext)
+
+        # for manga in all_manga:
+        #     cleantext = re.sub(cleanr, '', manga.synopsis)
+        #     manga.synopsis = html.unescape(cleantext)
+
+        for anime in all_anime:
+            anime.rating = html.unescape(anime.rating)
+
+            
+        db.session.commit()
         
         
 if __name__ == "__main__":
 
-    fix_bad_genres()
+    fix_html()
