@@ -379,8 +379,54 @@ def delete_manga_model(rowid):
         print("Deleted manga ID: " + str(rowid))
             
         db.session.commit()
+
+def fix_bad_genres():
+    with app.app_context():
+        db.init_app(app)
+
+        all_anime = Anime.query.all()
+        all_manga = Manga.query.all()
+
+        models = []
+
+        for anime in all_anime:
+            if len(anime.genre) == 4: # Bad genres are in the form of "., ." where . is any symbol
+                print("Anime ID: " + str(anime.id) + " Genre: " + anime.genre)
+                models.append(anime)
+
+        for manga in all_manga:
+            if len(manga.genre) == 4: # Bad genres are in the form of "., ." where . is any symbol
+                print("Manga ID: " + str(manga.id) + " Genre: " + manga.genre)
+                models.append(manga)
+
+        image_json = {}
+        for anime_file_num in os.listdir(data_folder + jikan_anime):
+            with open(data_folder + jikan_anime + anime_file_num) as anime_datafile:
+                print("anime: " + anime_file_num)
+                anime_json_data = json.load(anime_datafile)
+
+                image_json[anime_json_data["image"]] = anime_json_data
+
+        for manga_file_num in os.listdir(data_folder + jikan_manga):
+            with open(data_folder + jikan_manga + manga_file_num) as manga_datafile:
+                print("manga: " + manga_file_num)
+                manga_json_data = json.load(manga_datafile)
+
+                image_json[manga_json_data["image"]] = manga_json_data
+
+        for model in models:
+            # print(image_json[model.picture]['genre'])
+            genre = image_json[model.picture]['genre']
+            if type(genre) is dict:
+                print(genre["name"])
+                model.genre = genre["name"]
+            if type(genre) is list:
+                print(genre[1])
+                model.genre = genre[1]
+        
+        db.session.commit()
         
         
 if __name__ == "__main__":
 
-    delete_manga_model(370)
+    fix_bad_genres()
