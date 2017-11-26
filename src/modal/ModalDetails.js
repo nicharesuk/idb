@@ -43,16 +43,19 @@ class ModalDetails extends Component {
           <div className={styles.details}>
             {this.props.detailsList.map((detail, index) => (
               <div key={index} className={styles.detailContainer}>
-                <div className={styles.detail}>
-                  {detail}
-                </div>
-                {index !== this.props.detailsList.length - 1 ?
+                {detail ?
+                  <div className={styles.detail}>
+                    {detail}
+                  </div> :
+                  null
+                }
+                {index !== this.props.detailsList.length - 1 && detail ?
                   <div className={styles.detail}>
                     •
                   </div> :
                   null
                 }
-              </div>   
+              </div>
             ))}
           </div>
           {this.props.website && this.props.websiteText === "Link to trailer" ?
