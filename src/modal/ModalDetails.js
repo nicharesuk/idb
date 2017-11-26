@@ -30,6 +30,7 @@ class ModalDetails extends Component {
   }
 
   render() { 
+    const detailsString = this.props.detailsList.filter((detail) => detail !== null)
     return (
       <div className={styles.content}>
         <div className={styles.head}>
@@ -41,18 +42,18 @@ class ModalDetails extends Component {
             />
           </div>
           <div className={styles.details}>
-            {this.props.detailsList.map((detail, index) => (
+            {detailsString.map((detail, index) => (
               <div key={index} className={styles.detailContainer}>
                 <div className={styles.detail}>
                   {detail}
                 </div>
-                {index !== this.props.detailsList.length - 1 ?
+                {index !== detailsString.length - 1 ?
                   <div className={styles.detail}>
                     •
                   </div> :
                   null
                 }
-              </div>   
+              </div>
             ))}
           </div>
           {this.props.website && this.props.websiteText === "Link to trailer" ?
