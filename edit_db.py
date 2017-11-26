@@ -9,6 +9,8 @@ import errno
 import filecmp
 import re
 
+import html
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import CheckConstraint
@@ -359,8 +361,101 @@ def update_empty_relationships():
                 print("DELETED: " + character.name)
         
         db.session.commit()
+
+def delete_manga_model(rowid):
+    with app.app_context():
+        db.init_app(app)
+        
+        manga = Manga.query.filter_by(id=rowid).first()
+
+        if len(manga.animes) == 0:
+
+            for character in manga.characters:
+                if len(character.animes) == 0 and len(character.actors) == 0:
+                    db.session.delete(character)
+                    print("DELETED: " + character.name)
+        else:
+            print("Manga has an anime, cannot delete characters. ID: " + str(rowid))
+
+        db.session.delete(manga)
+        print("Deleted manga ID: " + str(rowid))
+            
+        db.session.commit()
+
+def fix_bad_genres():
+    with app.app_context():
+        db.init_app(app)
+
+        all_anime = Anime.query.all()
+        all_manga = Manga.query.all()
+
+        models = []
+
+        for anime in all_anime:
+            if len(anime.genre) == 4: # Bad genres are in the form of "., ." where . is any symbol
+                print("Anime ID: " + str(anime.id) + " Genre: " + anime.genre)
+                models.append(anime)
+
+        for manga in all_manga:
+            if len(manga.genre) == 4: # Bad genres are in the form of "., ." where . is any symbol
+                print("Manga ID: " + str(manga.id) + " Genre: " + manga.genre)
+                models.append(manga)
+
+        image_json = {}
+        for anime_file_num in os.listdir(data_folder + jikan_anime):
+            with open(data_folder + jikan_anime + anime_file_num) as anime_datafile:
+                print("anime: " + anime_file_num)
+                anime_json_data = json.load(anime_datafile)
+
+                image_json[anime_json_data["image"]] = anime_json_data
+
+        for manga_file_num in os.listdir(data_folder + jikan_manga):
+            with open(data_folder + jikan_manga + manga_file_num) as manga_datafile:
+                print("manga: " + manga_file_num)
+                manga_json_data = json.load(manga_datafile)
+
+                image_json[manga_json_data["image"]] = manga_json_data
+
+        for model in models:
+            # print(image_json[model.picture]['genre'])
+            genre = image_json[model.picture]['genre']
+            if type(genre) is dict:
+                print(genre["name"])
+                model.genre = genre["name"]
+            if type(genre) is list:
+                print(genre[1])
+                model.genre = genre[1]
+        
+        db.session.commit()
+
+def fix_html():
+    with app.app_context():
+        db.init_app(app)
+        
+        cleanr = re.compile('<.*?>')
+        all_characters = Character.query.all()
+        all_anime = Anime.query.all()
+        all_manga = Manga.query.all()
+
+        # for character in all_characters:
+        #     cleantext = re.sub(cleanr, '', character.about)
+        #     character.about = html.unescape(cleantext)
+
+        # for anime in all_anime:
+        #     cleantext = re.sub(cleanr, '', anime.synopsis)
+        #     anime.synopsis = html.unescape(cleantext)
+
+        # for manga in all_manga:
+        #     cleantext = re.sub(cleanr, '', manga.synopsis)
+        #     manga.synopsis = html.unescape(cleantext)
+
+        for anime in all_anime:
+            anime.rating = html.unescape(anime.rating)
+
+            
+        db.session.commit()
         
         
 if __name__ == "__main__":
 
-    update_empty_relationships()
+    fix_html()
