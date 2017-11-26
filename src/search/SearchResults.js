@@ -7,15 +7,12 @@ import PageList from '../shared/PageList';
 import ReactDOM from 'react-dom';
 import Result from './Result';
 import ButtonRow from './ButtonRow';
+import { changeModalURL } from '../shared/Utilities';
 
 class SearchResults extends Component {
 
   openModalAction = (id, type) => {
-    this.context.router.history.push(`/search?type=${type}&id=${id}`);
-  }
-
-  closeModalAction = () => {
-    this.context.router.history.push(`/search`);
+    this.context.router.history.push(changeModalURL(id, type));
   }
 
   componentDidUpdate = () => {
@@ -53,8 +50,7 @@ class SearchResults extends Component {
             </h1>
           </div> : null
         }
-        <ModalInstance
-          onClose={this.closeModalAction} />
+        <ModalInstance pageType="search" />
         }
         <div className={styles.items}>
           {shouldButtonRowShow ?

@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import styles from './PageList.scss';
 import PropTypes from 'prop-types';
-
-// TODO: Fix the fact that there can be a LOT of pages and it will break styling
+import { Button } from 'semantic-ui-react';
+import queryString from 'query-string';
 
 const MAX_SHOWING = 10;
 
 class PageList extends Component {
 
   render() {
-    const { currentPage, maxPage } = this.props;
+    const maxPage = this.props.maxPage;
+    const params = queryString.parse(window.location.search);
+    const currentPage = params.page ? parseInt(params.page, 10) : 1;
+    // console.log(currentPage);
+    // console.log(maxPage);
 
     const numBelow = Math.ceil((MAX_SHOWING - 1) / 2);
     const numAbove = Math.floor((MAX_SHOWING - 1) / 2);
@@ -25,9 +28,10 @@ class PageList extends Component {
         name: 'First',
         page: 1,
       });
-    } else if (currentPage !== 1) {
+    }
+    if (currentPage !== 1) {
       itemList.push({
-        name: 'Prev',
+        name: '<<',
         page: currentPage - 1,
       });
     }
@@ -37,41 +41,36 @@ class PageList extends Component {
         page: i,
       });
     }
+    if (currentPage !== maxPage) {
+      itemList.push({
+        name: '>>',
+        page: currentPage + 1,
+      });
+    }
     if (last !== maxPage) {
       itemList.push({
         name: 'Last',
         page: maxPage,
       });
-    } else if (currentPage !== maxPage) {
-      itemList.push({
-        name: 'Next',
-        page: currentPage + 1,
-      });
     }
     return (
-      <div className={styles.detailContainer}>
-          {itemList.map((item, index) => (
-            <div key={item.name} className={styles.detailContainer}>
-              <div
-                onClick={() => this.props.changePage(item.page)}
-                className={item.name === `${currentPage}` ? styles.current : styles.link}>
-                {item.name}
-              </div>
-              {index !== itemList.length - 1 ?
-                <div className={styles.bullet}>
-                  •
-                </div> :
-                null
-              }
-            </div>   
-          ))}
-      </div>
+      <Button.Group>
+        {itemList.map((item, index) => (
+          <Button
+            key={item.name}
+            active={item.name === `${currentPage}`}
+            onClick={() => this.props.changePage(item.page)}
+            inverted
+            size="mini">
+            {item.name}
+          </Button>
+        ))}
+      </Button.Group>
     );
   }
 }
 
 PageList.propTypes = {
-  currentPage: PropTypes.number,
   maxPage: PropTypes.number,
   changePage: PropTypes.func,
 }

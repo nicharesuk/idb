@@ -60,6 +60,7 @@ ActorsPage.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
   handleSubmit: PropTypes.func,
+  page: PropTypes.number,
 }
 
 export default ActorsPage;

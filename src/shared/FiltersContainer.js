@@ -3,6 +3,7 @@ import ThumbnailPage from './ThumbnailPage';
 import { getModelData } from './Requests';
 import NavMenu from './NavMenu';
 import PropTypes from 'prop-types';
+import { changePageURL } from './Utilities';
 
 class FiltersContainer extends Component {
 
@@ -12,12 +13,20 @@ class FiltersContainer extends Component {
     activeSortIndex: 0,
     loading: true,
     ascending: true,
-    page: 1,
     maxPage: 1,
   }
 
   componentWillMount = () => {
     this.getInstances({});
+  }
+
+  componentWillReceiveProps = (nextProps) => {
+    if (nextProps.page !== this.props.page) {
+      if (!this.state.loading) {
+        this.setState({data: [], loading: true});
+        this.getInstances({newPage: nextProps.page});
+      }
+    }
   }
 
   getActiveFilters = (filters) => {
@@ -43,7 +52,7 @@ class FiltersContainer extends Component {
 
     const filters = newFilters ? newFilters : this.getActiveFilters(this.state.filters);
 
-    const page = newPage !== undefined ? newPage : this.state.page;
+    const page = newPage !== undefined ? newPage : this.props.page;
 
     getModelData({
       model: this.props.type,
@@ -57,15 +66,16 @@ class FiltersContainer extends Component {
   }
 
   changePage = (newPage) => {
-    if (newPage === this.state.page) {
+    const newURL = changePageURL(newPage);
+    if (newURL === null) {
       return;
     }
-    this.setState({page: newPage, data: [], loading: true});
-    this.getInstances({newPage});
+    this.context.router.history.push(newURL);
   }
 
   changeSort = (activeSortIndex) => {
-    this.setState({activeSortIndex, data: [], loading: true, page: 1});
+    this.setState({activeSortIndex, data: [], loading: true});
+    this.changePage(1);
     this.getInstances({newSort: this.props.sorts[activeSortIndex].field, newPage: 1});
   }
 
@@ -73,14 +83,16 @@ class FiltersContainer extends Component {
     if (ascending === this.state.ascending) {
       return;
     }
-    this.setState({ascending, data: [], loading: true, page: 1});
+    this.setState({ascending, data: [], loading: true});
+    this.changePage(1);
     this.getInstances({newDirection: ascending, newPage: 1});
   }
 
   updateFilters = (filterIndex, valueIndex) => {
     const newFilters = [...this.state.filters];
     newFilters[filterIndex].activeValue = valueIndex;
-    this.setState({filters: newFilters, data: [], loading: true, page: 1});
+    this.setState({filters: newFilters, data: [], loading: true});
+    this.changePage(1);
     this.getInstances({
       newFilters: this.getActiveFilters(newFilters),
       newPage: 1,
@@ -105,7 +117,6 @@ class FiltersContainer extends Component {
           loading={this.state.loading}
           type={this.props.type}
           data={this.state.data.map(instance => this.props.handleModel(instance))}
-          currentPage={this.state.page}
           maxPage={this.state.maxPage}
           changePage={this.changePage} />
       </div>
@@ -113,9 +124,17 @@ class FiltersContainer extends Component {
   }
 }
 
+FiltersContainer.contextTypes = {
+  router: PropTypes.shape({
+    history: PropTypes.object.isRequired,
+  }),
+};
+
+
 FiltersContainer.defaultProps = {
   filters: [],
   sorts: [],
+  page: 1,
 }
 
 FiltersContainer.propTypes = {
@@ -126,6 +145,7 @@ FiltersContainer.propTypes = {
   filters: PropTypes.array,
   sorts: PropTypes.array,
   type: PropTypes.string,
+  page: PropTypes.number,
 }
 
 export default FiltersContainer;

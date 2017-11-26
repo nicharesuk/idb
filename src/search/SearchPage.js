@@ -3,6 +3,7 @@ import SearchResults from './SearchResults';
 import { getSearchData } from '../shared/Requests';
 import NavMenu from '../shared/NavMenu';
 import PropTypes from 'prop-types';
+import { changePageURL } from '../shared/Utilities';
 
 const models = [
   {
@@ -143,7 +144,6 @@ class SearchPage extends Component {
   state = {
     data: [],
     loading: true,
-    page: 1,
     maxPage: 1,
     orSearch: true,
     filters: searchFilters.map(filter => ({...filter, active: filter.value === "all"})),
@@ -157,13 +157,20 @@ class SearchPage extends Component {
     if (nextProps.searchText !== this.props.searchText) {
       this.setState({data: [], loading: true, page: 1});
       this.getInstances({newSearch: nextProps.searchText, newPage: 1});
+    } else if (nextProps.page !== this.props.page) {
+      if (!this.state.loading) {
+        this.setState({data: [], loading: true});
+        this.getInstances({newPage: nextProps.page});
+      }
     }
   }
 
   getInstances = ({newSearch, newFilters, newPage, newOrSearch}) => {
     const search = newSearch !== undefined ? newSearch : this.props.searchText;
     const filters = newFilters !== undefined ? newFilters : this.state.filters;
-    const page = newPage !== undefined ? newPage : this.state.page;
+
+    const page = newPage !== undefined ? newPage : this.props.page;
+
     const orSearch = newOrSearch !== undefined ? newOrSearch : this.state.orSearch;
 
     let activeFilters = [];
@@ -194,11 +201,11 @@ class SearchPage extends Component {
   }
 
   changePage = (newPage) => {
-    if (newPage === this.state.page) {
+    const newURL = changePageURL(newPage);
+    if (newURL === null) {
       return;
     }
-    this.setState({page: newPage, data: [], loading: true});
-    this.getInstances({newPage});
+    this.context.router.history.push(newURL);
   }
 
   updateFilters = (filterIndex) => {
@@ -216,7 +223,8 @@ class SearchPage extends Component {
       };
     }
 
-    this.setState({filters, page: 1, data: [], loading: true});
+    this.setState({filters, data: [], loading: true});
+    this.changePage(1);
     this.getInstances({newFilters: filters, newPage: 1});
   }
 
@@ -224,7 +232,8 @@ class SearchPage extends Component {
     if (orSearch === this.state.orSearch) {
       return;
     }
-    this.setState({orSearch, page: 1, data: [], loading: true});
+    this.setState({orSearch, data: [], loading: true});
+    this.changePage(1);
     this.getInstances({newOrSearch: orSearch, newPage: 1});
   }
 
@@ -252,10 +261,22 @@ class SearchPage extends Component {
   }
 }
 
+
+SearchPage.contextTypes = {
+  router: PropTypes.shape({
+    history: PropTypes.object.isRequired,
+  }),
+};
+
+SearchPage.defaultProps = {
+  page: 1,
+}
+
 SearchPage.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
   handleSubmit: PropTypes.func,
+  page: PropTypes.number,
 }
 
 export default SearchPage;
