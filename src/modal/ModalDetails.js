@@ -44,9 +44,9 @@ class ModalDetails extends Component {
           <div className={styles.details}>
             {detailsString.map((detail, index) => (
               <div key={index} className={styles.detailContainer}>
-                  <div className={styles.detail}>
-                    {detail}
-                  </div>
+                <div className={styles.detail}>
+                  {detail}
+                </div>
                 {index !== detailsString.length - 1 ?
                   <div className={styles.detail}>
                     •
