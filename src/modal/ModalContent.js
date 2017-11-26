@@ -8,6 +8,7 @@ import ActorModalContent from '../actors/ActorModalContent';
 import MangaModalContent from '../manga/MangaModalContent';
 import { getSingleModel } from '../shared/Requests';
 import defaultImage from '../shared/DefaultImage';
+import { changeModalURL } from '../shared/Utilities';
 
 class ModalContent extends Component {
 
@@ -36,7 +37,7 @@ class ModalContent extends Component {
 
   changeContent = (type, index) => {
     const id = this.state.dataObject.included.filter(obj => obj.type === type)[index].id;
-    this.context.router.history.push(`/${window.location.pathname.substring(1)}?type=${type}&id=${id}`);
+    this.context.router.history.push(changeModalURL(id, type));
   }
 
   getContentNode = () => {

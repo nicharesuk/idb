@@ -6,6 +6,7 @@ import { Loader } from 'semantic-ui-react';
 import ModalInstance from '../modal/ModalInstance';
 import PageList from './PageList';
 import ReactDOM from 'react-dom';
+import { changeModalURL } from './Utilities';
 
 const THUMBNAIL_WIDTH = 134 + 20;
 
@@ -31,11 +32,7 @@ class ThumbnailPage extends Component {
 
   openModalAction = (index) => {
     const id = this.props.data[index].id;
-    this.context.router.history.push(`/${this.props.type}?type=${this.props.type}&id=${id}`);
-  }
-
-  closeModalAction = () => {
-    this.context.router.history.push(`/${this.props.type}`);
+    this.context.router.history.push(changeModalURL(id, this.props.type));
   }
 
   componentDidUpdate = () => {
@@ -65,14 +62,13 @@ class ThumbnailPage extends Component {
     const numGhosts = Math.floor(this.state.windowWidth / THUMBNAIL_WIDTH);
     const ghosts = [];
     for (let i = 0; i < numGhosts; i++) {
-      ghosts.push(<div key={`ghost-${i}`} className={styles.ghost}></div>);
+      ghosts.push(<div key={`ghost-KiD${i}`} className={styles.ghost}></div>);
     }
 
     const data = this.props.data;
     return (
       <div className={styles.container}>
-        <ModalInstance
-          onClose={this.closeModalAction} />
+        <ModalInstance pageType={this.props.type} />
         <div className={styles.items}>
           {data.map((instance, index) => (
             <div
@@ -89,7 +85,6 @@ class ThumbnailPage extends Component {
           {ghosts}
           <div className={styles.pageList}>
             <PageList
-              currentPage={this.props.currentPage}
               maxPage={this.props.maxPage}
               changePage={this.props.changePage} />
           </div>
@@ -110,7 +105,6 @@ ThumbnailPage.propTypes = {
   loading: PropTypes.bool,
   type: PropTypes.string,
   data: PropTypes.array,
-  currentPage: PropTypes.number,
   maxPage: PropTypes.number,
   changePage: PropTypes.func,
 }

@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 // import styles from './AnimePage.scss';
-import getStartYear from '../shared/GetStartYear';
+import { getStartYear } from '../shared/Utilities';
 import PropTypes from 'prop-types';
 import FiltersContainer from '../shared/FiltersContainer';
-
-// TODO: Fill in all filters and sorts for this page
 
 const filters = [
   {
@@ -110,6 +108,7 @@ AnimePage.propTypes = {
   pages: PropTypes.array,
   searchText: PropTypes.string,
   handleSubmit: PropTypes.func,
+  page: PropTypes.number,
 }
 
 export default AnimePage;

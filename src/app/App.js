@@ -8,6 +8,7 @@ import MangaPage from '../manga/MangaPage';
 import SearchPage from '../search/SearchPage';
 import { Switch, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { getCurrentPage } from '../shared/Utilities';
 
 const pages = [
   {
@@ -68,6 +69,7 @@ class App extends Component {
                     pages: pages,
                     searchText: this.state.searchText,
                     handleSubmit: this.handleSubmit,
+                    page: getCurrentPage(),
                   })
                 )} />
             );
