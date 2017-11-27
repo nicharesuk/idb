@@ -20,10 +20,12 @@
 	overflow: auto;
 }
 
-.innerElement {
-	background-color: transparent;
-	padding: 20px;
+.element {
 	margin: 3px;
+}
+
+.innerElement {
+	padding: 20px;
 	font-size: 20px;
 	cursor: pointer;
 	color: white;

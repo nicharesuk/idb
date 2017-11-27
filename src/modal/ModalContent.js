@@ -9,6 +9,7 @@ import MangaModalContent from '../manga/MangaModalContent';
 import { getSingleModel } from '../shared/Requests';
 import defaultImage from '../shared/DefaultImage';
 import { changeModalURL } from '../shared/Utilities';
+import { Loader } from 'semantic-ui-react';
 
 class ModalContent extends Component {
 
@@ -25,7 +26,10 @@ class ModalContent extends Component {
   }
 
   componentWillReceiveProps = (nextProps) => {
-    this.getModelData(nextProps.type, nextProps.id);
+    if (nextProps.id !== this.props.id || nextProps.type !== this.props.type) {
+      this.setState({dataObject: null});
+      this.getModelData(nextProps.type, nextProps.id);
+    }
   }
 
   getModelData = (type, id) => {
@@ -56,7 +60,16 @@ class ModalContent extends Component {
 
   render() {
     if (!this.state.dataObject) {
-      return <div className={styles.container}></div>
+      return (
+        <div className={styles.container}>
+          <Loader
+            size="massive"
+            active
+            inverted>
+            Loading
+          </Loader>
+        </div>
+      );
     }
     return (
       <div className={styles.container}>
