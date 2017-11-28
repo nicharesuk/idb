@@ -6,11 +6,16 @@
 }
 
 .titleText {
-  font-size: 60px;
-  color: white;
   &:hover {
     color: white;
   }
+  font-size: 60px;
+  color: white;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .bullet {
@@ -18,9 +23,11 @@
 }
 
 .info {
-  height: 70%;
-  max-height: 70%;
+  flex: 1 1 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .vid {
@@ -47,13 +54,13 @@
 }
 
 .paragraph {
+  flex: 1 1 40%;
   line-height: 21px;
-  height: 30%;
-  max-height: 30%;
   overflow: auto;
 }
 
 .head {
+  flex: 0 0 auto;
   display: block;
   overflow: auto; 
   width: 100%;
@@ -61,13 +68,14 @@
 }
 
 .divider {
+  flex: 0 0 auto;
   width: 95%;
   margin: auto;
   border-top: 1px solid rgba(255, 255, 255, .3);
 }
 
 .listsContainer {
-  height: 70%;
+  flex: 1 1 60%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -76,6 +84,8 @@
 .content {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .tabs {
