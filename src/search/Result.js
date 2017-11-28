@@ -57,11 +57,12 @@ class Result extends Component {
 
     for (const key in data) {
       if (key in this.props.keyNames) {
-        const indices = this.props.searchWords.map(w => data[key].toLowerCase().indexOf(w));
+        const dataValue = String(data[key]);
+        const indices = this.props.searchWords.map(w => dataValue.toLowerCase().indexOf(w));
         const matches = indices.filter(index => index !== -1);
         if (matches.length) {
           const minIndex = Math.min(...matches);
-          const text = this.sanitizeText(data[key], minIndex);
+          const text = this.sanitizeText(dataValue, minIndex);
           results.push({
             name: key,
             data: text,

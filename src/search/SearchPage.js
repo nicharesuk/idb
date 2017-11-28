@@ -37,6 +37,14 @@ const models = [
         name: "Synopsis",
         key: "synopsis",
       },
+      {
+        name: "Score",
+        key: "score",
+      },
+      {
+        name: "Number of Episodes",
+        key: "num_episodes",
+      },
     ],
   },
   {
@@ -49,7 +57,11 @@ const models = [
       {
         name: "Name",
         key: "name",
-      }
+      },
+      {
+        name: "Role",
+        key: "role",
+      },
     ],
   },
   {
@@ -82,6 +94,14 @@ const models = [
       {
         name: "Synopsis",
         key: "synopsis",
+      },
+      {
+        name: "Score",
+        key: "score",
+      },
+      {
+        name: "Number of Chapters",
+        key: "num_chapters",
       },
     ],
   },
