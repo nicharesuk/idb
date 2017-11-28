@@ -7,6 +7,7 @@ from sqlalchemy.schema import ForeignKey
 from flask_restless import APIManager
 from flask import Flask, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS, cross_origin
 from app.models import db, Character, Anime, Actor, Manga
 
 BUILD_DIR = 'build'
@@ -14,6 +15,7 @@ app = Flask(__name__, static_folder=BUILD_DIR)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app/weeb.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # Suppress warning
+CORS(app) # Enable Cross-Origin Resource Sharing
 
 db.init_app(app)
 
