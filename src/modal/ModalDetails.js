@@ -83,6 +83,7 @@ class ModalDetails extends Component {
               {this.props.website && this.props.websiteText === "Link to website" ?
                 <div>
                   <Button
+                    as="a"
                     inverted
                     onClick={() => window.open(websiteString, "_blank")}>
                     Website
