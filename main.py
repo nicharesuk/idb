@@ -1,3 +1,8 @@
+"""
+Starts the main server to host the static production build files
+as well as set up the Flask-Restless API routes for the database models.
+"""
+
 import os
 import flask
 import flask_sqlalchemy

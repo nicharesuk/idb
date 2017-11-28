@@ -1,3 +1,7 @@
+"""
+This file was used to scrape data from Kitsu.io
+"""
+
 import sys
 import requests
 import json

@@ -1,4 +1,7 @@
-### Important, this must be run with Python, not Python3 ###
+"""
+IMPORTANT, this must be run with Python, not Python3
+This file was used for scraping data from Jikan.me
+"""
 # -------
 # imports
 # -------
