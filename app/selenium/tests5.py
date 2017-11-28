@@ -7,28 +7,28 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 
-class Navigation(unittest.TestCase):
+class Tests5(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://localhost:3000/"
+        self.base_url = "http://weebmd.me/"
         self.verificationErrors = []
         self.accept_next_alert = True
     
-    def test_navigation(self):
+    def test_s5(self):
         driver = self.driver
-        driver.get(self.base_url + "/")
-        self.assertEqual("http://localhost:3000/", driver.current_url)
-        driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[2]/div").click()
-        self.assertEqual("http://localhost:3000/animes", driver.current_url)
-        driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[3]/div").click()
-        self.assertEqual("http://localhost:3000/characters", driver.current_url)
-        driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[4]/div").click()
-        self.assertEqual("http://localhost:3000/mangas", driver.current_url)
-        driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[5]/div").click()
+        driver.get(self.base_url + "/actors")
         self.assertEqual("http://localhost:3000/actors", driver.current_url)
-        driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[6]/div").click()
-        self.assertEqual("http://localhost:3000/search", driver.current_url)
+        driver.find_element_by_xpath("//img[contains(@src,'https://myanimelist.cdn-dena.com/images/voiceactors/1/39961.jpg')]").click()
+        self.assertRegexpMatches(driver.current_url, r"^http://localhost:3000/actors[\s\S]type=actors&id=523$")
+        driver.find_element_by_xpath("//div[2]/div/div/i").click()
+        self.assertEqual("http://localhost:3000/actors", driver.current_url)
+        driver.find_element_by_xpath("//div[@id='root']/div/div/div[2]/div/div[74]/div/button[12]").click()
+        self.assertRegexpMatches(driver.current_url, r"^http://localhost:3000/actors[\s\S]page=19$")
+        driver.find_element_by_xpath("//img[contains(@src,'https://myanimelist.cdn-dena.com/images/voiceactors/2/43333.jpg')]").click()
+        self.assertRegexpMatches(driver.current_url, r"^http://localhost:3000/actors[\s\S]page=19&type=actors&id=966$")
+        driver.find_element_by_xpath("//div[2]/div/div/i").click()
+        self.assertRegexpMatches(driver.current_url, r"^http://localhost:3000/actors[\s\S]page=19$")
         driver.close()
     
     def is_element_present(self, how, what):

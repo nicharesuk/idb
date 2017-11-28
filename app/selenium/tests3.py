@@ -7,15 +7,15 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 
-class Test3(unittest.TestCase):
+class Tests3(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://localhost:3000/"
+        self.base_url = "http://weebmd.me/"
         self.verificationErrors = []
         self.accept_next_alert = True
     
-    def test_3(self):
+    def test_s3(self):
         driver = self.driver
         driver.get(self.base_url + "/mangas")
         self.assertEqual("http://localhost:3000/mangas", driver.current_url)
