@@ -12,12 +12,12 @@ export default [
   {
     id: 3,
     name: "Technical Report",
-    URL: "https://utexas.app.box.com/v/weebmdreport"
+    URL: "https://weebmd.gitbooks.io/report"
   },
   {
     id: 4,
     name: "UML Diagram",
-    URL: "https://utexas.app.box.com/v/weebmduml"
+    URL: "https://weebmd.gitbooks.io/uml"
   },
   {
     id: 5,

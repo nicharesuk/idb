@@ -9,7 +9,7 @@ export default [
   {
     id: 2,
     name: "Axios",
-    imgURL: "https://i.lensdump.com/i/EnDX5.md.gif",
+    imgURL: "https://i.imgur.com/paSS0fC.png",
     info: "HTTP Client",
     URL: "https://www.npmjs.com/package/axios"
   },
