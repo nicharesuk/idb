@@ -1,4 +1,7 @@
-# This is the file we will use to put data into the database
+"""
+This is the script file used to create and edit the database using Flask-SQL-Alchemy.
+"""
+
 import os
 import json
 import sys

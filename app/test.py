@@ -1,3 +1,9 @@
+"""
+The below unit tests have been deprecated.
+Due to using Flask-Restless there is no Back-End code to test.
+Thus we have moved all Unit tests to Selenium and Postman files.
+"""
+
 import requests
 import json
 import unittest

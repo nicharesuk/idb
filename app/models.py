@@ -1,3 +1,8 @@
+"""
+All of the model declarations for Flask-SQL-Alchemy.
+Defines the schema for the SQL Database
+"""
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import CheckConstraint
