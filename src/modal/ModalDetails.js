@@ -31,6 +31,7 @@ class ModalDetails extends Component {
 
   render() { 
     const detailsString = this.props.detailsList.filter((detail) => detail !== null)
+    const websiteString = this.props.website
     return (
       <div className={styles.content}>
         <div className={styles.head}>
@@ -80,12 +81,13 @@ class ModalDetails extends Component {
           <div className={styles.info}>
             <div className={styles.paragraph}>
               {this.props.website && this.props.websiteText === "Link to website" ?
-                <div className={styles.link}>
-                  <a
-                    href={this.props.website}
-                    target="_blank">
-                    {this.props.websiteText} <br />
-                  </a>
+                <div>
+                  <Button
+                    as="a"
+                    inverted
+                    onClick={() => window.open(websiteString, "_blank")}>
+                    Website
+                  </Button>
                 </div> :
                 null
               }
