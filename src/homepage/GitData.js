@@ -2,16 +2,16 @@ export default [
   {
     id: 1,
     name: "Total commits",
-    value: "275"
+    value: "224"
   },
   {
     id: 2,
     name: "Total issues",
-    value: "140"
+    value: "183"
   },
   {
     id: 3,
     name: "Total unit tests",
-    value: "18"
+    value: "23"
   }
 ]
