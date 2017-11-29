@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://weebmd.me/animes" />
-<title>test</title>
+<link rel="selenium.base" href="http://weebmd.me/" />
+<title>anime</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">test</td></tr>
+<tr><td rowspan="1" colspan="3">anime</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,7 +18,12 @@
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost:3000/animes</td>
+	<td>http://weebmd.me/animes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[contains(@src,'https://myanimelist.cdn-dena.com/images/anime/2/82596.jpg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -28,27 +33,12 @@
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost:3000/animes?type=animes&amp;id=4</td>
+	<td>http://weebmd.me/animes?type=animes&amp;id=4</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[3]/div[2]/div[2]/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertLocation</td>
-	<td>http://localhost:3000/animes?type=mangas&amp;id=350</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[3]/div[2]/div[2]/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertLocation</td>
-	<td>http://localhost:3000/animes?type=animes&amp;id=4</td>
+	<td>waitForElementPresent</td>
+	<td>//div[3]/div/div[2]/div[4]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -58,17 +48,57 @@
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost:3000/animes?type=characters&amp;id=1568</td>
+	<td>http://weebmd.me/animes?type=characters&amp;id=1568</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[2]/div[2]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[3]/div[2]/div[2]/div/div</td>
+	<td>//div[2]/div[2]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost:3000/animes?type=animes&amp;id=4</td>
+	<td>http://weebmd.me/animes?type=animes&amp;id=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[2]/div[2]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div[2]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://weebmd.me/animes?type=mangas&amp;id=350</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[2]/div[2]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div[2]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://weebmd.me/animes?type=animes&amp;id=4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[2]/div/div/i</td>
 	<td></td>
 </tr>
 <tr>
@@ -78,17 +108,22 @@
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost:3000/animes</td>
+	<td>http://weebmd.me/animes</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[@id='root']/div/div/div[2]/div/div[74]/div/button[2]</td>
+	<td>open</td>
+	<td>/animes?page=2</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost:3000/animes?page=2</td>
+	<td>http://weebmd.me/animes?page=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[contains(@src,'https://myanimelist.cdn-dena.com/images/anime/4/19644.jpg')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -98,7 +133,12 @@
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost:3000/animes?page=2&amp;type=animes&amp;id=1</td>
+	<td>http://weebmd.me/animes?page=2&amp;type=animes&amp;id=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[2]/div/div/i</td>
 	<td></td>
 </tr>
 <tr>
@@ -108,14 +148,10 @@
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost:3000/animes?page=2</td>
+	<td>http://weebmd.me/animes?page=2</td>
 	<td></td>
 </tr>
-<tr>
-	<td>close</td>
-	<td>/</td>
-	<td></td>
-</tr>
+
 </tbody></table>
 </body>
 </html>

@@ -11,25 +11,54 @@ class Tests1(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://localhost:3000/"
+        self.base_url = "http://weebmd.me/"
         self.verificationErrors = []
         self.accept_next_alert = True
     
     def test_s1(self):
         driver = self.driver
         driver.get(self.base_url + "/")
-        self.assertEqual("http://localhost:3000/", driver.current_url)
+        self.assertEqual("http://weebmd.me/", driver.current_url)
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//div[@id='root']/div/div/div/div/div/a[2]/div"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
         driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[2]/div").click()
-        self.assertEqual("http://localhost:3000/animes", driver.current_url)
+        self.assertEqual("http://weebmd.me/animes", driver.current_url)
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//div[@id='root']/div/div/div/div/div/a[3]/div"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
         driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[3]/div").click()
-        self.assertEqual("http://localhost:3000/characters", driver.current_url)
+        self.assertEqual("http://weebmd.me/characters", driver.current_url)
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//div[@id='root']/div/div/div/div/div/a[4]/div"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
         driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[4]/div").click()
-        self.assertEqual("http://localhost:3000/mangas", driver.current_url)
+        self.assertEqual("http://weebmd.me/mangas", driver.current_url)
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//div[@id='root']/div/div/div/div/div/a[5]/div"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
         driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[5]/div").click()
-        self.assertEqual("http://localhost:3000/actors", driver.current_url)
+        self.assertEqual("http://weebmd.me/actors", driver.current_url)
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//div[@id='root']/div/div/div/div/div/a[6]/div"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
         driver.find_element_by_xpath("//div[@id='root']/div/div/div/div/div/a[6]/div").click()
-        self.assertEqual("http://localhost:3000/search", driver.current_url)
-        driver.close()
+        self.assertEqual("http://weebmd.me/search", driver.current_url)
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)

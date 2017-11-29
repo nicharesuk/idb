@@ -18,18 +18,57 @@ class Tests5(unittest.TestCase):
     def test_s5(self):
         driver = self.driver
         driver.get(self.base_url + "/actors")
-        self.assertEqual("http://localhost:3000/actors", driver.current_url)
+        self.assertEqual("http://weebmd.me/actors", driver.current_url)
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//img[contains(@src,'https://myanimelist.cdn-dena.com/images/voiceactors/1/39961.jpg')]"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
         driver.find_element_by_xpath("//img[contains(@src,'https://myanimelist.cdn-dena.com/images/voiceactors/1/39961.jpg')]").click()
-        self.assertRegexpMatches(driver.current_url, r"^http://localhost:3000/actors[\s\S]type=actors&id=523$")
+        self.assertRegexpMatches(driver.current_url, r"^http://weebmd\.me/actors[\s\S]type=actors&id=523$")
+        for i in range(60):
+            try:
+                if self.is_element_present(By.CSS_SELECTOR, "div.ScrollableList__innerElement___10j84"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        driver.find_element_by_css_selector("div.ScrollableList__innerElement___10j84").click()
+        self.assertRegexpMatches(driver.current_url, r"^http://weebmd\.me/actors[\s\S]type=characters&id=566$")
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//div[3]/div/div[2]/div[2]/div"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        driver.find_element_by_xpath("//div[3]/div/div[2]/div[1]/div").click()
+        self.assertRegexpMatches(driver.current_url, r"^http://weebmd\.me/actors[\s\S]type=actors&id=523$")
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//div[2]/div/div/i"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
         driver.find_element_by_xpath("//div[2]/div/div/i").click()
-        self.assertEqual("http://localhost:3000/actors", driver.current_url)
-        driver.find_element_by_xpath("//div[@id='root']/div/div/div[2]/div/div[74]/div/button[12]").click()
-        self.assertRegexpMatches(driver.current_url, r"^http://localhost:3000/actors[\s\S]page=19$")
-        driver.find_element_by_xpath("//img[contains(@src,'https://myanimelist.cdn-dena.com/images/voiceactors/2/43333.jpg')]").click()
-        self.assertRegexpMatches(driver.current_url, r"^http://localhost:3000/actors[\s\S]page=19&type=actors&id=966$")
+        self.assertEqual("http://weebmd.me/actors", driver.current_url)
+        driver.get(self.base_url + "/actors?page=7")
+        self.assertRegexpMatches(driver.current_url, r"^http://weebmd\.me/actors[\s\S]page=7$")
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//img[contains(@src,'https://myanimelist.cdn-dena.com/images/voiceactors/3/23989.jpg')]"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        driver.find_element_by_xpath("//img[contains(@src,'https://myanimelist.cdn-dena.com/images/voiceactors/3/23989.jpg')]").click()
+        self.assertRegexpMatches(driver.current_url, r"^http://weebmd\.me/actors[\s\S]page=7&type=actors&id=241$")
+        for i in range(60):
+            try:
+                if self.is_element_present(By.XPATH, "//div[2]/div/div/i"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
         driver.find_element_by_xpath("//div[2]/div/div/i").click()
-        self.assertRegexpMatches(driver.current_url, r"^http://localhost:3000/actors[\s\S]page=19$")
-        driver.close()
+        self.assertRegexpMatches(driver.current_url, r"^http://weebmd\.me/actors[\s\S]page=7$")
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
