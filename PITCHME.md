@@ -3,6 +3,14 @@
 # **WeebMD**
 Christopher Gutierrez, Corbin Rogerson, David Malone, Joshua Ondrusek, Nelson Swindler, and Randy Thai
 
+Note:
+* Chris: Unit Testing, Visualization
+* Corbin: Hosting, Database Setup, Auto-generate API
+* David: Front-End Design/Development, User Stories, UML Diagram, Technical Document, Selenium Tests
+* Joshua: Database Scraping, API Documentation, Visualization
+* Nelson: Front-end Design/Development, Technical Document
+* Randy: Front-End Design/Development, Technical Document
+
 ---
 
 @title[Demonstration]
