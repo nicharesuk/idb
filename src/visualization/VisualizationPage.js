@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import NavMenu from '../shared/NavMenu';
 import axios from 'axios';
-import { ForceGraph, ForceGraphNode, ForceGraphLink } from 'react-vis-force';
+import Graph from 'react-graph-vis';
 
 class VisualizationPage extends Component {
 
   state = {
-    nodes: new Set(),
+    nodes: {},
     links: [],
     windowWidth: 0,
     windowHeight: 0,
     clicked: -1,
+    numArtists: -1,
   }
 
   componentWillUnmount = () => {
@@ -30,6 +31,7 @@ class VisualizationPage extends Component {
 
   getAllData = () => {
     this.getAllArtists().then((response) => {
+      this.setState({numArtists: response.data.length})
       response.data.map(artist => this.addArtist(artist.artist_id));
     });
   }
@@ -56,48 +58,69 @@ class VisualizationPage extends Component {
     });
   }
 
-  processArtist = (artist) => {
-    const artist_key = `artist-${artist.artist.artist_id}`;
-    const nodes = this.state.nodes;
-    const links = this.state.links;
+  sanitizeName = (name) => {
+    if (name.length > 10) {
+      return `${name.substr(0, 8)}...`
+    }
+    return name;
+  }
 
-    nodes.add(artist_key);
+  processArtist = (artist) => {
+    const artist_id = `${artist.artist.artist_id}-artist`;
+    const nodesToAdd = [];
+    const linksToAdd = [];
+
+    nodesToAdd.push({id: artist_id, name: this.sanitizeName(artist.artist.name), color: "#e04141"});
 
     artist.albums.forEach((album) => {
-      const album_key = `album-${album.album_id}`;
-      nodes.add(album_key);
-      links.push({source: artist_key, target: album_key});
+      const album_id = `${album.album_id}-album`;
+      nodesToAdd.push({id: album_id, name: this.sanitizeName(album.name), color: "#7be041"});
+      linksToAdd.push({from: artist_id, to: album_id});
     });
 
     artist.cities.forEach((city) => {
-      const city_key = `city-${city.city_id}`;
-      nodes.add(city_key);
-      links.push({source: artist_key, target: city_key});
+      const city_id = `${city.city_id}-city`;
+      nodesToAdd.push({id: city_id, name: city.name, color: "#41e0c9"});
+      linksToAdd.push({from: city_id, to: artist_id});
     });
 
-    this.setState({
-      nodes,
-      links,
+    this.setState((state) => {
+      const nodes = state.nodes;
+      const links = state.links;
+      nodesToAdd.forEach(node => nodes[node.id] = node);
+      linksToAdd.forEach(link => links.push(link));
+      return {...state, nodes, links};
     });
-  }
-
-  getColor = (key) => {
-    if        (key.startsWith('album')) {
-      return "blue";
-    } else if (key.startsWith('artist')) {
-      return "red";
-    } else if (key.startsWith('city')) {
-      return "green";
-    } else {
-      return "";
-    }
   }
 
   render() {
-    //console.log(window.innerWidth);
 
-    const nodes = Array.from(this.state.nodes);
-    const links = this.state.links;
+    const graph = {
+      nodes: Object.values(this.state.nodes).map(node => ({id: node.id, label: node.name, color: node.color})),
+      edges: this.state.links.map(link => ({ from: link.from, to: link.to }))
+    };
+
+    const options = {
+      layout: {
+        hierarchical: false
+      },
+      edges: {
+        color: "#000000"
+      }
+    };
+
+    const num_artists = graph.nodes.filter(node => node.id.endsWith("artist")).length;
+
+    if (num_artists !== this.state.numArtists) {
+      return (
+        <div style={{height: "100%", width: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
+          <div>
+            <h1>Loading</h1>
+            <h2>{Math.round((num_artists / this.state.numArtists) * 100)}%</h2>
+          </div>
+        </div>
+      );
+    }
 
     return (
       <div>
@@ -105,26 +128,8 @@ class VisualizationPage extends Component {
           pages={this.props.pages}
           searchText={this.props.searchText}
           handleSubmit={this.props.handleSubmit} />
-        <div style={{height: '100%', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <ForceGraph
-            zoom
-            simulationOptions={
-              {
-                animate: true,
-                height: this.state.windowHeight,
-                width: this.state.windowWidth,
-              }
-            }>
-            {nodes.map((node, index) => (
-              <ForceGraphNode
-                key={node}
-                onClick={() => this.setState({clicked: index})}
-                showLabel={this.state.clicked === index}
-                node={{id: node, labelAttr: "labelAttr"}}
-                fill={this.getColor(node)} />)
-            )}
-            {links.map(link => <ForceGraphLink key={`${link.source}-${link.target}`} link={link} />)}
-          </ForceGraph>
+        <div style={{height: '100%', width: '100%'}}>
+          <Graph graph={graph} options={options} style={{ height: `${this.state.windowHeight}px` }} />
         </div>
       </div>
     );
