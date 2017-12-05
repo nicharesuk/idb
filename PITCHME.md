@@ -12,6 +12,15 @@ Note:
 * Randy: Front-End Design/Development, Technical Document
 
 ---
+@title[Data Source and Scraping]
+# Data Source and Scraping
+* Jikan.me
+* Kitsu.io
+
+Note:
+* Explain issues with Jikan, and how we handled them, Josh/Corbin
+
+---
 
 @title[Demonstration]
 
@@ -25,6 +34,15 @@ Note:
 
 ##### Navigation & search
 <a href="http://weebmd.me/" target="_blank">![WeebMD](https://i.imgur.com/IvU3WT5.png)</a>
+
++++
+
+@title[Unit tests]
+
+##### Back-End
+* Flask-Restless
+* Flask-SQL-Alchemy
+* SQLite
 
 +++
 
@@ -51,13 +69,15 @@ Note:
 ##### What did we do well?
 * Looks great
 * Simple navigation
+* Task management and planning
 
 +++
 
 @title[What did we learn?]
 
 ##### What did we learn?
-* Data source and format
+* Understanding data source and format is important
+* You don't need to re-invent the wheel, there are many many tools
 
 +++
 
@@ -66,8 +86,9 @@ Note:
 ##### What can we do better?
 * Time-sensitive information
 * Image hosting
-* Default image
-* Mobile
+* Mobile view
+* Regex searching and weighting
+* Database is not very scalable as it is SQLite
 
 Note:
 * A lot of the information is time sensitive, that is a published date or rating could be changed over time and thus we would not be getting those changes with our current implementation of things.
@@ -80,8 +101,9 @@ Note:
 @title[What puzzles us?]
 
 ##### What puzzles us?
-* Semantic UI search
+* Jikan has different formats for different values, e.g. genres sometimes list, sometimes dictionary
 * Search highlighting on multiple words in the same attribute
+* Webpack
 
 Note:
 * Why does semantic UIs search box not let you click the magnifying glass as a button to enter your search? To fix this would be really annoying.
@@ -104,8 +126,9 @@ Note:
 @title[What did they do well?]
 
 ##### What did they do well?
-* Speed?
+* Looks really nice, especially the model's pictures
 * Useful service
+* Spotify integration
 
 Note:
 * Its very fast! (Maybe not)
@@ -117,23 +140,18 @@ Note:
 
 ##### What did we learn from their website?
 * The meaning of the word Poupon
+* API Availability status
+* Mobile view
 
 +++
 
 @title[What can they do better?]
 
 ##### What can they do better?
-* Model cards
+* Clickable Model cards
 * Column labels
-* Page navigation cursor
 * Current page indicator
-* Unused filter
-* State filter
-* News pagination
-* Media filter
-* News with wrong related albums
-* Unclear sorting
-* The meaning of points
+* Filtering and sorting issues
 
 Note:
 * The model cards are not clickable, it is the name that is clickable. This is annoying as Id like to click on the whole card and not have to move my mouse to a precise location.
@@ -153,7 +171,8 @@ Note:
 @title[What puzzles us about their website?]
 
 ##### What puzzles us about their website?
-* City - article relation
+* Why is Justin Beiber there but not Eminem?
+* The meaning of points
 
 ---
 
