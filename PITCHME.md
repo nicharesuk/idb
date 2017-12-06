@@ -113,7 +113,7 @@ Note:
 
 @title[Other Critique]
 
-# Other Critique
+# Poupon.me Critique
 * What did they do well?
 * What did we learn from their website?
 * What can they do better?
@@ -171,19 +171,13 @@ Note:
 @title[What puzzles us about their website?]
 
 ##### What puzzles us about their website?
-* Why is Justin Beiber there but not Eminem?
 * The meaning of points
+* Related city, some artists lack a city
+* Some artists have a spotify link but no related albums (e.g. Post Malone)
+* Why is Justin Beiber there but not Eminem?
 
 ---
 
 @title[Visualization]
 
 # Visualization
-
-@fa[arrow-down]
-
-+++
-
-@title[???]
-
-##### ???
