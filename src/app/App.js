@@ -6,11 +6,17 @@ import CharactersPage from '../characters/CharactersPage';
 import ActorsPage from '../actors/ActorsPage';
 import MangaPage from '../manga/MangaPage';
 import SearchPage from '../search/SearchPage';
+import VisualizationPage from '../visualization/VisualizationPage';
 import { Switch, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { getCurrentPage } from '../shared/Utilities';
 
 const pages = [
+  {
+    name: "Visualization",
+    link: "/visualization",
+    node: (props) => <VisualizationPage {...props} />
+  },
   {
     name: "Home",
     link: "/",
