@@ -23,5 +23,10 @@ export default [
     id: 5,
     name: "Trello Board",
     URL: "https://trello.com/b/KrhsKbmQ/weebmd"
+  },
+  {
+    id: 6,
+    name: "Git Pitch",
+    URL: "https://gitpitch.com/nicharesuk/idb/"
   }
 ]
