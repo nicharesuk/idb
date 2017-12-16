@@ -337,7 +337,7 @@ def update_inappropriate():
         # for anime in bad_anime:
         #     db.session.delete(anime)
         
-        bad_manga = Manga.query.filter(Manga.genre.contains("hentai")).all()
+        bad_manga = Manga.query.filter(Manga.genre.contains("Hentai")).all()
 
         for manga in bad_manga:
             db.session.delete(manga)
@@ -461,4 +461,5 @@ def fix_html():
         
 if __name__ == "__main__":
 
-    fix_html()
+    update_inappropriate()
+    update_empty_relationships()
